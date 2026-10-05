@@ -1,5 +1,7 @@
 # 素材与授权范围
 
+状态更新（2026-10-05）：用户已明确确认公开现有仓库与GitHub Pages。下文「本轮仅私有同步」等为历史收录阶段，不再描述当前可见性。公开操作不改变图片许可范围，也不补齐缺失的历史输入；MIT仍仅覆盖有权许可的代码与自编文档。
+
 ## 包内素材
 
 `examples/clothespin-public-domain.jpg`：Eloquence，2004，原文件名 Clothespin.jpg。
