@@ -1,6 +1,8 @@
-# 公开实验版准备记录
+# 公开实验版准备与执行记录
 
-日期：2026-10-05。用户表示「可以考虑公开仓库」。目前仍为private；没有将这句话视为最终公开操作确认，也没有启用Pages或创建Release。
+执行更新：2026-10-05用户明确回复「确认公开」，经GitHub身份验证后完成public切换并启用Pages。实际访问地址：https://denggui-ai.github.io/create-miniature-world/site/ 。未创建正式Release。
+
+以下保留切换前的检查和方案；其中待确认步骤已按上述授权执行。
 
 ## 已核对范围
 
