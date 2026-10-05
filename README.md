@@ -1,5 +1,7 @@
 # 微缩摄影 Skill · Miniature World
 
+![微缩摄影 Skill：日常物件，另有天地。](site/cover.png)
+
 **让日常物件，成为有故事的小世界。**
 
 面向 Codex 与 Claude Code 的 **AI 微缩摄影与缩微场景创作 Skill**。受田中达也（Tatsuya Tanaka）的「见立 / mitate」创作启发，从日常物件的形状、纹理和结构出发，构思有故事的微缩世界，生成并迭代画面。自动成图需要所在环境提供相应图像工具。

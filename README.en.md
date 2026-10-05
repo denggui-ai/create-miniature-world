@@ -1,5 +1,7 @@
 # Miniature World · Miniature Photography Skill
 
+![Miniature World: everyday objects, unexpected stories.](site/cover.png)
+
 **Turn everyday objects into small worlds with a story.**
 
 An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka (田中达也) and his mitate approach to miniature photography: seeing everyday objects as something else.
