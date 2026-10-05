@@ -27,3 +27,15 @@
 发布成功后，把真实仓库URL和安装路径写回README。不要提前写一个假定存在的链接。可提供仓库 ZIP 下载和指向 `skills/create-miniature-world` 的安装说明。
 
 第一版只发布Skill和文档即可。官方文档建议通过插件分发跨平台可安装包；是否增加插件包装，等本机流程稳定后再决定，无需先建网站、服务端或MCP服务。
+
+## 已确定的对外命名与呈现（2026-10-05）
+
+- 展示名：微缩摄影 Skill · Miniature World。
+- 一句话：让日常物件，成为有故事的小世界。
+- 仓库、源目录、调用标识保留 create-miniature-world，不加拼音，不将作者姓名用作项目名。
+- About建议：微缩摄影 Skill｜让日常物件成为有故事的小世界。Miniature photography for Codex & Claude Code. 实验候选版；本机闭环待验收。
+- Topics：agent-skills、codex、claude-code、miniature-photography、mitate、image-generation、product-photography。
+- README中文为主，README.en.md为简洁英文入口；首页4张，案例页精选8张，18组代表案例保留。
+- 田中达也列为创作启发与致敬，Preiser列为人物参考，均不声称官方背书。
+
+这次是展示与安装文档调整，不改变核心行为或候选版本。分享预览图仍沿用GitHub默认，不新增设计资产；之后确有需要再用已核对素材制作。公开可见性与正式Release仍按上面的条件单独处理。
