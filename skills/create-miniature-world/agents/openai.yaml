@@ -1,0 +1,6 @@
+interface:
+  display_name: 微缩造景
+  short_description: 把日常物品变成有趣的微缩世界，支持自由创作与产品保真两种模式
+  default_prompt: 使用 $create-miniature-world，把我提供的物品或产品图做成一张有趣的微缩摄影，创意由你决定。
+policy:
+  allow_implicit_invocation: true
