@@ -1,130 +1,92 @@
-# 微缩造景 · Miniature World
+# 微缩摄影 Skill · Miniature World
 
-把日常物件的特征重新看成一个有趣的小世界。给出物品名称或商品照片，Skill 会读物件、比较创意、组织画面、调用可用的生图工具，并根据实际成图审查和修改。
+**让日常物件，成为有故事的小世界。**
 
-**版本：v0.1.0-rc2，发布候选。** 已完成当前开发环境的结构与可移植性检查；你的本机安装、生图和修改验收仍待执行。私有GitHub开发仓库已创建；正式版本尚未发布。本包不是离线模型或独立应用。
+受田中达也「见立」创作启发，从物件的形状、纹理和结构出发，构思微缩情境，生成并迭代画面。面向 Codex 与 Claude Code；自动成图需要所在环境提供相应图像工具。
 
-本目录是私有开发仓库的工作基线，核心Skill与rc2一致。Codex从 `AGENTS.md`、Claude Code从 `CLAUDE.md` 进入同一份[开发交接](docs/DEVELOPMENT_HANDOFF.md)。下方安装示例针对Codex；Claude的安装位置与调用方式见交接文件。两个宿主的实际本机生图闭环均待验收。
+[开始使用](docs/INSTALL.md) · [查看案例](examples/SELECTED.md) · [English](README.en.md)
 
-私有开发仓库：[denggui-ai/create-miniature-world](https://github.com/denggui-ai/create-miniature-world)。当前保留rc2待验收状态；不公开仓库、不创建正式Release。拉取源码不会自动安装Skill或提供图片工具。
+> **实验候选版 v0.1.0-rc2** · 当前为私有开发仓库。本机安装、生图和编辑闭环待验收；正式Release尚未发布。
 
-在本机已登录具有仓库权限的GitHub账号后，可克隆：
+## 从一个物件，发现另一个世界
 
-```bash
-git clone https://github.com/denggui-ai/create-miniature-world.git
-cd create-miniature-world
-```
+以下为开发期间的AI生成案例，每件产品选一张代表图。画面展示创意方向，具体商品保真与已知不足见[18组案例详情](examples/SELECTED.md)。
 
-## 代表案例
-
-每个产品只展示一张代表图；其他版本保留作开发对照。下列为8张首页精选，完整18组及不足见[案例集](examples/SELECTED.md)。历史成图不等于本机验收通过。
-
-| G52 修正带 · 山地步道 | G46 回形针 · 夹纸冰场 |
+| 修正带 · 山地步道 | 木梳 · 齿间农田 |
 | --- | --- |
-| <img src="examples/correction-tape-hiking.png" width="280" alt="修正带 山地步道"> | <img src="examples/paperclip-paper-after.png" width="280" alt="回形针 夹纸冰场"> |
+| <img src="examples/correction-tape-hiking.png" width="300" alt="修正带的起伏外壳成为微缩徒步路线"> | <img src="examples/comb-farm.png" width="300" alt="木梳的平行梳齿成为微缩田垄"> |
+| 外壳的起伏轮廓，成为徒步路线。 | 平行排列的梳齿，成为耕作的田垄。 |
 
-| G23 木梳 · 齿间农田 | G30 笔记本 · 装订圈停车架 |
+| 笔记本 · 装订圈停车架 | 眼镜 · 透明屋面维修 |
 | --- | --- |
-| <img src="examples/comb-farm.png" width="280" alt="木梳 齿间农田"> | <img src="examples/notebook-bike-rack.png" width="280" alt="笔记本 装订圈停车架"> |
+| <img src="examples/notebook-bike-rack.png" width="300" alt="笔记本装订圈成为微缩自行车停车架"> | <img src="examples/glasses-roof-repair.png" width="300" alt="眼镜的镜片与镜框成为微缩工人维修的透明屋面"> |
+| 装订圈成为停放自行车的结构。 | 镜片与镜框成为透明屋面及其框架。 |
 
-| G05 眼镜 · 透明屋面维修 | G19 马克杯 · 雨中相遇 |
+[继续看回形针、马克杯、小青柑等案例 →](examples/README.md)
+
+## 开始使用
+
+1. **获取项目**：克隆仓库，或从 Code → Download ZIP 下载并解压；当前需要仓库访问权限。
+2. **安装Skill**：按[安装说明](docs/INSTALL.md)选择 Codex 或 Claude Code。唯一安装源为 `skills/create-miniature-world/`。
+3. **上传商品图，先看方案**：复制下面与你的工具对应的一句。
+
+| 环境 | 安装后发送 |
 | --- | --- |
-| <img src="examples/glasses-roof-repair.png" width="280" alt="眼镜 透明屋面维修"> | <img src="examples/mug-rain-shelter.png" width="280" alt="马克杯 雨中相遇"> |
+| Codex | `使用 $create-miniature-world，把这张商品图做成微缩摄影。先给三个有明显区别的创意，不要立即生图。` |
+| Claude Code | `/create-miniature-world 把这张商品图做成微缩摄影。先给三个有明显区别的创意，不要立即生图。` |
 
-| G58 小青柑 · 茶仓装卸 | G70 厨房海绵 · 崖壁与营地 |
+选好方案后，让助手生成一张；再用一句具体反馈修改，例如「人物小一点，商品和构图保持不变」。没有生图工具时，可先得到方案与提示词。首次运行可用[本机验收](docs/LOCAL_TEST.md)确认实际能力。
+
+## 你可以怎样和它沟通
+
+| 你说什么 | 它应该怎样处理 |
 | --- | --- |
-| <img src="examples/citrus-tea-loading.png" width="280" alt="小青柑 茶仓装卸"> | <img src="examples/sponge-climbing.png" width="280" alt="厨房海绵 崖壁与营地"> |
-
-## 从这里开始
-
-1. 解压整个文件夹，在本机 Codex 中打开它。
-2. 将下面这段话交给 Codex，由它检查现有版本、安装并核对能力：
-
-> 请阅读 README.md 和 docs/LOCAL_TEST.md。将 skills/create-miniature-world 安装到你实际支持的用户技能目录。先检查是否已有同名技能；有则比较差异，不覆盖。核对实际加载路径和本包三个核心文件是否一致，再分别报告本会话能否读本地图片、把图片实际传给生图工具、生图、编辑和保存。不要安装依赖、切换付费 API 或先生成图片。随后执行验收的“先看方案”，给出方案后等待我选择。
-
-3. 按 [本机验收](docs/LOCAL_TEST.md) 完成一次出图和一次反馈修改。图片能力不可用时，只能完成策划与提示词，不能记为生图通过。
-
-官方本地技能位置包括用户级 `~/.agents/skills/` 和项目级 `.agents/skills/`。本包采用 `skills/create-miniature-world/` 便于阅读和分发，**仅打开文件夹不代表已自动安装**。安装内容是该子目录，不能把整个发布目录直接当作一个 Skill。
-
-若你使用 macOS/Linux，也可在本项目根目录执行以下可见操作。已有同名目录时会停止，不覆盖：
-
-```bash
-skill_dest="$HOME/.agents/skills/create-miniature-world"
-if [ ! -f "skills/create-miniature-world/SKILL.md" ]; then
-  echo "请先进入解压后的项目根目录；本次未安装。"
-elif [ -e "$skill_dest" ] || [ -L "$skill_dest" ]; then
-  echo "已有同名技能，请先比较版本；本次未覆盖。"
-else
-  mkdir -p "$HOME/.agents/skills" &&
-    cp -R "skills/create-miniature-world" "$skill_dest"
-fi
-```
-
-如果已存在云端安装的同名技能，也要先确认本轮加载的是哪个版本，避免两个同名入口导致误测。Windows 用户可交给 Codex 按上述自然语言安装，不需要照抄 Bash。
-
-## 怎么使用
-
-在 Codex CLI/IDE 中可显式提及 `$create-miniature-world`；在支持技能选择的桌面界面中，从技能入口选择「微缩造景」。
-
-| 你说什么 | 预期行为 |
-| --- | --- |
-| 把这张商品图做成微缩摄影，创意你来定 | 读图，自主比较候选，选定后出一张图 |
+| 创意你来定，直接做一张 | 读物件、比较候选后自主选案，工具可用时生成 |
 | 先看方案，不要生图 | 给三个有差异的方案，等待选择 |
-| 只给我生图提示词 | 输出文字，不生图 |
-| 人物再小一些 | 保持商品大小，调整人物及相关道具比例 |
-| 只把光线调暖 | 编辑当前图，保持产品与故事 |
-| 没看懂这个故事 | 回查物件联系、动作和空间关系，需要时重选情境 |
+| 只给我生图提示词 | 输出文字，不调用生图 |
+| 人物再小一些 | 调整人物及相关道具比例，保护商品 |
+| 只把光线调暖 | 工具支持时编辑当前图，保留故事与构图 |
+| 没看懂这个故事 | 回查物件联系、人物动作和空间关系，必要时换情境 |
 
-有商品图时默认保护其可见事实；只有物品名称时默认自由创作。默认单张竖版3:4、不透明背景。一次初始生成，遇明确约束错误至多自动修正一次；用户的新修改请求另行处理。
+有商品参考图时，默认保护其可见外观；只有物品名称时，默认自由创作。默认单张竖版3:4、不透明背景；初次生成遇明确约束错误时至多自动修正一次，用户后续修改另行处理。
 
-## 运行条件
+## 四句话，说明创作方法
 
-- 需要支持 Agent Skills 的宿主，以及可读图片的模型。
-- 自动成图需要本会话实际开放的生图/编辑工具；参考图保真还需要工具支持图片输入。Skill 不会凭空增加工具。
-- 优先使用宿主内置生图；本包不含 API 客户端、不索取密钥、不自动切换外部付费服务。
-- 本机执行时，把成图另存到项目 `outputs/`，原商品图保留不覆盖。联网模型的使用额度由宿主决定，本包不包含模型额度。
-- 私人研究页面不是运行依赖。作品来源链接只用于按需研究，离线或链接失效时不可编造查阅结果。
+- **发现联想：**找到商品值得被重新看见的特征。
+- **建立情境：**让行动或空间关系把联想显现出来。
+- **组织画面：**让原物、新角色和整体美感同时成立。
+- **判断巧思：**用可见证据和必要对照，区分成立、好看与保真。
+
+我们要找的是：商品的某个特征被重新看见之后，才变得有意思的情境。故事可以只是一个生活片刻；不必演示商品用途，也不必安排冲突和结局。
+
+## 适用条件与当前限制
+
+适合从可见的轮廓、纹理、结构或开合关系中寻找联想。商品照片优先；不能只按「文具」「食品」等品类保证成功，也不能为了故事凭空改变商品结构。
+
+- **运行能力**：需要可读图的宿主。自动成图需要生图工具，参考图创作需要图片输入，反馈编辑需要编辑能力；Skill不附带模型、额度或付费API客户端。
+- **商品保真**：标签、文字、部件和尺寸仍可能生成错误。创意得到认可，不代表精确SKU还原通过。
+- **微缩人偶**：比例、姿态和涂装需看图判断；严格匹配实物时需提供有权使用的参考图。项目1:64是规划值，不是作者或Preiser的统一比例，也不是生成尺寸保证。
+- **验证状态**：已有历史案例与文件检查；两个宿主的真实本机闭环均待验收。详见[验证记录](docs/VALIDATION.md)。
 
 ## 创作启发与致敬
 
-致敬微缩摄影家、见立作家**田中达也（Tatsuya Tanaka）**。他的 [MINIATURE CALENDAR](https://miniature-calendar.com/about/) 启发我们重新看见日常物件：从一处轮廓、纹理或结构，发现另一个世界，并用微小人物的行动让它成立。
+致敬微缩摄影家、见立作家**田中达也（Tatsuya Tanaka）**。他的 [MINIATURE CALENDAR](https://miniature-calendar.com/about/) 启发我们重新看见日常物件。本项目将作品学习和自身试验整理成创作方法，帮助使用者构思自己的微缩场景；这些步骤不是作者本人公布的工作流程。
 
-本 Skill 将对作品的学习与项目试验整理为四项能力：发现联想、建立情境、组织画面、判断巧思。这是本项目提炼的方法，不是作者本人公布的工作流程；希望帮助使用者创作自己的微缩场景。
+人物动作和模型造型可参考 [Preiser官方网站](https://www.preiserfiguren.de/)。具体型号、比例及图片使用条件以对应资料为准。[人偶参考说明](examples/FIGURE_REFERENCES.md)记录现有材料与缺口。
 
-本项目为独立学习与创作工具，与田中达也、MINIATURE CALENDAR 及 Preiser 无官方合作、授权或背书关系。致敬与署名不替代具体图片的使用许可。
+本项目与田中达也、MINIATURE CALENDAR、Preiser无官方合作或背书关系。代码与自编文档采用[MIT许可证](LICENSE)；案例图和第三方素材不自动适用MIT。图片来源、用途和公开分发待核事项见[素材说明](THIRD_PARTY_NOTICES.md)。
 
-人物模型研究推荐访问 [Preiser 官方网站](https://www.preiserfiguren.de/)（Paul M. Preiser GmbH），从 Katalogdownload、Diorama im Blick 等入口了解实物模型与场景。阅读时关注动作、支撑、朝向及人物组合，整理为自己的观察；具体型号与比例按官方产品信息确认。官网允许私人、非商业下载，并未因此开放图片随本Skill再分发；需要打包官方图时按其条款确认用途许可，详见素材说明。
+## 反馈与继续开发
 
-## 人偶参考与案例图片如何处理
+反馈时请说明：使用Codex还是Claude Code、实际加载版本、输入是什么、期待什么、实际发生什么；可附有权分享的成图及一句具体问题。缺工具、故事难懂、商品改错和人物过大应分别记录，勿上传账号信息或密钥。
 
-现已整理[18组产品代表案例](examples/SELECTED.md)，保留[早期六组复盘](examples/CASES.md)、一份已匹配输入与输出的原始提示词，以及[人偶参考说明](examples/FIGURE_REFERENCES.md)。图片、反馈的对应范围与未通过项逐组记录；部分完整输入和提示词仍未恢复。找回的人偶图为AI诊断图，真实Preiser参考缺口仍在。
-
-我们独立策划的AI生成案例可作为候选样张，标明AI生成并核对实际输入的来源与用途。自己拍摄或已获相应用途许可的人偶参考可纳入；厂商、商家的产品照片需查看照片许可，不能仅凭产品公开销售推定照片可自由再分发。私有开发保存与公开打包分开判断，私有也不自动补足缺失的许可。田中达也原作、学习复刻与本项目独立案例分开标记。
-
-本地使用时，可在 Skill 的 `assets/` 中添加有权用于本任务的 `preiser-adults-reference.png` 或 `preiser-children-reference.jpg`。当前不自动下载这些可选文件。将来公开打包时，只收录适合该分发用途的素材，并保留来源与许可说明。
-
-没有实物参考时，普通创作仍可使用正常头身、细四肢、克制涂装等文字指导，并明确标记造型待审。严格匹配实物造型时先补图。这条无参考分支尚未完成独立的成图质量验证，不能沿用有参考试验的效果承诺。
-
-项目默认1:64是规划值，用户的人物大小要求优先；它不代表作者或品牌统一使用该比例，生成结果也不等于经过实测。历史测试反复出现人物偏大、商品部件改变和空间关系不清，当前版本不承诺精确SKU还原。
-
-## 目录与继续开发
-
-| 路径 | 用途 |
+| 入口 | 内容 |
 | --- | --- |
-| `skills/create-miniature-world/` | 唯一可安装源目录，主流程、参考方法和界面配置 |
-| `examples/` | 18组产品代表案例、历史对照、人偶说明及真实商品试用照片 |
-| `docs/LOCAL_TEST.md` | 本机验收步骤与待填写结果 |
-| `docs/VALIDATION.md` | 此候选包实际检查结果和未验证项 |
-| `docs/PUBLISH.md` | GitHub发布步骤与门槛 |
-| `AGENTS.md`、`CLAUDE.md`、`docs/DEVELOPMENT_HANDOFF.md` | Codex／Claude开发入口、首轮任务与缺失材料清单 |
-| `THIRD_PARTY_NOTICES.md` | 来源、授权范围和未打包素材 |
+| [安装与更新](docs/INSTALL.md) | Codex / Claude Code分别安装、触发与更新 |
+| [代表案例](examples/SELECTED.md) | 18组产品，每组一张主案例与已知不足 |
+| [案例与复盘](examples/README.md) | 更多精选、历史对照与原始编号 |
+| [本机验收](docs/LOCAL_TEST.md) | 一次生成与一次反馈修改 |
+| [开发交接](docs/DEVELOPMENT_HANDOFF.md) | Codex读AGENTS.md，Claude Code读CLAUDE.md |
+| [发布说明](docs/PUBLISH.md) | 实验候选状态与正式发布条件 |
 
-后续以这个开发目录为源修改；安装目录只是运行副本。编辑后比较并更新运行副本，避免两处各自发展。账号配置与密钥不入库；商品图、人偶参考与精选成图按来源和用途逐项选择，不把整个私人目录或输出缓存一并上传。
-
-## 开源范围与来源
-
-本项目自行编写的方法说明、配置及文档采用 [MIT](LICENSE)。第三方作品、品牌和用户提供的素材不因本项目许可证改变权利归属。我们与田中达也、Preiser不存在官方合作或背书关系。
-
-历史研究形成的方法见 Skill 的参考文件；已恢复的精选样张见案例目录，其他历史图与完整调用尚未全部恢复。收录为私有开发资料不等于已完成公开素材审核。本候选包已有一个公有领域的木夹子照片用于本机流程验收，不能把“流程跑完”当作“该创意成功”。详见 [案例](examples/README.md) 和 [素材说明](THIRD_PARTY_NOTICES.md)。
-
-安装与触发说明核对于2026-10-05：[OpenAI Build skills](https://learn.chatgpt.com/docs/build-skills)。不同宿主的工具能力仍以实际会话为准。
+仓库与调用标识保持 `create-miniature-world`。核心只维护 `skills/create-miniature-world/` 一份源，安装目录是运行副本。
