@@ -1,28 +1,35 @@
-# 案例图与本机试用
+# 微缩造景 · 一件产品，一个代表故事
 
-2026-10-05恢复的精选历史档案：六组案例、九张AI生成图（含一张人偶诊断图），以及一张历史回形针真实输入。图片保持原字节，只重命名。本轮没有重新生图，也不是在用户本机完成的新测试。
+正式展示按产品去重：18组代表案例，首页精选8张。修正带采用G52山地步道；影院放在详情补充。其余成功版本与反例继续作为开发资料保留。本次只整理历史图片，没有新生图，也未改变Skill核心。
 
-用户追加要求后，已另整理[70张生成图核对索引](REVIEW_INDEX.md)与单独的PDF核对册：34张为建议入选，最终名单待用户确认；本目录六组仍是开发档案。
+| G52 修正带 · 山地步道 | G46 回形针 · 夹纸冰场 |
+| --- | --- |
+| <img src="correction-tape-hiking.png" width="280" alt="修正带 山地步道"> | <img src="paperclip-paper-after.png" width="280" alt="回形针 夹纸冰场"> |
 
-先看图，再读[案例记录](CASES.md)。用户认可的范围、当前观察和未验证项分别保留。以下是历史案例方向的代表图；除回形针早期图外，尚未恢复成图哈希与具体反馈逐一绑定的完整记录。
+| G23 木梳 · 齿间农田 | G30 笔记本 · 装订圈停车架 |
+| --- | --- |
+| <img src="comb-farm.png" width="280" alt="木梳 齿间农田"> | <img src="notebook-bike-rack.png" width="280" alt="笔记本 装订圈停车架"> |
 
-| 直尺冲线 | 木梳农田 | 笔记本停车 |
-| --- | --- | --- |
-| <img src="ruler-finish-line.png" width="220" alt="直尺冲线历史成图"> | <img src="comb-farm.png" width="220" alt="木梳农田历史成图"> | <img src="notebook-bike-parking.png" width="220" alt="笔记本停车历史成图"> |
-| 动作易读；数字错误 | 梳齿参与农田联想；SKU未验收 | 装订圈参与停车；锁车动作未确定 |
+| G05 眼镜 · 透明屋面维修 | G19 马克杯 · 雨中相遇 |
+| --- | --- |
+| <img src="glasses-roof-repair.png" width="280" alt="眼镜 透明屋面维修"> | <img src="mug-rain-shelter.png" width="280" alt="马克杯 雨中相遇"> |
 
-| 回形针对照 | 剪刀反例 | 眼镜换情境 |
-| --- | --- | --- |
-| <img src="paperclip-paper-after.png" width="220" alt="夹纸回形针滑冰历史成图"> | <img src="scissors-rink-a.png" width="220" alt="剪刀冰场反例"> | <img src="glasses-roof-repair.png" width="220" alt="倾斜眼镜维修"> |
-| 对照早期跳水图看物件辨识；不是单变量实验 | 不能因场面漂亮就认定物件联系成立 | 回到透明斜面，改为边缘维修 |
+| G58 小青柑 · 茶仓装卸 | G70 厨房海绵 · 崖壁与营地 |
+| --- | --- |
+| <img src="citrus-tea-loading.png" width="280" alt="小青柑 茶仓装卸"> | <img src="sponge-climbing.png" width="280" alt="厨房海绵 崖壁与营地"> |
 
-- [案例记录与图片来源](CASES.md)：六组拆解、版本差异与文件校验值。
-- [人偶参考说明](FIGURE_REFERENCES.md)：AI诊断图与真实Preiser参考的区别。
-- [回形针早期试验原始提示词](paperclip-trial-1-2.md)：已匹配输入、输出和试验编号的一例。
-- [素材范围](../THIRD_PARTY_NOTICES.md)：开发档案不自动等于公开图片包。
+[查看18个产品的代表案例与已知不足](SELECTED.md)
+
+## 开发资料
+
+- [70图原始核对索引](REVIEW_INDEX.md)：固定编号、历史建议与本轮采用状态。
+- [早期六组复盘](CASES.md)：成功方向、反例及反馈范围，不代表全部案例。
+- [人偶参考说明](FIGURE_REFERENCES.md)：真实参考缺口与AI诊断图。
+- [回形针试验1-2原文记录](paperclip-trial-1-2.md)。
+- [素材来源与用途](../THIRD_PARTY_NOTICES.md)。
+
+“展示采用”不等于商品保真、人偶比例、文字细节全部通过。学习复刻不与独立策划混标。旧24页核对册保留为选片历史，不另做版本覆盖。
 
 ## 本机试用输入
 
-`clothespin-public-domain.jpg` 是可再分发的真实木夹子照片。主角是前景被手指按开的浅色木夹，背景还有其他夹子；选择主体时不要合并。去掉手指后要重新判断支撑，不能默认悬空张开仍合理。
-
-试用时不指定跷跷板，让Skill自主选择情境。商品尺寸未知，不认证精确模型比例。这张照片用于[本机流程验收](../docs/LOCAL_TEST.md)，不是承诺成功的固定模板。
+`clothespin-public-domain.jpg` 保留用于[本机验收](../docs/LOCAL_TEST.md)。主角是前景被手指按开的木夹；去掉手指后要重新判断开合与支撑，不将背景多个夹子合并。不固定跷跷板题材，商品尺寸未知。
