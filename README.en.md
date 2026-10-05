@@ -6,9 +6,9 @@
 
 An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka (田中达也) and his mitate approach to miniature photography: seeing everyday objects as something else.
 
-[中文](README.md) · [Installation](#getting-started) · [18 representative cases](examples/SELECTED.md)
+[View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [18 representative cases](examples/SELECTED.md)
 
-> Experimental candidate **v0.1.0-rc2**. The repository is currently private. Local installation, generation and editing in both hosts still need end-to-end validation. No stable release has been published.
+> Experimental candidate **v0.1.0-rc2**. The experimental repository is now public. Local installation, generation and editing in both hosts still need end-to-end validation. No stable release has been published.
 
 ## See the idea
 
