@@ -16,7 +16,7 @@
 
 历史私人试验用过 Preiser 官方人偶照片、田中达也作品原图及相应AI学习复刻；公开包不携带这些文件。现有原文件未因本次打包被删除。参考文档保留官方作品页及目录来源，公开可访问不等于本项目获得再分发或训练授权。
 
-本次已恢复六组历史案例及AI人偶诊断图，见 examples/CASES.md 和 examples/FIGURE_REFERENCES.md。它们作为私有开发资料收录；除已匹配记录外，部分完整参考输入仍未知，因此不将这些图片自动归入MIT或宣称全部已适合公开分发。公开前按实际输入和用途逐项核对，不能仅将私有仓库切换公开来代替此步骤。独立策划的AI成图、作者原作与学习复刻分别标记；不能仅因使用AI生成，就推定实际输入及输出的全部用途均获许可。文档中的认可与失败状态是项目历史记录摘要，不能替代读者自己的视觉验收。
+2026-10-05曾在私有开发阶段恢复六组历史案例及AI人偶诊断图，见 examples/CASES.md 和 examples/FIGURE_REFERENCES.md。现已随仓库公开；除已匹配记录外，部分完整参考输入仍未知，因此不将这些图片自动归入MIT或宣称全部已适合公开分发。公开展示不能代替按实际输入和用途逐项核对；当前缺口与复用状态见下方逐文件清单。独立策划的AI成图、作者原作与学习复刻分别标记；不能仅因使用AI生成，就推定实际输入及输出的全部用途均获许可。文档中的认可与失败状态是项目历史记录摘要，不能替代读者自己的视觉验收。
 
 人偶实物公开销售不等于厂商或商家的产品照片可自由再分发。自摄或已获相应用途许可的参考图可以收录；其他图片按来源条款和具体用途判断，不作一律禁用。私有仓库与公开发布分开处理，私有可见性本身不产生素材授权。精选图片需单独注明来源和使用条件，不自动归入项目MIT许可证。
 
@@ -34,11 +34,52 @@ Preiser官网Impressum的Urheberrecht段说明：下载与复制仅允许私人�
 
 ## 本次新增图片的具体来源
 
-- `examples/paperclip-pd-scan.jpeg`：Hephaestos，来源 https://commons.wikimedia.org/wiki/File:Paperclip.jpeg 。2026-10-04历史sources.json记录PD-user公有领域，本轮从试验档案原字节恢复，未重新浏览许可页。它不是项目原创，不通过MIT重新许可。
+- `examples/paperclip-pd-scan.jpeg`：Hephaestos，来源 https://commons.wikimedia.org/wiki/File:Paperclip.jpeg 。2026-10-04历史sources.json记录PD-user公有领域；2026-10-05本地审计重新打开来源页，仍标明作者释入公有领域。文件从试验档案原字节恢复。它不是项目原创，不通过MIT重新许可。
 - 九张PNG均为项目历史AI输出，原名与校验值见CASES.md；生成方式标记不等于完整输入与所有用途已核清。其中 `ai-figure-diagnostic.png` 不是官方Preiser产品照片。
 - 木梳关联输入为用户提供的商品页面截图；本轮实际看过但没有把整张页面截图打包，商家摄影、品牌标识及网页内容的权利不由本项目授予。
 - 本批不含田中达也原作和Preiser官方人偶照片。未确定对应关系的作者复刻不作为“本项目独立成功案例”补入。
 
 ## 产品代表图增补（2026-10-05）
 
-新增选图与历史原件SHA-256逐一匹配，映射见examples/SELECTED.md。18组主案例和G45详情补充均是本项目历史AI输出；保留部分完整输入、实物人偶参考及公开用途仍待核实的边界，不自动用MIT许可这些图片。本轮只同步私有开发仓库，不改变仓库可见性，不发布Release。
+新增选图与历史原件SHA-256逐一匹配，映射见examples/SELECTED.md。18组主案例和G45详情补充均是本项目历史AI输出；保留部分完整输入、实物人偶参考及公开用途仍待核实的边界，不自动用MIT许可这些图片。此为2026-10-05公开前的选图收录记录；当时仅同步私有仓库，后续已公开，未发布正式 Release。
+
+## 当前公开图片逐文件清单（2026-10-05本地审计）
+
+覆盖当前 Git 跟踪的全部30张图片，首页所用资产列在前五行。文件在公开仓库可访问，只说明已展示；不等于本项目能够授权商业使用、修改或再分发。表中「未提供额外复用授权」记录项目目前未授予的范围，不替代适用法律或原权利人的授权。AI 输出标记不构成商用许可结论。未核清的证据继续保留待核，图片不因本次审计删除或替换。
+
+首页三案的优先缺口：木梳缺完整实际生成输入及商品截图权利链；笔记本缺对应调用和人偶参考用途授权；薯片缺完整输入与生成工具/用途记录。首屏及封面还依赖设计参考图，其原始出处与复用许可待核。下一次补证应对应具体文件，不用统一的「AI生成」说明覆盖这些差异。
+
+| 公开文件 | 已知来源 / 证据 | 当前许可状态 | 本项目是否提供图片复用授权 |
+| --- | --- | --- | --- |
+| `site/hero-comb.png` | 项目 AI 展示适配；依据木梳案例与选定设计稿，见 [site/README.md](site/README.md) | 原案例及设计稿权利链未完整核清；不纳入 MIT | 未提供额外复用授权 |
+| `examples/comb-farm.png` | 项目历史 AI 输出 G23，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md)；商品页面截图仅为关联输入候选 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/notebook-bike-rack.png` | 项目历史 AI 输出 G30，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md)；历史方法记录提及成人实物参考，完整调用未恢复 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/potato-chip-harvest.png` | 项目历史 AI 输出 G68，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `site/cover.png` | 项目 AI 展示适配；依据木梳案例与选定设计稿，见 [site/README.md](site/README.md) | 原案例及设计稿权利链未完整核清；不纳入 MIT | 未提供额外复用授权 |
+| `docs/design-reference.png` | 用户选定的设计参考图，见 [开发交接](docs/DEVELOPMENT_HANDOFF.md)；原作者/原始出处未记录 | 作者、输入链与分发/复用许可待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/ai-figure-diagnostic.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md)；AI 人偶诊断，非官方实物照片 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/binder-clip-climbing.png` | 项目历史 AI 输出 G64，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/citrus-tea-loading.png` | 项目历史 AI 输出 G58，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/clear-tape-concert.png` | 项目历史 AI 输出 G54，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/clothespin-public-domain.jpg` | Eloquence，2004；[Commons 来源页](https://commons.wikimedia.org/wiki/File:Clothespin.jpg) | 来源页 Public domain；2026-10-05复核 | 依据原作者公有领域声明；非本项目再许可 |
+| `examples/correction-tape-cinema-alternative.png` | 项目历史 AI 输出 G45，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/correction-tape-hiking.png` | 项目历史 AI 输出 G52，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/glasses-roof-repair.png` | 项目历史 AI 输出 G05，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/glue-stick-summit.png` | 项目历史 AI 输出 G50，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/grater-climbing.png` | 项目历史 AI 输出 G15，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/mug-rain-shelter.png` | 项目历史 AI 输出 G19，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/notebook-bike-parking.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/packing-tape-road.png` | 项目历史 AI 输出 G12，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/paperclip-diving-before.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md)；公有领域回形针输入与试验1-2已配对，完整用途权利仍不能据此推定 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/paperclip-paper-after.png` | 项目历史 AI 输出 G46，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/paperclip-pd-scan.jpeg` | Hephaestos，2004；[Commons 来源页](https://commons.wikimedia.org/wiki/File:Paperclip.jpeg) | 来源页 Public domain；2026-10-05复核 | 依据原作者公有领域声明；非本项目再许可 |
+| `examples/pencil-road.png` | 项目历史 AI 输出 G56，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/ruler-finish-line.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/scissors-rink-a.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/scissors-rink-b.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/sponge-climbing.png` | 项目历史 AI 输出 G70，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/stapler-concert.png` | 项目历史 AI 输出 G65，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/tape-measure-jump.png` | 项目历史 AI 输出 G60，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/zipper-canal.png` | 项目历史 AI 输出 G69，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+
+本机验证新生成的图片仅保存在被忽略的 `outputs/`，不因本清单自动进入公开案例或获得商用承诺。轻量实验安装包不含任何图片，案例仅提供在线浏览链接。

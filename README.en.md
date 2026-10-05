@@ -20,7 +20,7 @@ The homepage features three cases: comb, notebook and potato chip. The comb cove
 
 ## Getting started
 
-Clone the repository with an account that has access, or download its ZIP from the Code menu. Open the project in your local host.
+Clone this public repository, or download its ZIP from the Code menu; no repository access invitation is required. Open the project in your local host.
 
 ```bash
 git clone https://github.com/denggui-ai/create-miniature-world.git
@@ -36,7 +36,7 @@ The only installable source directory is `skills/create-miniature-world/`. Check
 
 Use one installation scope and verify the actual loaded files in a fresh task. The current Codex display label is `微缩造景`. Installation and update details are in [docs/INSTALL.md](docs/INSTALL.md) (Chinese).
 
-Attach a product photo and ask:
+Attach a product photo and ask. Your host and its image tool process the photo and prompt; upload only material you may share with those services. This project website does not receive photos or generate images.
 
 > Turn this product into a miniature photograph. First propose three distinct concepts connected to its visible features. Do not generate an image yet.
 

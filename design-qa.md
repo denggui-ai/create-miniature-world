@@ -1,6 +1,6 @@
 # 独立介绍页检查
 
-final result: partial — desktop live checks passed; mobile pending
+final result: partial — previous desktop checks passed; current candidate desktop/mobile interaction acceptance pending
 
 日期：2026-10-05。用户指出此前左右分栏封面偏离设计，要求以docs/design-reference.png为准恢复连续背景、宋体大标题、斜向大木梳与双列案例。后续新增参考裁光独立介绍页的信息组织。
 
@@ -20,7 +20,7 @@ final result: partial — desktop live checks passed; mobile pending
 - 当前导出入口已禁用旧排版操作，避免运行旧脚本覆盖已选封面。
 - Skill核心和examples原始图片保持不变。
 
-## 待真实浏览器验收
+## 历史本地预览阻塞（2026-10-05，公开前）
 
 预览入口此前多次返回net::ERR_BLOCKED_BY_CLIENT，未因公开参考页能访问而宣称本地预览恢复。没有新版网页截图、控制台检查或交互通过记录。
 
@@ -28,10 +28,18 @@ final result: partial — desktop live checks passed; mobile pending
 2. 三图放大/关闭/Escape，宿主切换，复制成功与手动回退，安装导航与键盘焦点。
 3. 背景图上的文字实际对比度必须看渲染结果；纯色对比度计算不代表摄影背景验收。
 
-独立页尚未公开部署；README展示图可查看不等于网站已上线。当前Skill仍为v0.1.0-rc2，本机生图/编辑闭环未新增验收结果。
+该阶段独立页尚未公开部署；后续公开及桌面实测已替代这一状态，见下一节。该阶段未新增 Skill 本机生图/编辑验收。
 
 ## 公开页面实测（2026-10-05，用户确认公开后）
 
 实测网址：https://denggui-ai.github.io/create-miniature-world/site/ 。GitHub Pages显示live，浏览器实际打开成功。桌面首屏暖色背景、宋体标题、木梳主体已截图观察；使用区布局可读。三个案例均能打开对应弹窗，关闭按钮和Escape可退出；开始使用锚点和Claude指令切换正常。复制按钮显示成功；独立剪贴板读取未获得对应内容，因此不将跨通道剪贴板核验记为通过。现有日志中的错误来自浏览器扩展，不能当作本站脚本错误。
 
 以上替代此前无法访问网页的blocked状态。手机390px、其他字体环境与复制失败回退仍待实际检查，不因上线宣称全部QA通过。Skill核心未修改。
+
+## 当前候选更新（2026-10-05）
+
+安装入口使用现有主按钮样式，复制按钮移除外跳箭头，上传处增加数据流提醒。新增18组站内图库，首页全案例入口转站内，connection补笔记本关系图；保留木梳首屏、三精选、核心及原图。
+
+静态路径/锚点、18图尺寸/lazy、手机单列CSS、共享脚本空节点保护及关闭后的焦点逻辑检查通过；实际桌面/手机视觉、导航、复制、全部大图、Escape/Tab焦点及溢出仍待浏览器验收。此前DOM或截图只支持对应旧状态，不能记为新图库通过。
+
+用户已批准更新公开实验候选和Pages后继续云端验收。两页noindex保留，不创建正式Release。测试范围与未通过项见[审计记录](docs/LOCAL_AUDIT_2026-10-05.md)；部署结果以GitHub Pages对应提交的构建记录为准。本机操作日志及机器状态不纳入公开记录。
