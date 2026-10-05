@@ -33,9 +33,11 @@
 - 展示名：微缩摄影 Skill · Miniature World。
 - 一句话：让日常物件，成为有故事的小世界。
 - 仓库、源目录、调用标识保留 create-miniature-world，不加拼音，不将作者姓名用作项目名。
-- About建议：微缩摄影 Skill｜让日常物件成为有故事的小世界。Miniature photography for Codex & Claude Code. 实验候选版；本机闭环待验收。
+- About：AI 微缩摄影与缩微场景创作 Skill，受田中达也（Tatsuya Tanaka）的见立 / mitate 启发。让日常物件成为有故事的小世界。Codex / Claude Code · 实验候选版，本机闭环待验收。
 - Topics：agent-skills、codex、claude-code、miniature-photography、mitate、image-generation、product-photography。
 - README中文为主，README.en.md为简洁英文入口；首页4张，案例页精选8张，18组代表案例保留。
 - 田中达也列为创作启发与致敬，Preiser列为人物参考，均不声称官方背书。
 
 这次是展示与安装文档调整，不改变核心行为或候选版本。分享预览图仍沿用GitHub默认，不新增设计资产；之后确有需要再用已核对素材制作。公开可见性与正式Release仍按上面的条件单独处理。
+
+搜索用词补充（2026-10-05）：主名称继续使用微缩摄影；About与README首段自然覆盖缩微场景、田中达也 / Tatsuya Tanaka、见立 / mitate。作者姓名用于说明创作启发，不改成官方或保证复刻的表述；不增加拼音或无关关键词。不将文案覆盖记录为搜索排名或流量改善；仓库仍为私有，公开后才能评估公众发现效果。
