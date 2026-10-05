@@ -15,6 +15,26 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
+## 代表案例
+
+每个产品只展示一张代表图；其他版本保留作开发对照。下列为8张首页精选，完整18组及不足见[案例集](examples/SELECTED.md)。历史成图不等于本机验收通过。
+
+| G52 修正带 · 山地步道 | G46 回形针 · 夹纸冰场 |
+| --- | --- |
+| <img src="examples/correction-tape-hiking.png" width="280" alt="修正带 山地步道"> | <img src="examples/paperclip-paper-after.png" width="280" alt="回形针 夹纸冰场"> |
+
+| G23 木梳 · 齿间农田 | G30 笔记本 · 装订圈停车架 |
+| --- | --- |
+| <img src="examples/comb-farm.png" width="280" alt="木梳 齿间农田"> | <img src="examples/notebook-bike-rack.png" width="280" alt="笔记本 装订圈停车架"> |
+
+| G05 眼镜 · 透明屋面维修 | G19 马克杯 · 雨中相遇 |
+| --- | --- |
+| <img src="examples/glasses-roof-repair.png" width="280" alt="眼镜 透明屋面维修"> | <img src="examples/mug-rain-shelter.png" width="280" alt="马克杯 雨中相遇"> |
+
+| G58 小青柑 · 茶仓装卸 | G70 厨房海绵 · 崖壁与营地 |
+| --- | --- |
+| <img src="examples/citrus-tea-loading.png" width="280" alt="小青柑 茶仓装卸"> | <img src="examples/sponge-climbing.png" width="280" alt="厨房海绵 崖壁与营地"> |
+
 ## 从这里开始
 
 1. 解压整个文件夹，在本机 Codex 中打开它。
@@ -77,7 +97,7 @@ fi
 
 ## 人偶参考与案例图片如何处理
 
-现已补入[六组历史案例](examples/README.md)、一份已匹配输入与输出的原始提示词，以及[人偶参考说明](examples/FIGURE_REFERENCES.md)。图片、反馈的对应范围与未通过项逐组记录；部分完整输入和提示词仍未恢复。找回的人偶图为AI诊断图，真实Preiser参考缺口仍在。
+现已整理[18组产品代表案例](examples/SELECTED.md)，保留[早期六组复盘](examples/CASES.md)、一份已匹配输入与输出的原始提示词，以及[人偶参考说明](examples/FIGURE_REFERENCES.md)。图片、反馈的对应范围与未通过项逐组记录；部分完整输入和提示词仍未恢复。找回的人偶图为AI诊断图，真实Preiser参考缺口仍在。
 
 我们独立策划的AI生成案例可作为候选样张，标明AI生成并核对实际输入的来源与用途。自己拍摄或已获相应用途许可的人偶参考可纳入；厂商、商家的产品照片需查看照片许可，不能仅凭产品公开销售推定照片可自由再分发。私有开发保存与公开打包分开判断，私有也不自动补足缺失的许可。田中达也原作、学习复刻与本项目独立案例分开标记。
 
@@ -92,7 +112,7 @@ fi
 | 路径 | 用途 |
 | --- | --- |
 | `skills/create-miniature-world/` | 唯一可安装源目录，主流程、参考方法和界面配置 |
-| `examples/` | 六组历史案例、来源记录、人偶说明及真实商品试用照片 |
+| `examples/` | 18组产品代表案例、历史对照、人偶说明及真实商品试用照片 |
 | `docs/LOCAL_TEST.md` | 本机验收步骤与待填写结果 |
 | `docs/VALIDATION.md` | 此候选包实际检查结果和未验证项 |
 | `docs/PUBLISH.md` | GitHub发布步骤与门槛 |
