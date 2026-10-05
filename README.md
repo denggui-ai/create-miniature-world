@@ -4,7 +4,7 @@
 
 面向 Codex 与 Claude Code 的 **AI 微缩摄影与缩微场景创作 Skill**。受田中达也（Tatsuya Tanaka）的「见立 / mitate」创作启发，从日常物件的形状、纹理和结构出发，构思有故事的微缩世界，生成并迭代画面。自动成图需要所在环境提供相应图像工具。
 
-[开始使用](docs/INSTALL.md) · [查看案例](examples/SELECTED.md) · [English](README.en.md)
+[开始使用](docs/INSTALL.md) · [查看案例](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
 
 > **实验候选版 v0.1.0-rc2** · 当前为私有开发仓库。本机安装、生图和编辑闭环待验收；正式Release尚未发布。
 
@@ -17,10 +17,10 @@
 | <img src="examples/correction-tape-hiking.png" width="300" alt="修正带的起伏外壳成为微缩徒步路线"> | <img src="examples/comb-farm.png" width="300" alt="木梳的平行梳齿成为微缩田垄"> |
 | 外壳的起伏轮廓，成为徒步路线。 | 平行排列的梳齿，成为耕作的田垄。 |
 
-| 笔记本 · 装订圈停车架 | 眼镜 · 透明屋面维修 |
+| 笔记本 · 装订圈停车架 | 薯片 · 波纹秋收 |
 | --- | --- |
-| <img src="examples/notebook-bike-rack.png" width="300" alt="笔记本装订圈成为微缩自行车停车架"> | <img src="examples/glasses-roof-repair.png" width="300" alt="眼镜的镜片与镜框成为微缩工人维修的透明屋面"> |
-| 装订圈成为停放自行车的结构。 | 镜片与镜框成为透明屋面及其框架。 |
+| <img src="examples/notebook-bike-rack.png" width="300" alt="笔记本装订圈成为微缩自行车停车架"> | <img src="examples/potato-chip-harvest.png" width="300" alt="薯片的金色波纹成为微型收割机作业的田垄"> |
+| 装订圈成为停放自行车的结构。 | 金黄的波纹与碎屑，成为秋收的田垄与收获。 |
 
 [继续看回形针、马克杯、小青柑等案例 →](examples/README.md)
 
