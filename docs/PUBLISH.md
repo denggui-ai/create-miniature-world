@@ -1,8 +1,8 @@
 # GitHub发布
 
-私有开发仓库已创建：https://github.com/denggui-ai/create-miniature-world 。尚未公开开源或发布正式Release。建议仓库名 `create-miniature-world`，首版在本机验收后发布为 `v0.1.0`；本候选包版本为 `v0.1.0-rc2`。
+仓库已按用户2026-10-05明确确认改为公开：https://github.com/denggui-ai/create-miniature-world 。GitHub Pages已上线：https://denggui-ai.github.io/create-miniature-world/site/ 。当前仍为 `v0.1.0-rc2` 实验候选版，未发布正式Release，本机生图与编辑闭环待验收。
 
-## 当前执行：私有开发仓库
+## 历史阶段：私有开发仓库（已被公开决定替代）
 
 用户已于2026-10-05授权先创建私有开发仓库并上传候选源，再在本机拉取验收。此步骤不等于公开开源或发布正式版本，不受下方正式版生图验收门槛阻塞。
 
@@ -28,7 +28,7 @@
 
 第一版只发布Skill和文档即可。官方文档建议通过插件分发跨平台可安装包；是否增加插件包装，等本机流程稳定后再决定，无需先建网站、服务端或MCP服务。
 
-## 已确定的对外命名与呈现（2026-10-05）
+## 对外命名与呈现的历史记录（最新状态见文首）
 
 - 展示名：微缩摄影 Skill · Miniature World。
 - 一句话：让日常物件，成为有故事的小世界。
@@ -46,3 +46,7 @@
 
 
 封面现为AI排版适配图，旧site/export_cover.py入口已禁用以避免覆盖。封面查看不代表网页QA通过。独立介绍页待正式确认后配置发布；仓库仍私有。
+
+## 当前部署维护
+
+GitHub Pages采用Deploy from a branch、main、/(root)，根index.html跳转site/，.nojekyll保持纯静态发布。首页只展示木梳、笔记本和薯片三个案例。README和About使用已打开核对的真实网址；更新页面后检查部署结果。手机端排版未验收前保留noindex，不把上线或桌面交互检查记为Skill生图验收通过。
