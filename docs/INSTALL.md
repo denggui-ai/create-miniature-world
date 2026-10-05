@@ -4,7 +4,7 @@
 
 ## 获取项目
 
-当前仓库为私有，需要你的GitHub账号有访问权限。在本机终端执行：
+当前仓库已公开，可以直接克隆或下载ZIP。在本机终端执行：
 
 ```bash
 git clone https://github.com/denggui-ai/create-miniature-world.git
