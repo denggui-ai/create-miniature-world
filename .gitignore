@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+outputs/
+private-inputs/
+skills/create-miniature-world/assets/
+.claude/skills/create-miniature-world/
+.agents/skills/create-miniature-world/
+*.zip
+__pycache__/

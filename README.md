@@ -1,0 +1,96 @@
+# 微缩造景 · Miniature World
+
+把日常物件的特征重新看成一个有趣的小世界。给出物品名称或商品照片，Skill 会读物件、比较创意、组织画面、调用可用的生图工具，并根据实际成图审查和修改。
+
+**版本：v0.1.0-rc2，发布候选。** 已完成当前开发环境的结构与可移植性检查；你的本机安装、生图和修改验收仍待执行。私有GitHub开发仓库已创建；正式版本尚未发布。本包不是离线模型或独立应用。
+
+本目录是私有开发仓库的工作基线，核心Skill与rc2一致。Codex从 `AGENTS.md`、Claude Code从 `CLAUDE.md` 进入同一份[开发交接](docs/DEVELOPMENT_HANDOFF.md)。下方安装示例针对Codex；Claude的安装位置与调用方式见交接文件。两个宿主的实际本机生图闭环均待验收。
+
+私有开发仓库：[denggui-ai/create-miniature-world](https://github.com/denggui-ai/create-miniature-world)。当前保留rc2待验收状态；不公开仓库、不创建正式Release。拉取源码不会自动安装Skill或提供图片工具。
+
+在本机已登录具有仓库权限的GitHub账号后，可克隆：
+
+```bash
+git clone https://github.com/denggui-ai/create-miniature-world.git
+cd create-miniature-world
+```
+
+## 从这里开始
+
+1. 解压整个文件夹，在本机 Codex 中打开它。
+2. 将下面这段话交给 Codex，由它检查现有版本、安装并核对能力：
+
+> 请阅读 README.md 和 docs/LOCAL_TEST.md。将 skills/create-miniature-world 安装到你实际支持的用户技能目录。先检查是否已有同名技能；有则比较差异，不覆盖。核对实际加载路径和本包三个核心文件是否一致，再分别报告本会话能否读本地图片、把图片实际传给生图工具、生图、编辑和保存。不要安装依赖、切换付费 API 或先生成图片。随后执行验收的“先看方案”，给出方案后等待我选择。
+
+3. 按 [本机验收](docs/LOCAL_TEST.md) 完成一次出图和一次反馈修改。图片能力不可用时，只能完成策划与提示词，不能记为生图通过。
+
+官方本地技能位置包括用户级 `~/.agents/skills/` 和项目级 `.agents/skills/`。本包采用 `skills/create-miniature-world/` 便于阅读和分发，**仅打开文件夹不代表已自动安装**。安装内容是该子目录，不能把整个发布目录直接当作一个 Skill。
+
+若你使用 macOS/Linux，也可在本项目根目录执行以下可见操作。已有同名目录时会停止，不覆盖：
+
+```bash
+skill_dest="$HOME/.agents/skills/create-miniature-world"
+if [ ! -f "skills/create-miniature-world/SKILL.md" ]; then
+  echo "请先进入解压后的项目根目录；本次未安装。"
+elif [ -e "$skill_dest" ] || [ -L "$skill_dest" ]; then
+  echo "已有同名技能，请先比较版本；本次未覆盖。"
+else
+  mkdir -p "$HOME/.agents/skills" &&
+    cp -R "skills/create-miniature-world" "$skill_dest"
+fi
+```
+
+如果已存在云端安装的同名技能，也要先确认本轮加载的是哪个版本，避免两个同名入口导致误测。Windows 用户可交给 Codex 按上述自然语言安装，不需要照抄 Bash。
+
+## 怎么使用
+
+在 Codex CLI/IDE 中可显式提及 `$create-miniature-world`；在支持技能选择的桌面界面中，从技能入口选择「微缩造景」。
+
+| 你说什么 | 预期行为 |
+| --- | --- |
+| 把这张商品图做成微缩摄影，创意你来定 | 读图，自主比较候选，选定后出一张图 |
+| 先看方案，不要生图 | 给三个有差异的方案，等待选择 |
+| 只给我生图提示词 | 输出文字，不生图 |
+| 人物再小一些 | 保持商品大小，调整人物及相关道具比例 |
+| 只把光线调暖 | 编辑当前图，保持产品与故事 |
+| 没看懂这个故事 | 回查物件联系、动作和空间关系，需要时重选情境 |
+
+有商品图时默认保护其可见事实；只有物品名称时默认自由创作。默认单张竖版3:4、不透明背景。一次初始生成，遇明确约束错误至多自动修正一次；用户的新修改请求另行处理。
+
+## 运行条件
+
+- 需要支持 Agent Skills 的宿主，以及可读图片的模型。
+- 自动成图需要本会话实际开放的生图/编辑工具；参考图保真还需要工具支持图片输入。Skill 不会凭空增加工具。
+- 优先使用宿主内置生图；本包不含 API 客户端、不索取密钥、不自动切换外部付费服务。
+- 本机执行时，把成图另存到项目 `outputs/`，原商品图保留不覆盖。联网模型的使用额度由宿主决定，本包不包含模型额度。
+- 私人研究页面不是运行依赖。作品来源链接只用于按需研究，离线或链接失效时不可编造查阅结果。
+
+## 人偶参考如何处理
+
+公开包**不包含 Preiser 官方照片、田中达也原图或学习复刻图**。可上传你有权使用的模型照片；也可在本地 Skill 的 `assets/` 中添加 `preiser-adults-reference.png` 或 `preiser-children-reference.jpg`。这些文件为可选输入，不会由本包自动下载。
+
+没有实物参考时，普通创作仍可使用正常头身、细四肢、克制涂装等文字指导，并明确标记造型待审。严格匹配实物造型时先补图。这条无参考分支尚未完成独立的成图质量验证，不能沿用有参考试验的效果承诺。
+
+项目默认1:64是规划值，用户的人物大小要求优先；它不代表作者或品牌统一使用该比例，生成结果也不等于经过实测。历史测试反复出现人物偏大、商品部件改变和空间关系不清，当前版本不承诺精确SKU还原。
+
+## 目录与继续开发
+
+| 路径 | 用途 |
+| --- | --- |
+| `skills/create-miniature-world/` | 唯一可安装源目录，主流程、参考方法和界面配置 |
+| `examples/` | 可再分发的真实商品测试照片及用法 |
+| `docs/LOCAL_TEST.md` | 本机验收步骤与待填写结果 |
+| `docs/VALIDATION.md` | 此候选包实际检查结果和未验证项 |
+| `docs/PUBLISH.md` | GitHub发布步骤与门槛 |
+| `AGENTS.md`、`CLAUDE.md`、`docs/DEVELOPMENT_HANDOFF.md` | Codex／Claude开发入口、首轮任务与缺失材料清单 |
+| `THIRD_PARTY_NOTICES.md` | 来源、授权范围和未打包素材 |
+
+后续以这个开发目录为源修改；安装目录只是运行副本。编辑后比较并更新运行副本，避免两处各自发展。不要把私人商品图、人偶参考、生成缓存或账号配置提交到公开仓库。
+
+## 开源范围与来源
+
+本项目自行编写的方法说明、配置及文档采用 [MIT](LICENSE)。第三方作品、品牌和用户提供的素材不因本项目许可证改变权利归属。我们与田中达也、Preiser不存在官方合作或背书关系。
+
+历史研究形成的方法见 Skill 的参考文件；历史生成结果不作开源样张分发。提供一个公有领域的木夹子照片用于本机流程验收，不能把“流程跑完”当作“该创意成功”。详见 [案例](examples/README.md) 和 [素材说明](THIRD_PARTY_NOTICES.md)。
+
+安装与触发说明核对于2026-10-05：[OpenAI Build skills](https://learn.chatgpt.com/docs/build-skills)。不同宿主的工具能力仍以实际会话为准。
