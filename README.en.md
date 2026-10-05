@@ -2,7 +2,7 @@
 
 **Turn everyday objects into small worlds with a story.**
 
-An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka's mitate photography.
+An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka (田中达也) and his mitate approach to miniature photography: seeing everyday objects as something else.
 
 [中文](README.md) · [Installation](#getting-started) · [18 representative cases](examples/SELECTED.md)
 
