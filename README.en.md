@@ -12,11 +12,11 @@ An Agent Skill for Codex and Claude Code that finds visual connections in an obj
 
 ## See the idea
 
-| Correction tape → hiking trail | Notebook → bicycle rack |
+| Notebook → bicycle rack | Potato chip → harvest field |
 | --- | --- |
-| <img src="examples/correction-tape-hiking.png" width="300" alt="Miniature hikers follow the curved shell of a correction tape dispenser"> | <img src="examples/notebook-bike-rack.png" width="300" alt="Notebook binding rings become a miniature bicycle rack"> |
+| <img src="examples/notebook-bike-rack.png" width="300" alt="Notebook binding rings become a miniature bicycle rack"> | <img src="examples/potato-chip-harvest.png" width="300" alt="Golden potato chip ridges become a miniature harvest field"> |
 
-These are AI-generated development examples. Each product has one representative image; limitations and evidence are recorded in the [case collection](examples/SELECTED.md) (Chinese). They are not proof of local-host compatibility or exact product fidelity.
+The homepage features three cases: comb, notebook and potato chip. The comb cover is an AI layout adaptation; the [original comb image](examples/comb-farm.png) is retained separately. The two images below are original AI-generated development examples. Each product has one representative image; limitations and evidence are recorded in the [case collection](examples/SELECTED.md) (Chinese). They are not proof of local-host compatibility or exact product fidelity.
 
 ## Getting started
 
