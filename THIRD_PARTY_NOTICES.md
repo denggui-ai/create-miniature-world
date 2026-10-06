@@ -113,7 +113,7 @@ f423079d57dbb74861e61b27565e7ea37d798a9b37e8f7440bcac26c6c43d5f1  examples/paper
 
 用户已批准本轮实验更新采用以下两张AI生成图，保留初稿与一次编辑，不加入18图精选。此前34张资产加本轮两张共36张；实际部署结果以GitHub提交与Pages运行为准。
 
-商品参考来源：[Pears with Glycerin & Mint Extracts Bar Soap 3.53oz 官方产品页](https://www.pearspuresince1807.com/us/en/p/pears-pure-gentle-with-glycerin-mint-extracts-extracts-bar-soap-3-53oz.html/00850022820427)。这里只保留来源链接与自有观察，不附官方产品照片；成图不是官方商品照片，不代表Pears或Preiser合作、背书或真品证明。图片与品牌标识不纳入MIT，本项目未提供额外商业使用或再分发授权。
+商品参考来源：[Pears with Glycerin & Mint Extracts Bar Soap 3.53oz 官方产品页](https://www.pearspuresince1807.com/us/en/p/pears-pure-gentle-with-glycerin-mint-extracts-extracts-bar-soap-3-53oz.html/00850022820427)。这里只保留来源链接与自有观察，不附官方产品照片；成图不是官方商品照片，不代表Pears或Preiser合作、背书或真品证明。图片与品牌标识不纳入MIT，本项目未提供额外商业使用或再分发授权。生成后的研究才发现田中达也《[Soap Skating](https://miniature-calendar.com/200911)》（2020-09-11）这一同类先例，未将其作为当时生成输入，也不主张香皂滑冰机制为本项目独创。
 
 | 教程文件 | 来源与实际结果 | 当前状态 |
 | --- | --- | --- |
@@ -127,4 +127,22 @@ SHA-256：
 ```text
 798346189faaf83ebf183ef1decb09f8fcb5f7d8e52c72805f7f5202cf2bc2bb  examples/pears-soap-skating-v1-20261006.png
 a7c88da784f0c8cddbd31d7dd886f56f9debad7449cbdcfebc0c4c7b6062b403  examples/pears-soap-skating-v2-20261006.png
+```
+
+<a id="sticky-roller-tutorial-source"></a>
+
+## 粘毛滚筒教程图片（2026-10-06教学边界更新）
+
+用户已批准以下两张AI生成／编辑图在本项目公开作教学对照与能力边界说明，保留商品识别受质疑及比例失真的结论，不加入18图精选；实际部署结果以对应GitHub提交与Pages运行为准。商品参考为[MUJI Lint Roller for Clothes官方产品页](https://www.muji.us/collections/cleaning-tools/products/lint-roller-ma0dpa1a)，SKU 4550344831762；初稿另用了既有人偶参考，私有记录标为Preiser 10754，本轮未独立核验其外部来源或型号。官方商品照片、人偶照片、截图及私有研究资料均不随本次更新公开，生成图不代表品牌合作、背书或真品证明，不纳入MIT或额外商业使用／再分发授权。
+
+| 教程文件 | 来源与实际结果 | 当前状态 |
+| --- | --- | --- |
+| `examples/muji-sticky-roller-v1-20261006.png` | 2026-10-06商品参考试验的AI初稿；用户认可创意直观，指出人偶偏大 | 已批准公开作教学对照；创意获认可、识别待验、SKU比例未过 |
+| `examples/muji-sticky-roller-v2-20261006.png` | 以v1为输入的一次AI缩人编辑；两人缩小、动作接触保留，用户正向反馈 | 已批准公开作教学对照；缩人获认可，识别待验、SKU比例未过；不证明单目标更优 |
+
+两图均1086×1448，已实际对照查看，从私有归档原字节复制；共1初稿＋1编辑，不宣称独创。SHA-256：
+
+```text
+8d635fe619a33ad515d648b2a6def8ca3e595a29b3e7f9abcab164c333758cf5  examples/muji-sticky-roller-v1-20261006.png
+0d3b81bd799b196babf477d1d4a1f45f3e76e59c1d479d163e75b7c64c0575ad  examples/muji-sticky-roller-v2-20261006.png
 ```
