@@ -6,7 +6,7 @@
 
 面向 Codex 与 Claude Code 的 **AI 微缩摄影与缩微场景创作 Skill**。受田中达也（Tatsuya Tanaka）的「见立 / mitate」创作启发，从日常物件的形状、纹理和结构出发，构思有故事的微缩世界，生成并迭代画面。自动成图需要所在环境提供相应图像工具。
 
-[打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [浏览18组图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
+[打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [纸杯入门教程](docs/QUICK_START.md) · [浏览18组图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
 
 > **实验候选版 v0.1.0-rc2** · 现已公开，欢迎试用与反馈。本机安装、生图和编辑闭环待验收；正式Release尚未发布。
 
