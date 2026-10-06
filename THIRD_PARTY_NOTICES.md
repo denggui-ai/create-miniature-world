@@ -1,6 +1,6 @@
 # 素材与授权范围
 
-状态更新（2026-10-05）：用户已明确确认公开现有仓库与GitHub Pages。下文「本轮仅私有同步」等为历史收录阶段，不再描述当前可见性。公开操作不改变图片许可范围，也不补齐缺失的历史输入；MIT仍仅覆盖有权许可的代码与自编文档。
+状态更新（2026-10-06）：用户已明确确认公开现有仓库与GitHub Pages。下文「本轮仅私有同步」等为历史收录阶段，不再描述当前可见性。公开操作不改变图片许可范围，也不补齐缺失的历史输入；MIT仍仅覆盖有权许可的代码与自编文档。
 
 ## 包内素材
 
@@ -43,9 +43,9 @@ Preiser官网Impressum的Urheberrecht段说明：下载与复制仅允许私人�
 
 新增选图与历史原件SHA-256逐一匹配，映射见examples/SELECTED.md。18组主案例和G45详情补充均是本项目历史AI输出；保留部分完整输入、实物人偶参考及公开用途仍待核实的边界，不自动用MIT许可这些图片。此为2026-10-05公开前的选图收录记录；当时仅同步私有仓库，后续已公开，未发布正式 Release。
 
-## 当前公开图片逐文件清单（2026-10-05本地审计）
+## 公开图片逐文件清单（2026-10-06发布稿）
 
-覆盖当前 Git 跟踪的全部30张图片，首页所用资产列在前五行。文件在公开仓库可访问，只说明已展示；不等于本项目能够授权商业使用、修改或再分发。表中「未提供额外复用授权」记录项目目前未授予的范围，不替代适用法律或原权利人的授权。AI 输出标记不构成商用许可结论。未核清的证据继续保留待核，图片不因本次审计删除或替换。
+覆盖原30张公开图片与本次批准新增的1张纸胶带v2，共31张发布候选图片，首页所用资产列在前五行。原30张文件已在公开仓库展示，新增纸胶带v2已获采用授权、当前待终检发布。文件公开可访问只说明已展示；不等于本项目能够授权商业使用、修改或再分发。表中「未提供额外复用授权」记录项目目前未授予的范围，不替代适用法律或原权利人的授权。AI 输出标记不构成商用许可结论。未核清的证据继续保留待核，图片不因本次审计删除或替换。
 
 首页三案的优先缺口：木梳缺完整实际生成输入及商品截图权利链；笔记本缺对应调用和人偶参考用途授权；薯片缺完整输入与生成工具/用途记录。首屏及封面还依赖设计参考图，其原始出处与复用许可待核。下一次补证应对应具体文件，不用统一的「AI生成」说明覆盖这些差异。
 
@@ -70,6 +70,7 @@ Preiser官网Impressum的Urheberrecht段说明：下载与复制仅允许私人�
 | `examples/mug-rain-shelter.png` | 项目历史 AI 输出 G19，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/notebook-bike-parking.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/packing-tape-road.png` | 项目历史 AI 输出 G12，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/paper-tape-road-roller-v2.png` | 2026-10-06纸胶带试验AI输出，一次修正v2；原名、尺寸与SHA-256见[SELECTED.md](examples/SELECTED.md)。参考造型非认证Preiser型号，精确1:87未验证；非官方实物照片 | 用户已批准本项目公开展示；不纳入MIT，不将参考照片许可外推至成图全部用途 | 未提供额外复用授权 |
 | `examples/paperclip-diving-before.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md)；公有领域回形针输入与试验1-2已配对，完整用途权利仍不能据此推定 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/paperclip-paper-after.png` | 项目历史 AI 输出 G46，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/paperclip-pd-scan.jpeg` | Hephaestos，2004；[Commons 来源页](https://commons.wikimedia.org/wiki/File:Paperclip.jpeg) | 来源页 Public domain；2026-10-05复核 | 依据原作者公有领域声明；非本项目再许可 |
@@ -82,4 +83,4 @@ Preiser官网Impressum的Urheberrecht段说明：下载与复制仅允许私人�
 | `examples/tape-measure-jump.png` | 项目历史 AI 输出 G60，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/zipper-canal.png` | 项目历史 AI 输出 G69，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 
-本机验证新生成的图片仅保存在被忽略的 `outputs/`，不因本清单自动进入公开案例或获得商用承诺。轻量实验安装包不含任何图片，案例仅提供在线浏览链接。
+除用户明确批准采用的纸胶带v2外，本机验证生成图与其他纸胶带对照仍仅保存在被忽略的outputs。本次只收录v2成图，不附带第三方参考照片；公开采用不等于额外商用或再分发承诺。轻量实验安装包不含任何图片，案例仅提供在线浏览链接。

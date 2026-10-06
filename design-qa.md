@@ -1,6 +1,6 @@
 # 独立介绍页检查
 
-final result: partial — previous desktop checks passed; current candidate desktop/mobile interaction acceptance pending
+final result: partial — live c94665f columns passed cloud checks; aligned grid and AI tape v2 approved for adoption; independent final review and new-layout browser checks pending
 
 日期：2026-10-05。用户指出此前左右分栏封面偏离设计，要求以docs/design-reference.png为准恢复连续背景、宋体大标题、斜向大木梳与双列案例。后续新增参考裁光独立介绍页的信息组织。
 
@@ -36,10 +36,22 @@ final result: partial — previous desktop checks passed; current candidate desk
 
 以上替代此前无法访问网页的blocked状态。手机390px、其他字体环境与复制失败回退仍待实际检查，不因上线宣称全部QA通过。Skill核心未修改。
 
-## 当前候选更新（2026-10-05）
+## 候选发布前记录（2026-10-05）
 
 安装入口使用现有主按钮样式，复制按钮移除外跳箭头，上传处增加数据流提醒。新增18组站内图库，首页全案例入口转站内，connection补笔记本关系图；保留木梳首屏、三精选、核心及原图。
 
 静态路径/锚点、18图尺寸/lazy、手机单列CSS、共享脚本空节点保护及关闭后的焦点逻辑检查通过；实际桌面/手机视觉、导航、复制、全部大图、Escape/Tab焦点及溢出仍待浏览器验收。此前DOM或截图只支持对应旧状态，不能记为新图库通过。
 
 用户已批准更新公开实验候选和Pages后继续云端验收。两页noindex保留，不创建正式Release。测试范围与未通过项见[审计记录](docs/LOCAL_AUDIT_2026-10-05.md)；部署结果以GitHub Pages对应提交的构建记录为准。本机操作日志及机器状态不纳入公开记录。
+
+## 最新复核（2026-10-06，c94665f）
+
+图库原比例布局已随提交[`c94665f`](https://github.com/denggui-ai/create-miniature-world/commit/c94665f9ccb305d144d21188d9816fb7966cbebb)上线，[Pages运行](https://github.com/denggui-ai/create-miniature-world/actions/runs/37390715136)结果为success，部署SHA与该提交一致；线上CSS哈希已核对。可直接访问[首页](https://denggui-ai.github.io/create-miniature-world/site/)与[18组图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。
+
+按主任务移交的云浏览器实测结果归档：1180px、852px、500px视口分别为三列、二列、单列，18张图、放大关闭及焦点检查通过，首页无退化。500px云端视口不等于375–390px真机验证；真机和慢网尚未测试。本次为结果归档，未在本地重跑浏览器，也不扩大为完整剪贴板、全部键盘操作或Skill质量验收通过。
+
+noindex继续保留；网页部署与上述视觉通过不代表Skill本机兼容性、商品保真或素材许可已全部通过。
+
+## 当前本地网格发布稿（待独立终检）
+
+2026-10-06用户已批准采用纸胶带压路机v2，并完成等宽逐行网格后发布实验候选。当前本地稿统一3:4完整展示，保留现代浏览器五条共享行轨道，以及不支持subgrid时的普通文档流回退；窄屏单列。18张展示图由17张历史案例和1张新增AI示意组成，新图以日期标识，旧G12图片、编号和来源记录保留。新图仅为参考造型生成示意，非认证Preiser型号，未验证精确1:87，也不宣称已表现清楚“压平翘边”。当前尚未提交或上线，等待独立终检后提交推送；线上仍为c94665f，其既有验收不代表新网格通过。保留experimental/noindex，不创建正式Release。

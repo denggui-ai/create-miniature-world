@@ -6,7 +6,7 @@
 
 An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka (田中达也) and his mitate approach to miniature photography: seeing everyday objects as something else.
 
-[View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [18 representative cases](examples/SELECTED.md)
+[View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [18-case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
 
 > Experimental candidate **v0.1.0-rc2**. The experimental repository is now public. Local installation, generation and editing in both hosts still need end-to-end validation. No stable release has been published.
 
@@ -16,7 +16,7 @@ An Agent Skill for Codex and Claude Code that finds visual connections in an obj
 | --- | --- |
 | <img src="examples/notebook-bike-rack.png" width="300" alt="Notebook binding rings become a miniature bicycle rack"> | <img src="examples/potato-chip-harvest.png" width="300" alt="Golden potato chip ridges become a miniature harvest field"> |
 
-The homepage features three cases: comb, notebook and potato chip. The comb cover is an AI layout adaptation; the [original comb image](examples/comb-farm.png) is retained separately. The two images below are original AI-generated development examples. Each product has one representative image; limitations and evidence are recorded in the [case collection](examples/SELECTED.md) (Chinese). They are not proof of local-host compatibility or exact product fidelity.
+The homepage features three cases: comb, notebook and potato chip. The comb cover is an AI layout adaptation; the [original comb image](examples/comb-farm.png) is retained separately. The two images above are original AI-generated development examples. Each product has one representative image; limitations and evidence are recorded in the [case collection](examples/SELECTED.md) (Chinese). They are not proof of local-host compatibility or exact product fidelity.
 
 ## Getting started
 
