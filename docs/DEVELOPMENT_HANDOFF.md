@@ -4,7 +4,9 @@
 
 ## 当前状态（2026-10-07，本地候选收尾）
 
-仓库与GitHub Pages已公开，最近已核对的线上提交为`259257c66720d0b638d0847ae8b4aabf35398cdf`，对应[Pages运行](https://github.com/denggui-ai/create-miniature-world/actions/runs/37486150010)成功；这是既有发布记录，不是本次收尾结果。该提交的公开文件及固定ZIP已核验并私有归档，公开归档阻塞项已关闭。本次仅收尾HANDOFF与创意关系参考，可创建本地提交，尚未授权推送或部署。仍为v0.1.0-rc2实验候选，保留noindex、首页木梳/笔记本/薯片及18图精选，未创建正式Release；唯一核心源为 `skills/create-miniature-world/`。
+2026-10-07 11:41 UTC后续（反馈更新：2026-10-08）：按用户要求将背景／承托面经验合并到SKILL原有出图段，条件配色与来源放入[参考文档](../skills/create-miniature-world/references/creative-relations.md#背景与承托面)。手机木纹版被否定；最新用户反馈为煎蛋灰底v3、奶油底v4均被否决，DJ「第一拍」v3仅“勉强凑合”，不记为成功案例，停止生图。保留现有背景建议，不新增规则。此前仅修正参考文档与交接记录并同步已有安装副本，SKILL主文未再改动；2026-10-08用户已授权提交当前三个文件、正常推送main并核对该提交的Pages部署，取代此前暂停提交与发布的决定。文字检查不证明新图质量或宿主自动加载。
+
+仓库与GitHub Pages已公开，最近已核对的线上提交为`4d6ff18d0cfccc0daf330b02e97f67395d70bcbd`，对应[Pages运行](https://github.com/denggui-ai/create-miniature-world/actions/runs/37568658362)成功，已于上轮独立核验；背景更新此前仅本机、未提交，本次按上述授权提交并核验部署。此前`259257c66720d0b638d0847ae8b4aabf35398cdf`的公开文件及固定ZIP已核验并私有归档，公开归档阻塞项已关闭，此为历史归档记录。仍为v0.1.0-rc2实验候选，保留noindex、首页木梳/笔记本/薯片及18图精选，未创建正式Release；唯一核心源为 `skills/create-miniature-world/`。
 
 纸杯三案结论的最小纠正已随`6809032`发布。本轮实验更新包括：`docs/QUICK_START.md`和`THIRD_PARTY_NOTICES.md`剩余的创意偏好扩展，以及`SKILL.md`两段调整（含触感、使用体验的任选入口），已随`d035edf`发布。A的生活联想较直接，但封底歧义未解决；C新增内装使杯子偏容器。后续杯沿跑圈方案已被用户否定，不能将其记为新规则成功，现有两段调整的创意有效性也不因此算验证通过。上一轮线上已收窄为三图不判成功；本轮同步完整创意偏好扩展。
 
