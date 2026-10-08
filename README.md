@@ -21,6 +21,14 @@
 
 [继续看回形针、马克杯、小青柑等案例 →](examples/README.md)
 
+## 两个独立教程
+
+**先看二创实战：[纸巾雪坡与铅笔桥](docs/SECONDARY_CREATION.md)。** 从熟悉材质和物件组合出发，看已有成图、实际输入与反馈。用户提供目标、素材和反馈，策划与提示由 Skill 完成。
+
+[作品解读：胶带座为什么能成为跑步机？](docs/ARTWORK_INTERPRETATION.md) 解释田中达也 Tape Runner 的结构、动作与摄影关系。解读可以独立完成，复刻仅作可选辅助。
+
+两篇收录于[案例与教程页](site/gallery.html)，作为公开实验教程；原作与官方商品参考仅保留来源链接，媒体范围见[素材说明](THIRD_PARTY_NOTICES.md)。
+
 ## 开始使用
 
 1. **获取项目**：克隆仓库，或从 Code → Download ZIP 下载并解压。
