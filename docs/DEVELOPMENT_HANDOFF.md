@@ -3,7 +3,7 @@
 ## 当前状态（2026-10-09）
 
 - HEAD `f27879e`（main，已推送，Pages 部署成功）。版本仍为 v0.1.0-rc2 实验候选，site 页保留 noindex，未创建 Release。
-- 唯一核心源 `skills/create-miniature-world/`；项目 Codex 安装副本 `.agents/skills/` 三文件与源码逐字节一致。Claude Code 本机没有安装副本。
+- 唯一核心源 `skills/create-miniature-world/`；项目 Codex 安装副本 `.agents/skills/` 与 Claude Code 安装副本 `.claude/skills/` 三文件均与源码逐字节一致（两目录均被 .gitignore 覆盖）。
 - 2026-10-09 完成一次全项目独立审计（报告在本机 `outputs/claude-project-audit-20261009/report/`，私有目录，不随仓库分发）。当日据此改动：reference 加牙刷对照 6 行（`709edeb`）；SKILL.md 三句（`f063453` 提示约 200 词、保留项肯定句、道具风格词；`cfc7c8c` 自动修正只限结构性错误、小商品改按人物占商品长度描述）；木夹跳台教程（`f27879e`）。
 - E1 画面安排对照（6 图、3 次二选一）：牙刷选 A、毛巾选 B、笔袋都不好。"摆放优先"作为通则不成立，选情境段未改。
 - 验证状态（差分）：
@@ -11,11 +11,11 @@
 | 项 | 状态 | 证据 |
 | --- | --- | --- |
 | Codex/ChatGPT：参考图生成 + 用户点名的一次编辑 + 保存 | 已跑通 | [LOCAL_TEST 结果表](LOCAL_TEST.md)、[LOCAL_AUDIT](LOCAL_AUDIT_2026-10-05.md)、`examples/clothespin-diving-*` |
-| Claude Code：安装、自动发现、方案输出 | 未验收；该宿主无内置生图 | — |
+| Claude Code：安装、自动发现、方案输出 | 已验收（2026-10-09，项目级 `.claude/skills/` 安装；新会话显式调用读图并出三方案，未生图）；该宿主无内置生图，出图需人工接力；冷启动自然语言触发未单测 | [LOCAL_TEST 结果表](LOCAL_TEST.md) |
 | 任一样张的严格商品保真 | 未通过 | 各案记录与 THIRD_PARTY_NOTICES |
 | 自动化视觉测试 | 不存在；历史脚本只查结构与链接 | — |
 
-- 挂起、不排期：Claude Code 闭环（等额度）；正式 Release（条件见 [PUBLISH](PUBLISH.md)）；解除 noindex 前的手机真机检查；学习复刻 230808／170704／130724、OXO v2、香皂加人等待用户评价；精确 Preiser 型号与物理比例认证不做。
+- 挂起、不排期：Claude Code 冷启动自然语言触发单测；正式 Release（条件见 [PUBLISH](PUBLISH.md)）；解除 noindex 前的手机真机检查；学习复刻 230808／170704／130724、OXO v2、香皂加人等待用户评价；精确 Preiser 型号与物理比例认证不做。
 - 已结束、不重开：木梳 10-06 迁移、胶带穿环、杯沿跑圈、MUJI／U 款滚筒重生、热水袋、笔袋货船概念、背景／承托面实验。
 - 2026-10-05 至 10-08 的发布、研究、案例轮次与网站设计决策已原样移至 [DEVELOPMENT_HANDOFF_HISTORY.md](DEVELOPMENT_HANDOFF_HISTORY.md)，只作追溯，不是新指令。
 
@@ -23,7 +23,7 @@
 
 ## 项目规划（唯一当前待办入口）
 
-按 2026-10-09 审计给出的顺序：文档收口（本次）→ Claude Code 安装验证 → Release 决定。不扩大研究、不加规则、不建测试平台。创意方法的改动只在有用户二选一证据时进行（E1／E3 的做法）。
+按 2026-10-09 审计给出的顺序：文档收口（已完成）→ Claude Code 安装验证（已完成，方案输出层面）→ Release 决定（待用户）。不扩大研究、不加规则、不建测试平台。创意方法的改动只在有用户二选一证据时进行（E1／E3 的做法）。
 
 ## 阅读顺序与修改位置
 

@@ -56,7 +56,7 @@ cba76b464a7340c709e11d833a25761b47bce85a9271526a95ce35958a189e30
 | --- | --- | --- |
 | Codex 本机安装与自动发现 | 项目 `.agents/skills/` 安装副本与源码一致；2026-10-09 Codex CLI 直接调用走通 | [LOCAL_TEST 结果表](LOCAL_TEST.md) |
 | Codex 参考图输入、单张生成、一句编辑、保存 | 已跑通（10-05 木夹暖光编辑；10-08 牙刷／毛巾／笔袋；10-09 木夹跳台） | [LOCAL_AUDIT](LOCAL_AUDIT_2026-10-05.md)、`examples/clothespin-diving-*` |
-| Claude Code 安装、发现路径、方案输出 | 未验收；该宿主无内置生图，只能得到方案与提示 | — |
+| Claude Code 安装、发现路径、方案输出 | 已验收（2026-10-09）：项目级 `.claude/skills/` 安装，新会话显式调用读图并出三方案、未生图；该宿主无内置生图，只能得到方案与提示 | [LOCAL_TEST 结果表](LOCAL_TEST.md) |
 | 无人偶照片时的成图质量 | 有样张，用户按创意分别评价；无统计 | 各教程 |
 | 跨商品成功率、精确模型比例、准确文字与 SKU 保真 | 未验证；任一样张严格保真均未判通过 | THIRD_PARTY_NOTICES 各条 |
 | 插件目录分发 | 未做；仅可安装 Skill 与 GitHub 仓库 | — |

@@ -1,6 +1,6 @@
 # 微缩造景：开发入口
 
-先阅读 `docs/DEVELOPMENT_HANDOFF.md`、`README.md` 与 `docs/VALIDATION.md`。当前核心为v0.1.0-rc2候选版；Codex 本机参考图生成与一句编辑已跑通（2026-10-09），Claude Code 尚未验收，样张严格保真均未通过。
+先阅读 `docs/DEVELOPMENT_HANDOFF.md`、`README.md` 与 `docs/VALIDATION.md`。当前核心为v0.1.0-rc2候选版；Codex 本机参考图生成与一句编辑已跑通，Claude Code 方案输出已验收（均 2026-10-09；Claude Code 无内置生图），样张严格保真均未通过。
 
 唯一核心源码是 `skills/create-miniature-world/`；安装副本不另行维护。保留Codex与Claude共同使用的创意方法，宿主差异留在安装说明与实际工具调用中。
 
