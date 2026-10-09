@@ -159,3 +159,21 @@ a7c88da784f0c8cddbd31d7dd886f56f9debad7449cbdcfebc0c4c7b6062b403  examples/pears
 8d635fe619a33ad515d648b2a6def8ca3e595a29b3e7f9abcab164c333758cf5  examples/muji-sticky-roller-v1-20261006.png
 0d3b81bd799b196babf477d1d4a1f45f3e76e59c1d479d163e75b7c64c0575ad  examples/muji-sticky-roller-v2-20261006.png
 ```
+
+## 木夹教程图片（2026-10-09）
+
+用户已认可以下创意并要求写成教程条目。两张图由 Codex CLI 0.161.0 在本机通过内置 `image_gen.imagegen` 生成／编辑，实际输入为本仓库公有领域照片 `examples/clothespin-public-domain.jpg`（来源见上文）；无人偶实物参考，无品牌商品，不代表任何品牌合作或真品证明。创意认可不等于严格商品保真通过；下臂尖端、木纹与弹簧有重绘。图片不纳入 MIT，不提供额外商用、修改或再分发许可。
+
+| 教程文件 | 来源与实际结果 | 当前状态 |
+| --- | --- | --- |
+| `examples/clothespin-diving-v1-20261009.png` | 2026-10-09 自主选案初图，1 初图、0 重试；提示 224 词 | 用户认可创意；保真不判严格通过 |
+| `examples/clothespin-diving-v2-20261009.png` | 以 v1 与原照片为输入，按用户"人再小一半，其他都别动"做的唯一一次编辑，0 重试 | 用户认可；人物约缩至一半，其余基本保留，木纹略有重绘 |
+
+两图均 1086×1448，从 `outputs/` 原字节复制。SHA-256：
+
+```text
+9061053f5fddb448320139ac7d59511795f1bee9a659ac932c9aeaff108bf6fa  examples/clothespin-diving-v1-20261009.png
+b8f6bddf2fbad05b89ee17bd7f691754ccc1c3b68c5c4cd7e33619a2f912070a  examples/clothespin-diving-v2-20261009.png
+```
+
+实际提示保存在 `examples/prompts/clothespin-diving-v1-20261009.txt` 与 `clothespin-diving-v2-20261009.txt`。
