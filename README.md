@@ -8,7 +8,7 @@
 
 [打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [纸杯入门教程](docs/QUICK_START.md) · [浏览18组图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
 
-> **实验候选版 v0.1.0-rc2** · 现已公开，欢迎试用与反馈。本机安装、生图和编辑闭环待验收；正式Release尚未发布。
+> **实验候选版 v0.1.0-rc2** · 已作为 [pre-release 发布](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2)，欢迎试用与反馈。Codex 生图与一句修正闭环已跑通，Claude Code 方案输出已验收（无内置生图）；任一样张的严格商品保真未通过，正式版尚未发布。
 
 ## 从一个物件，发现另一个世界
 
