@@ -10,3 +10,4 @@ skills/create-miniature-world/assets/
 .agents/skills/create-miniature-world/
 *.zip
 __pycache__/
+generated_images/
