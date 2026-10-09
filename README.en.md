@@ -8,7 +8,7 @@ An Agent Skill for Codex and Claude Code that finds visual connections in an obj
 
 [View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [18-case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
 
-> Experimental candidate **v0.1.0-rc2**. The experimental repository is now public. Local installation, generation and editing in both hosts still need end-to-end validation. No stable release has been published.
+> Experimental candidate **v0.1.0-rc2**. The experimental repository is now public. The Codex/ChatGPT path (reference-image generation plus a one-line edit) has run end to end; Claude Code has no built-in image generation, so it returns a plan and prompt for you to render elsewhere, and its local install is still unverified. No stable release has been published.
 
 ## See the idea
 

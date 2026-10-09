@@ -1,6 +1,6 @@
 # 微缩造景：接手开发
 
-先读 `docs/DEVELOPMENT_HANDOFF.md`，再按其中顺序读现有文件。本包是v0.1.0-rc2加交接说明；没有完成Claude Code或用户本机的实际生图验收。
+先读 `docs/DEVELOPMENT_HANDOFF.md`，再按其中顺序读现有文件。本包是v0.1.0-rc2加交接说明；Codex 本机生图与一句编辑已跑通（2026-10-09），Claude Code 本机未安装、未验收，且 Claude Code 没有内置生图工具。
 
 唯一核心源是 `skills/create-miniature-world/`。安装副本不是第二套源码；修改后再同步。`agents/openai.yaml`是Codex界面元数据，不作为Claude运行能力或权限的依据。
 

@@ -108,7 +108,7 @@
 - 色彩可参与水、冰等情境，但不能替代动作与接触证据；纯白、米色或纸材都不是每张图的固定要求。
 - 用背景明度与主体／小人的对比、侧光和接触阴影形成层次，景深覆盖关键关系；仅改布景时保留已认可的人物大小，不靠盲目缩人或增加虚化解决可读性。
 
-证据分开理解：[2017年本人访谈](https://shuffle.genkosha.com/special/products/alpha/9510.html)说当时日更作品将背景拍白，再以正片叠底统一米色，未公布具体色值，不代表所有时期的配方。已完成看图取证的代表观察为[Digitable](https://miniature-calendar.com/250108/)浅暖米底、[Soap Skating](https://miniature-calendar.com/200911)青蓝底、[Chess Universe](https://miniature-calendar.com/250113)暖灰／灰褐底及受光渐变；不是统计规律或纸张色号。访谈[幕后图](https://shuffle.genkosha.com/picture/img_products_sony_a_tanaka02_04.jpg)显示白色平滑弯起的背景形态，仅凭外观不能确定纸或PVC。以上沿用已有取证记录，本次文字整合未重新看图，不复制原作图片入包。
+证据分开理解：[2017年本人访谈](https://shuffle.genkosha.com/special/products/alpha/9510.html)说当时日更作品将背景拍白，再以正片叠底统一米色，未公布具体色值，不代表所有时期的配方。已完成看图取证的代表观察为[Digitable](https://miniature-calendar.com/250108/)浅暖米底、[Soap Skating](https://miniature-calendar.com/200911)青蓝底、[Chess Universe](https://miniature-calendar.com/250113)暖灰／灰褐底及受光渐变；不是统计规律或纸张色号。同一访谈页内的幕后图显示白色平滑弯起的背景形态，仅凭外观不能确定纸或PVC。以上沿用已有取证记录，本次文字整合未重新看图，不复制原作图片入包。
 
 本项目手机木纹版被用户否定，反馈针对手机放在木纹桌面上的布景，不是手机材质反光问题。无关现实纹理可能干扰微缩关系，是此次复盘的条件判断，不是禁用木材。最新用户反馈：煎蛋灰底v3、奶油底v4均被否决；DJ「第一拍」v3仅“勉强凑合”，不记为成功案例。本轮停止生图；保留上述背景建议，不从个案新增规则。
 
@@ -150,7 +150,7 @@
 | 配套图片 | 官方来源与可观察特征 |
 | --- | --- |
 | `assets/preiser-adults-reference.png` | Preiser 10059 Hausfrauen，裁自 [PK28 官方目录](https://www.preiserfiguren.de/download.php?file=PK+28+Seite+002-029.pdf)印刷页 5（该 PDF 第 4 页）。可比较身体体量、弯腰与肘部折转、手脚和衣服色块；目录分辨率不足以判断微小眼部画法。 |
-| `assets/preiser-children-reference.jpg` | Preiser 28281 Kinder mit Leiter，[官方产品页](https://www.preiserfiguren.de/showpage.php?Neuheiten_2025/Miniaturfiguren_H0_Massstab_1_87_Exklusivausfuehrung=&SiteID=216)及[官方图片](https://www.preiserfiguren.de/upmedia/28281.jpg)。可比较儿童头身、细四肢、握持动作与简化面部。 |
+| `assets/preiser-children-reference.jpg` | Preiser 28281 Kinder mit Leiter，[官方产品页](https://www.preiserfiguren.de/showpage.php?Neuheiten_2025/Miniaturfiguren_H0_Massstab_1_87_Exklusivausfuehrung=&SiteID=216)及该页产品图片。可比较儿童头身、细四肢、握持动作与简化面部。 |
 
 2026-10-04 便利贴测试中，仅强调品牌、塑料和简化纹理的旧图被用户否定。使用官方实物图重新生成的独立样张更接近参考；回填原场景时仍残留圆润玩偶感，因此尚未证明能够稳定迁移。不能把这次样张当作已获用户认可的默认模板，也不把强颗粒纹理当作 Preiser 的共同特征。
 

@@ -69,7 +69,7 @@ Preiser官网Impressum的Urheberrecht段说明：下载与复制仅允许私人�
 | `examples/notebook-bike-rack.png` | 项目历史 AI 输出 G30，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md)；历史方法记录提及成人实物参考，完整调用未恢复 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/potato-chip-harvest.png` | 项目历史 AI 输出 G68，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `site/cover.png` | 项目 AI 展示适配；依据木梳案例与选定设计稿，见 [site/README.md](site/README.md) | 原案例及设计稿权利链未完整核清；不纳入 MIT | 未提供额外复用授权 |
-| `docs/design-reference.png` | 用户选定的设计参考图，见 [开发交接](docs/DEVELOPMENT_HANDOFF.md)；原作者/原始出处未记录 | 作者、输入链与分发/复用许可待核；不纳入 MIT | 未提供额外复用授权 |
+| `docs/design-reference.png` | 用户选定的设计参考图，见 [开发交接历史](docs/DEVELOPMENT_HANDOFF_HISTORY.md)；原作者/原始出处未记录 | 作者、输入链与分发/复用许可待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/ai-figure-diagnostic.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md)；AI 人偶诊断，非官方实物照片 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/binder-clip-climbing.png` | 项目历史 AI 输出 G64，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
 | `examples/citrus-tea-loading.png` | 项目历史 AI 输出 G58，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |

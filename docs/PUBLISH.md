@@ -1,6 +1,6 @@
 # GitHub发布
 
-仓库已按用户2026-10-05明确确认改为公开：https://github.com/denggui-ai/create-miniature-world 。GitHub Pages已上线：https://denggui-ai.github.io/create-miniature-world/site/ 。当前仍为 `v0.1.0-rc2` 实验候选版，未发布正式Release，本机生图与编辑闭环待验收。
+仓库已按用户2026-10-05明确确认改为公开：https://github.com/denggui-ai/create-miniature-world 。GitHub Pages已上线：https://denggui-ai.github.io/create-miniature-world/site/ 。当前仍为 `v0.1.0-rc2` 实验候选版，未发布正式Release。Codex 本机参考图生成与一句编辑已跑通（2026-10-09），Claude Code 未验收，样张严格保真均未通过，发布条件未满足。
 
 ## 历史阶段：私有开发仓库（已被公开决定替代）
 
@@ -33,7 +33,7 @@
 - 展示名：微缩摄影 Skill · Miniature World。
 - 一句话：让日常物件，成为有故事的小世界。
 - 仓库、源目录、调用标识保留 create-miniature-world，不加拼音，不将作者姓名用作项目名。
-- About：AI 微缩摄影与缩微场景创作 Skill，受田中达也（Tatsuya Tanaka）的见立 / mitate 启发。让日常物件成为有故事的小世界。Codex / Claude Code · 实验候选版，本机闭环待验收。
+- About：AI 微缩摄影与缩微场景创作 Skill，受田中达也（Tatsuya Tanaka）的见立 / mitate 启发。让日常物件成为有故事的小世界。Codex / Claude Code · 实验候选版，Codex 闭环已跑通、Claude Code 待验收。
 - Topics：agent-skills、codex、claude-code、miniature-photography、mitate、image-generation、product-photography。
 - README中文为主，README.en.md为简洁英文入口；首页4张，案例页精选8张，18组代表案例保留。
 - 田中达也列为创作启发与致敬，Preiser列为人物参考，均不声称官方背书。
