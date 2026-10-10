@@ -10,7 +10,9 @@
 | `shape-watchlist.md` | 五类形状（螺旋／链条／网格／球体／透明容器）对应物件类与每类 6 件看图清单（含原图 URL） | 第 2 步 |
 | `five-shapes-from-catalog.md` | 30 件实看条目：画面观察／作者文字／推断，五节规律，文本分类纠错 | 第 2 步 |
 | `product-type-to-approach.md` | 产品类型→田中做法→本项目模板→词典行，可信度 ★☆○ | 第 3 步 |
-| `scripts/` | 抽样、跑分类、比对、归并汇总、看图清单脚本（Codex CLI，effort low） | 复跑 |
+| `scripts/` | 抽样、跑分类、比对、归并汇总、看图清单、存档、看图盲读脚本（Codex CLI effort low；DeepSeek flash） | 复跑 |
+
+脚本按相对路径找数据，复跑前须放回原位：bench 组→`outputs/tanaka-catalog/bench/`，run_full/aggregate/watchlist→`outputs/tanaka-catalog/full/`，fetch_archive→`outputs/tanaka-archive/`，ds_vision→`outputs/validation/`。
 
 ## 结论摘要
 - 模型：gpt-5.6-terra 质量最好，gpt-6-astra 偏保守可互校，gpt-6-luna 不合格（不写"无法判断"、编抽象类）。

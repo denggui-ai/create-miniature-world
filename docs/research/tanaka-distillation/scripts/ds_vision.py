@@ -35,6 +35,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("image")
 ap.add_argument("--model", default="deepseek-flash")
 ap.add_argument("--prompt", default=DEFAULT_PROMPT)
+ap.add_argument("--think", action="store_true", help="enable DeepSeek thinking (slower; off by default like the MCP path)")
 a = ap.parse_args()
 
 mime = mimetypes.guess_type(a.image)[0] or "image/jpeg"
@@ -46,6 +47,7 @@ body = {
         {"type": "text", "text": a.prompt},
     ]}],
     "temperature": 0.2,
+    "thinking": {"type": "enabled" if a.think else "disabled"},
 }
 req = urllib.request.Request(
     "https://api.deepseek.com/chat/completions",
