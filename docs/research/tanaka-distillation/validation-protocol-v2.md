@@ -23,8 +23,9 @@ DeepSeek flash 回答五题，每题只答 是／否＋一句依据：
 
 ## G2 图盲测（每张成图必跑）
 **2026-10-10 更新（Owner 指出 DeepSeek flash 已有看图能力，实测通过）**：不再需要 Codex 描述步，G2 单步由 `deepseek-flash` 直连 API 完成（本机 MCP 工具只接文字，看图走 `outputs/validation/ds_vision.py`，密钥从钥匙串读入环境变量，不打印不内联）。
+2026-10-10 再更新：本机 MCP `deepseek_chat` 已加 `image_path` 参数（`~/2026code/claude-tools/mcp-deepseek.mjs`），Claude 会话内可直接传图，默认关思考，实测 1.1 s；脚本作为会话外批量用。
 步骤：
-1. 盲读：`python3 outputs/validation/ds_vision.py <图>`，模型只看图，不给方案，按 JSON 答"小人在干什么／主物件是什么／被当成了什么"＋60 字客观描述。
+1. 盲读：会话内 `deepseek_chat(message, model="flash", image_path=<图>)`；批量时 `python3 outputs/validation/ds_vision.py <图>`，模型只看图，不给方案，按 JSON 答"小人在干什么／主物件是什么／被当成了什么"＋60 字客观描述。
 2. 对照：把盲读答案与预定答案（策划端三行依据）一并交 DeepSeek flash（文字），判每题 命中／部分／未命中。
 3. 记分：3/3 命中＝通过；2/3＝次选；≤1＝不通过。两臂（带条目 vs 不带）各记分，比的是命中数，不是偏好。
 记录：`outputs/validation/G2-<日期>-<商品>-<臂>.json`（盲读 JSON、判分、模型名、token、秒）。
