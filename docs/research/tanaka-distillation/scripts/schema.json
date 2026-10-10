@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["items"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["slug", "main_object", "other_objects", "read_as", "confidence"],
+        "properties": {
+          "slug": {"type": "string"},
+          "main_object": {"type": "string"},
+          "other_objects": {"type": "array", "items": {"type": "string"}},
+          "read_as": {"type": "string"},
+          "confidence": {"type": "string", "enum": ["high", "medium", "low"]}
+        }
+      }
+    }
+  }
+}
