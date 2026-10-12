@@ -53,4 +53,4 @@
 
 当前待办统一维护在 [开发交接的项目规划](DEVELOPMENT_HANDOFF.md#项目规划唯一当前待办入口)，本文件只保留发布条件和历史，不另建任务清单。
 
-GitHub Pages采用Deploy from a branch、main、/(root)，根index.html跳转site/，.nojekyll保持纯静态发布。首页只展示木梳、笔记本和薯片三个案例。README和About使用已打开核对的真实网址；更新页面后检查部署结果。手机端排版未验收前保留noindex，不把上线或桌面交互检查记为Skill生图验收通过。
+GitHub Pages采用Deploy from a branch、main、/(root)，根index.html跳转site/，.nojekyll保持纯静态发布。首页只展示木梳、笔记本和薯片三个案例。README和About使用已打开核对的真实网址；更新页面后检查部署结果。2026-10-12用户手机真机检查首页与案例页通过，index、gallery、secondary-creation、artwork-interpretation四页已解除noindex，cover.html保留；不把上线或网页检查记为Skill生图验收通过。
