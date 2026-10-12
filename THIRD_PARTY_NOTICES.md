@@ -177,3 +177,20 @@ b8f6bddf2fbad05b89ee17bd7f691754ccc1c3b68c5c4cd7e33619a2f912070a  examples/cloth
 ```
 
 实际提示保存在 `examples/prompts/clothespin-diving-v1-20261009.txt` 与 `clothespin-diving-v2-20261009.txt`。
+
+<a id="2026-10-12新测试案例"></a>
+
+## 2026-10-12 新测试案例
+
+8 张 2026-10-12 Codex 本机生图输出，用户判为可用并批准公开展示；原文件名、SHA-256 与已知不足见[SELECTED.md](examples/SELECTED.md#2026-10-12-新测试案例8-张)。都只凭物品名称或文字描述生成，没有商品输入图。眼镜与马克杯 4 张生成时传入 Preiser 官方产品照作为人偶造型参考：参考照片版权归原权利人，不公开、不随包发布；成图不是 Preiser 产品照片，也不认证具体型号或精确 1:87。创作方向在本地对照田中达也同类作品做过局部查重，避开已有的同物件同身份同片刻；作品灵感来源不构成合作或背书。
+
+| 文件 | 来源 | 公开条件 | 再许可 |
+| --- | --- | --- | --- |
+| `examples/glasses-window-cleaner-20261012.png` | 2026-10-12 眼镜锚点小测 AI 输出，传入 Preiser 参考照 | 用户已批准本项目公开展示；不纳入 MIT | 未提供额外复用授权 |
+| `examples/mug-coffee-ring-track-20261012.png` | 2026-10-12 马克杯锚点小测 AI 输出，传入 Preiser 参考照 | 同上 | 未提供额外复用授权 |
+| `examples/mug-planter-20261012.png` | 2026-10-12 马克杯锚点小测 AI 输出，传入 Preiser 参考照 | 同上 | 未提供额外复用授权 |
+| `examples/mug-handle-photo-frame-20261012.png` | 2026-10-12 马克杯锚点小测 AI 输出，传入 Preiser 参考照 | 同上 | 未提供额外复用授权 |
+| `examples/stapler-crocodile-feeding-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
+| `examples/stapler-skate-slope-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
+| `examples/tape-measure-slide-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
+| `examples/tape-measure-cycleway-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |

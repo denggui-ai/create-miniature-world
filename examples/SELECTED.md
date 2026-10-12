@@ -198,3 +198,20 @@
 | G68 | potato-chip-harvest.png | 薯片上的迷你秋收.png | `9b9fe7351a8a9658bfc4a2628bab19d3f7f5e8ed0b0a1ef733eff16d52669fd5` |
 | G69 | zipper-canal.png | 拉链运河小拖船.png | `bd937c7d39b636901647c9ed40a9ddcdf76402a3f0f9896b5a54d6067fbc73da` |
 | G45 | correction-tape-cinema-alternative.png | 胶带投影的微型影院.png | `521b0e082ef67eec379a534314d0b7f0733adf133afec4539cfcd0f26dce8f65` |
+
+## 2026-10-12 新测试案例（8 张）
+
+2026-10-12 Skill 更新后的实跑与小测中，用户判为可用的 8 张，按原字节复制为下列英文文件名。都只凭物品名称或文字描述生成，没有商品输入图，不是特定商品保真样张；生成工具为 Codex 本机生图。眼镜与马克杯 4 张生成时传入 Preiser 官方产品照，只作人偶造型参考，参考照片不公开、不随包发布；订书机与卷尺 4 张按当时 Skill 只用文字描述人偶。原始提示与日志仅保存在本地测试记录。
+
+| 文件 | 商品联系与故事 | 已知不足 | 原文件名 · SHA-256 |
+| --- | --- | --- | --- |
+| <img src="glasses-window-cleaner-20261012.png" width="160" alt="眼镜 擦窗工人"><br>`glasses-window-cleaner-20261012.png` | 眼镜 · 擦窗：工人站在梯子上，像擦橱窗一样擦镜片。 | 只擦一侧镜片；眼镜为文字生成的普通款。 | G2.png · `57336e10f74a3c13a2b99cb34235a7ad5222d5cf1504ab6d7d30a14a6556ef6f` |
+| <img src="mug-coffee-ring-track-20261012.png" width="160" alt="马克杯 咖啡渍跑道"><br>`mug-coffee-ring-track-20261012.png` | 马克杯 · 咖啡渍跑道：杯子留下的咖啡渍圈成为运动会跑道，孩子赛跑、奶奶加油。 | 部分孩子没有严格跑在圈线上。 | M1.png · `ccffd8220ba357eec184b66d2dba0a481a3022d6a554bd7c9970b2f378f76252` |
+| <img src="mug-planter-20261012.png" width="160" alt="马克杯 花盆"><br>`mug-planter-20261012.png` | 马克杯 · 花盆：杯里装土，两位园丁种下一棵模型树。 | 杯中装满土，属于借用商品当花盆，商品展示用途需看场合。 | M2.png · `84c1b85b9f046239ef181c203ab203b62756191e9c2a3953c97f9f5b6440eefc` |
+| <img src="mug-handle-photo-frame-20261012.png" width="160" alt="马克杯 杯柄相框"><br>`mug-handle-photo-frame-20261012.png` | 马克杯 · 杯柄相框：游客在杯柄框里摆姿势，同伴拍照。 | 摆姿势的人站在杯柄下沿；杯身左侧被画面裁掉。 | M3.png · `d24e7f55223e19306a3a498d98873b9e54d2b082774f326a456d1372954256fc` |
+| <img src="stapler-crocodile-feeding-20261012.png" width="160" alt="订书机 喂鳄鱼"><br>`stapler-crocodile-feeding-20261012.png` | 订书机 · 喂鳄鱼：张开的订书机读作鳄鱼，饲养员递鱼喂食。 | 鳄鱼身份靠喂食动作撑起，不看动作时可能只读成订书机；鱼与水桶为添加道具。 | stapler-feeding.png · `70d4d3ac02cd01ca4476e9dbfd137f7f2af0af6582606416b856b071649ea2ef` |
+| <img src="stapler-skate-slope-20261012.png" width="160" alt="订书机 滑板坡"><br>`stapler-skate-slope-20261012.png` | 订书机 · 滑板坡：上臂的坡度成为滑板道，一人滑行、一人等待。 | 人偶偏精致，塑料模型感不足。 | stapler-skate-slope.png · `851da3050c2155bad1d40724485f1d85750842d1b37a7291250f72d77ec10c8d` |
+| <img src="tape-measure-slide-20261012.png" width="160" alt="卷尺 滑梯"><br>`tape-measure-slide-20261012.png` | 卷尺 · 滑梯：拉出的尺带弯成滑梯，孩子从上面滑下。 | 尺面刻度为生成内容，未与真实刻度核对。 | 01-tape-slide.png · `14a70254e981c4b0307caba5cc63070f5742b6e439fcbc6ba120268153aafc41` |
+| <img src="tape-measure-cycleway-20261012.png" width="160" alt="卷尺 自行车道"><br>`tape-measure-cycleway-20261012.png` | 卷尺 · 自行车道：拉直的尺带成为自行车道，两人骑行。 | 尺面刻度间隔不规则，为生成内容。 | 02-tape-cycleway.png · `5d460455a675c0e8046f8ded498fd6bf29fb53954cf28633036201fb40a8cadd` |
+
+用户认可可用不等于商品保真、人物比例或刻度文字通过；单一评审、样本少，不代表稳定产出率。用户批准本项目展示，不据此授予第三方素材或图片额外复用权，见[素材说明](../THIRD_PARTY_NOTICES.md#2026-10-12新测试案例)。

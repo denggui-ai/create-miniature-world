@@ -6,9 +6,9 @@
 
 An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka (田中达也) and his mitate approach to miniature photography: seeing everyday objects as something else.
 
-[View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [18-case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
+[View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
 
-> Experimental candidate **v0.1.0-rc2**, published as a [pre-release](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2). The Codex/ChatGPT path (reference-image generation plus a one-line edit) has run end to end; Claude Code has no built-in image generation, so it returns a plan and prompt for you to render elsewhere, and its local install is still unverified. No stable release has been published.
+> Experimental candidate **v0.1.0-rc2**, published as a [pre-release](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2). The Codex/ChatGPT path (reference-image generation plus a one-line edit) has run end to end; Claude Code has no built-in image generation, so it returns a plan and prompt for you to render elsewhere, and its project-level install has been verified. No stable release has been published. The Skill has changed since rc2; use the `main` branch for the latest version, as the release assets are the rc2 snapshot.
 
 ## See the idea
 
@@ -55,7 +55,7 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 
 Requires an image-reading host; generation, image references and editing each depend on tools actually available in that session. No model, credits, API keys or paid-service client are bundled. The default output is one opaque portrait image in a 3:4 ratio.
 
-Product lettering, construction and figure scale can still be wrong. Exact SKU preservation and exact figurine matching are not guaranteed. The project's 1:64 planning value is not a universal scale used by the artist or Preiser. See [validation](docs/VALIDATION.md) and the [local test](docs/LOCAL_TEST.md) (Chinese).
+Product lettering, construction and figure scale can still be wrong. Exact SKU preservation and exact figurine matching are not guaranteed. The project plans figures at 1:87 when a Preiser reference photo is supplied and 1:64 otherwise; neither is a universal scale used by the artist or Preiser. See [validation](docs/VALIDATION.md) and the [local test](docs/LOCAL_TEST.md) (Chinese).
 
 ## Inspiration and materials
 

@@ -64,3 +64,7 @@ dialog{border:0;padding:24px;max-width:min(94vw,900px);max-height:95vh;backgroun
 /* Approved learning-study illustration; original artwork is linked only. */
 .study-hero .editorial-art{max-width:540px}.study-hero .editorial-art img{aspect-ratio:1}.study-hero .editorial-art figcaption strong{font-size:16px}.study-relations{border-block:1px solid var(--line);margin:22px 0;padding:8px 0}.study-relations p{font-size:15px}.study-relations span{display:inline-block;margin-right:14px;color:var(--green);font-weight:600}.study-hero h1{font-size:clamp(34px,3.7vw,48px)}
 @media(max-width:680px){.study-hero h1{font-size:34px}.study-hero .editorial-art figcaption{font-size:12px}.study-relations span{margin-right:10px}}
+/* 2026-10-12 readability: lift helper text above 12px */
+.eyebrow{font-size:12px}.small-note,.detail-foot,figcaption,.case-limit,.evidence-note,.tool-note{font-size:13px}.hero-meta{font-size:12px}
+@media(min-width:681px){.connection-figure{max-width:480px}}
+@media(min-width:1001px){.gallery-grid.latest-grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:24px}}

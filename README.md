@@ -6,13 +6,13 @@
 
 面向 Codex 与 Claude Code 的 **AI 微缩摄影与缩微场景创作 Skill**。受田中达也（Tatsuya Tanaka）的「见立 / mitate」创作启发，从日常物件的形状、纹理和结构出发，构思有故事的微缩世界，生成并迭代画面。自动成图需要所在环境提供相应图像工具；Codex/ChatGPT 内置生图已跑通，Claude Code 当前没有内置生图，得到的是方案与提示词，出图需人工接力。
 
-[打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [纸杯入门教程](docs/QUICK_START.md) · [浏览18组图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
+[打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [纸杯入门教程](docs/QUICK_START.md) · [浏览案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
 
-> **实验候选版 v0.1.0-rc2** · 已作为 [pre-release 发布](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2)，欢迎试用与反馈。Codex 生图与一句修正闭环已跑通，Claude Code 方案输出已验收（无内置生图）；任一样张的严格商品保真未通过，正式版尚未发布。
+> **实验候选版 v0.1.0-rc2** · 已作为 [pre-release 发布](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2)，欢迎试用与反馈。Codex 生图与一句修正闭环已跑通，Claude Code 方案输出已验收（无内置生图）；任一样张的严格商品保真未通过，正式版尚未发布。Skill 在 rc2 之后仍有更新，最新版以 main 分支为准；Release 附件是 rc2 当时的快照。
 
 ## 从一个物件，发现另一个世界
 
-首页精选木梳、笔记本与薯片三个案例。上方木梳封面为AI展示适配图，[原始木梳案例](examples/comb-farm.png)另存；下方两张为开发期间原始AI成图。画面展示创意方向，具体商品保真与已知不足见[18组案例详情](examples/SELECTED.md)。
+首页精选木梳、笔记本与薯片三个案例。上方木梳封面为AI展示适配图，[原始木梳案例](examples/comb-farm.png)另存；下方两张为开发期间原始AI成图。画面展示创意方向，具体商品保真与已知不足见[案例详情](examples/SELECTED.md)。
 
 | 笔记本 · 装订圈停车架 | 薯片 · 波纹秋收 |
 | --- | --- |
@@ -70,7 +70,7 @@
 
 - **运行能力**：需要可读图的宿主。自动成图需要生图工具，参考图创作需要图片输入，反馈编辑需要编辑能力；Skill不附带模型、额度或付费API客户端。
 - **商品保真**：标签、文字、部件和尺寸仍可能生成错误。创意得到认可，不代表精确SKU还原通过。
-- **微缩人偶**：比例、姿态和涂装需看图判断；严格匹配实物时需提供有权使用的参考图。项目1:64是规划值，不是作者或Preiser的统一比例，也不是生成尺寸保证。
+- **微缩人偶**：比例、姿态和涂装需看图判断；严格匹配实物时需提供有权使用的参考图。传入 Preiser 实物参考时按 1:87 安排，没有参考时项目默认 1:64；两者都是规划值，不是作者或 Preiser 的统一比例，也不是生成尺寸保证。
 - **验证状态**：已有历史案例与文件检查；两个宿主的真实本机闭环均待验收。详见[验证记录](docs/VALIDATION.md)。
 
 ## 创作启发与致敬：田中达也与见立
@@ -88,7 +88,7 @@
 | 入口 | 内容 |
 | --- | --- |
 | [安装与更新](docs/INSTALL.md) | Codex / Claude Code分别安装、触发与更新 |
-| [代表案例](examples/SELECTED.md) | 18组产品，每组一张主案例与已知不足 |
+| [代表案例](examples/SELECTED.md) | 18组历史产品案例与 2026-10-12 新测试 8 张，各附已知不足 |
 | [案例与复盘](examples/README.md) | 更多精选、历史对照与原始编号 |
 | [本机验收](docs/LOCAL_TEST.md) | 一次生成与一次反馈修改 |
 | [开发交接](docs/DEVELOPMENT_HANDOFF.md) | Codex读AGENTS.md，Claude Code读CLAUDE.md |
