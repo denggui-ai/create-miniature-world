@@ -68,3 +68,5 @@ dialog{border:0;padding:24px;max-width:min(94vw,900px);max-height:95vh;backgroun
 .eyebrow{font-size:12px}.small-note,.detail-foot,figcaption,.case-limit,.evidence-note,.tool-note{font-size:13px}.hero-meta{font-size:12px}
 @media(min-width:681px){.connection-figure{max-width:480px}}
 @media(min-width:1001px){.gallery-grid.latest-grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:24px}}
+.method-grid.style-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.style-grid+.small-note{margin-top:22px}
+@media(max-width:680px){.method-grid.style-grid{grid-template-columns:1fr}}

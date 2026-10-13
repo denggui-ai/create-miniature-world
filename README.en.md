@@ -51,6 +51,18 @@ Choose a concept, request one image, then give a specific revision such as “Ma
 
 A story can be a small everyday moment. It does not need conflict, and it does not have to demonstrate the product's normal function. The product itself must contribute to the idea.
 
+## Two photo styles: Tanaka-inspired / Photo-real light
+
+| | Tanaka-inspired (default) | Photo-real light |
+| --- | --- | --- |
+| When | You do not mention a style | You ask for a real-photo feel, light and shadow, natural light |
+| Light | One soft warm key from the upper left, short soft shadows | One window light or low warm sunbeam, no fill; highlights may clip, hollows go dark |
+| Backdrop and camera | Off-white matte paper; near the figures' eye level or slightly above | Feels like a 100mm macro shot, camera a little above the object |
+| Focus | The product reads clearly | Only the figures and their contact point are sharp; the rest falls off gradually |
+| Figures | About 9% of the image height | Also written as about 9%; macro may draw them a little larger (ceiling 15%) |
+
+"Tanaka-inspired" names a bright tabletop look inspired by Tatsuya Tanaka's work; it is not his workflow and implies no endorsement. Ideas, figure appearance and product-fidelity rules are the same in both styles. When Python 3, Pillow and NumPy are available, the skill also saves a lightly finished copy (fine grain, optional gentle focus falloff) and delivers it with the original.
+
 ## Requirements and limits
 
 Requires an image-reading host; generation, image references and editing each depend on tools actually available in that session. No model, credits, API keys or paid-service client are bundled. The default output is one opaque portrait image in a 3:4 ratio.
