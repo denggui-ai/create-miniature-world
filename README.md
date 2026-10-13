@@ -8,7 +8,7 @@
 
 [打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [纸杯入门教程](docs/QUICK_START.md) · [浏览案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
 
-> **v0.1.0 已正式发布** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)。2026-10-13 两张[真实刨丝器参考样张](examples/GRATER_VALIDATION_20261013.md)经用户确认商品外观、故事、人物尺度、美感四项通过。Codex参考图生成、指定编辑与保存有实际记录；Claude Code沿用安装与方案输出验收，当前新拍法未重测。准确SKU、文字、微孔与跨商品稳定性仍不保证；新机安装及完整升级/卸载未验证。
+> **v0.1.0 已正式发布** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)。2026-10-13 两张[真实刨丝器参考样张](examples/GRATER_VALIDATION_20261013.md)经用户确认商品外观、故事、人物尺度、美感四项通过。Codex参考图生成、指定编辑与保存有实际记录；2026-10-14项目安装更新及新Codex会话实际加载验证通过，11个运行文件与源码/正式包一致。Claude Code沿用安装与方案输出验收，本轮只核对安装文件，当前新拍法未重测。准确SKU、文字、微孔与跨商品稳定性仍不保证；新机安装及完整升级/卸载未验证。
 
 [离线用户指南](docs/USER-GUIDE.html) · [v0.1.0 发布稿与限制](docs/RELEASE_v0.1.0.md)
 
@@ -87,7 +87,7 @@
 - **商品保真**：标签、文字、部件和尺寸仍可能生成错误。创意得到认可，不代表精确SKU还原通过。
 - **微缩人偶**：大小按画面比例定（约占画面高度 9%，像巨大物件旁的小不点），不按商品毫米数换算；姿态和涂装需看图判断。包内附三张作者实拍的 1:87 人偶涂装参考（[说明与许可](skills/create-miniature-world/assets/figure-refs/README.md)，CC BY-NC 4.0），严格匹配其他实物时需提供有权使用的参考图。比例不是作者或 Preiser 的统一比例，也不是生成尺寸保证。
 - **本机后期**：需要 Python 3、Pillow、NumPy；缺依赖时只交付原图。后期只加颗粒和轻微虚化，不能补出真实的光线与反射。
-- **验证状态**：已有历史案例与文件检查；两个宿主的真实本机闭环均待验收。详见[验证记录](docs/VALIDATION.md)。
+- **验证状态**：v0.1.0已发布；Codex本机生成、指定编辑与保存已跑通，两张真实参考样张四维通过，本项目安装更新及新会话显式加载已验证。Claude Code已验收安装和方案输出，本轮仅核对运行文件，未重测新会话/新拍法；新机和完整宿主生命周期仍未验证。详见[验证记录](docs/VALIDATION.md)。
 
 ## 创作启发与致敬：田中达也与见立
 
@@ -108,6 +108,6 @@
 | [案例与复盘](examples/README.md) | 更多精选、历史对照与原始编号 |
 | [本机验收](docs/LOCAL_TEST.md) | 一次生成与一次反馈修改 |
 | [开发交接](docs/DEVELOPMENT_HANDOFF.md) | Codex读AGENTS.md，Claude Code读CLAUDE.md |
-| [发布说明](docs/PUBLISH.md) | 实验候选状态与正式发布条件 |
+| [发布说明](docs/PUBLISH.md) | v0.1.0已发布状态、历史决定与后续发布条件 |
 
 仓库与调用标识保持 `create-miniature-world`。核心只维护 `skills/create-miniature-world/` 一份源，安装目录是运行副本。

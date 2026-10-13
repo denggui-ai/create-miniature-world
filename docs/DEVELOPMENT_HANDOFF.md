@@ -1,5 +1,11 @@
 # 给Codex与Claude的开发交接
 
+## 当前状态：v0.1.0（2026-10-14）
+
+v0.1.0正式Release已发布，安装包与校验附件已核对；Codex参考图生成、指定编辑和保存有实际记录，2026-10-13两张真实刨丝器参考样张四维通过。2026-10-14项目Codex/Claude Code安装各11个运行文件与源码及正式包一致，新Codex会话显式调用并实际读取安装入口、摘要匹配、文字验证完成。
+
+Claude Code本轮仅核对安装文件，方案输出沿用2026-10-09验收；其新会话、新拍法未重测。新机、自然语言隐式触发、跨系统图像生成、完整升级/回退/卸载仍未验证。以下已执行记录按日期保留，历史准备、rc2决定和失败结论不作为当前状态；具体证据见[验证记录](VALIDATION.md)。
+
 ## 2026-10-14：本机安装更新与新会话加载已验证
 
 本项目 Codex 安装 `.agents/skills/create-miniature-world/` 与 Claude Code 安装 `.claude/skills/create-miniature-world/` 已按 v0.1.0 正式包范围整理。更新前两个副本的11个运行文件已与源码一致，但各带2个开发证据文件；完整13文件旧副本先备份，再重建为11个运行文件。`evals/evals.json` 与 `CHANGELOG.md` 留在开发源码和备份，不进入安装副本。两副本逐文件 SHA-256 与当前源码及已发布安装包一致，runtime strict 检查均通过；核心源码未修改。
@@ -8,17 +14,21 @@
 
 本轮生图、图像编辑和外部连接器调用均为0；完整轨迹只含本地只读命令及文字消息。Claude Code 本轮仅更新和逐文件核对，未另启 Claude 新会话；新机、跨系统宿主、完整升级/回退/卸载仍未验证。详细摘要见[验证记录](VALIDATION.md#2026-10-14本机安装更新与codex新会话加载)。
 
-## 当前已发布状态（2026-10-13）
+## 正式发布记录（2026-10-13）
 
 用户2026-10-13已明确授权并完成v0.1.0正式Release：[Release页](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)，标签fa442a5，非草稿、非pre-release；ZIP与sidecar远端摘要匹配。5张对照图片已公开。最终ZIP SHA-256 `bce2b004c70e706cefb8d51a3b044d803a65571f2af355b50935b1f6722ddd99`。运行源未因发布改变，实际安装副本不自动覆盖；新机和完整宿主生命周期仍未验证。以下准备/验收记录保留历史。
 
 两条拍法已在 macOS Codex 新会话实跑。两张真实刨丝器参考样张经用户确认商品外观、故事、人物尺度、美感四项通过，正式版样张门槛满足；历史失败保留。范围、实际文件与来源见[两案对照](../examples/GRATER_VALIDATION_20261013.md)。
 
+## 历史发布准备（2026-10-13，正式发布前）
+
+以下保留当时准备状态，不作为当前状态；正式发布及安装更新结果见上方记录。
+
 当前准备 v0.1.0 离线指南、白名单安装包、校验清单及发布审阅；正式Release尚未创建。新主机、跨系统宿主生图、Claude Code新拍法和完整升级/卸载状态未验证。核心唯一源仍为 skills/create-miniature-world/，安装副本不自动更新。当前公开Release仍为rc2；以[发布说明](RELEASE_v0.1.0.md)与[发布条件](PUBLISH.md)为准。
 
 以下历史条目按其日期理解，不代表本轮仍无通过样张。
 
-## 当前状态（2026-10-09）
+## 历史状态（2026-10-09，含后续追加）
 
 - 2026-10-09 已在 `f521e28` 创建 pre-release `v0.1.0-rc2`（[Release 页](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2)）；版本仍为实验候选，正式版 v0.1.0 未发布。2026-10-12 用户手机真机检查通过后，site 四页（index、gallery、secondary-creation、artwork-interpretation）已解除 noindex，cover.html 保留。
 - 唯一核心源 `skills/create-miniature-world/`；项目 Codex 安装副本 `.agents/skills/` 与 Claude Code 安装副本 `.claude/skills/` 三文件均与源码逐字节一致（两目录均被 .gitignore 覆盖）。
@@ -46,7 +56,11 @@
 
 ## 项目规划（唯一当前待办入口）
 
-按 2026-10-09 审计给出的顺序：文档收口（已完成）→ Claude Code 安装验证（已完成，方案输出层面）→ Release 决定（已决定：保持 rc2，发 pre-release；正式版样张门槛已于2026-10-13满足，v0.1.0已获明确授权并完成正式发布）。不扩大研究、不加规则、不建测试平台。创意方法的改动只在有用户二选一证据时进行（E1／E3 的做法）。
+当前为v0.1.0发布后维护：本机安装更新和新Codex会话显式加载已完成；根据用户具体反馈做最小修改。Claude Code新拍法、新机/跨系统和完整宿主生命周期保留未验证范围，不自动追加测试或生图。不扩大研究、不加规则、不建测试平台。创意方法改动仍需对应用户授权和实际比较证据。
+
+历史规划原文（保留审计顺序及rc2阶段决定，非当前待办）：
+
+> 按 2026-10-09 审计给出的顺序：文档收口（已完成）→ Claude Code 安装验证（已完成，方案输出层面）→ Release 决定（已决定：保持 rc2，发 pre-release；正式版样张门槛已于2026-10-13满足，v0.1.0已获明确授权并完成正式发布）。不扩大研究、不加规则、不建测试平台。创意方法的改动只在有用户二选一证据时进行（E1／E3 的做法）。
 
 ## 阅读顺序与修改位置
 
@@ -62,11 +76,11 @@
 
 Codex先读根目录AGENTS.md，其安装与调用按README执行。两种宿主都使用同一份核心源；本节只说明Claude的入口差异，后续的证据边界和首轮任务对两者都适用。
 
-Claude Code可以先直接阅读这些文件开展开发，不必先安装Skill。需要测试自动发现与调用时，再把完整 `skills/create-miniature-world/` 复制到本项目的 `.claude/skills/create-miniature-world/`；已有同名目录或链接先比较，不覆盖。选择项目级安装可避免影响其他项目。若用户明确希望全局使用，官方用户级路径为 `~/.claude/skills/create-miniature-world/`。
+Claude Code可以先直接阅读这些文件开展开发，不必先安装Skill。需要测试自动发现与调用时，再按v0.1.0正式包范围将源码的11个运行文件复制到本项目的 `.claude/skills/create-miniature-world/`（不复制源侧evals/CHANGELOG）；已有同名目录或链接先比较，不覆盖。选择项目级安装可避免影响其他项目。若用户明确希望全局使用，官方用户级路径为 `~/.claude/skills/create-miniature-world/`。
 
 Claude Code的调用形式是 `/create-miniature-world`，不是Codex示例中的 `$create-miniature-world`。`agents/openai.yaml`保留给Codex，不需要为Claude另写一份创作方法；实际能力和权限以Claude会话为准。安装后比对源与运行副本，并确认确实加载了本包；不能仅凭目录存在就判安装发现成功。
 
-以上位置与调用形式来自[Claude Code官方Skills文档](https://code.claude.com/docs/en/skills)，项目入口方式参考[官方CLAUDE.md文档](https://code.claude.com/docs/en/memory)，2026-10-05核对。官方文档核对不代表本包已完成Claude实际运行验证。
+以上位置与调用形式来自[Claude Code官方Skills文档](https://code.claude.com/docs/en/skills)，项目入口方式参考[官方CLAUDE.md文档](https://code.claude.com/docs/en/memory)，2026-10-05核对。文档核对本身不代替实际运行验证；已有Claude Code安装与方案输出验收见上方日期记录，生图能力和新拍法仍按实际工具与证据判断。
 
 如果用的是普通Claude聊天界面，可提供这些文档和图片做分析；不要把上传资料等同于本机安装或源码修改。要继续改项目文件与验证本机流程，使用能访问项目目录的开发环境。
 

@@ -1,6 +1,6 @@
 # 微缩造景：开发入口
 
-先阅读 `docs/DEVELOPMENT_HANDOFF.md`、`README.md` 与 `docs/VALIDATION.md`。当前核心为v0.1.0-rc2候选版；Codex 本机参考图生成与一句编辑已跑通，Claude Code 方案输出已验收（均 2026-10-09；Claude Code 无内置生图），样张严格保真均未通过。
+先阅读 `docs/DEVELOPMENT_HANDOFF.md`、`README.md` 与 `docs/VALIDATION.md`。当前核心为已正式发布的 v0.1.0（2026-10-13）。Codex 本机参考图生成、指定编辑与保存已有实际记录；两张真实刨丝器参考样张经用户确认商品外观、故事、人物尺度、美感四项通过。2026-10-14 项目 Codex/Claude Code 安装的11个运行文件已与源码及正式包一致，新 Codex 会话显式调用并实际加载验证通过。Claude Code沿用2026-10-09安装与方案输出验收，本轮未重测其新会话或新拍法；该已测宿主无内置生图。新机、跨系统宿主和完整升级/回退/卸载仍未验证。rc2与历史失败仅作追溯，见开发交接。
 
 唯一核心源码是 `skills/create-miniature-world/`；安装副本不另行维护。保留Codex与Claude共同使用的创意方法，宿主差异留在安装说明与实际工具调用中。
 
