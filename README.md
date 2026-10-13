@@ -8,7 +8,7 @@
 
 [打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [纸杯入门教程](docs/QUICK_START.md) · [浏览案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
 
-> **v0.1.0 发布准备** · 当前公开 Release 仍为 [v0.1.0-rc2 pre-release](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2)。2026-10-13 两张[真实刨丝器参考样张](examples/GRATER_VALIDATION_20261013.md)经用户看图确认商品外观、故事、人物尺度、美感四项通过；正式版样张门槛已满足，正式 Release 尚未创建。该验收不保证任意SKU、文字或微孔细节；后续更新仍以 main 为准。
+> **v0.1.0 已正式发布** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)。2026-10-13 两张[真实刨丝器参考样张](examples/GRATER_VALIDATION_20261013.md)经用户确认商品外观、故事、人物尺度、美感四项通过。Codex参考图生成、指定编辑与保存有实际记录；Claude Code沿用安装与方案输出验收，当前新拍法未重测。准确SKU、文字、微孔与跨商品稳定性仍不保证；新机安装及完整升级/卸载未验证。
 
 [离线用户指南](docs/USER-GUIDE.html) · [v0.1.0 发布稿与限制](docs/RELEASE_v0.1.0.md)
 

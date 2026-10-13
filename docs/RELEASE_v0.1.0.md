@@ -1,6 +1,6 @@
 # v0.1.0 · 微缩摄影 Skill
 
-发布稿；正式 Release 尚未创建。安装源与调用标识仍为 `create-miniature-world`。
+2026-10-13 已发布[正式 Release](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)，标签指向公开提交 `fa442a5`，非草稿、非pre-release；安装包及校验文件已核对远端SHA-256。安装源与调用标识仍为 `create-miniature-world`。
 
 ## 本版行为
 
@@ -32,6 +32,8 @@ Claude Code项目级安装与方案输出在2026-10-09验收；该宿主当时�
 
 ## 获取与开始
 
-仓库：https://github.com/denggui-ai/create-miniature-world 。当前下载渠道仍是仓库及rc2 pre-release，正式版安装附件待发布。
+仓库：https://github.com/denggui-ai/create-miniature-world 。正式版专用安装包与 `.sha256` 已在[Release页](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)提供。
 
 先阅读[离线用户指南](USER-GUIDE.html)或[安装说明](INSTALL.md)，检查已有同名版本，先用“先给方案，不要生图”的文字冒烟确认加载。安装不自动更新已有同名目录，输出与输入不会因为卸载Skill而删除。
+
+安装包SHA-256：`bce2b004c70e706cefb8d51a3b044d803a65571f2af355b50935b1f6722ddd99`。发布状态文字调整后重新打包；运行文件与5张图片和验收包逐字节一致。

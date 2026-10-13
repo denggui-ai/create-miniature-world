@@ -8,7 +8,7 @@ An Agent Skill for Codex and Claude Code that finds visual connections in an obj
 
 [View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
 
-> **v0.1.0 release preparation.** The currently published Release is still [v0.1.0-rc2 pre-release](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2). On 2026-10-13, two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics. The sample gate is satisfied; no stable Release has been created. This does not guarantee arbitrary SKU details, text, microscopic patterns or manufacturing dimensions. See the [sample comparison](examples/GRATER_VALIDATION_20261013.md), [offline guide](docs/USER-GUIDE.html), and [release notes](docs/RELEASE_v0.1.0.md).
+> **v0.1.0 is released.** [Release and installation archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics on 2026-10-13. Codex reference generation, requested editing and saving have actual evidence; Claude Code retains its install/planning validation, with the new routes untested. Exact SKU details, text, microscopic patterns and cross-product consistency are not guaranteed. Fresh-host install and full upgrade/uninstall remain unverified. See the [sample comparison](examples/GRATER_VALIDATION_20261013.md) and [offline guide](docs/USER-GUIDE.html).
 
 ## See the idea
 
