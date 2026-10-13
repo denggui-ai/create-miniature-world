@@ -1,5 +1,13 @@
 # 给Codex与Claude的开发交接
 
+## 2026-10-14：本机安装更新与新会话加载已验证
+
+本项目 Codex 安装 `.agents/skills/create-miniature-world/` 与 Claude Code 安装 `.claude/skills/create-miniature-world/` 已按 v0.1.0 正式包范围整理。更新前两个副本的11个运行文件已与源码一致，但各带2个开发证据文件；完整13文件旧副本先备份，再重建为11个运行文件。`evals/evals.json` 与 `CHANGELOG.md` 留在开发源码和备份，不进入安装副本。两副本逐文件 SHA-256 与当前源码及已发布安装包一致，runtime strict 检查均通过；核心源码未修改。
+
+新 Codex CLI 会话在本项目实际发现并读取 `.agents/skills/create-miniature-world/SKILL.md`，以及该安装目录下的拍法、人偶取景、创意方法和形状词典；未用开发源码替代安装入口。入口及三份指定参考的会话内摘要与本机核对结果一致，完成刨丝器三案、推荐与两条拍法/人偶阈值的文字验证。明确显式调用 `$create-miniature-world`，不把此次验证扩大为自然语言隐式触发或其他机器发现验证。
+
+本轮生图、图像编辑和外部连接器调用均为0；完整轨迹只含本地只读命令及文字消息。Claude Code 本轮仅更新和逐文件核对，未另启 Claude 新会话；新机、跨系统宿主、完整升级/回退/卸载仍未验证。详细摘要见[验证记录](VALIDATION.md#2026-10-14本机安装更新与codex新会话加载)。
+
 ## 当前已发布状态（2026-10-13）
 
 用户2026-10-13已明确授权并完成v0.1.0正式Release：[Release页](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)，标签fa442a5，非草稿、非pre-release；ZIP与sidecar远端摘要匹配。5张对照图片已公开。最终ZIP SHA-256 `bce2b004c70e706cefb8d51a3b044d803a65571f2af355b50935b1f6722ddd99`。运行源未因发布改变，实际安装副本不自动覆盖；新机和完整宿主生命周期仍未验证。以下准备/验收记录保留历史。
