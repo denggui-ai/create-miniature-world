@@ -64,7 +64,15 @@ def main():
         sys.exit("photo_finish: --focus-y must be between 0 and 1")
 
     img = Image.open(a.src)
-    if img.mode in ("RGBA", "LA", "PA") or "transparency" in img.info:
+    has_alpha = "A" in img.getbands() or "transparency" in img.info
+    if has_alpha and img.format == "PNG":
+        # PNG IHDR stores bit depth at byte 24. Pillow can downsample 16-bit
+        # channels before exposing alpha, so keep the original in this case.
+        with open(a.src, "rb") as source:
+            header = source.read(25)
+        if header[24] > 8:
+            sys.exit("photo_finish: cannot reliably check high-bit-depth PNG transparency; skip finishing and deliver the original")
+    if has_alpha and img.convert("RGBA").getchannel("A").getextrema()[0] < 255:
         sys.exit("photo_finish: transparent image; skip finishing and deliver the original")
     img = img.convert("RGB")
     far, near = (f * img.size[0] for f in DOF_PRESETS[a.dof])
