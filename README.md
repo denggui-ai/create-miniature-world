@@ -14,6 +14,8 @@
 
 [离线用户指南](docs/USER-GUIDE.html) · [v0.1.0 发布稿与限制](docs/RELEASE_v0.1.0.md)
 
+**新增真实参考实测：** [遥控器原照 → 两张成图](examples/REMOTE_CONTROL_TEST_20261014.md) · [使用教程](site/remote-control.html) · [保真回归](docs/REMOTE_CONTROL_REGRESSION.md)。两张均为田中风格，保留新增图标、键形重绘与接触问题；严格细节保真未通过，公开授权不等于质量验收。
+
 ## 从一个物件，发现另一个世界
 
 首页保留木梳、笔记本与薯片的原展示，另补两张真实刨丝器参考验证及两种拍法对照。上方木梳封面为AI展示适配图，[原始木梳案例](examples/comb-farm.png)另存；下方两张为开发期间原始AI成图。画面展示创意方向，具体商品保真与已知不足见[案例详情](examples/SELECTED.md)。
@@ -25,13 +27,13 @@
 
 [继续看回形针、马克杯、小青柑等案例 →](examples/README.md)
 
-## 两个独立教程
+## 从案例学习
 
 **先看二创实战：[纸巾雪坡、铅笔桥与木夹跳台](docs/SECONDARY_CREATION.md)。** 从熟悉材质、物件组合和物件姿态出发，看已有成图、实际输入、一句修改与反馈。用户提供目标、素材和反馈，策划与提示由 Skill 完成。
 
 [作品解读：胶带座为什么能成为跑步机？](docs/ARTWORK_INTERPRETATION.md) 解释田中达也 Tape Runner 的结构、动作与摄影关系。解读可以独立完成，复刻仅作可选辅助。
 
-两篇收录于[案例与教程页](site/gallery.html)，作为公开实验教程；原作与官方商品参考仅保留来源链接，媒体范围见[素材说明](THIRD_PARTY_NOTICES.md)。
+以上教程收录于[案例与教程页](site/gallery.html)，作为公开实验教程；原作与官方商品参考仅保留来源链接，媒体范围见[素材说明](THIRD_PARTY_NOTICES.md)。
 
 ## 开始使用
 

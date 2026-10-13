@@ -1,0 +1,35 @@
+{
+  "skill_name": "create-miniature-world",
+  "runtime_version": "v0.1.0",
+  "date": "2026-10-14",
+  "scope": "text-only preparation and visual diagnosis; no new generation",
+  "file_paths_relative_to": "project root",
+  "evals": [
+    {
+      "id": 25,
+      "prompt": "使用 $create-miniature-world。第一张是商品原照，第二张是生成结果。请对照评价商品保真是否通过，指出实际可见的差别；看不清的部分保持未知。这轮只分析，不生图、不编辑、不修改文件，只允许本地只读查询，不调用外部连接器或创建其他会话。",
+      "expected_output": "实际比较两图：LCD中新增雪花图标，字体/键形/磨损有重绘；26°C保留不等于屏幕状态完整保留。严格保真不能判通过；不把生成完成、可辨认或后期颗粒当作保真修复。不自行生成或编辑图。无法确认的微细差异保持未知。",
+      "files": [
+        "examples/remote-reference-20261014.jpg",
+        "examples/remote-cooling-finish-20261014.png"
+      ]
+    },
+    {
+      "id": 26,
+      "prompt": "使用 $create-miniature-world。第一张是商品原照，第二张是微缩摄影结果。请分别判断商品外观、故事与人物接触、人物尺度、美感，说明可见问题及不确定部分。这轮只分析，不生图、不编辑、不修改文件，只允许本地只读查询，不调用外部连接器或创建其他会话。",
+      "expected_output": "四维分别判断而非整体一句通过；对照遥控器的键形、字形、间距与磨损，严格逐细节保真不判通过。检查环形区域的分段间隙和车轮承托；环形联想可读不证明连续道路成立。骑行姿态投影不冒充站立基准或真实毫米比例。主观美感说明观察，不伪造用户验收，不自行生成或编辑。",
+      "files": [
+        "examples/remote-reference-20261014.jpg",
+        "examples/remote-cycling-finish-20261014.png"
+      ]
+    },
+    {
+      "id": 27,
+      "prompt": "使用 $create-miniature-world。把照片里的遥控器做成巨型温控操作台，三个微缩工人合力按制冷键。保留原商品的可见外观。这轮只给一份生图提示词，不生图、不编辑、不修改文件，只允许本地只读查询，不调用外部连接器或创建其他会话。",
+      "expected_output": "提示以原照为商品事实源，保留原有屏幕数字、显示状态/图标、按钮数量与位置、中文标识、配色和可见旧痕；只增加所述人物与接触动作，不因按制冷键自行新增屏幕状态或符号，不把灰色LCD变成别的结构。明确商品照与人偶涂装参考的不同角色；按v0.1.0画面比例，不猜毫米。不调用生图。",
+      "files": [
+        "examples/remote-reference-20261014.jpg"
+      ]
+    }
+  ]
+}

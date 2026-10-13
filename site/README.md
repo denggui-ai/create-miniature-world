@@ -10,6 +10,10 @@ v0.1.0正式Release已发布。首页和案例页同步当前状态、两张2026
 
 以下检查与发布稿保留各自历史日期，不将旧“尚未上线”“待终检”“实验候选”表述作为当前结论。
 
+## 2026-10-14：遥控器实测教程追加
+
+新增[遥控器图文教程](remote-control.html)：原照和两张后期After，经用户授权公开；均为田中风格，严格细节保真未通过。首页、案例页和指南增加教程入口，28张既有图库卡片保持原样，教程图片另计。没有新增生图或更换v0.1.0附件。无头Chromium在1280/375检查新教程、案例页、首页与指南，共8组合：图片、锚点、无横向溢出、教程导航及键盘/折叠检查通过，截图已查看；不是手机真机验收。详见[验证记录](../docs/VALIDATION.md)。
+
 ## 在线查看
 
 [打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [浏览28张案例图](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。2026-10-05用户确认后，仓库已公开，GitHub Pages使用main分支根目录发布；根index.html跳转site/。

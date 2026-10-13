@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-14",
+  "tool": "built-in image_gen",
+  "purpose": "actual historical generation prompts, not newly executed",
+  "calls": [
+    {
+      "scene": "降温要全队出动",
+      "product_reference": "用户原照片实际输入；公开转正副本见remote-reference-20261014.jpg",
+      "figure_reference": "figure-bending-worker.jpg，包内涂装参考",
+      "prompt": "Create one portrait 3:4 realistic handmade miniature tableau photograph. Input 1 is the exact GREE air-conditioner remote to preserve; input 2 is solely hand-painted plastic figure paint reference, independent of clothing, pose and size. Preserve the complete off-white worn rounded remote, GREE 格力 logo, original gray LCD reading 26°C and icons, original exact button count, outlines, positions and Chinese labels, including 开/关, 节能, 风速, 模式, 制冷, 制热, 上下扫风, 左右扫风, 定时, 强劲, 睡眠, 静音, 干燥辅热, 灯光. Keep the curved four-piece ring and original yellow cooling/orange heating buttons. Same oblique top view, whole remote visible with generous space on off-white matte paper. The remote is a gigantic, clearest temperature control console: three tiny workers in blue and white lean forward together with palms and feet contacting the original yellow 制冷 button, struggling to press a button much bigger than themselves; screen remains visible above them. Figures about 9% of image height, one tenth remote length, on remote at same depth, tiny N-scale matte hand-painted railway figures too small for facial details. Only remote and three figures. One warm soft upper-left window light, no fill, short consistent shadows, luminous paper backdrop. Original product identity, weathering, text and geometry remain intact. Deliver a single photograph with its existing product labels."
+    },
+    {
+      "scene": "节能环岛",
+      "product_reference": "同一用户原照片实际输入",
+      "figure_reference": "figure-cyclist.jpg，包内涂装参考",
+      "prompt": "Create one portrait 3:4 realistic handmade miniature tableau photograph. Input 1 is the exact GREE air-conditioner remote to preserve; input 2 provides only hand-painted plastic figure paint texture, independent of clothes, pose and scale. Preserve its whole worn off-white rounded body, GREE 格力 logo, gray LCD reading 26°C with original icons, exact original button count, shapes and positions and all Chinese labels. Keep central 节能 circular button, its surrounding four separate curved keys, long 开/关 key, yellow 制冷/orange 制热 keys, and all lower keys intact. Same slightly overhead oblique angle, remote fully visible with breathing space on off-white matte paper. Scene: an energy-saving cycling roundabout. The original central 节能 circle is the roundabout island; existing four curved keys become separate curved riding surfaces. Three tiny cyclists in blue, white and green ride clockwise, one on each of three curved keys, both wheels visibly touching each original raised button top. Original ring gaps and printed labels remain visible. Bicycles align tangentially with curves; terrain is the original buttons. Only the unchanged remote and three cyclist miniatures. Baseline person height about 9% of picture height, about one tenth remote length, N-scale hand-painted matte railway miniatures too small to show facial detail. The remote is the largest clearest subject. One soft warm upper-left window light, no fill, short contact shadows, lit and shaded object sides, subtly graded paper."
+    }
+  ]
+}
