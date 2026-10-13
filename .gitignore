@@ -5,7 +5,8 @@ Thumbs.db
 !.env.example
 outputs/
 private-inputs/
-skills/create-miniature-world/assets/
+skills/create-miniature-world/assets/*
+!skills/create-miniature-world/assets/figure-refs/
 .claude/skills/create-miniature-world/
 .agents/skills/create-miniature-world/
 *.zip

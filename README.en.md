@@ -55,7 +55,7 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 
 Requires an image-reading host; generation, image references and editing each depend on tools actually available in that session. No model, credits, API keys or paid-service client are bundled. The default output is one opaque portrait image in a 3:4 ratio.
 
-Product lettering, construction and figure scale can still be wrong. Exact SKU preservation and exact figurine matching are not guaranteed. The project plans figures at 1:87 when a Preiser reference photo is supplied and 1:64 otherwise; neither is a universal scale used by the artist or Preiser. See [validation](docs/VALIDATION.md) and the [local test](docs/LOCAL_TEST.md) (Chinese).
+Product lettering, construction and figure scale can still be wrong. Exact SKU preservation and exact figurine matching are not guaranteed. Figures are sized in the frame (about 9% of the image height, tiny next to a giant object) rather than from product millimetres; this is not a universal scale used by the artist or Preiser. Three author-shot 1:87 figure photos ship as paint references ([notes and license](skills/create-miniature-world/assets/figure-refs/README.md), CC BY-NC 4.0). See [validation](docs/VALIDATION.md) and the [local test](docs/LOCAL_TEST.md) (Chinese).
 
 ## Inspiration and materials
 
