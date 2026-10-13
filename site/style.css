@@ -70,3 +70,8 @@ dialog{border:0;padding:24px;max-width:min(94vw,900px);max-height:95vh;backgroun
 @media(min-width:1001px){.gallery-grid.latest-grid{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:24px}}
 .method-grid.style-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.style-grid+.small-note{margin-top:22px}
 @media(max-width:680px){.method-grid.style-grid{grid-template-columns:1fr}}
+
+/* 2026-10-14: show the two reviewed routes at their original aspect ratio. */
+.verified-intro{max-width:850px;margin-bottom:28px}.capability-proof{margin-top:24px}
+.gallery-grid.verified-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:680px){.gallery-grid.verified-grid{grid-template-columns:1fr}}
