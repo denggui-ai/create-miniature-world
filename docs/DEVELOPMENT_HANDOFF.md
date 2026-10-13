@@ -1,5 +1,13 @@
 # 给Codex与Claude的开发交接
 
+## 当前发布准备（2026-10-13）
+
+两条拍法已在 macOS Codex 新会话实跑。两张真实刨丝器参考样张经用户确认商品外观、故事、人物尺度、美感四项通过，正式版样张门槛满足；历史失败保留。范围、实际文件与来源见[两案对照](../examples/GRATER_VALIDATION_20261013.md)。
+
+当前准备 v0.1.0 离线指南、白名单安装包、校验清单及发布审阅；正式Release尚未创建。新主机、跨系统宿主生图、Claude Code新拍法和完整升级/卸载状态未验证。核心唯一源仍为 skills/create-miniature-world/，安装副本不自动更新。当前公开Release仍为rc2；以[发布说明](RELEASE_v0.1.0.md)与[发布条件](PUBLISH.md)为准。
+
+以下历史条目按其日期理解，不代表本轮仍无通过样张。
+
 ## 当前状态（2026-10-09）
 
 - 2026-10-09 已在 `f521e28` 创建 pre-release `v0.1.0-rc2`（[Release 页](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2)）；版本仍为实验候选，正式版 v0.1.0 未发布。2026-10-12 用户手机真机检查通过后，site 四页（index、gallery、secondary-creation、artwork-interpretation）已解除 noindex，cover.html 保留。
@@ -28,7 +36,7 @@
 
 ## 项目规划（唯一当前待办入口）
 
-按 2026-10-09 审计给出的顺序：文档收口（已完成）→ Claude Code 安装验证（已完成，方案输出层面）→ Release 决定（已决定：保持 rc2，发 pre-release；正式版待四维全过样张）。不扩大研究、不加规则、不建测试平台。创意方法的改动只在有用户二选一证据时进行（E1／E3 的做法）。
+按 2026-10-09 审计给出的顺序：文档收口（已完成）→ Claude Code 安装验证（已完成，方案输出层面）→ Release 决定（已决定：保持 rc2，发 pre-release；正式版样张门槛已于2026-10-13满足，当前待安装包核验与正式发布授权）。不扩大研究、不加规则、不建测试平台。创意方法的改动只在有用户二选一证据时进行（E1／E3 的做法）。
 
 ## 阅读顺序与修改位置
 

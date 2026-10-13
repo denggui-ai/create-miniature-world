@@ -2,7 +2,7 @@
 
 > 2026-10-11：公开仓库已重建为只含 Skill、网站、公开文档与样张的干净历史；开发与研究在私有仓库 `create-miniature-world-dev`，以后按白名单同步到本仓库。
 
-仓库已按用户2026-10-05明确确认改为公开：https://github.com/denggui-ai/create-miniature-world 。GitHub Pages已上线：https://denggui-ai.github.io/create-miniature-world/site/ 。当前仍为 `v0.1.0-rc2` 实验候选版，已于 2026-10-09 按用户决定作为 **pre-release** 发布（标签 `v0.1.0-rc2`，指向 `f521e28`，[Release 页](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2)），发布说明披露已知限制。正式版 v0.1.0 未发布：Codex 本机参考图生成与一句编辑已跑通，Claude Code 方案输出已验收（Claude Code 无内置生图），但样张严格保真均未通过，下节"正式发布前"条件仍未满足。
+仓库已按用户2026-10-05明确确认改为公开：https://github.com/denggui-ai/create-miniature-world 。GitHub Pages已上线：https://denggui-ai.github.io/create-miniature-world/site/ 。当前仍为 `v0.1.0-rc2` 实验候选版，已于 2026-10-09 按用户决定作为 **pre-release** 发布（标签 `v0.1.0-rc2`，指向 `f521e28`，[Release 页](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2)），发布说明披露已知限制。正式版 v0.1.0 未发布：Codex 本机参考图生成与一句编辑已跑通，Claude Code 方案输出已验收（Claude Code 无内置生图），2026-10-13两张真实刨丝器参考样张已由用户对商品外观、故事、人物尺度、美感明确验收通过，样张门槛已满足。正式安装包与文档正在准备，仍需核对公开清单、素材许可和发布包，并取得正式Release授权；见[本版发布稿](RELEASE_v0.1.0.md)。
 
 ## 历史阶段：私有开发仓库（已被公开决定替代）
 

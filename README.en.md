@@ -8,7 +8,7 @@ An Agent Skill for Codex and Claude Code that finds visual connections in an obj
 
 [View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
 
-> Experimental candidate **v0.1.0-rc2**, published as a [pre-release](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2). The Codex/ChatGPT path (reference-image generation plus a one-line edit) has run end to end; Claude Code has no built-in image generation, so it returns a plan and prompt for you to render elsewhere, and its project-level install has been verified. No stable release has been published. The Skill has changed since rc2; use the `main` branch for the latest version, as the release assets are the rc2 snapshot.
+> **v0.1.0 release preparation.** The currently published Release is still [v0.1.0-rc2 pre-release](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0-rc2). On 2026-10-13, two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics. The sample gate is satisfied; no stable Release has been created. This does not guarantee arbitrary SKU details, text, microscopic patterns or manufacturing dimensions. See the [sample comparison](examples/GRATER_VALIDATION_20261013.md), [offline guide](docs/USER-GUIDE.html), and [release notes](docs/RELEASE_v0.1.0.md).
 
 ## See the idea
 

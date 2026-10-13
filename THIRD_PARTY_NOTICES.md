@@ -200,3 +200,14 @@ b8f6bddf2fbad05b89ee17bd7f691754ccc1c3b68c5c4cd7e33619a2f912070a  examples/cloth
 | `examples/stapler-skate-slope-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
 | `examples/tape-measure-slide-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
 | `examples/tape-measure-cycleway-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
+
+
+## 2026-10-13：真实刨丝器参考验收候选
+
+以下5个文件已按用户同意推进的正式版准备计划纳入本地候选，待公开清单确认后发布；本节不声称已推送或Release已创建。真实输入、两案原图/后期、四维反馈与逐文件SHA见[刨丝器对照](examples/GRATER_VALIDATION_20261013.md)。
+
+- `examples/grater-reference-20261013.jpg`：Ben Dalton/noii，2009-08-05，[Commons Grater (3792844780).jpg](https://commons.wikimedia.org/wiki/File:Grater_(3792844780).jpg)，明确CC BY 2.0；实际为同照片官方960×1434版本，未作本机改图。署名“Grater — Ben Dalton / noii, CC BY 2.0, via Wikimedia Commons”，附[许可](https://creativecommons.org/licenses/by/2.0/)。
+- `examples/grater-tanaka-original-20261013.png`、`grater-real-light-original-20261013.png`：本项目内置工具实际AI生成，商品图及包内作者弯腰人偶照作为不同角色的输入，各一次无重试；不是官方产品照。
+- `examples/grater-tanaka-finish-20261013.png`、`grater-real-light-finish-20261013.png`：上述图经源码本机脚本另存，预设细颗粒、未叠加虚化；不是额外生图。
+
+用户已对照原照片和两案原图/后期，明确“四项都过关”。许可与视觉认可分开：商品照沿用CC BY 2.0；人偶照沿用CC BY-NC 4.0，且不授予人偶雕塑造型权利。生成及后期图不纳入MIT，本项目没有据此授予额外商业使用、修改或再分发授权。品牌/SKU未知，无品牌合作或精确型号保证；遮挡、孔口/纹理重绘等可见限制仍保留。
