@@ -87,7 +87,7 @@
 
 ## 版本与验证记录
 
-> **v0.1.0 已正式发布** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)。2026-10-13 两张[真实刨丝器参考样张](examples/GRATER_VALIDATION_20261013.md)经用户确认商品外观、故事、人物尺度、美感四项通过。Codex参考图生成、指定编辑与保存有实际记录；2026-10-14项目安装更新及新Codex会话实际加载验证通过，11个运行文件与源码/正式包一致。Claude Code沿用安装与方案输出验收，本轮只核对安装文件，当前新拍法未重测。准确SKU、文字、微孔与跨商品稳定性仍不保证；新机安装及完整升级/卸载未验证。
+> **v0.1.0 已正式发布** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)。2026-10-13 两张[真实刨丝器参考样张](examples/GRATER_VALIDATION_20261013.md)经用户确认商品外观、故事、人物尺度、美感四项通过。Codex参考图生成、指定编辑与保存有实际记录；2026-10-14项目安装更新及新Codex会话实际加载验证通过，11个运行文件与源码/正式包一致。Claude Code沿用安装与方案输出验收，本轮只核对安装文件，当前新拍法未重测。准确SKU、文字、微孔与跨商品稳定性仍不保证；新机安装仍未验证；2026-10-17同机独立项目的Codex项目级安装/升级/回退/卸载通过，Claude仅文件级流程通过，详见验证记录。
 
 [离线用户指南](docs/USER-GUIDE.html) · [v0.1.0 发布稿与限制](docs/RELEASE_v0.1.0.md)
 
