@@ -115,7 +115,7 @@
 | [代表案例](examples/SELECTED.md) | 2张真实参考验证、8张名称测试及18张历史代表图，各附来源与限制 |
 | [案例与复盘](examples/README.md) | 更多精选、历史对照与原始编号 |
 | [本机验收](docs/LOCAL_TEST.md) | 一次生成与一次反馈修改 |
-| [开发交接](docs/DEVELOPMENT_HANDOFF.md) | Codex读AGENTS.md，Claude Code读CLAUDE.md |
+| [开发交接](docs/DEVELOPMENT_HANDOFF.md) | 维护者说明：当前状态、核心源与同步方式 |
 | [发布说明](docs/PUBLISH.md) | v0.1.0已发布状态、历史决定与后续发布条件 |
 
 仓库与调用标识保持 `create-miniature-world`。核心只维护 `skills/create-miniature-world/` 一份源，安装目录是运行副本。
