@@ -22,7 +22,7 @@
 
 ## AI 生成的示例图
 
-`examples/` 下其余 PNG，以及 `site/hero-comb.png`、`site/cover.png` 和 `site/img/` 下的压缩版，都是本项目用 AI 图像工具生成或编辑的输出。逐文件的输入、尺寸和 SHA-256 见 [examples/SELECTED.md](examples/SELECTED.md)、[examples/CASES.md](examples/CASES.md) 和各教程页。
+`examples/` 下其余 PNG，以及 `site/hero-comb.png`、`site/cover.png`，是本项目用 AI 图像工具生成或编辑的输出。`site/img/` 下的压缩副本沿用对应原图的来源与许可：实拍原照的压缩版仍是实拍照片，AI 成图的压缩版仍是 AI 输出；压缩不改变来源类别或增加复用许可。逐文件的输入、尺寸和 SHA-256 见 [examples/SELECTED.md](examples/SELECTED.md)、[examples/CASES.md](examples/CASES.md) 和各教程页。
 
 - 这些图片不纳入 MIT，仅供本项目展示和教学，不提供额外复用许可。
 - 生成时用到的输入分三类：只有物品名称或文字；上面列出的第三方或作者照片；以及少量网上公开的官方商品页或人偶厂商照片。最后一类只作为生成参考，**原图不随仓库分发**。

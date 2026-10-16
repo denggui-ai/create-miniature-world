@@ -94,6 +94,14 @@ With appreciation for [Tatsuya Tanaka / MINIATURE CALENDAR](https://miniature-ca
 
 This is an independent project, with no official affiliation or endorsement from the artist or Preiser. Original project text and configuration use the [MIT license](LICENSE). Images and third-party materials are not automatically covered by MIT; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+## Cost and common questions
+
+- **Does the skill include generation credits?** No model, API key or image allowance is bundled. Generation and editing use your existing host and image tool; their current account terms and limits apply.
+- **What if Claude Code cannot generate images?** Get concepts and prompts, use an image tool you already have, then return the results for review. Installing this skill does not require a new paid service.
+- **Why do results differ from the examples?** Generation varies. Text, texture, product parts and figure size can be wrong. Confirm the loaded source, then describe one focused change. An appealing idea does not establish exact product fidelity.
+- **Are local finishing dependencies required?** Without Python 3, Pillow and NumPy, deliver the original image. Finishing and web compression do not guarantee preservation of content credentials or all metadata; consult the original and case notes together.
+- **How do I report a problem?** Use the [issue template](https://github.com/denggui-ai/create-miniature-world/issues/new?template=bug_report.md), including the host, loaded version, minimal input, expected and actual result. Share only authorized material and omit credentials.
+
 ## Feedback and development
 
 Report the host, loaded version, input, expected result and observed problem. Include an image only when you have permission to share it. Distinguish missing tools from unreadable stories, altered products and oversized figures; do not include secrets.
