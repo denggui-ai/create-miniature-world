@@ -1,124 +1,39 @@
-# 素材与授权范围
+# 素材来源与许可
 
-## 2026-10-08：公开实验教程与案例
+本页说明仓库中图片与第三方名称的来源、许可和用途。[MIT 许可证](LICENSE) 只覆盖本项目自行编写的代码和文档，**不覆盖下列图片**，也不覆盖链接指向的作品、照片和品牌标识。本项目没有为任何图片提供额外的商用、修改或再分发许可。权利人如有异议，请通过仓库 Issue 联系，确认后移除。
 
-用户已明确批准将本轮教程、三张案例图片和排版修改正常推送到 denggui-ai/create-miniature-world 的 main 分支，并更新既有公开 GitHub Pages；实际部署结果以对应提交与 Pages 运行为准。抽纸与铅笔桥已获案例层面的认可；公开展示授权不等于额外复用授权。图片不纳入 MIT，不提供额外商用、修改或再分发许可；实际输入、生成工具及具体用途仍需分别核对。
+## 第三方照片
 
-| 文件 | 实际输入与来源 | 已知边界 |
-| --- | --- | --- |
-| `examples/tissue-ski-20261008.png` | 2026-10-08 内置图像工具生成，1 初图、0 修正；实际使用[维达 VS2102 官方商品参考](https://professional.vinda.com/product/VS2102.html)，由助手选取，未核实为实拍 | 用户认可作为案例；纸张摆放改变、纸纹偏粗，抽口连接与细小文字未全部核实。官方商品原图不随本次更新收录；参考及生成图的额外复用用途未核清 |
-| `examples/notebook-pencil-bridge-20261008.png` | 2026-10-08 内置图像工具生成，1 初图、0 重做；仅物品名称和文字方案，无商品图或人偶实物图输入 | 用户认可二创成功；不是指定 SKU 保真测试，未核查全部类似先例。不提供额外复用授权 |
-
-两张成图原字节保存，SHA-256 分别为 `7efc3711177f596c79ca1e44b5311982cb016e1c3c1456ed9c5c3f90df84d72c`（抽纸）、`73e2de1a65f7e85fe252c61a4e75608909224187abd2f7e278e0609323933830`（铅笔桥）。实际提示保存在 `examples/prompts/`，用于说明执行要求，不是用户必须填写的作业，也不证明全部提示已实现。
-
-作品解读保留[田中达也《Tape Runner》官方页面](https://miniature-calendar.com/240821)来源，正文是本项目对可见画面的分析，不冒充作者自述。用户于2026-10-08明确要求将已认可的 AI 学习复刻图加入本地教程主图：`examples/tape-runner-learning-replica-20261008.png`，1254×1254，1初图、0修正，原字节复制，SHA-256 `d6cba7eac3792954ef1877be067d0fa9d139493188df551312c66659f17222a9`。图中明确区分“AI学习复刻”与“田中达也原作”；它不代表本项目独立创意，也不认证精确Preiser或全部商品保真。随后用户明确批准将本轮教程及案例图片纳入上述公开实验更新。用户的发布确认不补齐第三方权利证明，也不授予额外复用许可。田中原作、官方商品原图、私人HTML及对话截图继续只在忽略的本机审阅目录，不随本次更新收录。
-
-状态更新（2026-10-06）：用户已明确确认公开现有仓库与GitHub Pages。下文「本轮仅私有同步」等为历史收录阶段，不再描述当前可见性。公开操作不改变图片许可范围，也不补齐缺失的历史输入；MIT仍仅覆盖有权许可的代码与自编文档。
-
-## 包内素材
-
-`examples/clothespin-public-domain.jpg`：Eloquence，2004，原文件名 Clothespin.jpg。
-
-- 来源：https://commons.wikimedia.org/wiki/File:Clothespin.jpg
-- 原图：https://upload.wikimedia.org/wikipedia/commons/0/0e/Clothespin.jpg
-- 来源页标明由作者释入公有领域（Public domain）；2026-10-05已核对。
-- 本包原字节复制，仅重命名，未改图。它不是本项目原创，也不是已确认品牌型号的商品图。
-- 此照片不通过本项目MIT重新授予或限制权利。
-
-`skills/create-miniature-world/assets/figure-refs/` 三张：项目作者 denggui-ai 自己拍摄的 1:87（HO）手工涂装塑料模型人偶实物，2026-10-13 收录；已转正、去除元数据、缩小人偶并补纸面。不含包装、logo、条码或量尺。
-
-- 署名：1:87 (HO) hand-painted plastic model figures. Photos by denggui-ai (project author).
-- 许可：仅这三张照片采用 CC BY-NC 4.0，不适用 MIT；不授予照片中人偶造型的任何权利。
-- 风险说明：照片中的人偶造型可能受权利保护；照片不含任何品牌标识。权利人提出异议时，经仓库 Issue 联系即移除。
-
-## 当前未附带的素材与后续收录
-
-历史私人试验用过 Preiser 官方人偶照片、田中达也作品原图及相应AI学习复刻；公开包不携带这些文件。现有原文件未因本次打包被删除。参考文档保留官方作品页及目录来源，公开可访问不等于本项目获得再分发或训练授权。
-
-2026-10-05曾在私有开发阶段恢复六组历史案例及AI人偶诊断图，见 examples/CASES.md 和 examples/FIGURE_REFERENCES.md。现已随仓库公开；除已匹配记录外，部分完整参考输入仍未知，因此不将这些图片自动归入MIT或宣称全部已适合公开分发。公开展示不能代替按实际输入和用途逐项核对；当前缺口与复用状态见下方逐文件清单。独立策划的AI成图、作者原作与学习复刻分别标记；不能仅因使用AI生成，就推定实际输入及输出的全部用途均获许可。文档中的认可与失败状态是项目历史记录摘要，不能替代读者自己的视觉验收。
-
-人偶实物公开销售不等于厂商或商家的产品照片可自由再分发。自摄或已获相应用途许可的参考图可以收录；其他图片按来源条款和具体用途判断，不作一律禁用。私有仓库与公开发布分开处理，私有可见性本身不产生素材授权。精选图片需单独注明来源和使用条件，不自动归入项目MIT许可证。
-
-Preiser官网Impressum的Urheberrecht段说明：下载与复制仅允许私人、非商业用途；超出著作权法允许范围的复制、改编、传播与利用，需要相应作者或制作者的书面同意。因此品牌推荐、署名和目录可下载本身，不等于获得将官方照片随Skill公开分发的许可。可保留官网链接、产品信息及自己的观察；本轮未取得额外图片分发授权。来源：https://www.preiserfiguren.de/showpage.php?Impressum&SiteID=26 （2026-10-05核对）。
-
-本地用户另行添加的产品图和人偶照片不属于公开源代码；请按各自权利条件使用，不将其自动提交到仓库。生成结果的使用条件另按实际输入、工具和用途判断。
-
-## 名称与研究来源
-
-本项目致敬田中达也的见立创作，并将MINIATURE CALENDAR明确列为创作启发。田中达也及Preiser名称用于说明研究来源或造型目标，不代表官方产品、合作或背书。方法研究是对可见作品关系的分析，不是作者本人公开确认的完整创作过程。致敬和署名不替代图片许可。
-
-田中达也官网ABOUT的Notice允许为介绍作者与MINIATURE CALENDAR而在文章中引用图片，要求署名，禁止图片热链，并限制其他未经授权的再分发与二次使用。研究介绍中的引用与把图片作为可安装Skill素材分发是不同用途，不能直接推定后一用途获准。来源：https://miniature-calendar.com/about/ （2026-10-05核对）。
-
-官方来源索引见 `skills/create-miniature-world/references/creative-relations.md`。MIT仅覆盖本项目有权许可的自行编写内容，不覆盖这些链接指向的作品、照片和品牌标识。
-
-## 本次新增图片的具体来源
-
-- `examples/paperclip-pd-scan.jpeg`：Hephaestos，来源 https://commons.wikimedia.org/wiki/File:Paperclip.jpeg 。2026-10-04历史sources.json记录PD-user公有领域；2026-10-05本地审计重新打开来源页，仍标明作者释入公有领域。文件从试验档案原字节恢复。它不是项目原创，不通过MIT重新许可。
-- 九张PNG均为项目历史AI输出，原名与校验值见CASES.md；生成方式标记不等于完整输入与所有用途已核清。其中 `ai-figure-diagnostic.png` 不是官方Preiser产品照片。
-- 木梳关联输入为用户提供的商品页面截图；本轮实际看过但没有把整张页面截图打包，商家摄影、品牌标识及网页内容的权利不由本项目授予。
-- 本批不含田中达也原作和Preiser官方人偶照片。未确定对应关系的作者复刻不作为“本项目独立成功案例”补入。
-
-## 产品代表图增补（2026-10-05）
-
-新增选图与历史原件SHA-256逐一匹配，映射见examples/SELECTED.md。18组主案例和G45详情补充均是本项目历史AI输出；保留部分完整输入、实物人偶参考及公开用途仍待核实的边界，不自动用MIT许可这些图片。此为2026-10-05公开前的选图收录记录；当时仅同步私有仓库，后续已公开，未发布正式 Release。
-
-## 公开图片逐文件清单（2026-10-06发布稿）
-
-覆盖原30张公开图片与本次批准新增的1张纸胶带v2，共31张发布候选图片，首页所用资产列在前五行。原30张文件已在公开仓库展示，新增纸胶带v2已获采用授权，并随`0c6f84e`发布。文件公开可访问只说明已展示；不等于本项目能够授权商业使用、修改或再分发。表中「未提供额外复用授权」记录项目目前未授予的范围，不替代适用法律或原权利人的授权。AI 输出标记不构成商用许可结论。未核清的证据继续保留待核，图片不因本次审计删除或替换。
-
-首页三案的优先缺口：木梳缺完整实际生成输入及商品截图权利链；笔记本缺对应调用和人偶参考用途授权；薯片缺完整输入与生成工具/用途记录。首屏及封面还依赖设计参考图，其原始出处与复用许可待核。下一次补证应对应具体文件，不用统一的「AI生成」说明覆盖这些差异。
-
-| 公开文件 | 已知来源 / 证据 | 当前许可状态 | 本项目是否提供图片复用授权 |
+| 文件 | 作者与来源 | 许可 | 用途 |
 | --- | --- | --- | --- |
-| `site/hero-comb.png` | 项目 AI 展示适配；依据木梳案例与选定设计稿，见 [site/README.md](site/README.md) | 原案例及设计稿权利链未完整核清；不纳入 MIT | 未提供额外复用授权 |
-| `examples/comb-farm.png` | 项目历史 AI 输出 G23，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md)；商品页面截图仅为关联输入候选 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/notebook-bike-rack.png` | 项目历史 AI 输出 G30，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md)；历史方法记录提及成人实物参考，完整调用未恢复 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/potato-chip-harvest.png` | 项目历史 AI 输出 G68，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `site/cover.png` | 项目 AI 展示适配；依据木梳案例与选定设计稿，见 [site/README.md](site/README.md) | 原案例及设计稿权利链未完整核清；不纳入 MIT | 未提供额外复用授权 |
-| `docs/design-reference.png` | 用户选定的设计参考图，见 [开发交接历史](docs/DEVELOPMENT_HANDOFF_HISTORY.md)；原作者/原始出处未记录 | 作者、输入链与分发/复用许可待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/ai-figure-diagnostic.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md)；AI 人偶诊断，非官方实物照片 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/binder-clip-climbing.png` | 项目历史 AI 输出 G64，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/citrus-tea-loading.png` | 项目历史 AI 输出 G58，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/clear-tape-concert.png` | 项目历史 AI 输出 G54，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/clothespin-public-domain.jpg` | Eloquence，2004；[Commons 来源页](https://commons.wikimedia.org/wiki/File:Clothespin.jpg) | 来源页 Public domain；2026-10-05复核 | 依据原作者公有领域声明；非本项目再许可 |
-| `examples/correction-tape-cinema-alternative.png` | 项目历史 AI 输出 G45，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/correction-tape-hiking.png` | 项目历史 AI 输出 G52，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/glasses-roof-repair.png` | 项目历史 AI 输出 G05，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/glue-stick-summit.png` | 项目历史 AI 输出 G50，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/grater-climbing.png` | 项目历史 AI 输出 G15，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/mug-rain-shelter.png` | 项目历史 AI 输出 G19，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/notebook-bike-parking.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/packing-tape-road.png` | 项目历史 AI 输出 G12，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/paper-tape-road-roller-v2.png` | 2026-10-06纸胶带试验AI输出，一次修正v2；原名、尺寸与SHA-256见[SELECTED.md](examples/SELECTED.md)。参考造型非认证Preiser型号，精确1:87未验证；非官方实物照片 | 用户已批准本项目公开展示；不纳入MIT，不将参考照片许可外推至成图全部用途 | 未提供额外复用授权 |
-| `examples/paperclip-diving-before.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md)；公有领域回形针输入与试验1-2已配对，完整用途权利仍不能据此推定 | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/paperclip-paper-after.png` | 项目历史 AI 输出 G46，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/paperclip-pd-scan.jpeg` | Hephaestos，2004；[Commons 来源页](https://commons.wikimedia.org/wiki/File:Paperclip.jpeg) | 来源页 Public domain；2026-10-05复核 | 依据原作者公有领域声明；非本项目再许可 |
-| `examples/pencil-road.png` | 项目历史 AI 输出 G56，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/ruler-finish-line.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/scissors-rink-a.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/scissors-rink-b.png` | 项目历史 AI 输出，原名及 SHA-256 见 [CASES.md](examples/CASES.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/sponge-climbing.png` | 项目历史 AI 输出 G70，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/stapler-concert.png` | 项目历史 AI 输出 G65，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/tape-measure-jump.png` | 项目历史 AI 输出 G60，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
-| `examples/zipper-canal.png` | 项目历史 AI 输出 G69，原名及 SHA-256 见 [SELECTED.md](examples/SELECTED.md) | 完整输入与公开复用权利待核；不纳入 MIT | 未提供额外复用授权 |
+| `examples/clothespin-public-domain.jpg` | Eloquence，2004，[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Clothespin.jpg) | 公有领域（作者释出） | 本机验收与木夹教程的商品输入 |
+| `examples/paperclip-pd-scan.jpeg` | Hephaestos，[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Paperclip.jpeg) | 公有领域（作者释出） | 回形针试验的商品输入 |
+| `examples/grater-reference-20261013.jpg` | Ben Dalton / noii，2009，[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Grater_(3792844780).jpg) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)，署名“Grater — Ben Dalton / noii, CC BY 2.0, via Wikimedia Commons” | 刨丝器真实参考验证的商品输入 |
 
-上述发布稿仅纳入用户明确批准采用的纸胶带v2，其他本机验证图与纸胶带对照保存在被忽略的outputs；下方纸杯图另列为获用户批准公开的教程示例。该发布稿只收录v2成图，不附带第三方参考照片；公开采用不等于额外商用或再分发承诺。轻量实验安装包不含任何图片，案例仅提供在线浏览链接。
+以上照片原样收录，仅重命名；本项目不对其重新授权或附加限制。
+
+## 项目作者拍摄的照片
+
+| 文件 | 说明 | 许可 |
+| --- | --- | --- |
+| `skills/create-miniature-world/assets/figure-refs/` 三张 | 项目作者 denggui-ai 拍摄的 1:87（HO）手工涂装塑料人偶，已去除元数据，不含包装、logo、条码 | 仅这三张照片采用 CC BY-NC 4.0，署名“1:87 (HO) hand-painted plastic model figures. Photos by denggui-ai (project author).”；不授予人偶造型本身的任何权利 |
+| `examples/remote-reference-20261014.jpg` | 遥控器实拍原照，已无损转正并移除 EXIF | 未附加许可，仅供本项目展示 |
+| `examples/orange-reference-20261015.jpg` | 橘子实拍原照，无 EXIF、GPS | 未附加许可，仅供本项目展示 |
+
+## AI 生成的示例图
+
+`examples/` 下其余 PNG，以及 `site/hero-comb.png`、`site/cover.png` 和 `site/img/` 下的压缩版，都是本项目用 AI 图像工具生成或编辑的输出。逐文件的输入、尺寸和 SHA-256 见 [examples/SELECTED.md](examples/SELECTED.md)、[examples/CASES.md](examples/CASES.md) 和各教程页。
+
+- 这些图片不纳入 MIT，仅供本项目展示和教学，不提供额外复用许可。
+- 生成时用到的输入分三类：只有物品名称或文字；上面列出的第三方或作者照片；以及少量网上公开的官方商品页或人偶厂商照片。最后一类只作为生成参考，**原图不随仓库分发**。
+- 成图不是官方商品照片或人偶厂商照片，不代表任何品牌或厂商的合作、背书或真品证明，也不保证商品外观、型号或 1:87 比例精确。
+- AI 生成的文字、刻度和标识可能有错，见各案例说明。
 
 <a id="paper-cup-tutorial-source"></a>
 
-## 教程图片（2026-10-06）
+### 纸杯教程（2026-10-06）
 
-以下3张为用户于2026-10-06批准公开的教程图片，与上方31张合计34张公开资产，不加入18图精选。用户曾因A的入口联想更直接而倾向A，随后指出封底歧义仍在；A结构逻辑未达标，三图均保留为有问题的教学对照，不判成功。公开展示授权不代表SKU保真、精确比例或额外商用许可。
-
-三案从普通物品名称出发，没有商品参考图；每案生成一次、没有修图，均为1086×1448。本轮从各自原Library条目取回并实际看图，按原字节复制；原文件名与下表相同。原Library身份和取回记录只保留在本机忽略目录。[纸杯入门教程](docs/QUICK_START.md)记录文字预选、成图比较与推荐理由。
-
-| 教程文件 | 已知来源 / 可见限制 | 当前许可与采用状态 | 本项目是否提供图片复用授权 |
-| --- | --- | --- | --- |
-| `examples/paper-cup-train-depot-20261006.png` | A纸杯隧道口／列车出洞联想，2026-10-06 AI输出。原提示用“tunnel”且保留封底，曾收窄称车库；入口联想仍让人怀疑杯底是否挖空，改名不消除歧义，结构逻辑未达标。未修图，杯口下缘连接被遮挡 | 已批准公开作教学对照，非成功验收；非SKU或比例验收；不纳入MIT | 未提供额外复用授权 |
-| `examples/paper-cup-circus-20261006.png` | B马戏帐篷，2026-10-06 AI输出。入场动作可读；切门、布帘与旗帜为新增，亦可读成剧场入口 | 已批准公开作教学对照；未记录单独质量认可或SKU保真；不纳入MIT | 未提供额外复用授权 |
-| `examples/paper-cup-theatre-20261006.png` | C音乐厅，2026-10-06 AI输出。木阶梯座席、舞台重构杯内空间，纸杯偏容器；不据此断言杯壁被切坏，部分脚部支撑不清 | 已批准公开作教学对照；新增内装偏离最新“小人国”方向，非成功验收；非SKU或比例验收；不纳入MIT | 未提供额外复用授权 |
-
-SHA-256：
+`examples/paper-cup-train-depot-20261006.png`、`paper-cup-circus-20261006.png`、`paper-cup-theatre-20261006.png`：只凭“纸杯”名称生成，无商品参考图，每案一次、未修图，1086×1448。三张均作为有问题的教学对照，不是成功验收。说明见[纸杯入门教程](docs/QUICK_START.md)。
 
 ```text
 8450a47d77eb51f969e898e212205eb2e468c7c5cb624f38d6b2566ddb539060  examples/paper-cup-train-depot-20261006.png
@@ -128,20 +43,9 @@ f423079d57dbb74861e61b27565e7ea37d798a9b37e8f7440bcac26c6c43d5f1  examples/paper
 
 <a id="soap-skating-tutorial-source"></a>
 
-## 香皂教程图片（2026-10-06实验更新）
+### 香皂教程（2026-10-06）
 
-用户已批准本轮实验更新采用以下两张AI生成图，保留初稿与一次编辑，不加入18图精选。此前34张资产加本轮两张共36张；实际部署结果以GitHub提交与Pages运行为准。
-
-商品参考来源：[Pears with Glycerin & Mint Extracts Bar Soap 3.53oz 官方产品页](https://www.pearspuresince1807.com/us/en/p/pears-pure-gentle-with-glycerin-mint-extracts-extracts-bar-soap-3-53oz.html/00850022820427)。这里只保留来源链接与自有观察，不附官方产品照片；成图不是官方商品照片，不代表Pears或Preiser合作、背书或真品证明。图片与品牌标识不纳入MIT，本项目未提供额外商业使用或再分发授权。生成后的研究才发现田中达也《[Soap Skating](https://miniature-calendar.com/200911)》（2020-09-11）这一同类先例，未将其作为当时生成输入，也不主张香皂滑冰机制为本项目独创。
-
-| 教程文件 | 来源与实际结果 | 当前状态 |
-| --- | --- | --- |
-| `examples/pears-soap-skating-v1-20261006.png` | 2026-10-06真实商品参考试验的AI初稿；用户认可“湿滑→双人滑冰”方向 | 已批准本项目公开作教程对照；非严格SKU或比例验收 |
-| `examples/pears-soap-skating-v2-20261006.png` | 同一试验的一次编辑；人偶缩小、牵手滑行保留，轮廓与机位校正未明显命中 | 已批准本项目公开作教程对照；编辑部分命中，严格保真不判通过 |
-
-两图均为1086×1448，从本机归档按原字节复制。已逐张查看；视角不同且缺实物厚度，不据此量化厚度变化。完整内部文件身份保留在本机私有记录。[教程说明](docs/QUICK_START.md)将创意反馈与保真限制分开。
-
-SHA-256：
+`examples/pears-soap-skating-v1-20261006.png`（初稿）与 `-v2-`（一次编辑）：生成参考为 [Pears 官方产品页](https://www.pearspuresince1807.com/us/en/p/pears-pure-gentle-with-glycerin-mint-extracts-extracts-bar-soap-3-53oz.html/00850022820427)，官方照片不随仓库分发。生成后才发现田中达也《[Soap Skating](https://miniature-calendar.com/200911)》是同类先例，本项目不主张该机制为独创。
 
 ```text
 798346189faaf83ebf183ef1decb09f8fcb5f7d8e52c72805f7f5202cf2bc2bb  examples/pears-soap-skating-v1-20261006.png
@@ -150,85 +54,48 @@ a7c88da784f0c8cddbd31d7dd886f56f9debad7449cbdcfebc0c4c7b6062b403  examples/pears
 
 <a id="sticky-roller-tutorial-source"></a>
 
-## 粘毛滚筒教程图片（2026-10-06教学边界更新）
+### 粘毛滚筒教程（2026-10-06）
 
-用户已批准以下两张AI生成／编辑图在本项目公开作教学对照与能力边界说明，保留商品识别受质疑及比例失真的结论，不加入18图精选；实际部署结果以对应GitHub提交与Pages运行为准。商品参考为[MUJI Lint Roller for Clothes官方产品页](https://www.muji.us/collections/cleaning-tools/products/lint-roller-ma0dpa1a)，SKU 4550344831762；初稿另用了既有人偶参考，私有记录标为Preiser 10754，本轮未独立核验其外部来源或型号。官方商品照片、人偶照片、截图及私有研究资料均不随本次更新公开，生成图不代表品牌合作、背书或真品证明，不纳入MIT或额外商业使用／再分发授权。
-
-| 教程文件 | 来源与实际结果 | 当前状态 |
-| --- | --- | --- |
-| `examples/muji-sticky-roller-v1-20261006.png` | 2026-10-06商品参考试验的AI初稿；用户认可创意直观，指出人偶偏大 | 已批准公开作教学对照；创意获认可、识别待验、SKU比例未过 |
-| `examples/muji-sticky-roller-v2-20261006.png` | 以v1为输入的一次AI缩人编辑；两人缩小、动作接触保留，用户正向反馈 | 已批准公开作教学对照；缩人获认可，识别待验、SKU比例未过；不证明单目标更优 |
-
-两图均1086×1448，已实际对照查看，从私有归档原字节复制；共1初稿＋1编辑，不宣称独创。SHA-256：
+`examples/muji-sticky-roller-v1-20261006.png`（初稿）与 `-v2-`（一次缩人编辑）：生成参考为 [MUJI Lint Roller 官方产品页](https://www.muji.us/collections/cleaning-tools/products/lint-roller-ma0dpa1a)，并用了人偶厂商照片作造型参考；两类参考原图都不随仓库分发。商品识别和比例未通过，作为能力边界对照。
 
 ```text
 8d635fe619a33ad515d648b2a6def8ca3e595a29b3e7f9abcab164c333758cf5  examples/muji-sticky-roller-v1-20261006.png
 0d3b81bd799b196babf477d1d4a1f45f3e76e59c1d479d163e75b7c64c0575ad  examples/muji-sticky-roller-v2-20261006.png
 ```
 
-## 木夹教程图片（2026-10-09）
+### 木夹教程（2026-10-09）
 
-用户已认可以下创意并要求写成教程条目。两张图由 Codex CLI 0.161.0 在本机通过内置 `image_gen.imagegen` 生成／编辑，实际输入为本仓库公有领域照片 `examples/clothespin-public-domain.jpg`（来源见上文）；无人偶实物参考，无品牌商品，不代表任何品牌合作或真品证明。创意认可不等于严格商品保真通过；下臂尖端、木纹与弹簧有重绘。图片不纳入 MIT，不提供额外商用、修改或再分发许可。
-
-| 教程文件 | 来源与实际结果 | 当前状态 |
-| --- | --- | --- |
-| `examples/clothespin-diving-v1-20261009.png` | 2026-10-09 自主选案初图，1 初图、0 重试；提示 224 词 | 用户认可创意；保真不判严格通过 |
-| `examples/clothespin-diving-v2-20261009.png` | 以 v1 与原照片为输入，按用户"人再小一半，其他都别动"做的唯一一次编辑，0 重试 | 用户认可；人物约缩至一半，其余基本保留，木纹略有重绘 |
-
-两图均 1086×1448，从 `outputs/` 原字节复制。SHA-256：
+`examples/clothespin-diving-v1-20261009.png`（初图）与 `-v2-`（按“人再小一半”的一次编辑）：输入为上方公有领域木夹照片，无品牌商品、无人偶照片。提示词见 `examples/prompts/`。
 
 ```text
 9061053f5fddb448320139ac7d59511795f1bee9a659ac932c9aeaff108bf6fa  examples/clothespin-diving-v1-20261009.png
 b8f6bddf2fbad05b89ee17bd7f691754ccc1c3b68c5c4cd7e33619a2f912070a  examples/clothespin-diving-v2-20261009.png
 ```
 
-实际提示保存在 `examples/prompts/clothespin-diving-v1-20261009.txt` 与 `clothespin-diving-v2-20261009.txt`。
-
 <a id="2026-10-12新测试案例"></a>
 
-## 2026-10-12 新测试案例
+### 2026-10-12 名称测试（8 张）
 
-8 张 2026-10-12 Codex 本机生图输出，用户判为可用并批准公开展示；原文件名、SHA-256 与已知不足见[SELECTED.md](examples/SELECTED.md#2026-10-12-新测试案例8-张)。都只凭物品名称或文字描述生成，没有商品输入图。眼镜与马克杯 4 张生成时传入 Preiser 官方产品照作为人偶造型参考：参考照片版权归原权利人，不公开、不随包发布；成图不是 Preiser 产品照片，也不认证具体型号或精确 1:87。创作方向在本地对照田中达也同类作品做过局部查重，避开已有的同物件同身份同片刻；作品灵感来源不构成合作或背书。
+眼镜、马克杯、订书机、卷尺 8 张，只凭物品名称或文字生成，无商品输入图。眼镜与马克杯 4 张用了人偶厂商官方照片作造型参考，原图不随仓库分发。逐文件说明见 [SELECTED.md](examples/SELECTED.md#2026-10-12-新测试案例8-张)。
 
-| 文件 | 来源 | 公开条件 | 再许可 |
-| --- | --- | --- | --- |
-| `examples/glasses-window-cleaner-20261012.png` | 2026-10-12 眼镜锚点小测 AI 输出，传入 Preiser 参考照 | 用户已批准本项目公开展示；不纳入 MIT | 未提供额外复用授权 |
-| `examples/mug-coffee-ring-track-20261012.png` | 2026-10-12 马克杯锚点小测 AI 输出，传入 Preiser 参考照 | 同上 | 未提供额外复用授权 |
-| `examples/mug-planter-20261012.png` | 2026-10-12 马克杯锚点小测 AI 输出，传入 Preiser 参考照 | 同上 | 未提供额外复用授权 |
-| `examples/mug-handle-photo-frame-20261012.png` | 2026-10-12 马克杯锚点小测 AI 输出，传入 Preiser 参考照 | 同上 | 未提供额外复用授权 |
-| `examples/stapler-crocodile-feeding-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
-| `examples/stapler-skate-slope-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
-| `examples/tape-measure-slide-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
-| `examples/tape-measure-cycleway-20261012.png` | 2026-10-12 Skill 实跑 AI 输出，仅文字 | 同上 | 未提供额外复用授权 |
+### 真实参考验证（2026-10-13 起）
 
-
-## 2026-10-13：真实刨丝器参考验收与正式发布
-
-以下5个文件经用户明确授权已公开并纳入v0.1.0正式Release；来源、输入及视觉认可与许可分别记录。真实输入、两案原图/后期、四维反馈与逐文件SHA见[刨丝器对照](examples/GRATER_VALIDATION_20261013.md)。
-
-- `examples/grater-reference-20261013.jpg`：Ben Dalton/noii，2009-08-05，[Commons Grater (3792844780).jpg](https://commons.wikimedia.org/wiki/File:Grater_(3792844780).jpg)，明确CC BY 2.0；实际为同照片官方960×1434版本，未作本机改图。署名“Grater — Ben Dalton / noii, CC BY 2.0, via Wikimedia Commons”，附[许可](https://creativecommons.org/licenses/by/2.0/)。
-- `examples/grater-tanaka-original-20261013.png`、`grater-real-light-original-20261013.png`：本项目内置工具实际AI生成，商品图及包内作者弯腰人偶照作为不同角色的输入，各一次无重试；不是官方产品照。
-- `examples/grater-tanaka-finish-20261013.png`、`grater-real-light-finish-20261013.png`：上述图经源码本机脚本另存，预设细颗粒、未叠加虚化；不是额外生图。
-
-用户已对照原照片和两案原图/后期，明确“四项都过关”。许可与视觉认可分开：商品照沿用CC BY 2.0；人偶照沿用CC BY-NC 4.0，且不授予人偶雕塑造型权利。生成及后期图不纳入MIT，本项目没有据此授予额外商业使用、修改或再分发授权。品牌/SKU未知，无品牌合作或精确型号保证；遮挡、孔口/纹理重绘等可见限制仍保留。
-
-
-## 2026-10-14：遥控器真实参考实测
-
-- `examples/remote-reference-20261014.jpg`：用户提供的真实商品照片，用户于2026-10-14明确授权在本项目公开，未取得作者署名或更广泛许可声明。由实际输入原件以jpegtran完整无损转正90°、移除EXIF/注释、保留ICC后公开；原件保留本机，公开与实际输入摘要分别记录。
-- `examples/remote-cooling-finish-20261014.png`、`remote-cycling-finish-20261014.png`：两次内置AI生成后另存的轻颗粒版，用户明确授权本项目公开。原始生成文件本机留存；不把后期版冒充未经处理的原生图。两次分别使用包内弯腰/骑车实拍人偶作涂装参考（denggui-ai，CC BY-NC 4.0）。
-- 三张图不自动采用MIT，不提供额外商用、修改或再分发许可，也不授予商标或人偶造型权利。可辨认不等于严格保真，新增屏幕图标、字形/键形重绘和接触问题保留；用户公开授权不等于四维质量通过。详见[实测记录](examples/REMOTE_CONTROL_TEST_20261014.md)。
-
+- 刨丝器：`examples/grater-*-original-20261013.png` 由 AI 生成，输入为上方 CC BY 2.0 刨丝器照片和包内人偶照片；`*-finish-*` 为本机脚本加颗粒的另存版。详见[刨丝器对照](examples/GRATER_VALIDATION_20261013.md)。
+- 遥控器：`examples/remote-*-finish-20261014.png`，输入为遥控器原照和包内人偶照片，详见[实测记录](examples/REMOTE_CONTROL_TEST_20261014.md)。
 
 <a id="2026-10-15橘子教程"></a>
 
-## 2026-10-15：橘子实拍与行星考察教程
+### 橘子教程（2026-10-15）
 
-用户明确同意公开本轮四张图片并同步教程到本项目公开展示站。公开范围只含下列原照与三张成图，不包含私人目录、原始运行日志或其他测试素材。
+`examples/orange-a-initial-20261015.png`、`orange-b-initial-20261015.png`（各一次生成）与 `orange-a-edited-20261015.png`（一次编辑）：输入为橘子原照和包内弯腰人偶照片。详见[教程](site/orange.html)。
 
-- `examples/orange-reference-20261015.jpg`：用户提供的日常实拍原照，未取得额外作者署名或更广泛许可声明。原件本机保留；公开副本已检查，无 EXIF、GPS、XMP 或注释，保留原像素和 ICC 色彩配置，未重新编码。
-- `examples/orange-a-initial-20261015.png`、`orange-b-initial-20261015.png`：本项目内置图像工具各1次初始生成，实际传入同一橘子原照及包内弯腰人偶实拍参考；0重试。原照中橘子由Skill选出，非用户一开始指定。
-- `examples/orange-a-edited-20261015.png`：以上A原图经用户批准仅1次编辑，同步缩小两个人偶与探测车，0重试、无本机后期；不是另一次文字新生图。用户评价“大小合适 故事清楚”，只覆盖人物大小与故事清晰度。
-- 人偶涂装参考为项目作者 denggui-ai 实拍，CC BY-NC 4.0，只提供模塑造型与涂装；不在本教程中另行收录该参考，也不认证生成雕塑型号。果皮局部、蒂痕邻域及阴影重绘、B人物偏大限制保留。
+## 名称与创作启发
 
-四张图片不自动采用MIT；本项目没有据此授予额外商用、修改或再分发许可，也不授予人偶雕塑造型或商标权利。教程认可和公开授权不等于商品严格保真、涂装、美感或全品类稳定性全部通过。详见[教程](site/orange.html)。
+本项目受田中达也（Tatsuya Tanaka）MINIATURE CALENDAR 的见立创作启发。田中达也、Preiser 及各商品品牌名称仅用于说明启发来源、造型参考或商品类别，不代表官方产品、合作或背书。方法说明是本项目对公开作品画面的分析，不是作者本人的创作自述。
+
+- 此前公开的 `examples/tape-runner-learning-replica-20261008.png`（参照田中达也《[Tape Runner](https://miniature-calendar.com/240821)》的 AI 学习复刻）已于 2026-10-17 出于对原作权利的审慎主动移除；本项目今后不公开对特定作品的复刻。[作品解读](docs/ARTWORK_INTERPRETATION.md)只做文字分析并链接原作。
+- 田中达也官网的 [ABOUT 页](https://miniature-calendar.com/about/) 允许为介绍作者而引用图片并要求署名，禁止热链和其他再分发；本仓库不收录田中原作图片，只链接官方页面。
+- Preiser 官网的 [Impressum](https://www.preiserfiguren.de/showpage.php?Impressum&SiteID=26) 规定其图片仅限私人、非商业用途；本仓库不收录 Preiser 官方照片。
+- 官方来源索引见 `skills/create-miniature-world/references/creative-relations.md`。
+
+你自己添加的商品图和人偶照片不属于本仓库内容，请按各自的权利条件使用。

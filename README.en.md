@@ -45,7 +45,7 @@ After loading, attach a product photo and ask. An object name also works. Your h
 | Codex | `Use $create-miniature-world with this product photo. Choose two distinct, viable concepts and generate one image for each.` |
 | Claude Code | `/create-miniature-world Use this product photo to develop two distinct, viable concepts. If image generation is unavailable, provide their prompts.` |
 
-With image tools, compare A/B images with a short title and one sentence connecting each idea to the object. Pick A or B, say neither works, or give direct feedback. A specified concept or a one-image request gets one image; if only one concept works, the skill does not invent a second. Editing comes after selection, with one shared edit budget per round. If neither works, diagnose first; start another direction only on an explicit request.
+**The following interaction describes current development source, not the v0.1.0 release. Public main still contains earlier rules; confirm the loaded version first.** With image tools, compare A/B images with a short title and one sentence connecting each idea to the object. Pick A or B, say neither works, or give direct feedback. A specified concept or a one-image request gets one image; if only one concept works, the skill does not invent a second. Editing comes after selection, with one shared edit budget per round. If neither works, diagnose first; start another direction only on an explicit request.
 
 For text first, add “Propose three concepts; do not generate yet.” For prompts only, say so. The tested Claude Code host has no built-in generation: take the prompts to an image tool you already use, then bring results back for review. Reading an image does not imply the generation tool can receive it. Check the actual capabilities of each new session.
 
@@ -98,7 +98,7 @@ This is an independent project, with no official affiliation or endorsement from
 
 Report the host, loaded version, input, expected result and observed problem. Include an image only when you have permission to share it. Distinguish missing tools from unreadable stories, altered products and oversized figures; do not include secrets.
 
-Maintainers start with the [handoff](docs/DEVELOPMENT_HANDOFF.md). Keep one source in `skills/create-miniature-world/`; update installed copies deliberately. The repository and invocation identifier remain `create-miniature-world`.
+Maintainers see [MAINTAINING.md](docs/MAINTAINING.md). Keep one source in `skills/create-miniature-world/`; update installed copies deliberately. The repository and invocation identifier remain `create-miniature-world`.
 
 <details>
 <summary>Historical presentation cover</summary>
