@@ -1,24 +1,14 @@
 # 微缩摄影 Skill · Miniature World
 
-![微缩摄影 Skill：日常物件，另有天地。](site/cover.png)
-
-*历史候选阶段展示封面，保留图内原始文字；当前版本为下方注明的v0.1.0正式版。*
-
 **让日常物件，成为有故事的小世界。**
 
 面向 Codex 与 Claude Code 的 **AI 微缩摄影与缩微场景创作 Skill**。受田中达也（Tatsuya Tanaka）的「见立 / mitate」创作启发，从日常物件的形状、纹理和结构出发，构思有故事的微缩世界，生成并迭代画面。自动成图需要所在环境提供相应图像工具；Codex/ChatGPT 内置生图已跑通，已测 Claude Code 环境没有内置生图，得到的是方案与提示词，出图需人工接力。
 
 [打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [纸杯入门教程](docs/QUICK_START.md) · [浏览案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
 
-> **v0.1.0 已正式发布** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)。2026-10-13 两张[真实刨丝器参考样张](examples/GRATER_VALIDATION_20261013.md)经用户确认商品外观、故事、人物尺度、美感四项通过。Codex参考图生成、指定编辑与保存有实际记录；2026-10-14项目安装更新及新Codex会话实际加载验证通过，11个运行文件与源码/正式包一致。Claude Code沿用安装与方案输出验收，本轮只核对安装文件，当前新拍法未重测。准确SKU、文字、微孔与跨商品稳定性仍不保证；新机安装及完整升级/卸载未验证。
-
-[离线用户指南](docs/USER-GUIDE.html) · [v0.1.0 发布稿与限制](docs/RELEASE_v0.1.0.md)
-
-**新增真实参考实测：** [遥控器原照 → 两张成图](examples/REMOTE_CONTROL_TEST_20261014.md) · [使用教程](site/remote-control.html) · [保真回归](docs/REMOTE_CONTROL_REGRESSION.md)。两张均为田中风格，保留新增图标、键形重绘与接触问题；严格细节保真未通过，公开授权不等于质量验收。
-
 ## 从一个物件，发现另一个世界
 
-首页保留木梳、笔记本与薯片的原展示，另补两张真实刨丝器参考验证及两种拍法对照。上方木梳封面为AI展示适配图，[原始木梳案例](examples/comb-farm.png)另存；下方两张为开发期间原始AI成图。画面展示创意方向，具体商品保真与已知不足见[案例详情](examples/SELECTED.md)。
+首页保留木梳、笔记本与薯片的原展示，另补两张真实刨丝器参考验证及两种拍法对照。历史木梳封面为AI展示适配图，[原始木梳案例](examples/comb-farm.png)另存；下方两张为开发期间原始AI成图。画面展示创意方向，具体商品保真与已知不足见[案例详情](examples/SELECTED.md)。
 
 | 笔记本 · 装订圈停车架 | 薯片 · 波纹秋收 |
 | --- | --- |
@@ -26,16 +16,6 @@
 | 装订圈成为停放自行车的结构。 | 金黄的波纹与碎屑，成为秋收的田垄与收获。 |
 
 [继续看回形针、马克杯、小青柑等案例 →](examples/README.md)
-
-## 从案例学习
-
-**先看二创实战：[纸巾雪坡、铅笔桥与木夹跳台](docs/SECONDARY_CREATION.md)。** 从熟悉材质、物件组合和物件姿态出发，看已有成图、实际输入、一句修改与反馈。用户提供目标、素材和反馈，策划与提示由 Skill 完成。
-
-[作品解读：胶带座为什么能成为跑步机？](docs/ARTWORK_INTERPRETATION.md) 解释田中达也 Tape Runner 的结构、动作与摄影关系。解读可以独立完成，复刻仅作可选辅助。
-
-以上教程收录于[案例与教程页](site/gallery.html)，作为公开实验教程；原作与官方商品参考仅保留来源链接，媒体范围见[素材说明](THIRD_PARTY_NOTICES.md)。
-
-> **维护状态（2026-10-16核对）：** 下列 A/B 交互已在本地源码对齐，Codex 与 Claude Code 两个项目安装副本的11个运行文件均与当前源码一致。公开 main（本次核查为03ce0d4）的运行文本尚未同步本地维护，正式 v0.1.0 包也未更新。上方“源码/正式包一致”是维护前的历史验证记录；安装一致不代表新版已公开或发布。详见[安装说明](docs/INSTALL.md)与[开发交接](docs/DEVELOPMENT_HANDOFF.md)。
 
 ## 开始使用
 
@@ -51,6 +31,16 @@
 有图像工具时，默认收到 A/B 两张初图，各有短标题和一句原物联想；选 A、选 B、都不喜欢或直接反馈即可。指定创意或只要一张时先出一张；只有一案成立不凑数。选中后有需要再编辑，本轮共享一次编辑预算。两案都不喜欢时先诊断，明确要求新方向后再生成。
 
 想先看文字，可加「先给三个方案，不要生图」；只要提示词也可直接说。已测 Claude Code 环境无内置生图，交付方案与提示词，可在你已有的图像工具生成后把结果带回评审。首次运行可用[本机验收](docs/LOCAL_TEST.md)分别确认读图、传参考图、生图、编辑和保存能力。
+
+## 从案例学习
+
+[橘子实拍 → 行星考察教程](site/orange.html)：比较两个创意，再用一次编辑缩小人物和车；保留初图、原照及已知不足。
+
+**先看二创实战：[纸巾雪坡、铅笔桥与木夹跳台](docs/SECONDARY_CREATION.md)。** 从熟悉材质、物件组合和物件姿态出发，看已有成图、实际输入、一句修改与反馈。用户提供目标、素材和反馈，策划与提示由 Skill 完成。
+
+[作品解读：胶带座为什么能成为跑步机？](docs/ARTWORK_INTERPRETATION.md) 解释田中达也 Tape Runner 的结构、动作与摄影关系。解读可以独立完成，复刻仅作可选辅助。
+
+以上教程收录于[案例与教程页](site/gallery.html)，作为公开实验教程；原作与官方商品参考仅保留来源链接，媒体范围见[素材说明](THIRD_PARTY_NOTICES.md)。
 
 ## 你可以怎样和它沟通
 
@@ -87,6 +77,16 @@
 
 我们要找的是：商品的某个特征被重新看见之后，才变得有意思的情境。故事可以只是一个生活片刻；不必演示商品用途，也不必安排冲突和结局。
 
+## 版本与验证记录
+
+> **v0.1.0 已正式发布** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)。2026-10-13 两张[真实刨丝器参考样张](examples/GRATER_VALIDATION_20261013.md)经用户确认商品外观、故事、人物尺度、美感四项通过。Codex参考图生成、指定编辑与保存有实际记录；2026-10-14项目安装更新及新Codex会话实际加载验证通过，11个运行文件与源码/正式包一致。Claude Code沿用安装与方案输出验收，本轮只核对安装文件，当前新拍法未重测。准确SKU、文字、微孔与跨商品稳定性仍不保证；新机安装及完整升级/卸载未验证。
+
+[离线用户指南](docs/USER-GUIDE.html) · [v0.1.0 发布稿与限制](docs/RELEASE_v0.1.0.md)
+
+**新增真实参考实测：** [遥控器原照 → 两张成图](examples/REMOTE_CONTROL_TEST_20261014.md) · [使用教程](site/remote-control.html) · [保真回归](docs/REMOTE_CONTROL_REGRESSION.md)。两张均为田中风格，保留新增图标、键形重绘与接触问题；严格细节保真未通过，公开授权不等于质量验收。
+
+> **维护状态（2026-10-16核对）：** 下列 A/B 交互已在本地源码对齐，Codex 与 Claude Code 两个项目安装副本的11个运行文件均与当前源码一致。公开 main（本次核查为03ce0d4）的运行文本尚未同步本地维护，正式 v0.1.0 包也未更新。上方“源码/正式包一致”是维护前的历史验证记录；安装一致不代表新版已公开或发布。详见[安装说明](docs/INSTALL.md)与[开发交接](docs/DEVELOPMENT_HANDOFF.md)。
+
 ## 适用条件与当前限制
 
 适合从可见的轮廓、纹理、结构或开合关系中寻找联想。商品照片优先；不能只按「文具」「食品」等品类保证成功，也不能为了故事凭空改变商品结构。
@@ -119,3 +119,12 @@
 | [发布说明](docs/PUBLISH.md) | v0.1.0已发布状态、历史决定与后续发布条件 |
 
 仓库与调用标识保持 `create-miniature-world`。核心只维护 `skills/create-miniature-world/` 一份源，安装目录是运行副本。
+
+<details>
+<summary>历史展示封面</summary>
+
+![微缩摄影 Skill：日常物件，另有天地。](site/cover.png)
+
+*历史候选阶段展示封面，保留图内原始文字；当前版本为下方注明的v0.1.0正式版。*
+
+</details>

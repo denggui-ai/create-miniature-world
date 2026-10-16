@@ -1,18 +1,10 @@
 # Miniature World · Miniature Photography Skill
 
-![Miniature World: everyday objects, unexpected stories.](site/cover.png)
-
-*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.0 release stated below.*
-
 **Turn everyday objects into small worlds with a story.**
 
-An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka (田中达也) and his mitate approach to miniature photography: seeing everyday objects as something else.
+An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka (田中达也) and his 見立 / 见立 / mitate approach to miniature photography: seeing everyday objects as something else.
 
 [View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [English installation and first-use guide](docs/GETTING_STARTED.en.md) · [case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
-
-> **v0.1.0 is released.** [Release and installation archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics on 2026-10-13. Codex reference generation, requested editing and saving have actual evidence. On 2026-10-14, both project installs matched all 11 runtime files in source and the release package, and a fresh Codex session explicitly loaded the installed skill. Claude Code retains its install/planning validation; its fresh session and new routes were not retested. Exact SKU details, text, microscopic patterns and cross-product consistency are not guaranteed. Fresh-host install and full upgrade/uninstall remain unverified. See the [sample comparison](examples/GRATER_VALIDATION_20261013.md) and [offline guide](docs/USER-GUIDE.html).
-
-New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Tanaka-inspired route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
 
 ## See the idea
 
@@ -21,8 +13,6 @@ New real-reference test: [a remote-control photo and two results](examples/REMOT
 | <img src="examples/notebook-bike-rack.png" width="300" alt="Notebook binding rings become a miniature bicycle rack"> | <img src="examples/potato-chip-harvest.png" width="300" alt="Golden potato chip ridges become a miniature harvest field"> |
 
 The homepage retains the comb, notebook and potato chip displays and adds two reviewed grater images made from the same real product reference. The comb cover is an AI layout adaptation; the [original comb image](examples/comb-farm.png) is retained separately. The two images above are original AI-generated development examples. The historical selection keeps one representative image per product group; the recent grater comparison shows two photo styles. Limitations and evidence are recorded in the [case collection](examples/SELECTED.md) (Chinese). They are not proof of local-host compatibility or exact product fidelity.
-
-> **Maintenance status checked on 2026-10-16:** the A/B flow below is implemented in local source. Both project installs match all 11 current runtime files. Public main (03ce0d4 when checked) still has the earlier runtime text, and the v0.1.0 archive has not been updated. The earlier source/package match is historical; matching local installs does not mean these maintenance changes have been published.
 
 ## Getting started
 
@@ -59,6 +49,10 @@ With image tools, compare A/B images with a short title and one sentence connect
 
 For text first, add “Propose three concepts; do not generate yet.” For prompts only, say so. The tested Claude Code host has no built-in generation: take the prompts to an image tool you already use, then bring results back for review. Reading an image does not imply the generation tool can receive it. Check the actual capabilities of each new session.
 
+## Learn from the tutorials
+
+Start with the [orange photo-to-scene tutorial](site/orange.html): two initial concepts, one edit to reduce the figures and rover, and the user’s feedback. Compare the source photo and results, including the remaining fidelity limits. The illustrated page is in Chinese; the [English first-use guide](docs/GETTING_STARTED.en.md#follow-the-examples) introduces the existing case tutorials.
+
 ## The method
 
 - **Find a connection:** notice a feature worth seeing differently.
@@ -80,6 +74,14 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 
 "Tanaka-inspired" names a bright tabletop look inspired by Tatsuya Tanaka's work; it is not his workflow and implies no endorsement. Ideas, figure appearance and product-fidelity rules are the same in both styles. When Python 3, Pillow and NumPy are available, the skill also saves a lightly finished copy (fine grain, optional gentle focus falloff) and delivers it with the original.
 
+## Version and validation
+
+> **v0.1.0 is released.** [Release and installation archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics on 2026-10-13. Codex reference generation, requested editing and saving have actual evidence. On 2026-10-14, both project installs matched all 11 runtime files in source and the release package, and a fresh Codex session explicitly loaded the installed skill. Claude Code retains its install/planning validation; its fresh session and new routes were not retested. Exact SKU details, text, microscopic patterns and cross-product consistency are not guaranteed. Fresh-host install and full upgrade/uninstall remain unverified. See the [sample comparison](examples/GRATER_VALIDATION_20261013.md) and [offline guide](docs/USER-GUIDE.html).
+
+New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Tanaka-inspired route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
+
+> **Maintenance status checked on 2026-10-16:** the A/B flow below is implemented in local source. Both project installs match all 11 current runtime files. Public main (03ce0d4 when checked) still has the earlier runtime text, and the v0.1.0 archive has not been updated. The earlier source/package match is historical; matching local installs does not mean these maintenance changes have been published.
+
 ## Requirements and limits
 
 Requires an image-reading host; generation, image references and editing each depend on tools actually available in that session. No model, credits, API keys or paid-service client are bundled. Each generated image is a separate opaque portrait image in a 3:4 ratio by default.
@@ -97,3 +99,12 @@ This is an independent project, with no official affiliation or endorsement from
 Report the host, loaded version, input, expected result and observed problem. Include an image only when you have permission to share it. Distinguish missing tools from unreadable stories, altered products and oversized figures; do not include secrets.
 
 Codex developers start with [AGENTS.md](AGENTS.md); Claude Code developers start with [CLAUDE.md](CLAUDE.md). Both use the same [handoff](docs/DEVELOPMENT_HANDOFF.md). Keep one source in `skills/create-miniature-world/`; update installed copies deliberately. The repository and invocation identifier remain `create-miniature-world`.
+
+<details>
+<summary>Historical presentation cover</summary>
+
+![Miniature World: everyday objects, unexpected stories.](site/cover.png)
+
+*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.0 release stated below.*
+
+</details>
