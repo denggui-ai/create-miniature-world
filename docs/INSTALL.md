@@ -1,10 +1,21 @@
 # 安装与更新
 
-仓库、Skill目录和调用标识统一为 `create-miniature-world`。项目展示名是「微缩摄影 Skill · Miniature World」；当前核心的界面配置仍显示「微缩造景」，是同一个Skill。以下沿用已核对的宿主入口；新环境的实际加载与图像能力需分别确认。
+仓库、Skill目录和调用标识统一为 `create-miniature-world`。项目展示名是「微缩摄影 Skill · Miniature World」；当前开发源码的界面配置显示「微缩摄影 Skill」，正式包仍显示「微缩造景」，是同一个Skill。以下沿用已核对的宿主入口；新环境的实际加载与图像能力需分别确认。
 
 当前版本为已正式发布的 **v0.1.0**，可从[Release页](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0)获取专用ZIP和SHA-256校验文件；先按[离线指南](USER-GUIDE.html#install)核验，再安装。2026-10-14本项目两安装副本的11个运行文件已与源码/正式包一致，新Codex会话实际加载并完成文字验证；Claude Code本轮只核对文件，方案输出沿用2026-10-09验收。另一台新机或其他宿主仍需分别确认实际加载与工具能力。
 
 v0.1.0安装范围为 `SKILL.md`、`agents/openai.yaml`、4份 `references/`、`assets/figure-refs/` 的说明及3张照片、`scripts/photo_finish.py`，共11个运行文件。专用包的 `skills/create-miniature-world/` 已按此范围整理；从开发源码安装时排除源侧 `evals/` 和 `CHANGELOG.md`。这些开发证据保留在源码，不复制到安装副本。
+
+> **维护状态（2026-10-16核对）：** 本地源码已修改 A/B 流程、比例判断、人偶与后期；两个项目安装副本各11个运行文件均与当前源码一致。公开 main 的运行文本与正式 v0.1.0 包仍是维护前版本。上段“源码/正式包一致”是此前验证记录。安装时先确认所选来源，不把本地源码、公开主干与正式包当成同一版本。
+
+| 对象 | 本次只读核对结果 |
+| --- | --- |
+| 本地源码 | 当前维护的唯一源 `skills/create-miniature-world/`。 |
+| 两个项目安装副本 | Codex 与 Claude Code 各11个运行文件与当前源码逐字节一致；本次未安装或启动新会话。 |
+| 公开 main | 本次核查提交为 `03ce0d4`；已核对的8个运行文本文件与 v0.1.0 标签一致，尚未包含本地 A/B 等维护修订。 |
+| 正式 v0.1.0 | 远端仍为正式非草稿发布。现有本地下载ZIP的 SHA-256 与远端附件摘要一致；其11个运行文件中7个与当前源码不同，保持发布时快照。 |
+
+[English installation and first-use guide](GETTING_STARTED.en.md)。本轮仅同步教程与文档，未同步Skill运行维护，也不更新Release。
 
 ## 获取项目
 
@@ -29,9 +40,9 @@ cd create-miniature-world
 
 上传的照片和生成提示会交给当前宿主及其图像工具处理；仅上传有权使用、可交给这些服务的内容。本介绍页本身不接收照片或执行生图。
 
-> 使用 $create-miniature-world，把这张商品图做成微缩摄影。先给三个有明显区别的创意，不要立即生图。
+> 使用 $create-miniature-world，把这张商品图做成微缩摄影，创意由你决定，给我两个不同且成立的创意各一张。
 
-支持技能选择的界面中，也可选择当前显示的「微缩造景」。
+支持技能选择的界面中，也可选择「微缩摄影 Skill」（正式包仍为「微缩造景」）。默认 A/B 各一张，指定创意先一张，只有一案成立不凑数；收到图后选一张或直接反馈，选后才编辑，整轮共享一次预算。两案都不喜欢时先诊断，明确要求新方向后再生成。加「先给三个方案，不要生图」可先看文字。
 
 ## Claude Code
 
@@ -44,10 +55,10 @@ cd create-miniature-world
 安装后上传商品照片，发送：
 
 ```text
-/create-miniature-world 把这张商品图做成微缩摄影。先给三个有明显区别的创意，不要立即生图。
+/create-miniature-world 把这张商品图做成微缩摄影，给我两个不同且成立的创意；没有生图工具就给对应提示词。
 ```
 
-普通Claude网页聊天上传文件，不等于完成Claude Code本机安装。
+已测 Claude Code 宿主没有内置生图，方案与提示词可在你已有的图像工具使用，再把成图带回评审；不自动接新服务。普通Claude网页聊天上传文件，不等于完成Claude Code本机安装。
 
 ## 确认安装成功
 

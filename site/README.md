@@ -14,6 +14,10 @@ v0.1.0正式Release已发布。首页和案例页同步当前状态、两张2026
 
 新增[遥控器图文教程](remote-control.html)：原照和两张后期After，经用户授权公开；均为田中风格，严格细节保真未通过。首页、案例页和指南增加教程入口，28张既有图库卡片保持原样，教程图片另计。没有新增生图或更换v0.1.0附件。无头Chromium在1280/375检查新教程、案例页、首页与指南，共8组合：图片、锚点、无横向溢出、教程导航及键盘/折叠检查通过，截图已查看；不是手机真机验收。详见[验证记录](../docs/VALIDATION.md)。
 
+## 2026-10-16：橘子真实过程教程
+
+新增[橘子教程](orange.html)，首页与案例页教程区增加入口；只引用本轮实拍原照、A/B初图和A编辑版四张素材，图库卡片数不增加。2次初始生成＋1次编辑、0重试；用户认可A编辑版人物大小与故事清晰度，保留果皮重绘和B人物偏大限制。教程获用户认可，四张素材及教程公开已另获授权；页面不新增外部依赖，运行Skill与安装不变。详见[当前规划](../docs/DEVELOPMENT_HANDOFF.md#项目规划唯一当前待办入口)。
+
 ## 在线查看
 
 [打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [浏览28张案例图](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。2026-10-05用户确认后，仓库已公开，GitHub Pages使用main分支根目录发布；根index.html跳转site/。

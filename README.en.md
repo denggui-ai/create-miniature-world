@@ -8,7 +8,7 @@
 
 An Agent Skill for Codex and Claude Code that finds visual connections in an object's shape, texture and structure, plans a miniature scene, and uses available image tools to generate and revise it. Inspired by Tatsuya Tanaka (田中达也) and his mitate approach to miniature photography: seeing everyday objects as something else.
 
-[View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [Installation](#getting-started) · [case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
+[View website](https://denggui-ai.github.io/create-miniature-world/site/) · [中文](README.md) · [English installation and first-use guide](docs/GETTING_STARTED.en.md) · [case gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [Case notes and sources](examples/SELECTED.md)
 
 > **v0.1.0 is released.** [Release and installation archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics on 2026-10-13. Codex reference generation, requested editing and saving have actual evidence. On 2026-10-14, both project installs matched all 11 runtime files in source and the release package, and a fresh Codex session explicitly loaded the installed skill. Claude Code retains its install/planning validation; its fresh session and new routes were not retested. Exact SKU details, text, microscopic patterns and cross-product consistency are not guaranteed. Fresh-host install and full upgrade/uninstall remain unverified. See the [sample comparison](examples/GRATER_VALIDATION_20261013.md) and [offline guide](docs/USER-GUIDE.html).
 
@@ -22,7 +22,11 @@ New real-reference test: [a remote-control photo and two results](examples/REMOT
 
 The homepage retains the comb, notebook and potato chip displays and adds two reviewed grater images made from the same real product reference. The comb cover is an AI layout adaptation; the [original comb image](examples/comb-farm.png) is retained separately. The two images above are original AI-generated development examples. The historical selection keeps one representative image per product group; the recent grater comparison shows two photo styles. Limitations and evidence are recorded in the [case collection](examples/SELECTED.md) (Chinese). They are not proof of local-host compatibility or exact product fidelity.
 
+> **Maintenance status checked on 2026-10-16:** the A/B flow below is implemented in local source. Both project installs match all 11 current runtime files. Public main (03ce0d4 when checked) still has the earlier runtime text, and the v0.1.0 archive has not been updated. The earlier source/package match is historical; matching local installs does not mean these maintenance changes have been published.
+
 ## Getting started
+
+Follow the [English guide](docs/GETTING_STARTED.en.md) for installation, your first request, feedback and case examples. It distinguishes the current development flow from the released snapshot.
 
 Clone this public repository, or download its ZIP from the Code menu; no repository access invitation is required. Open the project in your local host.
 
@@ -38,13 +42,22 @@ The only installable source directory is `skills/create-miniature-world/`. Check
 | Codex | `.agents/skills/create-miniature-world/` | `$create-miniature-world` |
 | Claude Code | `.claude/skills/create-miniature-world/` | `/create-miniature-world` |
 
-Use one installation scope and verify the actual loaded files in a fresh task. The current Codex display label is `微缩造景`. Installation and update details are in [docs/INSTALL.md](docs/INSTALL.md) (Chinese).
+Use one installation scope and verify the actual loaded files in a fresh task. The development source display label is `微缩摄影 Skill`; the released archive still uses `微缩造景`. Installation and update steps are in the [English guide](docs/GETTING_STARTED.en.md); dated source, install and release details remain in [docs/INSTALL.md](docs/INSTALL.md) (Chinese).
 
-Attach a product photo and ask. Your host and its image tool process the photo and prompt; upload only material you may share with those services. This project website does not receive photos or generate images.
+To install, ask your local host:
 
-> Turn this product into a miniature photograph. First propose three distinct concepts connected to its visible features. Do not generate an image yet.
+> Read docs/INSTALL.md. Install only the 11 runtime files from skills/create-miniature-world into the project-local directory for this host: .agents/skills/create-miniature-world for Codex, or .claude/skills/create-miniature-world for Claude Code. Exclude evals and CHANGELOG.md. If a directory or symlink already exists, compare and back it up before any replacement. Verify all copied SHA-256 values and confirm the actual loaded path in a fresh session. Report image reading, reference-image input, generation, editing and saving separately. Do not generate, install dependencies or connect a paid service during installation.
 
-Choose a concept, request one image, then give a specific revision such as “Make the figures smaller while keeping the product and composition.” Reading an image does not imply the generation tool can receive it. Without image tools, the skill can provide concepts and prompts only.
+After loading, attach a product photo and ask. An object name also works. Your host and its image tool process the photo and prompt; upload only material you may share with those services. This project website does not receive photos or generate images.
+
+| Host | First request |
+| --- | --- |
+| Codex | `Use $create-miniature-world with this product photo. Choose two distinct, viable concepts and generate one image for each.` |
+| Claude Code | `/create-miniature-world Use this product photo to develop two distinct, viable concepts. If image generation is unavailable, provide their prompts.` |
+
+With image tools, compare A/B images with a short title and one sentence connecting each idea to the object. Pick A or B, say neither works, or give direct feedback. A specified concept or a one-image request gets one image; if only one concept works, the skill does not invent a second. Editing comes after selection, with one shared edit budget per round. If neither works, diagnose first; start another direction only on an explicit request.
+
+For text first, add “Propose three concepts; do not generate yet.” For prompts only, say so. The tested Claude Code host has no built-in generation: take the prompts to an image tool you already use, then bring results back for review. Reading an image does not imply the generation tool can receive it. Check the actual capabilities of each new session.
 
 ## The method
 
@@ -69,7 +82,7 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 
 ## Requirements and limits
 
-Requires an image-reading host; generation, image references and editing each depend on tools actually available in that session. No model, credits, API keys or paid-service client are bundled. The default output is one opaque portrait image in a 3:4 ratio.
+Requires an image-reading host; generation, image references and editing each depend on tools actually available in that session. No model, credits, API keys or paid-service client are bundled. Each generated image is a separate opaque portrait image in a 3:4 ratio by default.
 
 Product lettering, construction and figure scale can still be wrong. Exact SKU preservation and exact figurine matching are not guaranteed. Figures are sized in the frame (about 9% of the image height, tiny next to a giant object) rather than from product millimetres; this is not a universal scale used by the artist or Preiser. Three author-shot 1:87 figure photos ship as paint references ([notes and license](skills/create-miniature-world/assets/figure-refs/README.md), CC BY-NC 4.0). See [validation](docs/VALIDATION.md) and the [local test](docs/LOCAL_TEST.md) (Chinese).
 
