@@ -29,6 +29,10 @@
 - 成图不是官方商品照片或人偶厂商照片，不代表任何品牌或厂商的合作、背书或真品证明，也不保证商品外观、型号或 1:87 比例精确。
 - AI 生成的文字、刻度和标识可能有错，见各案例说明。
 
+### 订书机与粘毛器修正版（2026-10-17）
+
+`examples/stapler-crocodile-feeding-smaller-20261017.png` 与 `examples/lint-roller-smaller-20261017.png` 分别以 `examples/stapler-crocodile-feeding-20261012.png`、`examples/muji-sticky-roller-v1-20261006.png` 为唯一输入，各做一次内置AI编辑。未新增商品实拍、人偶照片或其他外部素材；订书机网站展示采用同名WebP压缩副本。用户统一认可并同意公开，两张旧图均保留。输入类别、剩余限制与摘要见[修正对照](examples/SELECTED.md#2026-10-17订书机与粘毛器人偶缩小修正)，粘毛器原始生成来源仍见下方历史记录。沿用本节AI示例图用途与许可，不归入MIT，不增加复用许可。
+
 ### 杯柄相框修正版（2026-10-17）
 
 `examples/mug-handle-photo-frame-smaller-20261017.png` 是以既有AI成图 `examples/mug-handle-photo-frame-20261012.png` 为唯一输入的一次内置AI编辑结果，未新增商品实拍或人偶参考照片；网站使用同名WebP压缩副本。用户认可效果并同意公开修正版，旧图保留作对照。修改范围、实际反馈及剩余限制见[案例记录](examples/SELECTED.md#2026-10-17杯柄相框人偶缩小修正)。沿用本节AI示例图的用途和许可说明，不归入MIT或提供额外复用许可。
