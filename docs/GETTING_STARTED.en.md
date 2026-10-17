@@ -1,6 +1,6 @@
 # Miniature World: installation, first image and examples
 
-This guide covers public main and the v0.1.1 runtime: installation, a text-only first request, one selected image, feedback and examples. Unpublished A/B and figure-maintenance rules are not part of these instructions; the v0.1.1 archive contains only the public runtime.
+This guide covers public main and the v0.1.2 runtime: installation, a text-only first request, selected images, feedback and examples. The public and local source now share all 11 runtime files, including A/B, figure and finishing rules.
 
 ## Choose your source
 
@@ -11,7 +11,7 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.1](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.1). Verify the archive against its accompanying checksum before installing. Public main and v0.1.1 include the default image-count fix, Soft Studio naming and revised concept selection. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.2](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.2). Verify the archive against its accompanying checksum before installing. Public main and v0.1.2 include the A/B workflow, relative figure scale and appearance rules, and EXIF/ICC finishing fixes. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
 
@@ -30,7 +30,7 @@ Ask your local host:
 
 Choose one installation scope. If you explicitly need user-wide installation, the documented alternatives are `~/.agents/skills/create-miniature-world/` for Codex and `~/.claude/skills/create-miniature-world/` for Claude Code. An existing directory alone does not prove discovery. In the fresh session, first request three concepts without generation to confirm loading.
 
-Public main and the release archive use the Codex display label `微缩造景`. The project title is Miniature Photography Skill; the directory and invocation identifier remain `create-miniature-world`. If another label appears, verify the loaded path and version.
+Public main and the release archive use the Codex display label `微缩摄影 Skill`. The project title is Miniature Photography Skill; the directory and invocation identifier remain `create-miniature-world`. If another label appears, verify the loaded path and version.
 
 ## Make your first request
 
@@ -44,7 +44,7 @@ In Claude Code:
 
 With a product photo, the skill protects the visible product appearance by default. With only an ordinary object name, it uses free creation and does not promise to reproduce a particular product. State any features that must remain unchanged. Photos and prompts are processed by your host and its image tool; upload only material you may share with them. The project website displays examples and instructions.
 
-After selecting a concept, ask “Generate one image using concept 1; preserve the product.” Public main defaults to one image per recommended and runner-up concept; an explicit one-image request overrides that default. The unchanged v0.1.0 archive retains conflicting wording, so specify the count when using it. A/B selection and diagnosis changes in development are not promised by this guide.
+After selecting a concept, ask “Generate one image using concept 1; preserve the product.” Direct generation defaults to two valid, distinct concepts, one image each, labeled A/B. Produce one when only one concept works or a concept/count is specified. Show initial images before editing; the round shares at most one edit after selection. Diagnose “neither” feedback first; start a new round when a new direction is explicitly requested.
 
 For a text-only start:
 
