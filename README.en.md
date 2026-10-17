@@ -32,7 +32,7 @@ The only installable source directory is `skills/create-miniature-world/`. Check
 | Codex | `.agents/skills/create-miniature-world/` | `$create-miniature-world` |
 | Claude Code | `.claude/skills/create-miniature-world/` | `/create-miniature-world` |
 
-Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.1.0 use the display label `微缩造景`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
+Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.1.1 use the display label `微缩造景`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
 
 To install, ask your local host:
 
@@ -45,7 +45,7 @@ After loading, attach a product photo and ask. An object name also works. Your h
 | Codex | `Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 | Claude Code | `/create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 
-Public main contains the v0.1.0 runtime with the default image-count fix and Soft Studio naming update; the release archive is unchanged. Start with text-only concepts to confirm loading; this page does not promise the unpublished A/B selection and diagnosis flow. After choosing, ask “Generate one image using concept 1; preserve the product.” Request one focused edit after reviewing the result.
+Public main and v0.1.1 include the default image-count fix, Soft Studio naming and revised concept selection. Start with text-only concepts to confirm loading; this page does not promise the unpublished A/B selection and diagnosis flow. After choosing, ask “Generate one image using concept 1; preserve the product.” Request one focused edit after reviewing the result.
 
 Public main defaults to one image for each of the recommended and runner-up concepts. Explicitly request one image if that is all you want. The unchanged v0.1.0 archive retains conflicting wording, so specify the count when using it. For prompts only, say so. The tested Claude Code host has no built-in generation: use an image tool you already have and return results for review. Reading an image does not prove the generation tool can receive it.
 
@@ -76,11 +76,11 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 
 ## Version and validation
 
-> **v0.1.0 is released.** [Release and installation archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics on 2026-10-13. Codex reference generation, requested editing and saving have actual evidence. On 2026-10-14, both project installs matched all 11 runtime files in source and the release package, and a fresh Codex session explicitly loaded the installed skill. Claude Code retains its install/planning validation; its fresh session and new routes were not retested. Exact SKU details, text, microscopic patterns and cross-product consistency are not guaranteed. Fresh-host install remains unverified. On 2026-10-17, both project-local and default user-wide Codex install/upgrade/rollback/uninstall lifecycles passed on the same Mac in independent projects; the user-wide run used published rc2 and v0.1.0 only; Claude passed filesystem checks only. See the [dated validation](docs/VALIDATION.md). See the [sample comparison](examples/GRATER_VALIDATION_20261013.md) and [offline guide](docs/USER-GUIDE.html).
+> **v0.1.1 maintenance release.** [Release and installation archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.1). Static and package integrity checks cover this update; no new model, image or host-session tests were run. Historical evidence follows. Two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics on 2026-10-13. Codex reference generation, requested editing and saving have actual evidence. On 2026-10-14, both project installs matched all 11 runtime files in source and the release package, and a fresh Codex session explicitly loaded the installed skill. Claude Code retains its install/planning validation; its fresh session and new routes were not retested. Exact SKU details, text, microscopic patterns and cross-product consistency are not guaranteed. Fresh-host install remains unverified. On 2026-10-17, both project-local and default user-wide Codex install/upgrade/rollback/uninstall lifecycles passed on the same Mac in independent projects; the user-wide run used published rc2 and v0.1.0 only; Claude passed filesystem checks only. See the [dated validation](docs/VALIDATION.md). See the [sample comparison](examples/GRATER_VALIDATION_20261013.md) and [offline guide](docs/USER-GUIDE.html).
 
 New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Soft Studio route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
 
-> **Version scope:** these first-use instructions cover public main and v0.1.0. Development A/B and figure-maintenance changes are not included in this documentation update; see the [installation guide](docs/INSTALL.md).
+> **Version scope:** these first-use instructions cover public main and v0.1.1. Development A/B and figure-maintenance changes are not included in v0.1.1; see the [installation guide](docs/INSTALL.md).
 
 ## Requirements and limits
 
@@ -113,6 +113,6 @@ Maintainers see [MAINTAINING.md](docs/MAINTAINING.md). Keep one source in `skill
 
 ![Miniature World: everyday objects, unexpected stories.](site/cover.png)
 
-*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.0 release stated below.*
+*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.1 release stated above.*
 
 </details>

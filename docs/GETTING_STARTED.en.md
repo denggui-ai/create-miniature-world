@@ -1,6 +1,6 @@
 # Miniature World: installation, first image and examples
 
-This guide covers public main and the v0.1.0 runtime: installation, a text-only first request, one selected image, feedback and examples. Unpublished A/B and figure-maintenance rules are not part of these instructions; the release archive remains unchanged.
+This guide covers public main and the v0.1.1 runtime: installation, a text-only first request, one selected image, feedback and examples. Unpublished A/B and figure-maintenance rules are not part of these instructions; the v0.1.1 archive contains only the public runtime.
 
 ## Choose your source
 
@@ -11,7 +11,7 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Verify the archive against its accompanying checksum before installing. Public main includes the default image-count fix and Soft Studio naming update in the v0.1.0 runtime; the release archive is unchanged. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.1](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.1). Verify the archive against its accompanying checksum before installing. Public main and v0.1.1 include the default image-count fix, Soft Studio naming and revised concept selection. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
 
