@@ -11,7 +11,7 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Verify the archive against its accompanying checksum before installing. Public main currently uses the same runtime files as v0.1.0; documentation and tutorials can change independently. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Verify the archive against its accompanying checksum before installing. Public main corrects only the default image-count contradiction in the v0.1.0 runtime; the release archive is unchanged. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
 
@@ -44,7 +44,7 @@ In Claude Code:
 
 With a product photo, the skill protects the visible product appearance by default. With only an ordinary object name, it uses free creation and does not promise to reproduce a particular product. State any features that must remain unchanged. Photos and prompts are processed by your host and its image tool; upload only material you may share with them. The project website displays examples and instructions.
 
-After selecting a concept, ask “Generate one image using concept 1; preserve the product.” The published runtime has conflicting default image counts, so state the count explicitly. A/B selection and diagnosis changes in development are not promised by this guide.
+After selecting a concept, ask “Generate one image using concept 1; preserve the product.” Public main defaults to one image per recommended and runner-up concept; an explicit one-image request overrides that default. The unchanged v0.1.0 archive retains conflicting wording, so specify the count when using it. A/B selection and diagnosis changes in development are not promised by this guide.
 
 For a text-only start:
 

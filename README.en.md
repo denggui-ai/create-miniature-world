@@ -45,9 +45,9 @@ After loading, attach a product photo and ask. An object name also works. Your h
 | Codex | `Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 | Claude Code | `/create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 
-Public main and v0.1.0 contain the published runtime files. Start with text-only concepts to confirm loading; this page does not promise the unpublished A/B selection and diagnosis flow. After choosing, ask “Generate one image using concept 1; preserve the product.” Request one focused edit after reviewing the result.
+Public main contains the v0.1.0 runtime with only the default image-count contradiction corrected; the release archive is unchanged. Start with text-only concepts to confirm loading; this page does not promise the unpublished A/B selection and diagnosis flow. After choosing, ask “Generate one image using concept 1; preserve the product.” Request one focused edit after reviewing the result.
 
-The published runtime still has conflicting default image counts, so explicitly request one image when ready. For prompts only, say so. The tested Claude Code host has no built-in generation: use an image tool you already have and return results for review. Reading an image does not prove the generation tool can receive it.
+Public main defaults to one image for each of the recommended and runner-up concepts. Explicitly request one image if that is all you want. The unchanged v0.1.0 archive retains conflicting wording, so specify the count when using it. For prompts only, say so. The tested Claude Code host has no built-in generation: use an image tool you already have and return results for review. Reading an image does not prove the generation tool can receive it.
 
 ## Learn from the tutorials
 
