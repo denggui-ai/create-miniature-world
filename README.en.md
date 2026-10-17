@@ -16,7 +16,7 @@ The homepage retains the comb, notebook and potato chip displays and adds two re
 
 ## Getting started
 
-Follow the [English guide](docs/GETTING_STARTED.en.md) for installation, your first request, feedback and case examples. It distinguishes the current development flow from the released snapshot.
+Follow the [English guide](docs/GETTING_STARTED.en.md) for the published version: installation, a text-only first request, one selected image and feedback.
 
 Clone this public repository, or download its ZIP from the Code menu; no repository access invitation is required. Open the project in your local host.
 
@@ -32,7 +32,7 @@ The only installable source directory is `skills/create-miniature-world/`. Check
 | Codex | `.agents/skills/create-miniature-world/` | `$create-miniature-world` |
 | Claude Code | `.claude/skills/create-miniature-world/` | `/create-miniature-world` |
 
-Use one installation scope and verify the actual loaded files in a fresh task. The development source display label is `微缩摄影 Skill`; the released archive still uses `微缩造景`. Installation and update steps are in the [English guide](docs/GETTING_STARTED.en.md); dated source, install and release details remain in [docs/INSTALL.md](docs/INSTALL.md) (Chinese).
+Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.1.0 use the display label `微缩造景`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
 
 To install, ask your local host:
 
@@ -42,12 +42,12 @@ After loading, attach a product photo and ask. An object name also works. Your h
 
 | Host | First request |
 | --- | --- |
-| Codex | `Use $create-miniature-world with this product photo. Choose two distinct, viable concepts and generate one image for each.` |
-| Claude Code | `/create-miniature-world Use this product photo to develop two distinct, viable concepts. If image generation is unavailable, provide their prompts.` |
+| Codex | `Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
+| Claude Code | `/create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 
-**The following interaction describes current development source, not the v0.1.0 release. Public main still contains earlier rules; confirm the loaded version first.** With image tools, compare A/B images with a short title and one sentence connecting each idea to the object. Pick A or B, say neither works, or give direct feedback. A specified concept or a one-image request gets one image; if only one concept works, the skill does not invent a second. Editing comes after selection, with one shared edit budget per round. If neither works, diagnose first; start another direction only on an explicit request.
+Public main and v0.1.0 contain the published runtime files. Start with text-only concepts to confirm loading; this page does not promise the unpublished A/B selection and diagnosis flow. After choosing, ask “Generate one image using concept 1; preserve the product.” Request one focused edit after reviewing the result.
 
-For text first, add “Propose three concepts; do not generate yet.” For prompts only, say so. The tested Claude Code host has no built-in generation: take the prompts to an image tool you already use, then bring results back for review. Reading an image does not imply the generation tool can receive it. Check the actual capabilities of each new session.
+The published runtime still has conflicting default image counts, so explicitly request one image when ready. For prompts only, say so. The tested Claude Code host has no built-in generation: use an image tool you already have and return results for review. Reading an image does not prove the generation tool can receive it.
 
 ## Learn from the tutorials
 
@@ -80,7 +80,7 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 
 New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Tanaka-inspired route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
 
-> **Maintenance status checked on 2026-10-16:** the A/B flow below is implemented in local source. Both project installs match all 11 current runtime files. Public main (03ce0d4 when checked) still has the earlier runtime text, and the v0.1.0 archive has not been updated. The earlier source/package match is historical; matching local installs does not mean these maintenance changes have been published.
+> **Version scope:** these first-use instructions cover public main and v0.1.0. Development A/B and figure-maintenance changes are not included in this documentation update; see the [installation guide](docs/INSTALL.md).
 
 ## Requirements and limits
 

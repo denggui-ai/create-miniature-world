@@ -9,7 +9,7 @@
 | [正式 v0.1.0 安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0) | 需要固定版本时优先使用 | 下载ZIP和SHA-256文件，按[离线指南](USER-GUIDE.html#install)核验后安装。 |
 | 公开仓库 main | 跟进公开文档与教程 | 当前运行文件仍为v0.1.0；文档更新不代表运行规则已更新。 |
 
-开发源码中的A/B交互与人偶维护尚未对外发布，不能从公开main或v0.1.0包中获得全部修订。安装后以实际读取的文件为准。界面可能显示「微缩造景」或「微缩摄影 Skill」，调用标识相同；名称不能用于判定版本。
+公开 main 与 v0.1.0 的 Codex 界面显示名都是「微缩造景」；仓库标题「微缩摄影 Skill」是项目介绍，调用标识始终为 `create-miniature-world`。若界面显示其他名称，先核对实际加载来源。开发运行修订未包含在本页安装步骤中。
 
 安装时只复制 `skills/create-miniature-world/` 中的11个运行文件：入口、界面配置、4份参考文档、人偶参考说明和3张照片、后期脚本。源侧 `evals/`、`CHANGELOG.md` 不属于安装范围；不要把整个仓库复制成一个Skill。
 
@@ -32,6 +32,51 @@ cd create-miniature-world
 
 检查所选宿主的项目级和用户级目录，并确认实际发现列表；目录存在、失效符号链接或同名技能已从别处发现时，先记录来源与差异，不覆盖或自动移动。验证用户级安装应使用没有项目级同名副本的独立项目，防止把项目副本的加载误当成用户级成功。已有安装需要更新时，先完整备份到技能发现目录之外。
 
+## 终端直接安装（macOS / Linux，首次项目级安装）
+
+从上述公开仓库或正式包获取文件，在解压/克隆后的仓库根目录运行。需要 Python 3 标准库，无需安装额外依赖。下方默认安装 Codex；Claude Code 用户只将 `host` 改为 `"claude"`，不要两个范围一起安装。
+
+脚本先检查该宿主常见的项目级和用户级同名位置，目录或失效链接存在时均停止；安装目录及其父目录也不能是链接。如果你配置过其他技能搜索位置，先核对宿主实际发现列表。已有安装请转到[更新](#更新)，完整备份并比较，勿删除旧目录来绕过检查。
+
+```bash
+python3 - <<'PYINSTALL'
+from pathlib import Path
+import hashlib
+import shutil
+
+host = "codex"  # Claude Code 用户改成 "claude"
+name = "create-miniature-world"
+if host not in ("codex", "claude"):
+    raise SystemExit("host 只能是 codex 或 claude")
+roots = [".agents/skills", ".codex/skills"] if host == "codex" else [".claude/skills"]
+target = Path(roots[0]) / name
+for root in roots:
+    for base in (Path.cwd(), Path.home()):
+        existing = base / root / name
+        if existing.exists() or existing.is_symlink():
+            raise SystemExit(f"发现同名目录或链接，停止安装：{existing}")
+for parent in target.parents:
+    if parent.is_symlink():
+        raise SystemExit(f"安装父目录是链接，停止安装：{parent}")
+source = Path("skills") / name
+ignored = {"evals", "CHANGELOG.md", "__pycache__", ".DS_Store"}
+entries = [p for p in source.rglob("*") if not ignored.intersection(p.relative_to(source).parts)]
+if not source.is_dir() or source.is_symlink() or any(p.is_symlink() for p in entries):
+    raise SystemExit("安装源缺失或含链接，停止安装")
+files = [p for p in entries if p.is_file()]
+if len(files) != 11:
+    raise SystemExit("所选公开版本应有11个运行文件，请先核对安装源")
+shutil.copytree(source, target, ignore=shutil.ignore_patterns(*ignored))
+for original in files:
+    copied = target / original.relative_to(source)
+    if hashlib.sha256(original.read_bytes()).digest() != hashlib.sha256(copied.read_bytes()).digest():
+        raise SystemExit(f"文件校验未通过：{copied}；先停止，不覆盖重装")
+print(f"已复制并核对11个运行文件：{target}；请在新会话确认实际加载路径。")
+PYINSTALL
+```
+
+以上只复制文件并核对摘要，不启动宿主、不调用模型或生图。打开新会话，先确认实际加载的入口路径，再按下方文字请求试用；文件复制成功不等于宿主加载成功。Windows 安装命令未验证，不直接套用这段命令。
+
 ## Codex
 
 在本机Codex打开项目，将这段话交给它：
@@ -44,9 +89,9 @@ cd create-miniature-world
 
 上传的照片和生成提示会交给当前宿主及其图像工具处理；仅上传有权使用、可交给这些服务的内容。本介绍页本身不接收照片或执行生图。
 
-> 使用 $create-miniature-world，把这张商品图做成微缩摄影，创意由你决定，给我两个不同且成立的创意各一张。
+> 使用 $create-miniature-world，把这张商品图做成微缩摄影。先给三个有明显区别的方案并推荐一个，不要生图。
 
-支持技能选择的界面中，也可选择「微缩摄影 Skill」（正式包仍为「微缩造景」）。以下为当前开发源码的交互，正式 v0.1.0 和公开 main 尚未包含全部修订，使用前确认加载来源。开发版默认 A/B 各一张，指定创意先一张，只有一案成立不凑数；收到图后选一张或直接反馈，选后才编辑，整轮共享一次预算。两案都不喜欢时先诊断，明确要求新方向后再生成。加「先给三个方案，不要生图」可先看文字。
+支持技能选择的 Codex 界面中，公开版显示为「微缩造景」。先看文字方案，选定后明确说「按方案1生成一张，保留商品外观」；公开运行文本仍有默认张数不一致的历史表述，请明确指定张数。生成与编辑需要实际工具，不承诺未发布的 A/B 选择和诊断流程。
 
 ## Claude Code
 
@@ -59,7 +104,7 @@ cd create-miniature-world
 安装后上传商品照片，发送：
 
 ```text
-/create-miniature-world 把这张商品图做成微缩摄影，给我两个不同且成立的创意；没有生图工具就给对应提示词。
+/create-miniature-world 把这张商品图做成微缩摄影。先给三个有明显区别的方案并推荐一个，不要生图。
 ```
 
 已测 Claude Code 宿主没有内置生图，方案与提示词可在你已有的图像工具使用，再把成图带回评审；不自动接新服务。普通Claude网页聊天上传文件，不等于完成Claude Code本机安装。

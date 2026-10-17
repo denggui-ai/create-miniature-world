@@ -1,5 +1,18 @@
 # 产品代表案例
 
+## 历史样张的已知缺陷
+
+下表整理已有审计与案例记录中的问题，原图保留作学习对照；本轮仅补说明，未重新生成或修复图片，也不将“故事可读”当作文字保真或人偶尺度通过。
+
+| 样张 | 已知问题与用途限制 |
+| --- | --- |
+| [直尺冲线](ruler-finish-line.png) | 尺面数字重复、乱序，不作为准确刻度或文字还原示例。 |
+| [透明胶带音乐会](clear-tape-concert.png) | 印字有生成乱码，品牌字样与商品结构未通过严格核对。 |
+| [AI人偶诊断图](ai-figure-diagnostic.png) | AI生成诊断图，不是实物参照，不能校准真实比例；不作人偶模型感达标示例。 |
+| [杯柄相框](mug-handle-photo-frame-20261012.png) | 人物相对物件偏大，且杯身左侧被裁掉；保留创意，不作微小人物尺度达标示例。 |
+| [粘毛器早期图](muji-sticky-roller-v1-20261006.png) | 人物相对物件偏大，不作微小人物尺度达标示例。 |
+| [订书机喂鳄鱼](stapler-crocodile-feeding-20261012.png) | 人物相对物件偏大；鳄鱼身份依靠喂食动作，不作尺度或商品细节保真达标示例。 |
+
 ## 2026-10-14：遥控器真实参考实测
 
 [原照、两张成图与偏差](REMOTE_CONTROL_TEST_20261014.md) · [使用教程](../site/remote-control.html) · [保真回归](../docs/REMOTE_CONTROL_REGRESSION.md)。两张均为田中风格；严格细节保真未通过，用户已授权公开但未给出四维质量通过结论。以下原有分组与历史记录保留。
@@ -115,7 +128,7 @@ v0.1.0网站新增2026-10-13真实刨丝器参考验收两张，分别展示田�
 
 **商品联系与故事：** 中空圆环容纳演奏者，卷边成为观众席。
 
-**已知不足：** 演奏关系可读；品牌字样、商品结构待核对。
+**已知不足：** 演奏关系可读；印字有生成乱码，品牌字样、商品结构未通过严格核对。
 
 ## G56 铅笔 · 石墨公路
 
@@ -219,8 +232,8 @@ v0.1.0网站新增2026-10-13真实刨丝器参考验收两张，分别展示田�
 | <img src="glasses-window-cleaner-20261012.png" width="160" alt="眼镜 擦窗工人"><br>`glasses-window-cleaner-20261012.png` | 眼镜 · 擦窗：工人站在梯子上，像擦橱窗一样擦镜片。 | 只擦一侧镜片；眼镜为文字生成的普通款。 | G2.png · `57336e10f74a3c13a2b99cb34235a7ad5222d5cf1504ab6d7d30a14a6556ef6f` |
 | <img src="mug-coffee-ring-track-20261012.png" width="160" alt="马克杯 咖啡渍跑道"><br>`mug-coffee-ring-track-20261012.png` | 马克杯 · 咖啡渍跑道：杯子留下的咖啡渍圈成为运动会跑道，孩子赛跑、奶奶加油。 | 部分孩子没有严格跑在圈线上。 | M1.png · `ccffd8220ba357eec184b66d2dba0a481a3022d6a554bd7c9970b2f378f76252` |
 | <img src="mug-planter-20261012.png" width="160" alt="马克杯 花盆"><br>`mug-planter-20261012.png` | 马克杯 · 花盆：杯里装土，两位园丁种下一棵模型树。 | 杯中装满土，属于借用商品当花盆，商品展示用途需看场合。 | M2.png · `84c1b85b9f046239ef181c203ab203b62756191e9c2a3953c97f9f5b6440eefc` |
-| <img src="mug-handle-photo-frame-20261012.png" width="160" alt="马克杯 杯柄相框"><br>`mug-handle-photo-frame-20261012.png` | 马克杯 · 杯柄相框：游客在杯柄框里摆姿势，同伴拍照。 | 摆姿势的人站在杯柄下沿；杯身左侧被画面裁掉。 | M3.png · `d24e7f55223e19306a3a498d98873b9e54d2b082774f326a456d1372954256fc` |
-| <img src="stapler-crocodile-feeding-20261012.png" width="160" alt="订书机 喂鳄鱼"><br>`stapler-crocodile-feeding-20261012.png` | 订书机 · 喂鳄鱼：张开的订书机读作鳄鱼，饲养员递鱼喂食。 | 鳄鱼身份靠喂食动作撑起，不看动作时可能只读成订书机；鱼与水桶为添加道具。 | stapler-feeding.png · `70d4d3ac02cd01ca4476e9dbfd137f7f2af0af6582606416b856b071649ea2ef` |
+| <img src="mug-handle-photo-frame-20261012.png" width="160" alt="马克杯 杯柄相框"><br>`mug-handle-photo-frame-20261012.png` | 马克杯 · 杯柄相框：游客在杯柄框里摆姿势，同伴拍照。 | 人物相对物件偏大；摆姿势的人站在杯柄下沿；杯身左侧被画面裁掉。 | M3.png · `d24e7f55223e19306a3a498d98873b9e54d2b082774f326a456d1372954256fc` |
+| <img src="stapler-crocodile-feeding-20261012.png" width="160" alt="订书机 喂鳄鱼"><br>`stapler-crocodile-feeding-20261012.png` | 订书机 · 喂鳄鱼：张开的订书机读作鳄鱼，饲养员递鱼喂食。 | 人物相对物件偏大；鳄鱼身份靠喂食动作撑起，不看动作时可能只读成订书机；鱼与水桶为添加道具。 | stapler-feeding.png · `70d4d3ac02cd01ca4476e9dbfd137f7f2af0af6582606416b856b071649ea2ef` |
 | <img src="stapler-skate-slope-20261012.png" width="160" alt="订书机 滑板坡"><br>`stapler-skate-slope-20261012.png` | 订书机 · 滑板坡：上臂的坡度成为滑板道，一人滑行、一人等待。 | 人偶偏精致，塑料模型感不足。 | stapler-skate-slope.png · `851da3050c2155bad1d40724485f1d85750842d1b37a7291250f72d77ec10c8d` |
 | <img src="tape-measure-slide-20261012.png" width="160" alt="卷尺 滑梯"><br>`tape-measure-slide-20261012.png` | 卷尺 · 滑梯：拉出的尺带弯成滑梯，孩子从上面滑下。 | 尺面刻度为生成内容，未与真实刻度核对。 | 01-tape-slide.png · `14a70254e981c4b0307caba5cc63070f5742b6e439fcbc6ba120268153aafc41` |
 | <img src="tape-measure-cycleway-20261012.png" width="160" alt="卷尺 自行车道"><br>`tape-measure-cycleway-20261012.png` | 卷尺 · 自行车道：拉直的尺带成为自行车道，两人骑行。 | 尺面刻度间隔不规则，为生成内容。 | 02-tape-cycleway.png · `5d460455a675c0e8046f8ded498fd6bf29fb53954cf28633036201fb40a8cadd` |

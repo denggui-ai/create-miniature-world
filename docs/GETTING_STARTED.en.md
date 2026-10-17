@@ -1,6 +1,6 @@
 # Miniature World: installation, first image and examples
 
-This guide covers installation, your first request, feedback and examples. The A/B interaction described here follows current development source. Public main and the v0.1.0 archive still contain the earlier runtime text, as checked on 2026-10-16; confirm which source your host loaded. This English guide accompanies the tutorial documentation update; the v0.1.0 release archive remains unchanged.
+This guide covers public main and the v0.1.0 runtime: installation, a text-only first request, one selected image, feedback and examples. Unpublished A/B and figure-maintenance rules are not part of these instructions; the release archive remains unchanged.
 
 ## Choose your source
 
@@ -11,9 +11,11 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Verify the archive against its accompanying checksum before installing. Current repository files may include maintenance changes that are absent from that release. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Verify the archive against its accompanying checksum before installing. Public main currently uses the same runtime files as v0.1.0; documentation and tutorials can change independently. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
+
+For a direct terminal installation on macOS/Linux, use the [checked copy-and-hash steps](INSTALL.md#终端直接安装macos--linux首次项目级安装). The default is Codex; change `host` to `"claude"` for Claude Code. Existing directories or symlinks stop the command. Windows commands have not been verified.
 
 The source is `skills/create-miniature-world/`. Install the 11 runtime files: `SKILL.md`, `agents/openai.yaml`, four reference documents, the figure-reference README and its three photos, and `scripts/photo_finish.py`. Exclude development `evals/` and `CHANGELOG.md`.
 
@@ -28,21 +30,21 @@ Ask your local host:
 
 Choose one installation scope. If you explicitly need user-wide installation, the documented alternatives are `~/.agents/skills/create-miniature-world/` for Codex and `~/.claude/skills/create-miniature-world/` for Claude Code. An existing directory alone does not prove discovery. In the fresh session, first request three concepts without generation to confirm loading.
 
-The display label may be 微缩摄影 Skill in current source or 微缩造景 in the release archive. The directory and invocation identifier remain `create-miniature-world`.
+Public main and the release archive use the Codex display label `微缩造景`. The project title is Miniature Photography Skill; the directory and invocation identifier remain `create-miniature-world`. If another label appears, verify the loaded path and version.
 
 ## Make your first request
 
 Attach a clear product photo, or start with an object name. In Codex:
 
-> Use $create-miniature-world with this product photo. Choose two distinct, viable concepts and generate one image for each. Please respond in English.
+> Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet. Please respond in English.
 
 In Claude Code:
 
-> /create-miniature-world Use this product photo to develop two distinct, viable concepts. If image generation is unavailable, provide their prompts. Please respond in English.
+> /create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet. Please respond in English.
 
 With a product photo, the skill protects the visible product appearance by default. With only an ordinary object name, it uses free creation and does not promise to reproduce a particular product. State any features that must remain unchanged. Photos and prompts are processed by your host and its image tool; upload only material you may share with them. The project website displays examples and instructions.
 
-The current development flow produces A/B images with a short title and one sentence connecting each concept to the object. Pick A, pick B, say neither works, or give direct feedback. A specified concept or a request for one image gets one image; when only one concept works, the skill does not invent a second. This describes current source; check the loaded version before expecting the same interaction from the v0.1.0 archive.
+After selecting a concept, ask “Generate one image using concept 1; preserve the product.” The published runtime has conflicting default image counts, so state the count explicitly. A/B selection and diagnosis changes in development are not promised by this guide.
 
 For a text-only start:
 
@@ -56,9 +58,9 @@ Review four things separately: whether the story is readable, whether the visibl
 
 After selection, request one focused change and state what to preserve:
 
-> Keep A's story, product and composition. Make the people and their related props smaller together, and preserve their contact with the product.
+> Keep this image's story, product and composition. Make the people and their related props smaller together, and preserve their contact with the product.
 
-Current source shares one edit budget across the round. Editing requires a tool that can edit the selected image; a new text-only generation is not evidence of a faithful edit. If neither image works, diagnose the object connection, story, structure and scale first. Ask explicitly for a new direction before another round.
+Request one focused edit at a time and review the result before continuing. Editing requires a tool that can edit the selected image; a new text-only generation is not evidence of a faithful edit. If the story does not work, request text-only diagnosis before authorizing more images.
 
 Images default to separate opaque portrait images in a 3:4 ratio. The default route is Tanaka-inspired bright tabletop photography. Ask for a real-photo feel, natural light, or light and shadow to select the Photo-real light route. Figures should feel like tiny painted plastic models beside a giant object; a frame-height percentage alone does not establish correct scale. Optional local finishing needs Python 3, Pillow and NumPy; without them, deliver the original. Save results under `outputs/` without overwriting inputs.
 
@@ -69,7 +71,7 @@ The [online gallery](https://denggui-ai.github.io/create-miniature-world/site/ga
 | Entry | What to learn | Evidence limit |
 | --- | --- | --- |
 | [Grater reference comparison](../examples/GRATER_VALIDATION_20261013.md) | Compare the same real product photo in the Tanaka-inspired and Photo-real light routes. | The user approved both samples for visible appearance, story, figure scale and aesthetics. Hidden details, exact SKU and microscopic pattern accuracy are not certified. |
-| [Paper-cup first steps](QUICK_START.md) | Compare a cup opening used as a train entrance, a circus entrance and an inner theatre; then inspect actual images. | This historical tutorial generated three concepts with permission. None became a complete success example: the train/cup-bottom logic remained unresolved, while other concepts depended on added scenery. Current source defaults to two viable concepts. |
+| [Paper-cup first steps](QUICK_START.md) | Compare a cup opening used as a train entrance, a circus entrance and an inner theatre; then inspect actual images. | This historical tutorial generated three concepts with permission. None became a complete success example: the train/cup-bottom logic remained unresolved, while other concepts depended on added scenery. For first use, select a concept and explicitly request one image. |
 | [Secondary creation](../site/secondary-creation.html) | Follow tissue snow, a notebook-and-pencil bridge and a clothespin diving platform from object relationships to images and feedback. | Preserve each case's actual inputs, edits and limitations; these are examples, not a cross-product success rate. |
 | [Coffee-ring track](../site/gallery.html) | See how an object's usage trace supplies the story: a mug's coffee ring becomes a running track. | Object-name input; no product-photo Before. Some runners are not exactly on the ring. |
 | [Remote-control tutorial](../site/remote-control.html) | Compare a real reference photo, two results, screen symbols, button shapes and figure contact. | Strict detail fidelity did not pass. Permission to publish is separate from quality approval. |
