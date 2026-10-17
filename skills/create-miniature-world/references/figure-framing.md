@@ -28,7 +28,7 @@
 4. 人偶外观只写一句：`tiny hand-painted matte model railway figures, too small to show any facial detail`；有参考图时加“matching only the paint of the reference photo”。不写笔触、五官、衣褶、手、溢色、发粉。
 5. 取景按物件：物件按分支入画，四周留空间；人偶可略虚；不写 close-up、macro of the figure（实拍光影路线写的是“100mm macro lens”拍桌面，不是人偶特写）。
 6. 动作写清接触点，人物只写身份，并写衣着颜色（如 white chef jackets）。
-7. 光线与机位：先按[拍法路由](photo-styles.md)选田中风格（默认）或实拍光影。田中风格：一个柔和偏暖的主光从左上或右上来，像大窗或柔光箱；物件有看得出的亮面与暗面，影子柔和、短、朝同一方向，不写补光；承托面与背景受光处亮、远处略暗；机位接近人偶视平或略俯。可写如“one soft warm key light from the upper left, like a large window, no fill: the object shows a lit side and a shaded side, short soft shadows fall the same way; the off-white paper is brighter near the light and dims gently away; camera near the figures' eye level or slightly above”。景深不在提示里强求，交给出图后的本机后期。
+7. 光线与机位：先按[拍法路由](photo-styles.md)选柔光棚拍（默认）或实拍光影。柔光棚拍：一个柔和偏暖的主光从左上或右上来，像大窗或柔光箱；物件有看得出的亮面与暗面，影子柔和、短、朝同一方向，不写补光；承托面与背景受光处亮、远处略暗；机位接近人偶视平或略俯。可写如“one soft warm key light from the upper left, like a large window, no fill: the object shows a lit side and a shaded side, short soft shadows fall the same way; the off-white paper is brighter near the light and dims gently away; camera near the figures' eye level or slightly above”。景深不在提示里强求，交给出图后的本机后期。
 
 ## 有实拍参考图时
 实拍参考（用户的，如 `inputs/figure-refs/`；没有时用包内 `assets/figure-refs/`，已处理好可直接传）每张有人物的图都传入一张，按姿态挑最接近的；参考人物有草帽、头带等醒目衣饰而本图身份不同时，换一张衣饰普通的。参考图应是人偶在大片纸面里很小的样子；只有满幅特写时，先按 EXIF 转正、缩小人偶、四周补纸面再传。提示里只用一句：参考图仅管涂装质感，不取它的衣服、帽子、配色、动作和大小。

@@ -20,6 +20,10 @@
 | `examples/remote-reference-20261014.jpg` | 遥控器实拍原照，已无损转正并移除 EXIF | 未附加许可，仅供本项目展示 |
 | `examples/orange-reference-20261015.jpg` | 橘子实拍原照，无 EXIF、GPS | 未附加许可，仅供本项目展示 |
 
+## 品牌名称与案例用途
+
+现有带品牌标识的样张按历史测试案例保留，不批量去标或重新生成；原有来源、标识错误与保真限制继续保留。品牌名称及标识仅用于描述案例，不代表与本项目合作、背书或推荐，也不纳入项目许可。后续推广首图优先选择无明显品牌标识的素材；若将案例用于本项目之外的商业推广，需另行核对相关素材与标识的使用权限。
+
 ## AI 生成的示例图
 
 `examples/` 下其余 PNG，以及 `site/hero-comb.png`、`site/cover.png`，是本项目用 AI 图像工具生成或编辑的输出。`site/img/` 下的压缩副本沿用对应原图的来源与许可：实拍原照的压缩版仍是实拍照片，AI 成图的压缩版仍是 AI 输出；压缩不改变来源类别或增加复用许可。逐文件的输入、尺寸和 SHA-256 见 [examples/SELECTED.md](examples/SELECTED.md)、[examples/CASES.md](examples/CASES.md) 和各教程页。

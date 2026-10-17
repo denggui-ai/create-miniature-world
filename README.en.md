@@ -45,7 +45,7 @@ After loading, attach a product photo and ask. An object name also works. Your h
 | Codex | `Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 | Claude Code | `/create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 
-Public main contains the v0.1.0 runtime with only the default image-count contradiction corrected; the release archive is unchanged. Start with text-only concepts to confirm loading; this page does not promise the unpublished A/B selection and diagnosis flow. After choosing, ask “Generate one image using concept 1; preserve the product.” Request one focused edit after reviewing the result.
+Public main contains the v0.1.0 runtime with the default image-count fix and Soft Studio naming update; the release archive is unchanged. Start with text-only concepts to confirm loading; this page does not promise the unpublished A/B selection and diagnosis flow. After choosing, ask “Generate one image using concept 1; preserve the product.” Request one focused edit after reviewing the result.
 
 Public main defaults to one image for each of the recommended and runner-up concepts. Explicitly request one image if that is all you want. The unchanged v0.1.0 archive retains conflicting wording, so specify the count when using it. For prompts only, say so. The tested Claude Code host has no built-in generation: use an image tool you already have and return results for review. Reading an image does not prove the generation tool can receive it.
 
@@ -62,9 +62,9 @@ Start with the [orange photo-to-scene tutorial](site/orange.html): two initial c
 
 A story can be a small everyday moment. It does not need conflict, and it does not have to demonstrate the product's normal function. The product itself must contribute to the idea.
 
-## Two photo styles: Tanaka-inspired / Photo-real light
+## Two photo styles: Soft Studio / Photo-real light
 
-| | Tanaka-inspired (default) | Photo-real light |
+| | Soft Studio (default) | Photo-real light |
 | --- | --- | --- |
 | When | You do not mention a style | You ask for a real-photo feel, light and shadow, natural light |
 | Light | One soft warm key from the upper left, short soft shadows | One window light or low warm sunbeam, no fill; highlights may clip, hollows go dark |
@@ -72,13 +72,13 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 | Focus | The product reads clearly | Only the figures and their contact point are sharp; the rest falls off gradually |
 | Figures | About 9% of the image height | Also written as about 9%; macro may draw them a little larger (ceiling 15%) |
 
-"Tanaka-inspired" names a bright tabletop look inspired by Tatsuya Tanaka's work; it is not his workflow and implies no endorsement. Ideas, figure appearance and product-fidelity rules are the same in both styles. When Python 3, Pillow and NumPy are available, the skill also saves a lightly finished copy (fine grain, optional gentle focus falloff) and delivers it with the original.
+"Soft Studio" (柔光棚拍) is the new name for the former "Tanaka-inspired" route. "田中风格", "田中达也风格" and "Tanaka-inspired" remain compatible aliases. The lighting and workflow are unchanged; the name implies no endorsement. Ideas, figure appearance and product-fidelity rules are the same in both styles. When Python 3, Pillow and NumPy are available, the skill also saves a lightly finished copy (fine grain, optional gentle focus falloff) and delivers it with the original.
 
 ## Version and validation
 
 > **v0.1.0 is released.** [Release and installation archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Two real-photo grater samples passed user review for visible product fidelity, story, figure scale and aesthetics on 2026-10-13. Codex reference generation, requested editing and saving have actual evidence. On 2026-10-14, both project installs matched all 11 runtime files in source and the release package, and a fresh Codex session explicitly loaded the installed skill. Claude Code retains its install/planning validation; its fresh session and new routes were not retested. Exact SKU details, text, microscopic patterns and cross-product consistency are not guaranteed. Fresh-host install remains unverified. On 2026-10-17, both project-local and default user-wide Codex install/upgrade/rollback/uninstall lifecycles passed on the same Mac in independent projects; the user-wide run used published rc2 and v0.1.0 only; Claude passed filesystem checks only. See the [dated validation](docs/VALIDATION.md). See the [sample comparison](examples/GRATER_VALIDATION_20261013.md) and [offline guide](docs/USER-GUIDE.html).
 
-New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Tanaka-inspired route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
+New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Soft Studio route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
 
 > **Version scope:** these first-use instructions cover public main and v0.1.0. Development A/B and figure-maintenance changes are not included in this documentation update; see the [installation guide](docs/INSTALL.md).
 
@@ -92,7 +92,7 @@ Product lettering, construction and figure scale can still be wrong. Exact SKU p
 
 With appreciation for [Tatsuya Tanaka / MINIATURE CALENDAR](https://miniature-calendar.com/about/) and the possibilities of mitate. This project's method is its own synthesis of visual study and experiments, not the artist's published workflow. [Preiser](https://www.preiserfiguren.de/) is a useful official reference for miniature figures and poses.
 
-This is an independent project, with no official affiliation or endorsement from the artist or Preiser. Original project text and configuration use the [MIT license](LICENSE). Images and third-party materials are not automatically covered by MIT; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+This is an independent project, with no official affiliation or endorsement from the artist, Preiser or the product brands shown in examples. Original project text and configuration use the [MIT license](LICENSE). Images and third-party materials are not automatically covered by MIT; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Cost and common questions
 

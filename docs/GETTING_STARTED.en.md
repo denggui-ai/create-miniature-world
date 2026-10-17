@@ -11,7 +11,7 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Verify the archive against its accompanying checksum before installing. Public main corrects only the default image-count contradiction in the v0.1.0 runtime; the release archive is unchanged. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.0). Verify the archive against its accompanying checksum before installing. Public main includes the default image-count fix and Soft Studio naming update in the v0.1.0 runtime; the release archive is unchanged. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
 
@@ -62,7 +62,7 @@ After selection, request one focused change and state what to preserve:
 
 Request one focused edit at a time and review the result before continuing. Editing requires a tool that can edit the selected image; a new text-only generation is not evidence of a faithful edit. If the story does not work, request text-only diagnosis before authorizing more images.
 
-Images default to separate opaque portrait images in a 3:4 ratio. The default route is Tanaka-inspired bright tabletop photography. Ask for a real-photo feel, natural light, or light and shadow to select the Photo-real light route. Figures should feel like tiny painted plastic models beside a giant object; a frame-height percentage alone does not establish correct scale. Optional local finishing needs Python 3, Pillow and NumPy; without them, deliver the original. Save results under `outputs/` without overwriting inputs.
+Images default to separate opaque portrait images in a 3:4 ratio. The default route is Soft Studio (柔光棚拍), the former Tanaka-inspired route; the old Chinese and English names remain compatible aliases. The v0.1.0 archive retains the old name. Ask for a real-photo feel, natural light, or light and shadow to select the Photo-real light route. Figures should feel like tiny painted plastic models beside a giant object; a frame-height percentage alone does not establish correct scale. Optional local finishing needs Python 3, Pillow and NumPy; without them, deliver the original. Save results under `outputs/` without overwriting inputs.
 
 ## Follow the examples
 
@@ -70,7 +70,7 @@ The [online gallery](https://denggui-ai.github.io/create-miniature-world/site/ga
 
 | Entry | What to learn | Evidence limit |
 | --- | --- | --- |
-| [Grater reference comparison](../examples/GRATER_VALIDATION_20261013.md) | Compare the same real product photo in the Tanaka-inspired and Photo-real light routes. | The user approved both samples for visible appearance, story, figure scale and aesthetics. Hidden details, exact SKU and microscopic pattern accuracy are not certified. |
+| [Grater reference comparison](../examples/GRATER_VALIDATION_20261013.md) | Compare the same real product photo in the Soft Studio and Photo-real light routes. | The user approved both samples for visible appearance, story, figure scale and aesthetics. Hidden details, exact SKU and microscopic pattern accuracy are not certified. |
 | [Paper-cup first steps](QUICK_START.md) | Compare a cup opening used as a train entrance, a circus entrance and an inner theatre; then inspect actual images. | This historical tutorial generated three concepts with permission. None became a complete success example: the train/cup-bottom logic remained unresolved, while other concepts depended on added scenery. For first use, select a concept and explicitly request one image. |
 | [Secondary creation](../site/secondary-creation.html) | Follow tissue snow, a notebook-and-pencil bridge and a clothespin diving platform from object relationships to images and feedback. | Preserve each case's actual inputs, edits and limitations; these are examples, not a cross-product success rate. |
 | [Coffee-ring track](../site/gallery.html) | See how an object's usage trace supplies the story: a mug's coffee ring becomes a running track. | Object-name input; no product-photo Before. Some runners are not exactly on the ring. |
