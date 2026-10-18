@@ -33,6 +33,14 @@
 - 成图不是官方商品照片或人偶厂商照片，不代表任何品牌或厂商的合作、背书或真品证明，也不保证商品外观、型号或 1:87 比例精确。
 - AI 生成的文字、刻度和标识可能有错，见各案例说明。
 
+<a id="planning-photography-cases-20261019"></a>
+
+### 冰格与榨汁器策划摄影案例（2026-10-19公开）
+
+`examples/ice-tray-private-pools-20261019.png` 与 `examples/citrus-squeezer-pavilion-20261018.png`、`citrus-squeezer-bee-20261018.png`、`citrus-squeezer-basketball-20261018.png` 为已有AI初图，各1次生成、0编辑、0后期，按用户授权择取公开。输入商品图分别来自 [IKEA SPJUTROCKA 404.295.80](https://www.ikea.com/se/en/p/spjutrocka-ice-cube-tray-with-lid-mixed-colours-40429580/) 和 [IKEA UPPFYLLD 905.286.91](https://www.ikea.com/us/en/p/uppfylld-lemon-squeezer-bright-yellow-bright-green-90528691/)，每件实际输入两张官方照片；官方照片未随本次案例公开。
+
+冰格和榨汁器A/C另输入包内作者拍摄的成人模型照片作模塑造型与涂装参考，沿用上方照片的署名与CC BY-NC 4.0说明；B无人未用人偶参考。生成图不继承或扩展输入照片、人偶造型、商品设计或商标权利，不纳入MIT，仅作本项目展示和教学，不增加商业或再分发授权。品牌仅用于说明输入，不代表背书；无田中达也原作作为生成输入。完整选案、反馈范围、已知不足与原始PNG摘要见[两案记录](examples/PLANNING_PHOTOGRAPHY_CASES_20261019.md)。
+
 ### 订书机与粘毛器修正版（2026-10-17）
 
 `examples/stapler-crocodile-feeding-smaller-20261017.png` 与 `examples/lint-roller-smaller-20261017.png` 分别以 `examples/stapler-crocodile-feeding-20261012.png`、`examples/muji-sticky-roller-v1-20261006.png` 为唯一输入，各做一次内置AI编辑。未新增商品实拍、人偶照片或其他外部素材；订书机网站展示采用同名WebP压缩副本。用户统一认可并同意公开，两张旧图均保留。输入类别、剩余限制与摘要见[修正对照](examples/SELECTED.md#2026-10-17订书机与粘毛器人偶缩小修正)，粘毛器原始生成来源仍见下方历史记录。沿用本节AI示例图用途与许可，不归入MIT，不增加复用许可。
