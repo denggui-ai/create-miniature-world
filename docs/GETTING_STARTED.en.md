@@ -1,6 +1,6 @@
 # Miniature World: installation, first image and examples
 
-This guide covers public main and the v0.1.2 runtime: installation, a text-only first request, selected images, feedback and examples. The public and local source now share all 11 runtime files, including A/B, figure and finishing rules.
+This guide covers public main and v0.1.3: installation, text-only planning, images and feedback. The 11-file runtime is unchanged in structure; concept, scale, framing and delivery rules have been revised. The Codex project install was checked; this round did not update or retest Claude.
 
 ## Choose your source
 
@@ -11,7 +11,7 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.2](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.2). Verify the archive against its accompanying checksum before installing. Public main and v0.1.2 include the A/B workflow, relative figure scale and appearance rules, and EXIF/ICC finishing fixes. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.3](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.3). Verify the archive against its accompanying checksum before installing. Public main and v0.1.3 include the A/B workflow, relative figure scale and appearance rules, and EXIF/ICC finishing fixes. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
 

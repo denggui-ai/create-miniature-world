@@ -6,12 +6,12 @@
 
 | 来源 | 适用情况 | 注意事项 |
 | --- | --- | --- |
-| [正式 v0.1.2 安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.2) | 需要固定版本时优先使用 | 下载ZIP和SHA-256文件，按[离线指南](USER-GUIDE.html#install)核验后安装。 |
-| 公开仓库 main | 跟进公开文档与教程 | 与v0.1.2统一11个运行文件，包含A/B反馈、人偶与后期规则。 |
+| [正式 v0.1.3 安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.3) | 需要固定版本时优先使用 | 下载ZIP和SHA-256文件，按[离线指南](USER-GUIDE.html#install)核验后安装。 |
+| 公开仓库 main | 跟进公开文档与教程 | 与v0.1.3运行范围一致，含创意/构图与交付判断修订。 |
 
-公开 main 与 v0.1.2 的 Codex 界面显示名为「微缩摄影 Skill」，调用标识仍为 `create-miniature-world`。默认拍法「柔光棚拍 / Soft Studio」，旧称「田中风格」等仍兼容。
+公开 main 与 v0.1.3 的 Codex 界面显示名为「微缩摄影 Skill」，调用标识仍为 `create-miniature-world`。默认拍法「柔光棚拍 / Soft Studio」，旧称「田中风格」等仍兼容。
 
-v0.1.2 当前会话完成4条文字应用与自评、7项后期合成测试及两张刨丝器初图，用户选A可用、编辑0次；本版未启动新宿主会话。下文生命周期结论保留各自历史版本范围。
+v0.1.3 已完成Codex项目文件安装核对及一次临时独立CLI显式读取/三案策划；主会话三商品5初图、计时器1编辑，反馈与保真分别记录。未验证桌面隐式发现、Claude新会话或跨机兼容。以下历史生命周期记录不扩大到本版。
 
 安装时只复制 `skills/create-miniature-world/` 中的11个运行文件：入口、界面配置、4份参考文档、人偶参考说明和3张照片、后期脚本。源侧 `evals/`、`CHANGELOG.md` 不属于安装范围；不要把整个仓库复制成一个Skill。
 
@@ -83,7 +83,7 @@ PYINSTALL
 
 在本机Codex打开项目，将这段话交给它：
 
-> 请阅读 docs/INSTALL.md 和 docs/LOCAL_TEST.md。检查是否已有 create-miniature-world 技能，若有则比较版本，不直接覆盖。按v0.1.2的11个运行文件范围，将 skills/create-miniature-world 安装到本项目的 .agents/skills/create-miniature-world，排除源侧evals/CHANGELOG。已有版本先完整备份。核对全部运行文件的SHA-256与源目录一致，并在新任务中确认实际加载路径。分别报告能否读本地图、把图传入生图工具、生图、编辑和保存；先不生图，不安装依赖或接入付费服务。
+> 请阅读 docs/INSTALL.md 和 docs/LOCAL_TEST.md。检查是否已有 create-miniature-world 技能，若有则比较版本，不直接覆盖。按v0.1.3的11个运行文件范围，将 skills/create-miniature-world 安装到本项目的 .agents/skills/create-miniature-world，排除源侧evals/CHANGELOG。已有版本先完整备份。核对全部运行文件的SHA-256与源目录一致，并在新任务中确认实际加载路径。分别报告能否读本地图、把图传入生图工具、生图、编辑和保存；先不生图，不安装依赖或接入付费服务。
 
 默认建议项目级安装 `.agents/skills/create-miniature-world/`，只在该项目使用。明确需要全局使用时，可选择用户级 `~/.agents/skills/create-miniature-world/`。两者选择其一；遇到云端或旧版同名Skill，确认实际加载的是哪一份。
 
@@ -99,7 +99,7 @@ PYINSTALL
 
 在Claude Code打开项目，发送：
 
-> 请阅读 docs/INSTALL.md 和 docs/LOCAL_TEST.md。检查本项目 .claude/skills/create-miniature-world 是否已有技能，若有则比较版本，不直接覆盖。已有版本先完整备份；按v0.1.2的11个运行文件范围将 skills/create-miniature-world 复制到该目录，排除源侧evals/CHANGELOG，逐文件核对SHA-256一致。在新会话确认技能可发现，并分别报告读图、参考图输入、生图、编辑和保存能力；先不生图，不安装依赖或接入付费服务。
+> 请阅读 docs/INSTALL.md 和 docs/LOCAL_TEST.md。检查本项目 .claude/skills/create-miniature-world 是否已有技能，若有则比较版本，不直接覆盖。已有版本先完整备份；按v0.1.3的11个运行文件范围将 skills/create-miniature-world 复制到该目录，排除源侧evals/CHANGELOG，逐文件核对SHA-256一致。在新会话确认技能可发现，并分别报告读图、参考图输入、生图、编辑和保存能力；先不生图，不安装依赖或接入付费服务。
 
 默认项目级目录为 `.claude/skills/create-miniature-world/`；明确需要全局使用时，可选择 `~/.claude/skills/create-miniature-world/`。保留同一份源文件，`agents/openai.yaml`为Codex界面配置，不需要为Claude另写创作方法。
 

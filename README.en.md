@@ -32,7 +32,7 @@ The only installable source directory is `skills/create-miniature-world/`. Check
 | Codex | `.agents/skills/create-miniature-world/` | `$create-miniature-world` |
 | Claude Code | `.claude/skills/create-miniature-world/` | `/create-miniature-world` |
 
-Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.1.2 use the display label `微缩摄影 Skill`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
+Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.1.3 use the display label `微缩摄影 Skill`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
 
 To install, ask your local host:
 
@@ -45,7 +45,7 @@ After loading, attach a product photo and ask. An object name also works. Your h
 | Codex | `Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 | Claude Code | `/create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 
-Public main and v0.1.2 now share the A/B workflow, figure rules and local finishing behavior. Start with text-only concepts to confirm loading, then ask “Generate one image using concept 1; preserve the product.”
+Public main and v0.1.3 include the revised creative, framing and delivery rules. First request text-only concepts, then select an image to generate.
 
 Direct generation defaults to two valid, distinct concepts, one image each, labeled A/B. Produce one if only one concept works, the user specifies a concept or asks for one image. Text-only requests do not generate. Show initial images first; the entire round shares at most one edit after selection. Diagnose “neither” feedback before generating a newly requested direction. The tested Claude Code host has no built-in generation; use an image tool you already have and return results for review.
 
@@ -67,26 +67,26 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 | | Soft Studio (default) | Photo-real light |
 | --- | --- | --- |
 | When | You do not mention a style | You ask for a real-photo feel, light and shadow, natural light |
-| Light | One soft warm key from the upper left, short soft shadows | One window light or low warm sunbeam, no fill; highlights may clip, hollows go dark |
-| Backdrop and camera | Off-white matte paper; near the figures' eye level or slightly above | Feels like a 100mm macro shot, camera a little above the object |
-| Focus | The product reads clearly | Only the figures and their contact point are sharp; the rest falls off gradually |
-| Figures | Describe size relative to visible object parts; use simplified molded figures and rough paint | Same relative-scale checks; frame-height targets only guide composition and recording |
+| Light | Start with soft light and adjust to the scene | Credible direction, reflections and shadows; fill is allowed when needed |
+| Backdrop and camera | Clean support; choose viewpoint for the relationship | Choose backdrop, focal length and viewpoint; no fixed 100mm rule |
+| Focus | Keep required relationships readable | Blur must preserve key figures, parts and markings |
+| Figures | Scale and count follow visible parts and scene needs | Same evidence; no universal frame-height target |
 
 "Soft Studio" (柔光棚拍) is the new name for the former "Tanaka-inspired" route. "田中风格", "田中达也风格" and "Tanaka-inspired" remain compatible aliases. The lighting and workflow are unchanged; the name implies no endorsement. Ideas, figure appearance and product-fidelity rules are the same in both styles. When Python 3, Pillow and NumPy are available, the skill also saves a lightly finished copy (fine grain, optional gentle focus falloff) and delivers it with the original.
 
 ## Version and validation
 
-> **v0.1.2 unified maintenance release.** [Release and installation archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.2). Four text cases were applied and self-reviewed in the current session, seven synthetic finishing tests passed, and two images were generated from one grater reference. The user selected A as usable without editing; actual edits: zero. These were assisted checks, not independent or blind tests, and do not certify strict detail fidelity. Historical generation, editing and same-Mac lifecycle evidence retains its original version scope. See [validation](docs/VALIDATION.md), the [historical samples](examples/GRATER_VALIDATION_20261013.md) and [offline guide](docs/USER-GUIDE.html).
+> **v0.1.3 creative and delivery maintenance release.** [Release and archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.3). This release relaxes fixed concept quotas, figure occupancy/count and camera rules, and separates concept drafts from final deliverables. One independent temporary CLI session explicitly read the installed skill and produced three concepts. The parent session generated five initial images across three products and edited the timer once. The timer concept received positive feedback; the user agreed with the egg-slicer delivery assessment. Strict product-detail fidelity remains unresolved. These are limited assisted trials, not a blind baseline comparison. See [validation](docs/VALIDATION.md).
 
 New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Soft Studio route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
 
-> **Version scope:** public main and v0.1.2 share all 11 runtime files with local development source. Earlier release snapshots are retained.
+> **Version scope:** public main and v0.1.3 retain 11 runtime files. The Codex project install was checked; the Claude install was not updated or retested this round. Earlier versions remain available.
 
 ## Requirements and limits
 
 Requires an image-reading host; generation, image references and editing each depend on tools actually available in that session. No model, credits, API keys or paid-service client are bundled. Each generated image is a separate opaque portrait image in a 3:4 ratio by default.
 
-Product lettering, construction and figure scale can still be wrong. Describe figure size relative to object parts; do not infer product millimetres. A frame-height target (around 9%) guides composition, not scale certification or automatic resizing. Three author-shot 1:87 figure photos supply simplified molded form and rough-paint references ([notes and license](skills/create-miniature-world/assets/figure-refs/README.md), CC BY-NC 4.0); close-ups alone cannot establish scale beside a product. Finishing applies EXIF orientation and preserves valid RGB ICC profiles in supported formats; unsupported combinations stop and keep the original. No new host sessions were run for this release; other machines, platforms, desktop cache refresh and implicit invocation remain unverified.
+Product lettering, construction and figure appearance may still be wrong. Scale follows visible relationships and valid references, without a universal occupancy target. Close-ups alone cannot establish scale beside a product. Finishing preserves the original and follows supported EXIF/ICC handling. Desktop implicit discovery, other machines, cross-platform behavior and fresh Claude sessions remain unverified. A concept draft is not a final product image; recommend delivery counts from actual quality, without generating extra images to fill a quota.
 
 ## Inspiration and materials
 
@@ -113,6 +113,6 @@ Maintainers see [MAINTAINING.md](docs/MAINTAINING.md). Keep one source in `skill
 
 ![Miniature World: everyday objects, unexpected stories.](site/cover.png)
 
-*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.2 release stated above.*
+*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.3 release stated above.*
 
 </details>

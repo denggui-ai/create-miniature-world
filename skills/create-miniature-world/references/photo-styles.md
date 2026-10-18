@@ -1,18 +1,18 @@
 # 拍法路由：柔光棚拍 / 实拍光影
 
-出图前选一条拍法，写进提示的光线、机位部分，交付时说明用了哪条。用户没提拍法，或点名“柔光棚拍”“Soft Studio”时走“柔光棚拍”；旧称“田中风格”“田中达也风格”“Tanaka-inspired”兼容同一路线；用户提到实拍感、光影感、自然光、氛围、像真的拍出来、微距感等时走“实拍光影”。用户指定具体光线时按用户。创意、人偶外观、商品保真两条路线相同；默认画高构图参考范围有所区别，真实相对尺度的证据要求相同（见人偶与取景）。
+出图前选一条拍法，写进提示的光线、机位部分，交付时说明用了哪条。用户没提拍法，或点名“柔光棚拍”“Soft Studio”时走“柔光棚拍”；旧称“田中风格”“田中达也风格”“Tanaka-inspired”兼容同一路线；用户提到实拍感、光影感、自然光、氛围、像真的拍出来、微距感等时走“实拍光影”。用户指定具体光线时按用户。创意、人偶外观、商品保真两条路线相同；两条路线都按情境选择尺度和清晰范围，真实相对尺度的证据要求相同（见人偶与取景）。
 
-“柔光棚拍 / Soft Studio”是原“田中风格”的新名称，仅改称呼，光线、机位、背景和后期规则不变；不代表田中达也本人的工作流程或认可。
+“柔光棚拍 / Soft Studio”是原“田中风格”的新名称，为本项目拍法名称，以下为可按情境调整的起点；不代表田中达也本人的工作流程或认可。
 
 <a id="田中风格默认"></a>
 
 ## 柔光棚拍（默认）
-按[人偶与取景](figure-framing.md)第 7 条：一个柔和偏暖的主光，从左上或右上来，像大窗或柔光箱；物件有亮面和暗面，影子短而柔；米白或白色哑光纸，受光处亮、远处略暗；机位接近人偶视平或略俯。画面干净明亮，商品交代清楚。不写夕阳、低角度阳光、长投影、暗调等戏剧光。后期 `--dof none`（只加颗粒）；机位略俯、前后有纵深时可用 `--dof mild`。
+可从柔和主光、干净承托面开始，使材质与关键关系可辨。光源方向、补光、背景、机位随构图选择，用户明确的摄影要求优先。景深覆盖需要同时看清的人物、部件或标签；不要求所有区域同样清楚。后期默认 `--dof none`。
 
 ## 实拍光影
-用相机与曝光的物理写法，不用 soft、high-key、gentle 之类形容词描述整体光线：100mm 微距镜头拍桌面，机位略高于物件上沿；景深只有几毫米，只有人偶和它们接触的那一小块清楚，最近的边缘、后方部分和背景逐渐化开；按人偶曝光，最亮的高光冲白，背光的凹处变暗；只有一束光（与故事相配的柔和窗光，或从左后方斜射的低角度暖阳），没有补光，影子朝同一方向；细微胶片颗粒。可写如“a real tabletop photograph through a 100mm macro lens, camera a little above the object's top edge. One window light from the left, no fill. Depth of field is only a few millimetres: only the figures and the patch they touch are in sharp focus; the nearest edge, the far parts and the backdrop blur progressively. Exposed for the figures, so the brightest highlights clip to white and shaded hollows go dark. Fine film grain.”需要暖阳时把光源句换成“one low warm sunbeam from behind left rakes across the scene, no fill; long blurred-edge shadows fall toward the front right”。不写 clearest、全部清楚。
+以有依据的光向、明暗、材质反射和接触阴影建立实拍感。焦段、视点、景深按关系选择，不固定100mm、几毫米景深或只清楚人物脚下；可用柔窗光或方向性阳光，也可按需要补光。不为追求真实感强制高光过曝或丢失商品标识。
 
-人偶大小遵循[人偶与取景](figure-framing.md)的证据优先级；无实物尺度约束时，普通分支仍可按画高约 9% 构图，参考上沿为 15%。超出只记录构图偏差，不据此判真实比例错误或自动缩小。后期 `--dof mild`；画面已有明显前后虚化时用 `--dof none`，只加颗粒。
+人偶尺度按[人偶与取景](figure-framing.md)的证据与情境选择，不按拍法分配画高上限。若前后虚化有助于观看且不损害关键关系，后期可用 `--dof mild`；否则用 `--dof none`，已有明显虚化时也用 none。
 
 ## 后期
 两条路线都按[人偶与取景](figure-framing.md)“出图后必看图”第 5 条做本机后期：另存一张，原图与后期版都交付，标明哪张是后期。后期只加颗粒和轻微虚化，强度用脚本预设，不再加强。
