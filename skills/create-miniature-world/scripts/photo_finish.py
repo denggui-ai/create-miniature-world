@@ -55,7 +55,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("src")
     ap.add_argument("dst")
-    ap.add_argument("--focus-y", type=float, default=0.6, help="row of the figures' feet, 0=top 1=bottom")
+    ap.add_argument("--focus-y", type=float, default=0.6, help="center of the clear horizontal band, 0<value<1 (top to bottom)")
     ap.add_argument("--band", type=float, default=0.05, help="half-height of the sharp band")
     ap.add_argument("--dof", choices=DOF_PRESETS, default="mild")
     ap.add_argument("--grain", type=float, default=3.5, help="grain strength in 8-bit levels; 0 disables")

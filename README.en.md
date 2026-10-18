@@ -32,7 +32,7 @@ The only installable source directory is `skills/create-miniature-world/`. Check
 | Codex | `.agents/skills/create-miniature-world/` | `$create-miniature-world` |
 | Claude Code | `.claude/skills/create-miniature-world/` | `/create-miniature-world` |
 
-Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.1.3 use the display label `微缩摄影 Skill`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
+Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.1.4 use the display label `微缩摄影 Skill`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
 
 To install, ask your local host:
 
@@ -45,7 +45,7 @@ After loading, attach a product photo and ask. An object name also works. Your h
 | Codex | `Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 | Claude Code | `/create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
 
-Public main and v0.1.3 include the revised creative, framing and delivery rules. First request text-only concepts, then select an image to generate.
+Public main and v0.1.4 include the revised creative, framing and delivery rules. First request text-only concepts, then select an image to generate.
 
 Direct generation defaults to two valid, distinct concepts, one image each, labeled A/B. Produce one if only one concept works, the user specifies a concept or asks for one image. Text-only requests do not generate. Show initial images first; the entire round shares at most one edit after selection. Diagnose “neither” feedback before generating a newly requested direction. The tested Claude Code host has no built-in generation; use an image tool you already have and return results for review.
 
@@ -66,21 +66,21 @@ A story can be a small everyday moment. It does not need conflict, and it does n
 
 | | Soft Studio (default) | Photo-real light |
 | --- | --- | --- |
-| When | You do not mention a style | You ask for a real-photo feel, light and shadow, natural light |
+| When | Starting point when expression needs no different approach | Explicit request or a scene that benefits from directional light and material reflections |
 | Light | Start with soft light and adjust to the scene | Credible direction, reflections and shadows; fill is allowed when needed |
 | Backdrop and camera | Clean support; choose viewpoint for the relationship | Choose backdrop, focal length and viewpoint; no fixed 100mm rule |
 | Focus | Keep required relationships readable | Blur must preserve key figures, parts and markings |
 | Figures | Scale and count follow visible parts and scene needs | Same evidence; no universal frame-height target |
 
-"Soft Studio" (柔光棚拍) is the new name for the former "Tanaka-inspired" route. "田中风格", "田中达也风格" and "Tanaka-inspired" remain compatible aliases. The lighting and workflow are unchanged; the name implies no endorsement. Ideas, figure appearance and product-fidelity rules are the same in both styles. When Python 3, Pillow and NumPy are available, the skill also saves a lightly finished copy (fine grain, optional gentle focus falloff) and delivers it with the original.
+"Soft Studio" (柔光棚拍) is a project shooting preset. A request for "Tanaka-inspired" work calls for object reinterpretation, viewing experience and physical miniature staging, rather than a fixed lighting preset. The name implies no endorsement. Ideas, figure appearance and product-fidelity rules are the same in both styles. When Python 3, Pillow and NumPy are available, the skill also saves a lightly finished copy (fine grain, optional gentle focus falloff) and delivers it with the original.
 
 ## Version and validation
 
-> **v0.1.3 creative and delivery maintenance release.** [Release and archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.3). This release relaxes fixed concept quotas, figure occupancy/count and camera rules, and separates concept drafts from final deliverables. One independent temporary CLI session explicitly read the installed skill and produced three concepts. The parent session generated five initial images across three products and edited the timer once. The timer concept received positive feedback; the user agreed with the egg-slicer delivery assessment. Strict product-detail fidelity remains unresolved. These are limited assisted trials, not a blind baseline comparison. See [validation](docs/VALIDATION.md).
+> **v0.1.4 planning and photography maintenance release.** [Release and archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.4). Concepts include rough composition; the selected direction develops into a shot plan and image review. Object familiarity informs selection without banning unfamiliar objects or delayed recognition. Four initial images across two products were generated in the main session; the ice-tray image received positive overall feedback. Strict SKU fidelity, figure matching and stable success rates remain unverified. See [release notes](docs/RELEASE_v0.1.4.md).
 
 New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Soft Studio route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
 
-> **Version scope:** public main and v0.1.3 retain 11 runtime files. The Codex project install was checked; the Claude install was not updated or retested this round. Earlier versions remain available.
+> **Version scope:** v0.1.4 retains 11 runtime files. Both local Codex and Claude project installs match source; fresh-session loading was not retested. v0.1.3 and earlier releases remain available.
 
 ## Requirements and limits
 
@@ -113,6 +113,6 @@ Maintainers see [MAINTAINING.md](docs/MAINTAINING.md). Keep one source in `skill
 
 ![Miniature World: everyday objects, unexpected stories.](site/cover.png)
 
-*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.3 release stated above.*
+*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.4 release stated above.*
 
 </details>
