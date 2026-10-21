@@ -32,7 +32,7 @@ The only installable source directory is `skills/create-miniature-world/`. Check
 | Codex | `.agents/skills/create-miniature-world/` | `$create-miniature-world` |
 | Claude Code | `.claude/skills/create-miniature-world/` | `/create-miniature-world` |
 
-Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.2.1 use the display label `微缩摄影 Skill`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
+Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.2.2 use the display label `微缩摄影 Skill`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
 
 To install, ask your local host:
 
@@ -45,7 +45,7 @@ After loading, attach a product photo and ask. An object name also works. Your h
 | Codex | `Use $create-miniature-world with this product photo. Show the picture cards first. Do not generate images yet.` |
 | Claude Code | `/create-miniature-world Use this product photo. Show the picture cards first. Do not generate images yet.` |
 
-Public main and v0.2.1 write planning and shooting as one picture card and produce through one of two routes. First request the picture cards, then select one to generate.
+Public main and v0.2.2 write planning and shooting as one picture card and produce through one of two routes. First request the picture cards, then select one to generate.
 
 Direct generation defaults to two ideas, one image each. Produce one if only one idea works, the user specifies an idea or asks for one image. Text-only requests do not generate. One edit at most, only on the image the user names; no retries or automatic extra images. The tested Claude Code host has no built-in generation; use an image tool you already have and return results for review.
 
@@ -77,13 +77,15 @@ Planning and shooting are written as one picture card: where the camera is and w
 
 ## Version and validation
 
+> **v0.2.2 case-card article links.** [Release and archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.2). v0.2.2 changes only references/tanaka-cases.md: the 20 Tanaka case-card links now point to the author's article pages (each page shows the original) instead of image files, matching the "official pages only" notice; card text and the other ten runtime files are unchanged, and all 20 pages were opened and checked. No image run in this release. See [release notes](docs/RELEASE_v0.2.2.md).
+
 > **v0.2.1 typical-object gate and base admission.** [Release and archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.1). v0.2.1 corrects three rules against Tatsuya Tanaka's 2017 interview: the picture card gains a fourth gate (a typical object whose identity and real size read at a glance); base-photo admission changes from "object fills the frame" to "object is large in frame" (near end off-frame or close to the edge, margins allowed; a small centred object is still rejected); the off-white ground is described as a post-processed backdrop, and a crop tightened to the event may be delivered alongside the original. Three runtime files changed; the other eight match v0.2.0. Checked with a five-case text before/after comparison and one image run (two scissors images, read on first look as skiing and a relay race); test images are not published. No fresh host session, blind test or cross-machine verification; strict SKU fidelity, figure matching and stable success rates remain unverified. See [release notes](docs/RELEASE_v0.2.1.md).
 
 > **v0.2.0 picture-card release.** [Release and archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.0). v0.2.0 writes planning and shooting as one picture card (where the camera is, what is huge, who is small, which parts become what, what is happening, what is left out); production takes one of two routes, direct generation or editing the real product photo; review answers two questions and lists three differences against a Tanaka original. All four reference documents are new, including 20 text-only Tanaka case cards (links to the author site, no images). One image per route was produced: the ice tray (edit route) was approved by the user on first read; the grater (direct route) remains a candidate; two further direct-route images read as their card events but were not judged. Those samples and the base photo are not published. Both local Codex and Claude project installs match source; one explicit Claude host load test was done; no Codex fresh session, blind test or cross-machine verification; strict SKU fidelity, figure matching and stable success rates remain unverified. See [release notes](docs/RELEASE_v0.2.0.md).
 
 New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Soft Studio route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
 
-> **Version scope:** v0.2.1 keeps 11 runtime files; three changed in this release. Both local Codex and Claude project installs match source; one explicit Claude host load test was done. v0.2.0, v0.1.4 and earlier releases remain available.
+> **Version scope:** v0.2.2 keeps 11 runtime files; one changed in this release. Both local Codex and Claude project installs match source; one explicit Claude host load test was done. v0.2.1, v0.2.0, v0.1.4 and earlier releases remain available.
 
 ## Requirements and limits
 
@@ -116,6 +118,6 @@ Maintainers see [MAINTAINING.md](docs/MAINTAINING.md). Keep one source in `skill
 
 ![Miniature World: everyday objects, unexpected stories.](site/cover.png)
 
-*Historical candidate-stage cover with its original wording retained; the current version is the v0.2.1 release stated above.*
+*Historical candidate-stage cover with its original wording retained; the current version is the v0.2.2 release stated above.*
 
 </details>

@@ -1,6 +1,6 @@
 # Miniature World: installation, first image and examples
 
-This guide covers public main and v0.2.1. The 11-file runtime writes planning and shooting as one picture card and produces through two routes (direct generation, or editing the real product photo). Both local Codex and Claude project installs were checked; one explicit Claude host load test was done. Image quality and strict product fidelity remain separate judgments.
+This guide covers public main and v0.2.2. The 11-file runtime writes planning and shooting as one picture card and produces through two routes (direct generation, or editing the real product photo). Both local Codex and Claude project installs were checked; one explicit Claude host load test was done. Image quality and strict product fidelity remain separate judgments.
 
 ## Choose your source
 
@@ -11,7 +11,7 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.2.1](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.1). Verify the archive against its accompanying checksum before installing. Public main and v0.2.1 include the picture card with four gates, the two making routes and the two-question review. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.2.2](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.2). Verify the archive against its accompanying checksum before installing. Public main and v0.2.2 include the picture card with four gates, the two making routes and the two-question review. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
 

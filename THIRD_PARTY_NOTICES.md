@@ -115,7 +115,7 @@ b8f6bddf2fbad05b89ee17bd7f691754ccc1c3b68c5c4cd7e33619a2f912070a  examples/cloth
 
 - 此前公开的 `examples/tape-runner-learning-replica-20261008.png`（参照田中达也《[Tape Runner](https://miniature-calendar.com/240821)》的 AI 学习复刻）已于 2026-10-17 出于对原作权利的审慎主动移除；本项目今后不公开对特定作品的复刻。[作品解读](docs/ARTWORK_INTERPRETATION.md)只做文字分析并链接原作。
 - 田中达也官网的 [ABOUT 页](https://miniature-calendar.com/about/) 允许为介绍作者而引用图片并要求署名，禁止热链和其他再分发；本仓库不收录田中原作图片，只链接官方页面。
-- 运行文件 `skills/create-miniature-world/references/tanaka-cases.md`（v0.2.0 起）是对 20 张公开作品画面的文字分析，每张只记作者站点上的原图地址作为本机对照入口；不收录、不转存、不嵌入任何原作图片，不把原作传给生成器，地址不作为再分发。
+- 运行文件 `skills/create-miniature-world/references/tanaka-cases.md`（v0.2.0 起）是对 20 张公开作品画面的文字分析，每张只记作者站点上的文章页地址（v0.2.2 起；页内即原图）作为本机对照入口；不收录、不转存、不嵌入任何原作图片，不把原作传给生成器，地址不作为再分发。
 - Preiser 官网的 [Impressum](https://www.preiserfiguren.de/showpage.php?Impressum&SiteID=26) 规定其图片仅限私人、非商业用途；本仓库不收录 Preiser 官方照片。
 - 官方来源索引见 `skills/create-miniature-world/references/creative-relations.md`。
 
