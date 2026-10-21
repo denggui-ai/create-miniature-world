@@ -1,6 +1,6 @@
 # Miniature World: installation, first image and examples
 
-This guide covers public main and v0.2.0. The 11-file runtime now writes planning and shooting as one picture card and produces through two routes (direct generation, or editing the real product photo). Both local Codex and Claude project installs were checked; one explicit Claude host load test was done. Image quality and strict product fidelity remain separate judgments.
+This guide covers public main and v0.2.1. The 11-file runtime writes planning and shooting as one picture card and produces through two routes (direct generation, or editing the real product photo). Both local Codex and Claude project installs were checked; one explicit Claude host load test was done. Image quality and strict product fidelity remain separate judgments.
 
 ## Choose your source
 
@@ -11,7 +11,7 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.2.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.0). Verify the archive against its accompanying checksum before installing. Public main and v0.2.0 include the picture card, the two making routes and the two-question review. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.2.1](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.1). Verify the archive against its accompanying checksum before installing. Public main and v0.2.1 include the picture card with four gates, the two making routes and the two-question review. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
 
@@ -62,7 +62,7 @@ After selection, request one focused change and state what to preserve:
 
 Request one focused edit at a time and review the result before continuing. Editing requires a tool that can edit the selected image; a new text-only generation is not evidence of a faithful edit. If the story does not work, request text-only diagnosis before authorizing more images.
 
-Images default to a square frame; any ratio you specify takes priority. The route names Soft Studio and Photo-real light are retired in v0.2.0; the picture card states the camera, scale and scene instead. Figures should feel like tiny painted plastic models beside a giant object; the card says which part a person is as tall as. Local finishing runs only on request and needs Python 3, Pillow and NumPy; otherwise the original is delivered. Save results under `outputs/` without overwriting inputs.
+Images default to a square frame; any ratio you specify takes priority. The route names Soft Studio and Photo-real light are retired since v0.2.0; the picture card states the camera, scale and scene instead. Figures should feel like tiny painted plastic models beside a giant object; the card says which part a person is as tall as. Local finishing runs only on request and needs Python 3, Pillow and NumPy; otherwise the original is delivered. Save results under `outputs/` without overwriting inputs.
 
 ## Follow the examples
 
