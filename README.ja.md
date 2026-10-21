@@ -2,16 +2,16 @@
 
 **身近なモノを、物語のある小さな世界に。**
 
-Codex と Claude Code で使える AI ミニチュア写真の Agent Skill です。モノの形・質感・構造から連想を探し、1枚の「ピクチャーカード」にまとめてから画像を生成します。田中達也さんの作品に見られる「見立て」の手法に着想を得た、独立した個人プロジェクトです。
+Codex と Claude Code で使える AI ミニチュア写真の Agent Skill です。モノの形・質感・構造から連想を探し、まず画面を思い描いてから画像を生成します。田中達也さんの作品に見られる「見立て」の手法に着想を得た、独立した個人プロジェクトです。
 
 [紹介ページ](https://denggui-ai.github.io/create-miniature-world/site/)（中国語） · [ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [最新版をダウンロード](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [中文](README.md)
 
 | クリップ → ハードル走 | おろし金 → パターゴルフ | ハサミ → リレー |
 | --- | --- | --- |
 | <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="立てた3本のクリップがハードルになり、小さなランナーが跳び越える"> | <img src="examples/grater-golf-20261020.png" width="260" alt="寝かせたおろし金の大きな穴がゴルフのカップになる"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="ハサミの黒い持ち手の輪がリレーのトラックになる"> |
-| 外側の輪がハードル。 | 大きな穴がカップ。 | 持ち手の輪がトラック。 |
+| ハードル決勝、先頭はもう宙を舞う。 | パットを打つ選手とキャディー。 | 持ち手の輪を走るリレー。 |
 
-v0.2 のピクチャーカードで作った AI 画像で、各1回生成です。直接生成では商品が描き直され、人形が細かくなりすぎる点を[作例記録](examples/PICTURE_CARD_CASES_20261021.md)（中国語）に記載しています。ほかの作例は[ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)へ。
+AI 生成の作例で、各1回の生成です。制作の過程は[作例記録](examples/PICTURE_CARD_CASES_20261021.md)（中国語）にあります。ほかの作例は[ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)へ。
 
 ## 30 秒ではじめる
 
@@ -36,7 +36,7 @@ mkdir -p your-project/.agents/skills && cp -R create-miniature-world/skills/crea
 
 **3. 案を選ぶ。**「案1で1枚生成、商品の見た目はそのままで」と伝え、画像を見てから直したい点を1つだけ伝えます。
 
-生成と編集には、お使いの環境に備わった画像ツールを使います。Codex / ChatGPT の内蔵生成で動作を確認済みです。検証した Claude Code 環境には内蔵生成がないため、案とプロンプトを受け取り、お手持ちの画像ツールで生成し、その画像を同じ会話に戻して講評を受ける形になります。モデル、API キー、生成クレジットは同梱していません。
+生成と編集には、お使いの環境に備わった画像ツールを使います。Codex / ChatGPT の内蔵生成で動作を確認済みです。Claude Code に内蔵生成がない場合は、案とプロンプトを受け取り、お手持ちの画像ツールで生成できます。モデル、API キー、生成クレジットは同梱していません。
 
 ## できること・できないこと
 

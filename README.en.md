@@ -2,16 +2,16 @@
 
 **Turn everyday objects into small worlds with a story.**
 
-An Agent Skill for Codex and Claude Code. It looks for connections in an object's shape, texture and structure, writes the idea as one picture card, then generates the image with the image tools your host already has. Inspired by Tatsuya Tanaka (田中達也) and his 見立 / mitate approach: seeing everyday objects as something else.
+An Agent Skill for Codex and Claude Code. It looks for connections in an object's shape, texture and structure, pictures the shot first, then generates the image with the image tools your host already has. Inspired by Tatsuya Tanaka (田中達也) and his 見立 / mitate approach: seeing everyday objects as something else.
 
 [Website](https://denggui-ai.github.io/create-miniature-world/site/) · [Gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [English guide](docs/GETTING_STARTED.en.md) · [Download latest](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [中文](README.md) · [日本語](README.ja.md)
 
 | Paper clips → hurdles | Grater → putting green | Scissors → relay track |
 | --- | --- | --- |
 | <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="Three upright paper clips become hurdles as tiny runners leap them"> | <img src="examples/grater-golf-20261020.png" width="260" alt="A grater laid flat becomes a putting green; the holes are cups"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="The black scissor handle loop becomes a running track for a relay"> |
-| The outer loop is the hurdle bar. | Large holes are the cups. | The handle loop is the track. |
+| A hurdles final; the leader is already in the air. | A golfer putts while the caddie looks on. | A relay race around the handle loop. |
 
-v0.2 picture-card images, one generation each. Direct generation redraws the product and figures look too detailed; inputs and flaws are in the [case notes](examples/PICTURE_CARD_CASES_20261021.md) (Chinese). More in the [gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html).
+AI-generated, one generation each. How they were made is in the [case notes](examples/PICTURE_CARD_CASES_20261021.md) (Chinese). More in the [gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html).
 
 ## Start in 30 seconds
 
@@ -31,41 +31,37 @@ Install only the `skills/create-miniature-world/` folder, not the whole reposito
 
 | Host | Send |
 | --- | --- |
-| Claude Code | `/create-miniature-world Use this product photo. Show the picture cards first. Do not generate images yet.` |
-| Codex | `Use $create-miniature-world with this product photo. Show the picture cards first. Do not generate images yet.` |
+| Claude Code | `/create-miniature-world Use this product photo. Show me the ideas first. Do not generate images yet.` |
+| Codex | `Use $create-miniature-world with this product photo. Show me the ideas first. Do not generate images yet.` |
 
-**3. Pick a card**, say "Generate card 1, keep the product's appearance", then ask for one focused change after you see the image.
+**3. Pick an idea**, say "Generate idea 1, keep the product's appearance", then ask for one focused change after you see the image.
 
-Generation and editing use your host's own image tools. Built-in generation works in Codex/ChatGPT; the tested Claude Code host has none, so it returns cards and prompts you can run in an image tool you already have, then bring back for review. No model, API key or image credits are bundled.
+Images come from your environment's own image tools: Codex generates directly; when Claude Code has no built-in generation, you get the full plan and prompts to run in any image tool you like. No model, API key or image credits are bundled.
 
 ## How to talk to it
 
 | You say | It does |
 | --- | --- |
 | You choose the idea, make one | Reads the object, compares candidates, picks one and generates when a tool is available |
-| Show the picture cards first | Text only: where the camera is, what is huge, who is small, which part becomes what, what is happening |
+| Show me the ideas first | Each idea in words: where the camera is, who is doing what, which part of the object becomes what |
 | Just give me the prompt | Text only, no generation |
-| Edit my real photo | First checks whether it can serve as a base (camera near and low, object large in frame, clean surface, soft light); if so, only figures and props are added |
+| Edit my real photo | If the photo is taken close to the table with the object large and a clean background, it keeps the photo and only adds figures and props |
 | Make the people smaller | Rescales figures and their props, protecting the product |
 | I don't get the story | Rechecks the object link, the action and the spatial relationships; changes the situation if needed |
 
 With a product photo, its visible appearance is protected by default; with only a name, the design is free. Square frame by default; any ratio you specify takes priority. One first image per idea; at most one edit, only on the image you name; no retries or automatic extra images.
 
-## One picture card, two making routes
+## How it comes up with ideas
 
-Planning and shooting are one picture card: where the camera is and what it sees; what is huge; who is small and which part a person is as tall as; which part of the object becomes what and why it reads that way from this camera; what is happening; what is left out. When ideas run short, the skill looks through 20 text-only case cards of Tanaka's works for a similar one and borrows the mechanism, not figure counts, props or titles.
+It pictures the shot before making it: where the camera is, what looks huge, how small the people are ("as tall as one hole"), which part of the object becomes what, and what is happening. When ideas run short, it looks through 20 text-only case cards of Tanaka's works and borrows the idea, not the picture.
 
-| | Direct generation | Edit the real photo |
-| --- | --- | --- |
-| When | Only an object name, or the photo cannot serve as a base | A photo that passes as a base |
-| Object | Redrawn by the generator; parts and holes may change | Original photo kept; only figures and props are added |
-| Review | Two questions first: what is happening; does it look like tiny people in a giant object's world | Also checks the object was not altered |
+There are two ways to make the image: with only an object name, the whole picture is generated; with a photo taken close to the table and the object large in frame, it keeps your photo and only adds figures and props. Afterwards it asks you one thing, "what is this scene?" If you read the story at a glance, it worked.
 
 ## More examples and tutorials
 
 - [English first-use guide](docs/GETTING_STARTED.en.md#follow-the-examples), which introduces the case tutorials
 - [Orange photo → planet survey](site/orange.html): two concepts, then one edit to shrink the figures (Chinese)
-- [Remote control photo → two results](examples/REMOTE_CONTROL_TEST_20261014.md): a real product reference and its fidelity limits (Chinese)
+- [Remote control photo → two results](https://denggui-ai.github.io/create-miniature-world/site/remote-control.html): one real photo, two tiny worlds (Chinese)
 - [All cases and reviews](examples/README.md) (Chinese)
 
 ## Requirements and limits

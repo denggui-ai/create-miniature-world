@@ -2,16 +2,16 @@
 
 **让日常物件，成为有故事的小世界。**
 
-给 Codex 与 Claude Code 用的 AI 微缩摄影 Skill：从物件的形状、纹理和结构里找联想，把它写成一张图卡，再生成画面。受田中达也（Tatsuya Tanaka）的「见立 / mitate」启发。
+给 Codex 与 Claude Code 用的 AI 微缩摄影 Skill：从物件的形状、纹理和结构里找联想，先把画面想清楚，再生成。受田中达也（Tatsuya Tanaka）的「见立 / mitate」启发。
 
 [介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [安装说明](docs/INSTALL.md) · [下载最新版](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [日本語](README.ja.md)
 
 | 回形针 · 跨栏赛 | 刨丝器 · 果岭推杆 | 剪刀 · 柄环接力 |
 | --- | --- | --- |
 | <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="三枚立起的回形针成了跨栏，小跑者腾空跨栏"> | <img src="examples/grater-golf-20261020.png" width="260" alt="仰放的刨丝器大孔面成了高尔夫果岭，球手推杆进洞"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="剪刀黑色柄环成了环形跑道，小跑者接力"> |
-| 外圈是栏架，直边是栏腿。 | 大孔是球洞，孔唇是杯口。 | 椭圆柄环是一圈跑道。 |
+| 跨栏决赛，领跑的已经腾空过栏。 | 球手正在推杆，球童在一旁看。 | 柄环跑道上的接力赛，冲向终点。 |
 
-v0.2 图卡版 AI 成图，各 1 次生成。直接生成会重绘商品、人偶偏精细，输入与不足见[案例记录](examples/PICTURE_CARD_CASES_20261021.md)；更多看[案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。
+AI 生成，每张只生成 1 次。创作过程见[案例记录](examples/PICTURE_CARD_CASES_20261021.md)；更多看[案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。
 
 ## 30 秒开始
 
@@ -36,40 +36,36 @@ mkdir -p 你的项目/.agents/skills && cp -R create-miniature-world/skills/crea
 
 **3. 选一个方案**，说「按方案1生成一张，保留商品外观」，看图后再提一处修改。
 
-生图和编辑用的是你所在环境自带的图像工具。Codex/ChatGPT 内置生图已跑通；已测的 Claude Code 环境没有内置生图，会给出方案与提示词，由你拿到已有的图像工具生成后带回来评。本项目不附带模型、API 密钥或生图额度。
+出图用的是你所在环境自带的图像工具：Codex 可以直接出图；Claude Code 没有内置生图时，会给你完整方案和提示词，拿去你常用的图像工具生成即可。本项目不附带模型、API 密钥或生图额度。
 
 ## 你可以怎样和它沟通
 
 | 你说什么 | 它会怎样做 |
 | --- | --- |
 | 创意你来定，直接做一张 | 读物件、比较候选后自己选案，工具可用时生成 |
-| 先看方案，不要生图 | 只交图卡（相机在哪、什么巨大、谁小、哪些部位成了什么、发生什么事），等你选 |
+| 先看方案，不要生图 | 只用文字讲清每个方案：相机放在哪、谁在做什么、物件的哪个部分成了什么，等你选 |
 | 只给我生图提示词 | 只输出文字，不调用生图 |
-| 用我这张实物照直接改 | 先判它能否当底图（机位近而低、物件在画中大、承托面干净、柔光）；能就只添加小人与配件，物件保留 |
+| 用我这张实物照直接改 | 照片贴近桌面、物件拍得够大、背景干净时，保留原照，只添加小人和道具 |
 | 人物再小一些 | 调整人物及相关道具比例，保护商品 |
 | 没看懂这个故事 | 回查物件联系、人物动作和空间关系，必要时换情境 |
 
 有商品照片时默认保护它的可见外观；只有名称时自由创作。画幅默认方幅，你指定的比例优先。每个方案一张首图；编辑只在你点名的那张上做、至多一次；失败不重试、不自动追加。
 
-## 一张图卡，两条制作路线
+## 它怎么想创意
 
-策划和拍摄写成一张图卡：相机在哪、看见什么；什么巨大；谁小、人高约等于哪个部件；物件哪个部位成了什么、从这个机位凭什么像；正在发生什么事；不加什么。想不出来时，Skill 会在 20 张田中作品的文字案例卡里找同类，借想法的机制，不抄人数、配件和标题。
+先把画面想清楚再动手：相机放在哪，什么显得巨大，小人有多小（比如“人高约等于一个孔”），物件的哪个部分成了什么，正在发生什么事。想不出来时，它会翻 20 张田中达也作品的文字案例卡找同类，借想法，不抄画面。
 
-| | 直接生成 | 编辑实物照 |
-| --- | --- | --- |
-| 什么时候用 | 只有物件名，或实物照不能当底图 | 有一张能当底图的实物照 |
-| 物件 | 由生成器重绘，部件与孔形可能变 | 原照保留，只添加小人与配件 |
-| 看图 | 先答两问：在发生什么事；像不像小人在巨大物件的世界里 | 另核对物件有没有被改 |
+出图有两种方式：只有物件名称时，整张画面直接生成；有一张贴近桌面、物件拍得够大的实物照时，保留原照，只在上面添加小人和道具。成图后它只问你一句“这是什么场景”，你一眼读出的故事就是检验。
 
 ## 更多案例与教程
 
 - [马克杯 · 咖啡渍跑道](https://denggui-ai.github.io/create-miniature-world/site/coffee-ring.html)：只有物件名称，怎样变成一个故事
 - [橘子实拍 → 行星考察](site/orange.html)：比较两个创意，再用一次编辑缩小人物
-- [遥控器原照 → 两张成图](examples/REMOTE_CONTROL_TEST_20261014.md)：真实商品参考与保真问题
+- [遥控器原照 → 两张成图](https://denggui-ai.github.io/create-miniature-world/site/remote-control.html)：上传一张实拍照片，变成两个小世界
 - [冰格与榨汁器的两次完整取舍](examples/PLANNING_PHOTOGRAPHY_CASES_20261019.md)：候选、机位与布光怎样决定
 - [纸巾雪坡、铅笔桥与木夹跳台](docs/SECONDARY_CREATION.md)：从材质、组合和姿态出发
 - [作品解读：胶带座为什么能成为跑步机？](docs/ARTWORK_INTERPRETATION.md)：只做文字分析，链接官方原作
-- [纸杯入门教程](docs/QUICK_START.md) · [全部案例与复盘](examples/README.md)
+- [纸杯三案复盘：怎样看图选案](docs/QUICK_START.md) · [全部案例与复盘](examples/README.md)
 
 ## 适用条件与限制
 

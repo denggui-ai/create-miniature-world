@@ -1,6 +1,6 @@
 # Miniature World: installation, first image and examples
 
-This guide covers public main and v0.2.2. The 11-file runtime writes planning and shooting as one picture card and produces through two routes (direct generation, or editing the real product photo). Both local Codex and Claude project installs were checked; one explicit Claude host load test was done. Image quality and strict product fidelity remain separate judgments.
+This guide covers public main and v0.2.2. It turns an everyday object into a tiny story world: paper clips become hurdles, a scissor handle becomes a relay track. It pictures the shot first, then either generates the whole image or adds figures to your own product photo.
 
 ## Choose your source
 
@@ -62,19 +62,19 @@ After selection, request one focused change and state what to preserve:
 
 Request one focused edit at a time and review the result before continuing. Editing requires a tool that can edit the selected image; a new text-only generation is not evidence of a faithful edit. If the story does not work, request text-only diagnosis before authorizing more images.
 
-Images default to a square frame; any ratio you specify takes priority. The route names Soft Studio and Photo-real light are retired since v0.2.0; the picture card states the camera, scale and scene instead. Figures should feel like tiny painted plastic models beside a giant object; the card says which part a person is as tall as. Local finishing runs only on request and needs Python 3, Pillow and NumPy; otherwise the original is delivered. Save results under `outputs/` without overwriting inputs.
+Images default to a square frame; any ratio you specify takes priority. The skill plans the camera, scale and scene for each idea. Figures should feel like tiny painted plastic models beside a giant object; each plan says which part a person is as tall as. Local finishing runs only on request and needs Python 3, Pillow and NumPy; otherwise the original is delivered. Save results under `outputs/` without overwriting inputs.
 
 ## Follow the examples
 
-The [online gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) has 28 case cards: two reviewed real-reference results, eight object-name tests and eighteen historical representative images. Tutorial images are counted separately. Gallery captions and detailed source records remain mainly in Chinese; this draft provides an English route through them.
+The [online gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) has more than 30 works plus step-by-step tutorials. Captions and detailed records are mainly in Chinese; this table is an English route through them.
 
-| Entry | What to learn | Evidence limit |
+| Entry | What to learn | Note |
 | --- | --- | --- |
-| [Grater reference comparison](../examples/GRATER_VALIDATION_20261013.md) | Compare the same real product photo in the Soft Studio and Photo-real light routes. | The user approved both samples for visible appearance, story, figure scale and aesthetics. Hidden details, exact SKU and microscopic pattern accuracy are not certified. |
-| [Paper-cup first steps](QUICK_START.md) | Compare a cup opening used as a train entrance, a circus entrance and an inner theatre; then inspect actual images. | This historical tutorial generated three concepts with permission. None became a complete success example: the train/cup-bottom logic remained unresolved, while other concepts depended on added scenery. For first use, select a concept and explicitly request one image. |
-| [Secondary creation](../site/secondary-creation.html) | Follow tissue snow, a notebook-and-pencil bridge and a clothespin diving platform from object relationships to images and feedback. | Preserve each case's actual inputs, edits and limitations; these are examples, not a cross-product success rate. |
-| [Coffee-ring track](../site/gallery.html) | See how an object's usage trace supplies the story: a mug's coffee ring becomes a running track. | Object-name input; no product-photo Before. Some runners are not exactly on the ring. |
-| [Remote-control tutorial](../site/remote-control.html) | Compare a real reference photo, two results, screen symbols, button shapes and figure contact. | Strict detail fidelity did not pass. Permission to publish is separate from quality approval. |
+| [Grater reference comparison](../examples/GRATER_VALIDATION_20261013.md) | One real grater photo, two cheese-snow scenes in soft indoor light and warm side light. | The user compared both with the original photo and approved appearance, story, figure size and look. |
+| [Paper-cup review](QUICK_START.md) | A cup as a tunnel mouth, a circus tent or a concert hall: how to judge which story comes from the cup itself. | An early (v0.1) comparison; for first use, pick one idea and ask for one image. |
+| [Secondary creation](../site/secondary-creation.html) | Tissue becomes a ski slope, a pencil bridges a notebook, a clothespin becomes a diving platform. | Each case shows its input, the image and the feedback. |
+| [Coffee-ring track](../site/coffee-ring.html) | A mug's coffee ring becomes a running track: children race, grandma cheers. | Made from the object name only, no product photo. |
+| [Remote-control tutorial](../site/remote-control.html) | One photo of an old remote control becomes two tiny worlds: a cooling crew and an eco-mode roundabout. | Compare each result with the original photo to see what to fix next. |
 
 For provenance and known issues, use [selected cases](../examples/SELECTED.md), the [case index](../examples/README.md) and [material notices](../THIRD_PARTY_NOTICES.md). Original text/configuration use MIT; images are not automatically MIT. The three bundled author-shot figure-reference photos use CC BY-NC 4.0 for those photos only.
 
