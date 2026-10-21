@@ -32,7 +32,7 @@ The only installable source directory is `skills/create-miniature-world/`. Check
 | Codex | `.agents/skills/create-miniature-world/` | `$create-miniature-world` |
 | Claude Code | `.claude/skills/create-miniature-world/` | `/create-miniature-world` |
 
-Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.1.4 use the display label `微缩摄影 Skill`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
+Use one installation scope and verify the actual loaded files in a fresh task. Public main and v0.2.0 use the display label `微缩摄影 Skill`; the invocation identifier is `create-miniature-world`. See the [English guide](docs/GETTING_STARTED.en.md) and [installation instructions](docs/INSTALL.md).
 
 To install, ask your local host:
 
@@ -42,12 +42,12 @@ After loading, attach a product photo and ask. An object name also works. Your h
 
 | Host | First request |
 | --- | --- |
-| Codex | `Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
-| Claude Code | `/create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet.` |
+| Codex | `Use $create-miniature-world with this product photo. Show the picture cards first. Do not generate images yet.` |
+| Claude Code | `/create-miniature-world Use this product photo. Show the picture cards first. Do not generate images yet.` |
 
-Public main and v0.1.4 include the revised creative, framing and delivery rules. First request text-only concepts, then select an image to generate.
+Public main and v0.2.0 write planning and shooting as one picture card and produce through one of two routes. First request the picture cards, then select one to generate.
 
-Direct generation defaults to two valid, distinct concepts, one image each, labeled A/B. Produce one if only one concept works, the user specifies a concept or asks for one image. Text-only requests do not generate. Show initial images first; the entire round shares at most one edit after selection. Diagnose “neither” feedback before generating a newly requested direction. The tested Claude Code host has no built-in generation; use an image tool you already have and return results for review.
+Direct generation defaults to two ideas, one image each. Produce one if only one idea works, the user specifies an idea or asks for one image. Text-only requests do not generate. One edit at most, only on the image the user names; no retries or automatic extra images. The tested Claude Code host has no built-in generation; use an image tool you already have and return results for review.
 
 ## Learn from the tutorials
 
@@ -62,25 +62,26 @@ Start with the [orange photo-to-scene tutorial](site/orange.html): two initial c
 
 A story can be a small everyday moment. It does not need conflict, and it does not have to demonstrate the product's normal function. The product itself must contribute to the idea.
 
-## Two photo styles: Soft Studio / Photo-real light
+## One picture card, two making routes
 
-| | Soft Studio (default) | Photo-real light |
+Planning and shooting are written as one picture card: where the camera is and which three things it sees; what is huge; who is small and which part a person is as tall as; which part of the object becomes what and why it reads that way from this camera; what is happening and where the joke is; what is left out. When ideas run short, the 20 text-only Tanaka case cards (links to the author site, no images) supply mechanisms to borrow, not figure counts, props or titles.
+
+| | Direct generation | Edit the real photo |
 | --- | --- | --- |
-| When | Starting point when expression needs no different approach | Explicit request or a scene that benefits from directional light and material reflections |
-| Light | Start with soft light and adjust to the scene | Credible direction, reflections and shadows; fill is allowed when needed |
-| Backdrop and camera | Clean support; choose viewpoint for the relationship | Choose backdrop, focal length and viewpoint; no fixed 100mm rule |
-| Focus | Keep required relationships readable | Blur must preserve key figures, parts and markings |
-| Figures | Scale and count follow visible parts and scene needs | Same evidence; no universal frame-height target |
+| When | Only an object name, or the photo cannot serve as a base | A photo that passes as a base (camera near and low, object filling the frame, clean surface, soft light) |
+| Object | Redrawn by the generator; parts and holes may change | Original photo kept; only figures and props are added |
+| Figures | Figure photo reference from the package, written as matte flat paint | Same, following the base photo's depth and perspective |
+| Review | Two questions first: what is happening; does it look like tiny people in a giant object's world | Also check object retention by eye and pixel difference |
 
-"Soft Studio" (柔光棚拍) is a project shooting preset. A request for "Tanaka-inspired" work calls for object reinterpretation, viewing experience and physical miniature staging, rather than a fixed lighting preset. The name implies no endorsement. Ideas, figure appearance and product-fidelity rules are the same in both styles. When Python 3, Pillow and NumPy are available, the skill also saves a lightly finished copy (fine grain, optional gentle focus falloff) and delivers it with the original.
+"Soft Studio" and "Photo-real light" are no longer route names in v0.2.0. A request for "Tanaka-inspired" work is designed through the picture card; the name implies no endorsement. The original image is delivered without finishing by default; local finishing runs only on request when Python 3, Pillow and NumPy are available.
 
 ## Version and validation
 
-> **v0.1.4 planning and photography maintenance release.** [Release and archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.4). Concepts include rough composition; the selected direction develops into a shot plan and image review. Object familiarity informs selection without banning unfamiliar objects or delayed recognition. Four initial images across two products were generated in the main session; the ice-tray image received positive overall feedback. Strict SKU fidelity, figure matching and stable success rates remain unverified. See [release notes](docs/RELEASE_v0.1.4.md).
+> **v0.2.0 picture-card release.** [Release and archive](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.0). v0.2.0 writes planning and shooting as one picture card (where the camera is, what is huge, who is small, which parts become what, what is happening, what is left out); production takes one of two routes, direct generation or editing the real product photo; review answers two questions and lists three differences against a Tanaka original. All four reference documents are new, including 20 text-only Tanaka case cards (links to the author site, no images). One image per route was produced: the ice tray (edit route) was approved by the user on first read; the grater (direct route) remains a candidate; two further direct-route images read as their card events but were not judged. Those samples and the base photo are not published. Both local Codex and Claude project installs match source; one explicit Claude host load test was done; no Codex fresh session, blind test or cross-machine verification; strict SKU fidelity, figure matching and stable success rates remain unverified. See [release notes](docs/RELEASE_v0.2.0.md).
 
 New real-reference test: [a remote-control photo and two results](examples/REMOTE_CONTROL_TEST_20261014.md), [usage tutorial](site/remote-control.html), and [fidelity regressions](docs/REMOTE_CONTROL_REGRESSION.md) (Chinese). Both images use the default Soft Studio route. Added display symbols, redrawn details and contact issues are retained; strict detail fidelity did not pass. Permission to publish is separate from quality approval.
 
-> **Version scope:** v0.1.4 retains 11 runtime files. Both local Codex and Claude project installs match source; fresh-session loading was not retested. v0.1.3 and earlier releases remain available.
+> **Version scope:** v0.2.0 keeps 11 runtime files; all four reference documents are new. Both local Codex and Claude project installs match source; one explicit Claude host load test was done. v0.1.4 and earlier releases remain available.
 
 ## Requirements and limits
 
@@ -113,6 +114,6 @@ Maintainers see [MAINTAINING.md](docs/MAINTAINING.md). Keep one source in `skill
 
 ![Miniature World: everyday objects, unexpected stories.](site/cover.png)
 
-*Historical candidate-stage cover with its original wording retained; the current version is the v0.1.4 release stated above.*
+*Historical candidate-stage cover with its original wording retained; the current version is the v0.2.0 release stated above.*
 
 </details>

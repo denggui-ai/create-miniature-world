@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """Local photographic finish for a generated miniature photo.
 
-Adds fine sensor grain and, optionally, a gentle depth-of-field falloff
-above and below a horizontal focus band (the row where the figures stand).
+Optionally adds grain or stylized blur above and below a horizontal band.
+Blur uses image rows, not scene depth or subject boundaries. Effects default
+to off; the output is not evidence of physically accurate depth of field.
 Writes a new file; never overwrites the input or an existing output.
 Applies EXIF orientation before finishing. Retains RGB ICC profiles for
 RGB/RGBA inputs saved as PNG/JPEG/TIFF/WebP; unsupported profiles or formats
 stop finishing so the caller can deliver the original without color conversion.
 
 Usage:
-  python3 photo_finish.py IN.png OUT.png [--focus-y 0.6] [--dof none|mild|shallow] [--grain 3.5]
+  python3 photo_finish.py IN.png OUT.png [--focus-y 0.6] [--dof none|mild|shallow] [--grain 0]
+  python3 photo_finish.py IN.png GRAIN.png --dof none --grain 3.5
 """
 import argparse
 import io
@@ -57,8 +59,8 @@ def main():
     ap.add_argument("dst")
     ap.add_argument("--focus-y", type=float, default=0.6, help="center of the clear horizontal band, 0<value<1 (top to bottom)")
     ap.add_argument("--band", type=float, default=0.05, help="half-height of the sharp band")
-    ap.add_argument("--dof", choices=DOF_PRESETS, default="mild")
-    ap.add_argument("--grain", type=float, default=3.5, help="grain strength in 8-bit levels; 0 disables")
+    ap.add_argument("--dof", choices=DOF_PRESETS, default="none", help="stylized horizontal-band blur; default none")
+    ap.add_argument("--grain", type=float, default=0.0, help="grain strength in 8-bit levels; default 0 (off)")
     ap.add_argument("--seed", type=int, default=0)
     a = ap.parse_args()
 

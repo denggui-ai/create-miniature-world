@@ -6,12 +6,12 @@
 
 | 来源 | 适用情况 | 注意事项 |
 | --- | --- | --- |
-| [正式 v0.1.4 安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.4) | 需要固定版本时优先使用 | 下载ZIP和SHA-256文件，按[离线指南](USER-GUIDE.html#install)核验后安装。 |
-| 公开仓库 main | 跟进公开文档与教程 | 与v0.1.4运行范围一致，含创意/构图与交付判断修订。 |
+| [正式 v0.2.0 安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.0) | 需要固定版本时优先使用 | 下载ZIP和SHA-256文件，按[离线指南](USER-GUIDE.html#install)核验后安装。 |
+| 公开仓库 main | 跟进公开文档与教程 | 与v0.2.0运行范围一致，含一张图卡与两条制作路线。 |
 
-公开 main 与 v0.1.4 的 Codex 界面显示名为「微缩摄影 Skill」，调用标识仍为 `create-miniature-world`。未指定具体表达需要时可从「柔光棚拍 / Soft Studio」开始；「田中风格」等请求不直接绑定某条拍法。
+公开 main 与 v0.2.0 的 Codex 界面显示名为「微缩摄影 Skill」，调用标识仍为 `create-miniature-world`。策划与拍摄写成一张图卡；「田中风格」等请求按图卡设计相机与场景，不绑定拍法名。
 
-v0.1.4 已核对Codex与Claude两套项目安装各11运行文件；本版主会话三项文字试用、一次校准文字检查及两商品4初图，冰格初图获整体正反馈。没有本版新会话、桌面隐式触发或跨机验证；以下历史生命周期记录不扩大到本版。
+v0.2.0 已核对Codex与Claude两套项目安装各11运行文件（4份参考文档全部换新，旧4份须删除）；两条路线各出图1张，冰格（编辑实物照）用户认可，刨丝器（直接生成）候选；Claude宿主显式加载测试1次。没有Codex新会话、桌面隐式触发或跨机验证；以下历史生命周期记录不扩大到本版。
 
 安装时只复制 `skills/create-miniature-world/` 中的11个运行文件：入口、界面配置、4份参考文档、人偶参考说明和3张照片、后期脚本。源侧 `evals/`、`CHANGELOG.md` 不属于安装范围；不要把整个仓库复制成一个Skill。
 
@@ -83,7 +83,7 @@ PYINSTALL
 
 在本机Codex打开项目，将这段话交给它：
 
-> 请阅读 docs/INSTALL.md 和 docs/LOCAL_TEST.md。检查是否已有 create-miniature-world 技能，若有则比较版本，不直接覆盖。按v0.1.4的11个运行文件范围，将 skills/create-miniature-world 安装到本项目的 .agents/skills/create-miniature-world，排除源侧evals/CHANGELOG。已有版本先完整备份。核对全部运行文件的SHA-256与源目录一致，并在新任务中确认实际加载路径。分别报告能否读本地图、把图传入生图工具、生图、编辑和保存；先不生图，不安装依赖或接入付费服务。
+> 请阅读 docs/INSTALL.md 和 docs/LOCAL_TEST.md。检查是否已有 create-miniature-world 技能，若有则比较版本，不直接覆盖。按v0.2.0的11个运行文件范围，将 skills/create-miniature-world 安装到本项目的 .agents/skills/create-miniature-world，排除源侧evals/CHANGELOG。已有版本先完整备份。核对全部运行文件的SHA-256与源目录一致，并在新任务中确认实际加载路径。分别报告能否读本地图、把图传入生图工具、生图、编辑和保存；先不生图，不安装依赖或接入付费服务。
 
 默认建议项目级安装 `.agents/skills/create-miniature-world/`，只在该项目使用。明确需要全局使用时，可选择用户级 `~/.agents/skills/create-miniature-world/`。两者选择其一；遇到云端或旧版同名Skill，确认实际加载的是哪一份。
 
@@ -91,29 +91,29 @@ PYINSTALL
 
 上传的照片和生成提示会交给当前宿主及其图像工具处理；仅上传有权使用、可交给这些服务的内容。本介绍页本身不接收照片或执行生图。
 
-> 使用 $create-miniature-world，把这张商品图做成微缩摄影。先给三个有明显区别的方案并推荐一个，不要生图。
+> 使用 $create-miniature-world，把这张商品图做成微缩摄影。先看方案，不要生图。
 
-支持技能选择的 Codex 界面中，显示名为「微缩摄影 Skill」。先看文字方案，选定后说「按方案1生成一张，保留商品外观」。直接生成默认两个成立且不同的创意各一张；只成立一案、指定创意或只要一张时只出一张。交初图后选择A/B，有需要才编辑，整轮共用最多一次；两张都不喜欢时先诊断。工具不足时交方案或提示，不以文字重生冒充保真编辑。
+支持技能选择的 Codex 界面中，显示名为「微缩摄影 Skill」。先看图卡，选定后说「按第1张图卡生成一张，保留商品外观」。直接生成默认两个想法各一张；只成立一案、指定创意或只要一张时只出一张。编辑只在你点名的那张上做、至多一次。工具不足时交方案或提示，不以文字重生冒充保真编辑。
 
 ## Claude Code
 
 在Claude Code打开项目，发送：
 
-> 请阅读 docs/INSTALL.md 和 docs/LOCAL_TEST.md。检查本项目 .claude/skills/create-miniature-world 是否已有技能，若有则比较版本，不直接覆盖。已有版本先完整备份；按v0.1.4的11个运行文件范围将 skills/create-miniature-world 复制到该目录，排除源侧evals/CHANGELOG，逐文件核对SHA-256一致。在新会话确认技能可发现，并分别报告读图、参考图输入、生图、编辑和保存能力；先不生图，不安装依赖或接入付费服务。
+> 请阅读 docs/INSTALL.md 和 docs/LOCAL_TEST.md。检查本项目 .claude/skills/create-miniature-world 是否已有技能，若有则比较版本，不直接覆盖。已有版本先完整备份；按v0.2.0的11个运行文件范围将 skills/create-miniature-world 复制到该目录，排除源侧evals/CHANGELOG，逐文件核对SHA-256一致。在新会话确认技能可发现，并分别报告读图、参考图输入、生图、编辑和保存能力；先不生图，不安装依赖或接入付费服务。
 
 默认项目级目录为 `.claude/skills/create-miniature-world/`；明确需要全局使用时，可选择 `~/.claude/skills/create-miniature-world/`。保留同一份源文件，`agents/openai.yaml`为Codex界面配置，不需要为Claude另写创作方法。
 
 安装后上传商品照片，发送：
 
 ```text
-/create-miniature-world 把这张商品图做成微缩摄影。先给三个有明显区别的方案并推荐一个，不要生图。
+/create-miniature-world 把这张商品图做成微缩摄影。先看方案，不要生图。
 ```
 
 已测 Claude Code 宿主没有内置生图，方案与提示词可在你已有的图像工具使用，再把成图带回评审；不自动接新服务。普通Claude网页聊天上传文件，不等于完成Claude Code本机安装。
 
 ## 确认安装成功
 
-目录存在不代表加载成功。核对实际安装的全部11个运行文件与本包一致，并在新会话确认实际读取项目安装入口和参考文件；先用“先给三个方案，不要生图”做文字验证。文字加载通过不等于生图通过。只有用户授权图像调用且工具能力具备时，才按[本机验收](LOCAL_TEST.md)追加参考图生成和指定编辑；不为检查安装自动消耗图像额度。
+目录存在不代表加载成功。核对实际安装的全部11个运行文件与本包一致，并在新会话确认实际读取项目安装入口和参考文件；先用“先看方案，不要生图”做文字验证。文字加载通过不等于生图通过。只有用户授权图像调用且工具能力具备时，才按[本机验收](LOCAL_TEST.md)追加参考图生成和指定编辑；不为检查安装自动消耗图像额度。
 
 Skill不附带生图模型、API密钥或额度。没有生图工具时，可以策划并输出提示词；能够读商品图不代表生图工具能接收该图。工具不足时记录具体阻塞，可由用户在现有图像工具中生成后交回审图，不能记为本机自动生图通过。
 

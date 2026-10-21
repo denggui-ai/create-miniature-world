@@ -1,6 +1,6 @@
 # Miniature World: installation, first image and examples
 
-This guide covers public main and v0.1.4. The 11-file runtime now connects concept selection, shot planning and image review. Both local Codex and Claude project installs were backed up and checked; fresh sessions were not retested. Image quality and strict product fidelity remain separate judgments.
+This guide covers public main and v0.2.0. The 11-file runtime now writes planning and shooting as one picture card and produces through two routes (direct generation, or editing the real product photo). Both local Codex and Claude project installs were checked; one explicit Claude host load test was done. Image quality and strict product fidelity remain separate judgments.
 
 ## Choose your source
 
@@ -11,7 +11,7 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 cd create-miniature-world
 ```
 
-For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.1.4](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.1.4). Verify the archive against its accompanying checksum before installing. Public main and v0.1.4 include the A/B workflow, relative figure scale and appearance rules, and EXIF/ICC finishing fixes. Keep the selected source identifiable; downloading a repository does not install a skill.
+For the released snapshot, use the dedicated ZIP and SHA-256 file attached to [v0.2.0](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.0). Verify the archive against its accompanying checksum before installing. Public main and v0.2.0 include the picture card, the two making routes and the two-question review. Keep the selected source identifiable; downloading a repository does not install a skill.
 
 ## Install for your host
 
@@ -36,19 +36,19 @@ Public main and the release archive use the Codex display label `微缩摄影 Sk
 
 Attach a clear product photo, or start with an object name. In Codex:
 
-> Use $create-miniature-world with this product photo. Propose three distinct concepts and recommend one. Do not generate images yet. Please respond in English.
+> Use $create-miniature-world with this product photo. Show the picture cards first. Do not generate images yet. Please respond in English.
 
 In Claude Code:
 
-> /create-miniature-world Use this product photo. Propose three distinct concepts and recommend one. Do not generate images yet. Please respond in English.
+> /create-miniature-world Use this product photo. Show the picture cards first. Do not generate images yet. Please respond in English.
 
 With a product photo, the skill protects the visible product appearance by default. With only an ordinary object name, it uses free creation and does not promise to reproduce a particular product. State any features that must remain unchanged. Photos and prompts are processed by your host and its image tool; upload only material you may share with them. The project website displays examples and instructions.
 
-After selecting a concept, ask “Generate one image using concept 1; preserve the product.” Direct generation defaults to two valid, distinct concepts, one image each, labeled A/B. Produce one when only one concept works or a concept/count is specified. Show initial images before editing; the round shares at most one edit after selection. Diagnose “neither” feedback first; start a new round when a new direction is explicitly requested.
+After selecting a card, ask “Generate one image from card 1; preserve the product.” Direct generation defaults to two ideas, one image each. Produce one when only one idea works or an idea/count is specified. One edit at most, only on the image you name; no retries or automatic extra images.
 
 For a text-only start:
 
-> Use $create-miniature-world with an ordinary paper cup. Propose three concepts and recommend one. Do not generate yet. Please respond in English.
+> Use $create-miniature-world with an ordinary paper cup. Show the picture cards first. Do not generate yet. Please respond in English.
 
 Use the Claude invocation instead when working in Claude Code. You can also request prompts only. The tested Claude Code environment has no built-in generation: use an image tool you already have, then return the results for review. Reading a photo does not prove that a generation tool can receive it.
 
@@ -62,7 +62,7 @@ After selection, request one focused change and state what to preserve:
 
 Request one focused edit at a time and review the result before continuing. Editing requires a tool that can edit the selected image; a new text-only generation is not evidence of a faithful edit. If the story does not work, request text-only diagnosis before authorizing more images.
 
-Images default to separate opaque portrait images in a 3:4 ratio. The default route is Soft Studio (柔光棚拍), the former Tanaka-inspired route; the old Chinese and English names remain compatible aliases. The v0.1.0 archive retains the old name. Ask for a real-photo feel, natural light, or light and shadow to select the Photo-real light route. Figures should feel like tiny painted plastic models beside a giant object; a frame-height percentage alone does not establish correct scale. Optional local finishing needs Python 3, Pillow and NumPy; without them, deliver the original. Save results under `outputs/` without overwriting inputs.
+Images default to a square frame; any ratio you specify takes priority. The route names Soft Studio and Photo-real light are retired in v0.2.0; the picture card states the camera, scale and scene instead. Figures should feel like tiny painted plastic models beside a giant object; the card says which part a person is as tall as. Local finishing runs only on request and needs Python 3, Pillow and NumPy; otherwise the original is delivered. Save results under `outputs/` without overwriting inputs.
 
 ## Follow the examples
 
