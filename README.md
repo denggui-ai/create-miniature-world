@@ -6,12 +6,12 @@
 
 [介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [安装说明](docs/INSTALL.md) · [下载最新版](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [日本語](README.ja.md)
 
-| 笔记本 · 装订圈停车架 | 薯片 · 波纹秋收 | 马克杯 · 咖啡渍跑道 |
+| 回形针 · 跨栏赛 | 刨丝器 · 果岭推杆 | 剪刀 · 柄环接力 |
 | --- | --- | --- |
-| <img src="examples/notebook-bike-rack.png" width="260" alt="笔记本装订圈成为微缩自行车停车架"> | <img src="examples/potato-chip-harvest.png" width="260" alt="薯片的金色波纹成为微型收割机作业的田垄"> | <img src="examples/mug-coffee-ring-track-20261012.png" width="260" alt="杯底留下的咖啡渍圈成为孩子们赛跑的跑道"> |
-| 装订圈成了停放自行车的车架。 | 金黄的波纹成了秋收的田垄。 | 一圈咖啡渍成了运动会跑道。[看教程](https://denggui-ai.github.io/create-miniature-world/site/coffee-ring.html) |
+| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="三枚立起的回形针成了跨栏，小跑者腾空跨栏"> | <img src="examples/grater-golf-20261020.png" width="260" alt="仰放的刨丝器大孔面成了高尔夫果岭，球手推杆进洞"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="剪刀黑色柄环成了环形跑道，小跑者接力"> |
+| 外圈是栏架，直边是栏腿。 | 大孔是球洞，孔唇是杯口。 | 椭圆柄环是一圈跑道。 |
 
-以上为 AI 成图，展示创意方向；商品保真与已知不足见[案例说明](examples/SELECTED.md)。
+v0.2 图卡版 AI 成图，各 1 次生成。直接生成会重绘商品、人偶偏精细，输入与不足见[案例记录](examples/PICTURE_CARD_CASES_20261021.md)；更多看[案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。
 
 ## 30 秒开始
 

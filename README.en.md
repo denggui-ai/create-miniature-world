@@ -6,11 +6,12 @@ An Agent Skill for Codex and Claude Code. It looks for connections in an object'
 
 [Website](https://denggui-ai.github.io/create-miniature-world/site/) · [Gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [English guide](docs/GETTING_STARTED.en.md) · [Download latest](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [中文](README.md) · [日本語](README.ja.md)
 
-| Notebook → bicycle rack | Potato chip → harvest field | Mug → coffee-ring race track |
+| Paper clips → hurdles | Grater → putting green | Scissors → relay track |
 | --- | --- | --- |
-| <img src="examples/notebook-bike-rack.png" width="260" alt="Notebook binding rings become a miniature bicycle rack"> | <img src="examples/potato-chip-harvest.png" width="260" alt="Golden potato chip ridges become a miniature harvest field"> | <img src="examples/mug-coffee-ring-track-20261012.png" width="260" alt="A coffee ring left by a mug becomes a running track for children"> |
+| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="Three upright paper clips become hurdles as tiny runners leap them"> | <img src="examples/grater-golf-20261020.png" width="260" alt="A grater laid flat becomes a putting green; the holes are cups"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="The black scissor handle loop becomes a running track for a relay"> |
+| The outer loop is the hurdle bar. | Large holes are the cups. | The handle loop is the track. |
 
-AI-generated examples showing the creative direction; product fidelity and known flaws are listed in the [case notes](examples/SELECTED.md) (Chinese).
+v0.2 picture-card images, one generation each. Direct generation redraws the product and figures look too detailed; inputs and flaws are in the [case notes](examples/PICTURE_CARD_CASES_20261021.md) (Chinese). More in the [gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html).
 
 ## Start in 30 seconds
 

@@ -80,3 +80,4 @@ a.source-card,.tutorial-content figure a.source-card{display:flex;flex-direction
 @media(max-width:960px){#latest-cases .new-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 18px}}
 @media(max-width:680px){#latest-cases .new-grid{grid-template-columns:1fr;gap:32px}}
 .gallery-grid.v02-grid .gallery-card img{aspect-ratio:1/1;object-fit:cover;object-position:50% 55%}
+#latest-cases{border-top:0}#latest-cases .latest-foot{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;margin-top:48px}#latest-cases .latest-cta{font-size:17px;padding:16px 34px;min-width:240px;text-align:center}#latest-cases .latest-foot .small-note{max-width:640px}#latest-cases .latest-foot .text-link{margin-left:8px}

@@ -6,11 +6,12 @@ Codex と Claude Code で使える AI ミニチュア写真の Agent Skill で�
 
 [紹介ページ](https://denggui-ai.github.io/create-miniature-world/site/)（中国語） · [ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [最新版をダウンロード](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [中文](README.md)
 
-| ノート → 駐輪場 | ポテトチップス → 秋の収穫 | マグカップ → コーヒー染みのトラック |
+| クリップ → ハードル走 | おろし金 → パターゴルフ | ハサミ → リレー |
 | --- | --- | --- |
-| <img src="examples/notebook-bike-rack.png" width="260" alt="ノートのリングが小さな駐輪場になる"> | <img src="examples/potato-chip-harvest.png" width="260" alt="ポテトチップスの波が収穫中の畑になる"> | <img src="examples/mug-coffee-ring-track-20261012.png" width="260" alt="マグカップのコーヒー染みが子どもたちの徒競走のトラックになる"> |
+| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="立てた3本のクリップがハードルになり、小さなランナーが跳び越える"> | <img src="examples/grater-golf-20261020.png" width="260" alt="寝かせたおろし金の大きな穴がゴルフのカップになる"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="ハサミの黒い持ち手の輪がリレーのトラックになる"> |
+| 外側の輪がハードル。 | 大きな穴がカップ。 | 持ち手の輪がトラック。 |
 
-作例画像はいずれも AI 生成で、発想の方向を示すものです。商品の再現度や既知の不具合は[作例メモ](examples/SELECTED.md)（中国語）に記載しています。
+v0.2 のピクチャーカードで作った AI 画像で、各1回生成です。直接生成では商品が描き直され、人形が細かくなりすぎる点を[作例記録](examples/PICTURE_CARD_CASES_20261021.md)（中国語）に記載しています。ほかの作例は[ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)へ。
 
 ## 30 秒ではじめる
 
