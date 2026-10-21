@@ -1,4 +1,4 @@
-const prompts={codex:'使用 $create-miniature-world，把这张商品图做成微缩摄影。先给三个有明显区别的创意，不要立即生图。',claude:'/create-miniature-world 把这张商品图做成微缩摄影。先给三个有明显区别的创意，不要立即生图。'};
+const prompts={codex:'使用 $create-miniature-world，把这张商品图做成微缩摄影，创意由你决定，给我两个不同且成立的创意各一张。',claude:'/create-miniature-world 把这张商品图做成微缩摄影，给我两个不同且成立的创意；没有生图工具就给对应提示词。'};
 const prompt=document.getElementById('prompt'),status=document.getElementById('copy-status'),copy=document.getElementById('copy');
 if(prompt&&status){
   for(const button of document.querySelectorAll('[data-host]'))button.addEventListener('click',()=>{if(!prompts[button.dataset.host])return;for(const b of document.querySelectorAll('[data-host]'))b.setAttribute('aria-pressed',String(b===button));prompt.textContent=prompts[button.dataset.host];status.textContent='';});

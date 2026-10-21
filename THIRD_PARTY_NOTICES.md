@@ -41,6 +41,12 @@
 
 冰格和榨汁器A/C另输入包内作者拍摄的成人模型照片作模塑造型与涂装参考，沿用上方照片的署名与CC BY-NC 4.0说明；B无人未用人偶参考。生成图不继承或扩展输入照片、人偶造型、商品设计或商标权利，不纳入MIT，仅作本项目展示和教学，不增加商业或再分发授权。品牌仅用于说明输入，不代表背书；无田中达也原作作为生成输入。完整选案、反馈范围、已知不足与原始PNG摘要见[两案记录](examples/PLANNING_PHOTOGRAPHY_CASES_20261019.md)。
 
+<a id="picture-card-cases-20261021"></a>
+
+### v0.2 图卡版案例（2026-10-21公开）
+
+`examples/paperclip-hurdles-20261020.png`、`grater-golf-20261020.png`、`grater-capsule-climb-20261020.png`、`scissors-blade-ski-20261021.png`、`scissors-handle-relay-20261021.png` 及 `site/img/` 下同名 webp 为 AI 生成图，各1次生成、0编辑、0后期，按用户授权公开。刨丝器两张输入上方 CC BY 2.0 刨丝器照片（署名“Grater — Ben Dalton / noii, CC BY 2.0”）；回形针只输入物件名称；剪刀两张输入项目作者自拍的剪刀照片，该照片不公开、不授予任何权利。五张均另输入包内作者拍摄的人偶照片作造型参考，沿用其 CC BY-NC 4.0 说明。生成图不继承或扩展输入照片、人偶造型或商品设计的权利，不纳入MIT，仅作本项目展示和教学；无田中达也原作作为生成输入。用户第一读与已知不足见[图卡版案例记录](examples/PICTURE_CARD_CASES_20261021.md)。
+
 ### 订书机与粘毛器修正版（2026-10-17）
 
 `examples/stapler-crocodile-feeding-smaller-20261017.png` 与 `examples/lint-roller-smaller-20261017.png` 分别以 `examples/stapler-crocodile-feeding-20261012.png`、`examples/muji-sticky-roller-v1-20261006.png` 为唯一输入，各做一次内置AI编辑。未新增商品实拍、人偶照片或其他外部素材；订书机网站展示采用同名WebP压缩副本。用户统一认可并同意公开，两张旧图均保留。输入类别、剩余限制与摘要见[修正对照](examples/SELECTED.md#2026-10-17订书机与粘毛器人偶缩小修正)，粘毛器原始生成来源仍见下方历史记录。沿用本节AI示例图用途与许可，不归入MIT，不增加复用许可。
