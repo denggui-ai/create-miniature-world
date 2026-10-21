@@ -2,145 +2,91 @@
 
 **让日常物件，成为有故事的小世界。**
 
-面向 Codex 与 Claude Code 的 **AI 微缩摄影与缩微场景创作 Skill**。受田中达也（Tatsuya Tanaka）的「见立 / mitate」创作启发，从日常物件的形状、纹理和结构出发，构思有故事的微缩世界，生成并迭代画面。自动成图需要所在环境提供相应图像工具；Codex/ChatGPT 内置生图已跑通，已测 Claude Code 环境没有内置生图，得到的是方案与提示词，出图需人工接力。
+给 Codex 与 Claude Code 用的 AI 微缩摄影 Skill：从物件的形状、纹理和结构里找联想，把它写成一张图卡，再生成画面。受田中达也（Tatsuya Tanaka）的「见立 / mitate」启发。
 
-[打开介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [开始使用](docs/INSTALL.md) · [纸杯入门教程](docs/QUICK_START.md) · [浏览案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [案例说明与来源](examples/SELECTED.md) · [介绍页预览说明](site/README.md) · [English](README.en.md)
+[介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [安装说明](docs/INSTALL.md) · [下载最新版](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [日本語](README.ja.md)
 
-## 从一个物件，发现另一个世界
+| 笔记本 · 装订圈停车架 | 薯片 · 波纹秋收 | 马克杯 · 咖啡渍跑道 |
+| --- | --- | --- |
+| <img src="examples/notebook-bike-rack.png" width="260" alt="笔记本装订圈成为微缩自行车停车架"> | <img src="examples/potato-chip-harvest.png" width="260" alt="薯片的金色波纹成为微型收割机作业的田垄"> | <img src="examples/mug-coffee-ring-track-20261012.png" width="260" alt="杯底留下的咖啡渍圈成为孩子们赛跑的跑道"> |
+| 装订圈成了停放自行车的车架。 | 金黄的波纹成了秋收的田垄。 | 一圈咖啡渍成了运动会跑道。[看教程](https://denggui-ai.github.io/create-miniature-world/site/coffee-ring.html) |
 
-首页保留木梳、笔记本与薯片的原展示，另补两张真实刨丝器参考验证及两种拍法对照。历史木梳封面为AI展示适配图，[原始木梳案例](examples/comb-farm.png)另存；下方两张为开发期间原始AI成图。画面展示创意方向，具体商品保真与已知不足见[案例详情](examples/SELECTED.md)。
+以上为 AI 成图，展示创意方向；商品保真与已知不足见[案例说明](examples/SELECTED.md)。
 
-| 笔记本 · 装订圈停车架 | 薯片 · 波纹秋收 |
+## 30 秒开始
+
+**1. 安装**（首次安装、目标目录还不存在时；已有同名 Skill 请先看[安装说明](docs/INSTALL.md)备份与比较）
+
+```bash
+git clone https://github.com/denggui-ai/create-miniature-world.git
+# Claude Code：复制到你的项目
+mkdir -p 你的项目/.claude/skills && cp -R create-miniature-world/skills/create-miniature-world 你的项目/.claude/skills/
+# Codex：改用 .agents/skills
+mkdir -p 你的项目/.agents/skills && cp -R create-miniature-world/skills/create-miniature-world 你的项目/.agents/skills/
+```
+
+只装 `skills/create-miniature-world/` 这一个目录，不要把整个仓库当成 Skill。
+
+**2. 开一个新会话，发一张商品照片和一句话**（没有照片，只说物品名称也行）
+
+| 环境 | 发送 |
 | --- | --- |
-| <img src="examples/notebook-bike-rack.png" width="300" alt="笔记本装订圈成为微缩自行车停车架"> | <img src="examples/potato-chip-harvest.png" width="300" alt="薯片的金色波纹成为微型收割机作业的田垄"> |
-| 装订圈成为停放自行车的结构。 | 金黄的波纹与碎屑，成为秋收的田垄与收获。 |
-
-[继续看回形针、马克杯、小青柑等案例 →](examples/README.md)
-
-## 开始使用
-
-1. **获取项目**：克隆仓库，或从 Code → Download ZIP 下载并解压。
-2. **安装Skill**：按[安装说明](docs/INSTALL.md)选择 Codex 或 Claude Code。唯一安装源为 `skills/create-miniature-world/`。
-3. **在新会话确认加载，再上传商品图**：复制下面与你的工具对应的一句。没有照片时也可以只给物品名称。
-
-| 环境 | 安装后发送 |
-| --- | --- |
-| Codex | `使用 $create-miniature-world，把这张商品图做成微缩摄影。先看方案，不要生图。` |
 | Claude Code | `/create-miniature-world 把这张商品图做成微缩摄影。先看方案，不要生图。` |
+| Codex | `使用 $create-miniature-world，把这张商品图做成微缩摄影。先看方案，不要生图。` |
 
-公开 main 与 v0.2.2 把策划与拍摄合成一张图卡，制作分“直接生成”与“编辑实物照”两条路线。Codex 界面显示名为「微缩摄影 Skill」，调用标识为 `create-miniature-world`。先看文字方案，再按选定创意生成。
+**3. 选一个方案**，说「按方案1生成一张，保留商品外观」，看图后再提一处修改。
 
-选定后明确说「按方案1生成一张，保留商品外观」，再按实际结果提出一处修改；生成和编辑分别取决于当前工具。已测 Claude Code 环境无内置生图，交付方案与提示词，可在你已有的图像工具生成后把结果带回评审。首次运行可用[本机验收](docs/LOCAL_TEST.md)确认实际能力。
-
-## 从案例学习
-
-[从物件到画面：冰格与榨汁器的两次完整取舍](examples/PLANNING_PHOTOGRAPHY_CASES_20261019.md)：保留三个候选、机位与布光决定、四张实际AI初图，以及从原推荐转向更有效方案的原因。案例包含未选和无人方向，创意认可与商品保真分别记录。
-
-[橘子实拍 → 行星考察教程](site/orange.html)：比较两个创意，再用一次编辑缩小人物和车；保留初图、原照及已知不足。
-
-**先看二创实战：[纸巾雪坡、铅笔桥与木夹跳台](docs/SECONDARY_CREATION.md)。** 从熟悉材质、物件组合和物件姿态出发，看已有成图、实际输入、一句修改与反馈。用户提供目标、素材和反馈，策划与提示由 Skill 完成。
-
-[作品解读：胶带座为什么能成为跑步机？](docs/ARTWORK_INTERPRETATION.md) 解释田中达也 Tape Runner 的结构、动作与摄影关系。本页只做文字分析并链接官方原作，不转载原图。
-
-以上教程收录于[案例与教程页](site/gallery.html)，作为公开实验教程；原作与官方商品参考仅保留来源链接，媒体范围见[素材说明](THIRD_PARTY_NOTICES.md)。
+生图和编辑用的是你所在环境自带的图像工具。Codex/ChatGPT 内置生图已跑通；已测的 Claude Code 环境没有内置生图，会给出方案与提示词，由你拿到已有的图像工具生成后带回来评。本项目不附带模型、API 密钥或生图额度。
 
 ## 你可以怎样和它沟通
 
-| 你说什么 | 它应该怎样处理 |
+| 你说什么 | 它会怎样做 |
 | --- | --- |
-| 创意你来定，直接做一张 | 读物件、比较候选后自主选案，工具可用时生成 |
-| 先看方案，不要生图 | 只交图卡（一段话写完相机在哪、什么巨大、谁小、哪些部位成了什么、发生什么事），等待选择 |
-| 只给我生图提示词 | 输出文字，不调用生图 |
+| 创意你来定，直接做一张 | 读物件、比较候选后自己选案，工具可用时生成 |
+| 先看方案，不要生图 | 只交图卡（相机在哪、什么巨大、谁小、哪些部位成了什么、发生什么事），等你选 |
+| 只给我生图提示词 | 只输出文字，不调用生图 |
+| 用我这张实物照直接改 | 先判它能否当底图（机位近而低、物件在画中大、承托面干净、柔光）；能就只添加小人与配件，物件保留 |
 | 人物再小一些 | 调整人物及相关道具比例，保护商品 |
-| 用我这张实物照直接改 | 先判它能否当底图（机位近而低、物件在画中大、承托面干净、柔光）；过则走编辑实物照路线，只添加小人与配件，物件保留 |
-| 只把光线调暖 | 工具支持时编辑当前图，保留故事与构图 |
 | 没看懂这个故事 | 回查物件联系、人物动作和空间关系，必要时换情境 |
 
-有商品参考图时，默认保护其可见外观；只有物品名称时，默认自由创作。画幅默认方幅，用户指定优先。直接生成默认两个想法各一张；只有一案成立、已指定创意或只要一张时只出一张。先看方案、只要提示词时不生图。每案一张首图，编辑只在用户点名的那张上做、至多一次；失败不重试、不自动追加。用户说了机位或景别时照办，不主动问景别。
-
-创意稿可供选案，正式成片需达到本次商品外观及其他明确要求；多图按实际质量推荐主推、备选或待修，不把生成数量当成可定稿数量。
+有商品照片时默认保护它的可见外观；只有名称时自由创作。画幅默认方幅，你指定的比例优先。每个方案一张首图；编辑只在你点名的那张上做、至多一次；失败不重试、不自动追加。
 
 ## 一张图卡，两条制作路线
 
-策划和拍摄是同一件事，写成一张图卡：相机在哪、看见哪三件东西；什么巨大；谁小、人高约等于哪个部件；物件哪个部位成了什么、从这个机位凭什么像；正在发生什么事、笑点是什么；不加什么。联想不够时在 20 张田中案例卡（只有文字与作者站点链接，不含图片）里找同类，取想法的机制，不抄人数、配件和标题。
+策划和拍摄写成一张图卡：相机在哪、看见什么；什么巨大；谁小、人高约等于哪个部件；物件哪个部位成了什么、从这个机位凭什么像；正在发生什么事；不加什么。想不出来时，Skill 会在 20 张田中作品的文字案例卡里找同类，借想法的机制，不抄人数、配件和标题。
 
 | | 直接生成 | 编辑实物照 |
 | --- | --- | --- |
-| 什么时候用 | 只有物件名，或实物照不能当底图 | 有一张能当底图的实物照（机位近而低、物件在画中大、承托面干净、柔光） |
+| 什么时候用 | 只有物件名，或实物照不能当底图 | 有一张能当底图的实物照 |
 | 物件 | 由生成器重绘，部件与孔形可能变 | 原照保留，只添加小人与配件 |
-| 人偶 | 传入包内人偶实拍参考，写哑光平涂 | 同左，随底图的景深与透视 |
-| 看图 | 先答两问：在发生什么事；像不像小人在巨大物件的世界里 | 另按目视与像素差核对物件保留 |
+| 看图 | 先答两问：在发生什么事；像不像小人在巨大物件的世界里 | 另核对物件有没有被改 |
 
-“柔光棚拍 / Soft Studio”“实拍光影”自 v0.2.0 起不再是拍法名；用户说“田中风格”等时按图卡设计相机与场景，不代表作者本人的工作流程或认可。默认交原图不做后期；用户点名且本机有 Python 3、Pillow 与 NumPy 时才另存轻度后期版。
+## 更多案例与教程
 
-## 四句话，说明创作方法
+- [马克杯 · 咖啡渍跑道](https://denggui-ai.github.io/create-miniature-world/site/coffee-ring.html)：只有物件名称，怎样变成一个故事
+- [橘子实拍 → 行星考察](site/orange.html)：比较两个创意，再用一次编辑缩小人物
+- [遥控器原照 → 两张成图](examples/REMOTE_CONTROL_TEST_20261014.md)：真实商品参考与保真问题
+- [冰格与榨汁器的两次完整取舍](examples/PLANNING_PHOTOGRAPHY_CASES_20261019.md)：候选、机位与布光怎样决定
+- [纸巾雪坡、铅笔桥与木夹跳台](docs/SECONDARY_CREATION.md)：从材质、组合和姿态出发
+- [作品解读：胶带座为什么能成为跑步机？](docs/ARTWORK_INTERPRETATION.md)：只做文字分析，链接官方原作
+- [纸杯入门教程](docs/QUICK_START.md) · [全部案例与复盘](examples/README.md)
 
-- **发现联想：** 找到商品值得被重新看见的特征。
-- **建立情境：** 让行动或空间关系把联想显现出来。
-- **组织画面：** 让原物、新角色和整体美感同时成立。
-- **判断巧思：** 用可见证据和必要对照，区分成立、好看与保真。
+## 适用条件与限制
 
-我们要找的是：商品的某个特征被重新看见之后，才变得有意思的情境。故事可以只是一个生活片刻；不必演示商品用途，也不必安排冲突和结局。
+- **适合**从可见的轮廓、纹理、结构或开合关系中找联想的物件；商品照片优先。不能只按「文具」「食品」等品类保证成功，也不会为了故事凭空改变商品结构。
+- **商品保真**：标签、文字、部件和尺寸仍可能生成错误，直接生成时尤其明显。创意得到认可，不代表精确还原了某款商品。
+- **微缩人偶**：大小按人物与物件部件的关系判断，不猜毫米。包内三张人偶实拍只作造型与涂装参考（[说明与许可](skills/create-miniature-world/assets/figure-refs/README.md)，CC BY-NC 4.0）。
+- **本机后期**：只在你点名时做，需要 Python 3、Pillow、NumPy；缺依赖时交原图。
+- **已验证与未验证**：每个版本测了什么、没测什么，写在[发布说明](https://github.com/denggui-ai/create-miniature-world/releases)与[验证记录](docs/VALIDATION.md)里。换电脑、跨系统、桌面端自动触发尚未验证，也不宣称稳定成功率。
 
-## 成本与常见问题
+## 创作启发与致敬
 
-- **Skill 本身收费吗？** 本项目不附带模型、API 密钥或生图额度。生成与编辑使用当前宿主的账户和图像工具，是否收费及可用额度以你已使用的服务为准。
-- **Claude Code 没有生图工具怎么办？** 先获取方案和提示词，在你已有的图像工具生成，再把结果带回评审；无需为安装本 Skill 接入新服务。
-- **为什么结果与示例不同？** 生成存在波动；文字、细纹、商品部件和人偶大小仍可能出错。先确认加载来源，再指出最想修的一处，创意认可不等于商品严格保真。
-- **本机后期缺依赖怎么办？** 交付原图即可；后期需要 Python 3、Pillow 和 NumPy，不自动安装。后期与网站压缩副本不保证保留原文件的内容凭证或全部元数据，判断来源请同时参考原图和案例说明。
-- **如何反馈问题？** 使用[问题反馈模板](https://github.com/denggui-ai/create-miniature-world/issues/new?template=bug_report.md)，提供宿主、实际加载版本、最小输入、期望和实际结果。仅附有权公开的素材，勿贴账号或密钥。
+致敬微缩摄影家、见立作家**田中达也**。他的 [MINIATURE CALENDAR](https://miniature-calendar.com/about/) 启发我们重新看见日常物件。本项目把作品学习和自己的试验整理成方法，这些步骤不是作者本人公布的工作流程；案例卡只有文字与作者官网文章页链接，不收录、不转存任何原作图片。人物动作和模型造型可参考 [Preiser 官网](https://www.preiserfiguren.de/)。
 
-## 版本与验证记录
+本项目与田中达也、MINIATURE CALENDAR、Preiser 及样张中的商品品牌无官方合作或背书关系。代码与自编文档采用 [MIT 许可证](LICENSE)；案例图和第三方素材不自动适用 MIT，见[素材说明](THIRD_PARTY_NOTICES.md)。
 
-> **v0.2.2 案例卡链接改为作者文章页** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.2)。本版只改 references/tanaka-cases.md：20张田中案例卡的链接由原图文件地址改为作者站点文章页（页内即原图），与素材许可“只链接官方页面”同口径；卡片文字和其余10个运行文件不变，20个文章页逐条打开核对。不做出图测试。详见[发布说明](docs/RELEASE_v0.2.2.md)。
+## 版本、反馈与维护
 
-> **v0.2.1 典型款门槛与底图准入校正** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.1)。本版按田中达也2017年访谈原话校正三处：图卡门槛新增“物件是典型款，身份与实际大小一眼可读”；底图准入“物件填画”改为“物件在画中大”（近端出画或边缘接近画边，四周可留承托面，整件小小居中仍不准入）；米白写成后期统一的底色，物件小、事件读不出时可裁切收紧到事件并与原图同交。只改3个运行文件，其余8个与v0.2.0相同。文字层改前/改后对照5例与1次出图测试（剪刀2张，用户第一读“滑雪和跑步比赛”）；测试图不公开。没有新宿主会话、盲测或跨机验证；不认证精确SKU、人偶造型或稳定成功率。详见[发布说明](docs/RELEASE_v0.2.1.md)。
+当前版本见 [Releases](https://github.com/denggui-ai/create-miniature-world/releases/latest)（含安装包、SHA-256 与发布说明）；需要离线阅读时用[离线用户指南](docs/USER-GUIDE.html)，首次运行可用[本机验收](docs/LOCAL_TEST.md)确认实际能力。
 
-> **v0.2.0 一张图卡与两条制作路线** · [Release与安装包](https://github.com/denggui-ai/create-miniature-world/releases/tag/v0.2.0)。本版把策划与拍摄写成一张图卡（相机在哪、什么巨大、谁小、哪些部位成了什么、发生什么事、不加什么），制作分“直接生成”与“编辑实物照”两条路线，看图先答两问再与田中原作并排写三处差异；4份参考文档全部换新，其中20张田中案例卡只有文字与作者站点链接，不含图片。两条路线各实际出图1张：冰格（编辑实物照）用户第一读“打扫卫生 应该是清理什么池子”并认可“可以通过”；刨丝器（直接生成）第一读“爬墙探索”，记候选；另两张直接生成（刨丝器高尔夫、回形针跨栏）第一读与图卡事件一致，未判好坏。四张样张与底图不公开。Codex与Claude两套项目安装各11文件已核对，Claude宿主显式加载测试1次（只交图卡）；没有Codex新会话、盲测或跨机验证；不认证精确SKU、人偶造型或稳定成功率。详见[发布说明](docs/RELEASE_v0.2.0.md)。
-
-[离线用户指南](docs/USER-GUIDE.html) · [v0.2.2 发布说明与限制](docs/RELEASE_v0.2.2.md) · [v0.2.1 发布说明](docs/RELEASE_v0.2.1.md) · [v0.2.0 发布说明](docs/RELEASE_v0.2.0.md) · [v0.1.4 发布说明](docs/RELEASE_v0.1.4.md)
-
-**新增真实参考实测：** [遥控器原照 → 两张成图](examples/REMOTE_CONTROL_TEST_20261014.md) · [使用教程](site/remote-control.html) · [保真回归](docs/REMOTE_CONTROL_REGRESSION.md)。两张均为柔光棚拍，保留新增图标、键形重绘与接触问题；严格细节保真未通过，公开授权不等于质量验收。
-
-> **版本范围：** 本页面向公开 main 与 v0.2.2；11运行文件范围不变，本版只改案例卡1个运行文件。Codex与Claude项目安装已核对，Claude宿主显式加载测试1次。历史v0.2.1、v0.2.0、v0.1.4及更早版本保留。
-
-## 适用条件与当前限制
-
-适合从可见的轮廓、纹理、结构或开合关系中寻找联想。商品照片优先；不能只按「文具」「食品」等品类保证成功，也不能为了故事凭空改变商品结构。
-
-- **运行能力**：需要可读图的宿主。自动成图需要生图工具，参考图创作需要图片输入，反馈编辑需要编辑能力；Skill不附带模型、额度或付费API客户端。
-- **商品保真**：标签、文字、部件和尺寸仍可能生成错误。创意得到认可，不代表精确SKU还原通过。
-- **微缩人偶**：大小按具体人物与物件部件的关系判断，不猜毫米，也不设通用画高或人数。包内三张作者实拍供简化模塑造型与涂装参考（[说明与许可](skills/create-miniature-world/assets/figure-refs/README.md)，CC BY-NC 4.0）；独立特写不能证明与商品的相对比例。
-- **本机后期**：需要 Python 3、Pillow、NumPy；缺依赖时交原图。先按 EXIF 转正，有效 RGB ICC 在支持的输出格式中保留，不可靠组合停止后期；另存结果，保留原图。颗粒与轻微虚化不能补出真实光线或反射。
-- **验证状态**：本版有限试用见上方。当前已有独立CLI显式读取记录；桌面新会话隐式发现、新机器、跨系统与Claude新会话仍未验证。历史生命周期证据保留其原版本范围。
-
-## 创作启发与致敬：田中达也与见立
-
-致敬微缩摄影家、见立作家**田中达也（Tatsuya Tanaka）**。他的 [MINIATURE CALENDAR](https://miniature-calendar.com/about/) 启发我们重新看见日常物件。本项目将作品学习和自身试验整理成创作方法，帮助使用者构思自己的微缩场景；这些步骤不是作者本人公布的工作流程。
-
-人物动作和模型造型可参考 [Preiser官方网站](https://www.preiserfiguren.de/)。具体型号、比例及图片使用条件以对应资料为准。[人偶参考说明](examples/FIGURE_REFERENCES.md)记录现有材料与缺口。
-
-本项目与田中达也、MINIATURE CALENDAR、Preiser及样张中的商品品牌无官方合作或背书关系。代码与自编文档采用[MIT许可证](LICENSE)；案例图和第三方素材不自动适用MIT。图片来源与许可见[素材说明](THIRD_PARTY_NOTICES.md)。
-
-## 反馈与继续开发
-
-反馈时请说明：使用Codex还是Claude Code、实际加载版本、输入是什么、期待什么、实际发生什么；可附有权分享的成图及一句具体问题。缺工具、故事难懂、商品改错和人物过大应分别记录，勿上传账号信息或密钥。
-
-| 入口 | 内容 |
-| --- | --- |
-| [安装与更新](docs/INSTALL.md) | Codex / Claude Code分别安装、触发与更新 |
-| [代表案例](examples/SELECTED.md) | 2张真实参考验证、8张名称测试及18张历史代表图，各附来源与限制 |
-| [案例与复盘](examples/README.md) | 更多精选、历史对照与原始编号 |
-| [本机验收](docs/LOCAL_TEST.md) | 一次生成与一次反馈修改 |
-| [维护说明](docs/MAINTAINING.md) | 源码结构、发版与反馈方式 |
-
-仓库与调用标识保持 `create-miniature-world`。核心只维护 `skills/create-miniature-world/` 一份源，安装目录是运行副本。
-
-<details>
-<summary>历史展示封面</summary>
-
-![微缩摄影 Skill：日常物件，另有天地。](site/cover.png)
-
-*历史候选阶段展示封面，保留图内原始文字；当前版本为上方注明的v0.2.2。*
-
-</details>
+遇到问题请用[反馈模板](https://github.com/denggui-ai/create-miniature-world/issues/new?template=bug_report.md)，写明用的是 Codex 还是 Claude Code、加载的版本、输入、期望与实际结果；只附有权分享的图片，不要贴账号或密钥。维护者见[维护说明](docs/MAINTAINING.md)。核心只维护 `skills/create-miniature-world/` 一份源，安装目录是运行副本。
