@@ -81,3 +81,13 @@ a.source-card,.tutorial-content figure a.source-card{display:flex;flex-direction
 @media(max-width:680px){#latest-cases .new-grid{grid-template-columns:1fr;gap:32px}}
 .gallery-grid.v02-grid .gallery-card img{aspect-ratio:1/1;object-fit:cover;object-position:50% 55%}
 #latest-cases{border-top:0}#latest-cases .latest-foot{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;margin-top:48px}#latest-cases .latest-cta{font-size:17px;padding:16px 34px;min-width:240px;text-align:center}#latest-cases .latest-foot .small-note{max-width:640px}#latest-cases .latest-foot .text-link{margin-left:8px}
+
+/* Language versions: keep the switcher visible on small screens; use Latin / Japanese fonts. */
+nav>a.nav-lang{display:inline;font-family:Arial,sans-serif;font-size:12px;letter-spacing:.04em}
+html[lang="en"]{--serif:Georgia,"Times New Roman",serif}
+html[lang="ja"]{--serif:"Hiragino Mincho ProN","Yu Mincho","Noto Serif CJK JP",serif}
+html[lang="ja"] body{font-family:"Hiragino Sans","Yu Gothic","Noto Sans CJK JP",sans-serif}
+nav>a{white-space:nowrap}
+html[lang="en"] .hero h1{font-size:clamp(40px,5vw,80px)}
+html[lang="ja"] .hero h1{font-size:clamp(38px,4.4vw,72px)}
+@media(max-width:680px){html[lang="en"] .hero h1{font-size:40px}html[lang="ja"] .hero h1{font-size:34px}html[lang="ja"] .brand-cn{font-size:20px;white-space:nowrap}}
