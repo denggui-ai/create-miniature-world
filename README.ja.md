@@ -4,7 +4,7 @@
 
 Codex と Claude Code で使える AI ミニチュア写真の Agent Skill です。モノの形・質感・構造から連想を探し、まず画面を思い描いてから画像を生成します。田中達也さんの作品に見られる「見立て」の手法に着想を得た、独立した個人プロジェクトです。
 
-[紹介ページ](https://denggui-ai.github.io/create-miniature-world/site/)（中国語） · [ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [最新版をダウンロード](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [中文](README.md)
+[紹介ページ](https://denggui-ai.github.io/create-miniature-world/site/ja/) · [ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)（説明は中国語） · [最新版をダウンロード](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [中文](README.md)
 
 | クリップ → ハードル走 | おろし金 → パターゴルフ | ハサミ → リレー |
 | --- | --- | --- |

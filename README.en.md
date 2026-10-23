@@ -4,7 +4,7 @@
 
 An Agent Skill for Codex and Claude Code. It looks for connections in an object's shape, texture and structure, pictures the shot first, then generates the image with the image tools your host already has. Inspired by Tatsuya Tanaka (田中達也) and his 見立 / mitate approach: seeing everyday objects as something else.
 
-[Website](https://denggui-ai.github.io/create-miniature-world/site/) · [Gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [English guide](docs/GETTING_STARTED.en.md) · [Download latest](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [中文](README.md) · [日本語](README.ja.md)
+[Website](https://denggui-ai.github.io/create-miniature-world/site/en/) · [Gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) (Chinese captions) · [English guide](docs/GETTING_STARTED.en.md) · [Download latest](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [中文](README.md) · [日本語](README.ja.md)
 
 | Paper clips → hurdles | Grater → putting green | Scissors → relay track |
 | --- | --- | --- |
