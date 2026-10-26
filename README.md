@@ -13,30 +13,37 @@
 
 AI 生成，每张只生成 1 次。创作过程见[案例记录](examples/PICTURE_CARD_CASES_20261021.md)；更多看[案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。
 
-## 30 秒开始
+## 从第一个文字方案开始
 
-**1. 安装**（首次安装、目标目录还不存在时；已有同名 Skill 请先看[安装说明](docs/INSTALL.md)备份与比较）
+先准备 Codex 或 Claude Code。这个项目是给 Agent 读取的创作 Skill，介绍页用于看案例，不是在线生图工具。**没有照片也能试用；先看方案不会调用生图工具。**
 
-```bash
-git clone https://github.com/denggui-ai/create-miniature-world.git
-# Claude Code：复制到你的项目
-mkdir -p 你的项目/.claude/skills && cp -R create-miniature-world/skills/create-miniature-world 你的项目/.claude/skills/
-# Codex：改用 .agents/skills
-mkdir -p 你的项目/.agents/skills && cp -R create-miniature-world/skills/create-miniature-world 你的项目/.agents/skills/
-```
+**1. 安装到你使用的一个宿主**
 
-只装 `skills/create-miniature-world/` 这一个目录，不要把整个仓库当成 Skill。
+从[最新版 Release](https://github.com/denggui-ai/create-miniature-world/releases/latest)下载附带的 Skill 安装包与校验文件，按[安装说明](docs/INSTALL.md)核验并解压。找到包含 `SKILL.md` 的 `create-miniature-world` 文件夹；源码中的对应位置是 `skills/create-miniature-world/`。
 
-**2. 开一个新会话，发一张商品照片和一句话**（没有照片，只说物品名称也行）
+| 你使用的宿主 | 首次项目级安装位置 | 详细步骤 |
+| --- | --- | --- |
+| Codex | `你的项目/.agents/skills/create-miniature-world/` | [Codex 安装](docs/INSTALL.md#codex) |
+| Claude Code | `你的项目/.claude/skills/create-miniature-world/` | [Claude Code 安装](docs/INSTALL.md#claude-code) |
+
+只选你使用的一行，完整安装 Skill 文件夹，不要只复制 `SKILL.md` 或整个仓库。已有同名副本时先[备份与比较](docs/INSTALL.md#更新)，不要直接覆盖。打开新会话，确认宿主实际加载了这份 Skill；文件复制成功不等于已加载。
+
+**2. 不用照片，先复制一句话**
 
 | 环境 | 发送 |
 | --- | --- |
-| Claude Code | `/create-miniature-world 把这张商品图做成微缩摄影。先看方案，不要生图。` |
-| Codex | `使用 $create-miniature-world，把这张商品图做成微缩摄影。先看方案，不要生图。` |
+| Claude Code | `/create-miniature-world 用一个普通马克杯设计微缩摄影。先给我两个文字方案，不要生成图片。` |
+| Codex | `使用 $create-miniature-world，用一个普通马克杯设计微缩摄影。先给我两个文字方案，不要生成图片。` |
 
-**3. 选一个方案**，说「按方案1生成一张，保留商品外观」，看图后再提一处修改。
+你应该先看到文字方案：马克杯的哪部分变成什么、谁在做什么、相机从哪里看。此时还没有成图。若没加载 Skill，回到[安装检查](docs/INSTALL.md#确认安装成功)；若先出了图，记录问题并反馈。
 
-出图用的是你所在环境自带的图像工具：Codex 可以直接出图；Claude Code 没有内置生图时，会给你完整方案和提示词，拿去你常用的图像工具生成即可。本项目不附带模型、API 密钥或生图额度。
+**3. 选一个方案，再生成一张**
+
+有可用生图工具时，发送「按方案1生成一张」。没有生图工具时，发送「只给方案1的完整生图提示词，不要生成」，拿到你已有的图像工具中使用。之后可以换成自己的商品照片，并明确要保留的外观。
+
+生成和编辑取决于当前宿主实际提供的图像工具；并非每个 Codex 或 Claude Code 环境都能出图。本项目不附带模型、API 密钥或生图额度。已有验证范围见[记录](docs/VALIDATION.md)。
+
+做完后，用一句话描述“这是什么场景”，再决定是否修改。愿意分享试用结果，可以填[首次体验反馈](https://github.com/denggui-ai/create-miniature-world/issues/new?template=first_use.md)；卡在安装或没有生图工具也欢迎记录。
 
 ## 你可以怎样和它沟通
 
@@ -86,3 +93,5 @@ mkdir -p 你的项目/.agents/skills && cp -R create-miniature-world/skills/crea
 当前版本见 [Releases](https://github.com/denggui-ai/create-miniature-world/releases/latest)（含安装包、SHA-256 与发布说明）；需要离线阅读时用[离线用户指南](docs/USER-GUIDE.html)，首次运行可用[本机验收](docs/LOCAL_TEST.md)确认实际能力。
 
 遇到问题请用[反馈模板](https://github.com/denggui-ai/create-miniature-world/issues/new?template=bug_report.md)，写明用的是 Codex 还是 Claude Code、加载的版本、输入、期望与实际结果；只附有权分享的图片，不要贴账号或密钥。维护者见[维护说明](docs/MAINTAINING.md)。核心只维护 `skills/create-miniature-world/` 一份源，安装目录是运行副本。
+
+想介绍或收录这个项目？这里有[中英文项目简介、案例入口与收录说明](docs/SHARING.md)。
