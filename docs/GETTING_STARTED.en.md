@@ -4,7 +4,7 @@ This guide covers public main and v0.2.2. It turns an everyday object into a tin
 
 ## Choose your source
 
-Start with the [English README](../README.en.md). The public repository is [denggui-ai/create-miniature-world](https://github.com/denggui-ai/create-miniature-world). Download and extract its Code → Download ZIP archive, or use the existing clone instructions:
+Start with the [English README](../README.md). The public repository is [denggui-ai/create-miniature-world](https://github.com/denggui-ai/create-miniature-world). Download and extract its Code → Download ZIP archive, or use the existing clone instructions:
 
 ```bash
 git clone https://github.com/denggui-ai/create-miniature-world.git
