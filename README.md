@@ -1,6 +1,6 @@
 # Miniature World · 微缩摄影 Skill
 
-**回形针是跨栏，刨丝器是果岭，日常物件里藏着一个小世界。**
+**回形针是跨栏，剪刀柄环是跑道，日常物件里藏着一个小世界。**
 
 给一个物件名，或上传一张商品照片，让 Codex / Claude Code 帮你构思有故事的微缩摄影：从物件的形状、纹理与结构出发，安排小人的动作、比例、机位和光线，再用当前环境的图像工具制作。
 
@@ -8,10 +8,10 @@
 
 [介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [安装说明](docs/INSTALL.md) · [下载最新版](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [日本語](README.ja.md)
 
-| 回形针 · 跨栏赛 | 刨丝器 · 果岭推杆 | 剪刀 · 柄环接力 |
-| --- | --- | --- |
-| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="三枚立起的回形针成了跨栏，小跑者腾空跨栏"> | <img src="examples/grater-golf-20261020.png" width="260" alt="仰放的刨丝器大孔面成了高尔夫果岭，球手推杆进洞"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="剪刀黑色柄环成了环形跑道，小跑者接力"> |
-| 跨栏决赛，领跑的已经腾空过栏。 | 球手正在推杆，球童在一旁看。 | 柄环跑道上的接力赛，冲向终点。 |
+| 回形针 · 跨栏赛 | 剪刀 · 柄环接力 |
+| --- | --- |
+| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="三枚立起的回形针成了跨栏，小跑者腾空跨栏"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="剪刀黑色柄环成了环形跑道，小跑者接力"> |
+| 跨栏决赛，领跑的已经腾空过栏。 | 柄环跑道上的接力赛，冲向终点。 |
 
 AI 生成，每张只生成 1 次。创作过程见[案例记录](examples/PICTURE_CARD_CASES_20261021.md)；更多看[案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。
 

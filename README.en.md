@@ -1,6 +1,6 @@
 # Miniature World · Miniature Photography Skill
 
-**Paper clips become hurdles. A grater becomes a putting green. Everyday objects hold small worlds.**
+**Paper clips become hurdles. Scissor handles become a running track. Everyday objects hold small worlds.**
 
 Give Codex or Claude Code an object name or a product photo to plan miniature photography with a story. It uses the object's shape, texture and structure to work out the tiny figures' actions, scale, camera angle and lighting, then creates the image with your environment's image tools.
 
@@ -8,10 +8,10 @@ Review ideas first, request an image directly, or get prompts only. Use it for e
 
 [Website](https://denggui-ai.github.io/create-miniature-world/site/en/) · [Gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) (Chinese captions) · [English guide](docs/GETTING_STARTED.en.md) · [Download latest](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [中文](README.md) · [日本語](README.ja.md)
 
-| Paper clips → hurdles | Grater → putting green | Scissors → relay track |
-| --- | --- | --- |
-| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="Three upright paper clips become hurdles as tiny runners leap them"> | <img src="examples/grater-golf-20261020.png" width="260" alt="A grater laid flat becomes a putting green; the holes are cups"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="The black scissor handle loop becomes a running track for a relay"> |
-| A hurdles final; the leader is already in the air. | A golfer putts while the caddie looks on. | A relay race around the handle loop. |
+| Paper clips → hurdles | Scissors → relay track |
+| --- | --- |
+| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="Three upright paper clips become hurdles as tiny runners leap them"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="The black scissor handle loop becomes a running track for a relay"> |
+| A hurdles final; the leader is already in the air. | A relay race around the handle loop. |
 
 AI-generated, one generation each. How they were made is in the [case notes](examples/PICTURE_CARD_CASES_20261021.md) (Chinese). More in the [gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html).
 

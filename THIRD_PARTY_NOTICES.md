@@ -126,3 +126,8 @@ b8f6bddf2fbad05b89ee17bd7f691754ccc1c3b68c5c4cd7e33619a2f912070a  examples/cloth
 - 官方来源索引见 `skills/create-miniature-world/references/creative-relations.md`。
 
 你自己添加的商品图和人偶照片不属于本仓库内容，请按各自的权利条件使用。
+
+
+## 2026-10-31 案例撤回
+
+“刨丝器·果岭推杆”（原文件 `examples/grater-golf-20261020.png` 及 `site/img/grater-golf-20261020.webp`）因明显的一致性问题撤回，已移除当前版本的图片文件及展示入口。上文的授权与来源描述仅作为历史记录保留，不代表该案例仍获展示认可。原始版本保留在 Git 历史中，不作为推荐案例。

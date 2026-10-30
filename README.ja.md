@@ -1,6 +1,6 @@
 # Miniature World · ミニチュア写真 Skill
 
-**クリップはハードルに、おろし金はグリーンに。身近なモノに、小さな世界が隠れています。**
+**クリップはハードルに、ハサミの持ち手はトラックに。身近なモノに、小さな世界が隠れています。**
 
 モノの名前を伝えるか、商品写真を1枚アップロードすると、Codex / Claude Code が物語のあるミニチュア写真を構想します。モノの形・質感・構造を手がかりに、小人の動き、大きさ、カメラ位置、光を考え、お使いの環境の画像ツールで制作します。
 
@@ -8,10 +8,10 @@
 
 [紹介ページ](https://denggui-ai.github.io/create-miniature-world/site/ja/) · [ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)（説明は中国語） · [最新版をダウンロード](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [中文](README.md)
 
-| クリップ → ハードル走 | おろし金 → パターゴルフ | ハサミ → リレー |
-| --- | --- | --- |
-| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="立てた3本のクリップがハードルになり、小さなランナーが跳び越える"> | <img src="examples/grater-golf-20261020.png" width="260" alt="寝かせたおろし金の大きな穴がゴルフのカップになる"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="ハサミの黒い持ち手の輪がリレーのトラックになる"> |
-| ハードル決勝、先頭はもう宙を舞う。 | パットを打つ選手とキャディー。 | 持ち手の輪を走るリレー。 |
+| クリップ → ハードル走 | ハサミ → リレー |
+| --- | --- |
+| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="立てた3本のクリップがハードルになり、小さなランナーが跳び越える"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="ハサミの黒い持ち手の輪がリレーのトラックになる"> |
+| ハードル決勝、先頭はもう宙を舞う。 | 持ち手の輪を走るリレー。 |
 
 AI 生成の作例で、各1回の生成です。制作の過程は[作例記録](examples/PICTURE_CARD_CASES_20261021.md)（中国語）と[検証記録](docs/VALIDATION.md)にあります。ほかの作例は[ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)へ。
 
