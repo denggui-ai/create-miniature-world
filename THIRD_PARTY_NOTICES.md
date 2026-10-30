@@ -131,3 +131,8 @@ b8f6bddf2fbad05b89ee17bd7f691754ccc1c3b68c5c4cd7e33619a2f912070a  examples/cloth
 ## 2026-10-31 案例撤回
 
 “刨丝器·果岭推杆”（原文件 `examples/grater-golf-20261020.png` 及 `site/img/grater-golf-20261020.webp`）因明显的一致性问题撤回，已移除当前版本的图片文件及展示入口。上文的授权与来源描述仅作为历史记录保留，不代表该案例仍获展示认可。原始版本保留在 Git 历史中，不作为推荐案例。
+
+
+## 2026-10-31 README 与社交预览横幅
+
+`site/img/github-social-preview.jpg` 以本项目已有木梳农田 AI 样图为参考，通过图像工具重新构图并加入项目文案，用于 README 与 GitHub 社交预览。它是 AI 展示与排版图，不是商品保真验证记录；不因加入仓库而自动纳入 MIT，既有素材与品牌权利边界继续适用。

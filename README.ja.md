@@ -1,19 +1,21 @@
-# Miniature World · ミニチュア写真 Skill
+<p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a></p>
 
-**クリップはハードルに、ハサミの持ち手はトラックに。身近なモノに、小さな世界が隠れています。**
+<h1 align="center">Miniature World</h1>
 
-モノの名前を伝えるか、商品写真を1枚アップロードすると、Codex / Claude Code が物語のあるミニチュア写真を構想します。モノの形・質感・構造を手がかりに、小人の動き、大きさ、カメラ位置、光を考え、お使いの環境の画像ツールで制作します。
+<p align="center"><strong>身近なモノを、物語のある小さな世界に。</strong><br>Codex と Claude Code のためのミニチュア写真 Skill。</p>
 
-案を見てから選ぶ、直接制作を頼む、プロンプトだけ受け取る、といった使い方ができます。身近なモノのアイデア出し、商品のミニチュアシーン、見立て写真の練習に。
+<p align="center"><img src="site/img/github-social-preview.jpg" width="100%" alt="Miniature World — miniature farming on a wooden comb"></p>
 
-[紹介ページ](https://denggui-ai.github.io/create-miniature-world/site/ja/) · [ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)（説明は中国語） · [最新版をダウンロード](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [中文](README.md)
+<p align="center"><a href="#インストールと最初の制作">使いはじめる</a> · <a href="https://denggui-ai.github.io/create-miniature-world/site/gallery.html">ギャラリー</a> · <a href="https://github.com/denggui-ai/create-miniature-world/releases/latest">ダウンロード</a></p>
 
-| クリップ → ハードル走 | ハサミ → リレー |
-| --- | --- |
-| <img src="examples/paperclip-hurdles-20261020.png" width="260" alt="立てた3本のクリップがハードルになり、小さなランナーが跳び越える"> | <img src="examples/scissors-handle-relay-20261021.png" width="260" alt="ハサミの黒い持ち手の輪がリレーのトラックになる"> |
-| ハードル決勝、先頭はもう宙を舞う。 | 持ち手の輪を走るリレー。 |
+<p align="center">
+  <img src="site/img/notebook-pencil-bridge-20261008.webp" width="44%" alt="開いたノートの溝に架かった鉛筆を小さな人たちが渡る">
+  <img src="site/img/ice-tray-private-pools-20261019.webp" width="44%" alt="製氷皿の隣り合うマスが専用プールになる">
+</p>
 
-AI 生成の作例で、各1回の生成です。制作の過程は[作例記録](examples/PICTURE_CARD_CASES_20261021.md)（中国語）と[検証記録](docs/VALIDATION.md)にあります。ほかの作例は[ギャラリー](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)へ。
+<p align="center">ノートと鉛筆 · ページをつなぐ橋 · 製氷皿 · ひとり一つのプール</p>
+
+AI 制作の作例：[鉛筆の橋の制作過程](docs/SECONDARY_CREATION.md) · [製氷皿の構想と振り返り](examples/PLANNING_PHOTOGRAPHY_CASES_20261019.md)（中国語）。
 
 ## ひとつのモノからはじめる
 
