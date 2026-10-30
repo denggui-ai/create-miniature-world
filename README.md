@@ -1,8 +1,10 @@
-# 微缩摄影 Skill · Miniature World
+# Miniature World · 微缩摄影 Skill
 
-**让日常物件，成为有故事的小世界。**
+**回形针是跨栏，刨丝器是果岭，日常物件里藏着一个小世界。**
 
-给 Codex 与 Claude Code 用的 AI 微缩摄影 Skill：从物件的形状、纹理和结构里找联想，先把画面想清楚，再生成。受田中达也（Tatsuya Tanaka）的「见立 / mitate」启发。
+给一个物件名，或上传一张商品照片，让 Codex / Claude Code 帮你构思有故事的微缩摄影：从物件的形状、纹理与结构出发，安排小人的动作、比例、机位和光线，再用当前环境的图像工具制作。
+
+可以先选方案、直接创作，也可以只拿提示词。适合日常物件创意、商品微缩场景和见立摄影练习。
 
 [介绍页](https://denggui-ai.github.io/create-miniature-world/site/) · [案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) · [安装说明](docs/INSTALL.md) · [下载最新版](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [English](README.en.md) · [日本語](README.ja.md)
 
@@ -13,19 +15,35 @@
 
 AI 生成，每张只生成 1 次。创作过程见[案例记录](examples/PICTURE_CARD_CASES_20261021.md)；更多看[案例图库](https://denggui-ai.github.io/create-miniature-world/site/gallery.html)。
 
-## 30 秒开始
+## 从一件物品开始
+
+| 你提供什么 | 可以怎样创作 |
+| --- | --- |
+| 一个物件名，如“马克杯” | 从轮廓、纹理或结构联想场景，先给方案，或直接生成 |
+| 一张商品照片 | 以保留商品可见外观为目标，构思小人与物件的故事；照片适合作底图时，走实物照编辑路线 |
+| 一个明确创意 | 按你指定的故事制作，不额外凑候选方案 |
+| 只想要文字 | 交付方案或完整生图提示词，不调用图像工具 |
+
+**核心是让物件本身成为场景。** 小人做什么、为什么在这里，都要和物件的可见结构有关。创意方法受田中达也（Tatsuya Tanaka）的「见立 / mitate」启发，详见[创作启发与致敬](#创作启发与致敬)。
+
+## 安装与第一次创作
 
 **1. 安装**（首次安装、目标目录还不存在时；已有同名 Skill 请先看[安装说明](docs/INSTALL.md)备份与比较）
 
+先获取仓库：
+
 ```bash
 git clone https://github.com/denggui-ai/create-miniature-world.git
-# Claude Code：复制到你的项目
-mkdir -p 你的项目/.claude/skills && cp -R create-miniature-world/skills/create-miniature-world 你的项目/.claude/skills/
-# Codex：改用 .agents/skills
-mkdir -p 你的项目/.agents/skills && cp -R create-miniature-world/skills/create-miniature-world 你的项目/.agents/skills/
 ```
 
-只装 `skills/create-miniature-world/` 这一个目录，不要把整个仓库当成 Skill。
+进入你的目标项目，按所用宿主选择一个项目级目录：
+
+| 宿主 | 安装位置 |
+| --- | --- |
+| Codex | `.agents/skills/create-miniature-world/` |
+| Claude Code | `.claude/skills/create-miniature-world/` |
+
+将仓库中的 `skills/create-miniature-world/` 完整复制到所选位置。**只安装这个 Skill 目录，别把整个仓库复制进去。** 首次安装脚本、更新与备份步骤见[安装说明](docs/INSTALL.md)；已有同名副本时先比较，不直接覆盖。
 
 **2. 开一个新会话，发一张商品照片和一句话**（没有照片，只说物品名称也行）
 
@@ -36,7 +54,7 @@ mkdir -p 你的项目/.agents/skills && cp -R create-miniature-world/skills/crea
 
 **3. 选一个方案**，说「按方案1生成一张，保留商品外观」，看图后再提一处修改。
 
-出图用的是你所在环境自带的图像工具：Codex 可以直接出图；Claude Code 没有内置生图时，会给你完整方案和提示词，拿去你常用的图像工具生成即可。本项目不附带模型、API 密钥或生图额度。
+**出图取决于宿主能力。** Codex 在图像工具可用时可直接生成或编辑；Claude Code 没有内置生图时，会交付方案和提示词，供你在已有图像工具中使用。本项目不附带模型、API 密钥或生图额度。
 
 ## 你可以怎样和它沟通
 
@@ -49,7 +67,7 @@ mkdir -p 你的项目/.agents/skills && cp -R create-miniature-world/skills/crea
 | 人物再小一些 | 调整人物及相关道具比例，保护商品 |
 | 没看懂这个故事 | 回查物件联系、人物动作和空间关系，必要时换情境 |
 
-有商品照片时默认保护它的可见外观；只有名称时自由创作。画幅默认方幅，你指定的比例优先。每个方案一张首图；编辑只在你点名的那张上做、至多一次；失败不重试、不自动追加。
+有商品照片或指定商品时，默认以保护可见外观为目标；只有普通物件名称时自由创作。画幅默认方幅，你指定的比例优先。直接创作默认两个想法各出一张；指定创意、只要一张或仅成立一案时出一张。每个方案一张首图；编辑只在你点名的那张上做、至多一次；失败不重试、不自动追加。
 
 ## 它怎么想创意
 
@@ -60,7 +78,7 @@ mkdir -p 你的项目/.agents/skills && cp -R create-miniature-world/skills/crea
 ## 更多案例与教程
 
 - [马克杯 · 咖啡渍跑道](https://denggui-ai.github.io/create-miniature-world/site/coffee-ring.html)：只有物件名称，怎样变成一个故事
-- [橘子实拍 → 行星考察](site/orange.html)：比较两个创意，再用一次编辑缩小人物
+- [橘子实拍 → 行星考察](https://denggui-ai.github.io/create-miniature-world/site/orange.html)：比较两个创意，再用一次编辑缩小人物
 - [遥控器原照 → 两张成图](https://denggui-ai.github.io/create-miniature-world/site/remote-control.html)：上传一张实拍照片，变成两个小世界
 - [冰格与榨汁器的两次完整取舍](examples/PLANNING_PHOTOGRAPHY_CASES_20261019.md)：候选、机位与布光怎样决定
 - [纸巾雪坡、铅笔桥与木夹跳台](docs/SECONDARY_CREATION.md)：从材质、组合和姿态出发

@@ -1,8 +1,10 @@
 # Miniature World · Miniature Photography Skill
 
-**Turn everyday objects into small worlds with a story.**
+**Paper clips become hurdles. A grater becomes a putting green. Everyday objects hold small worlds.**
 
-An Agent Skill for Codex and Claude Code. It looks for connections in an object's shape, texture and structure, pictures the shot first, then generates the image with the image tools your host already has. Inspired by Tatsuya Tanaka (田中達也) and his 見立 / mitate approach: seeing everyday objects as something else.
+Give Codex or Claude Code an object name or a product photo to plan miniature photography with a story. It uses the object's shape, texture and structure to work out the tiny figures' actions, scale, camera angle and lighting, then creates the image with your environment's image tools.
+
+Review ideas first, request an image directly, or get prompts only. Use it for everyday-object concepts, miniature product scenes and mitate photography practice.
 
 [Website](https://denggui-ai.github.io/create-miniature-world/site/en/) · [Gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html) (Chinese captions) · [English guide](docs/GETTING_STARTED.en.md) · [Download latest](https://github.com/denggui-ai/create-miniature-world/releases/latest) · [中文](README.md) · [日本語](README.ja.md)
 
@@ -13,19 +15,35 @@ An Agent Skill for Codex and Claude Code. It looks for connections in an object'
 
 AI-generated, one generation each. How they were made is in the [case notes](examples/PICTURE_CARD_CASES_20261021.md) (Chinese). More in the [gallery](https://denggui-ai.github.io/create-miniature-world/site/gallery.html).
 
-## Start in 30 seconds
+## Start with one object
+
+| What you provide | What you can create |
+| --- | --- |
+| An object name, such as “mug” | Scenes inspired by its outline, texture or structure; review ideas first or generate directly |
+| A product photo | A story linking tiny figures to the object, with its visible appearance as a preservation goal; use photo editing when the image is a suitable base |
+| A specific idea | Follow your story without adding extra candidate concepts |
+| A text-only request | Concepts or complete image prompts, without calling image tools |
+
+**The object itself becomes the scene.** What the figures do, and why they are there, should relate to its visible structure. Inspired by Tatsuya Tanaka's mitate approach; see [Inspiration and materials](#inspiration-and-materials).
+
+## Installation and your first creation
 
 **1. Install** (first install only, when the target folder does not exist yet; if a copy is already installed, back it up and compare first, see [installation](docs/INSTALL.md))
 
+Get the repository first:
+
 ```bash
 git clone https://github.com/denggui-ai/create-miniature-world.git
-# Claude Code: copy into your project
-mkdir -p your-project/.claude/skills && cp -R create-miniature-world/skills/create-miniature-world your-project/.claude/skills/
-# Codex: use .agents/skills instead
-mkdir -p your-project/.agents/skills && cp -R create-miniature-world/skills/create-miniature-world your-project/.agents/skills/
 ```
 
-Install only the `skills/create-miniature-world/` folder, not the whole repository.
+In your target project, choose one project-level location for your host:
+
+| Host | Installation location |
+| --- | --- |
+| Codex | `.agents/skills/create-miniature-world/` |
+| Claude Code | `.claude/skills/create-miniature-world/` |
+
+Copy the repository's `skills/create-miniature-world/` folder in full to that location. **Install this Skill folder only, not the entire repository.** See [installation](docs/INSTALL.md) (Chinese) for first-install scripts, updates and backups, or the [English guide](docs/GETTING_STARTED.en.md). Compare any existing copy before replacing it.
 
 **2. Open a fresh session and send a product photo with one line** (an object name alone also works)
 
@@ -34,9 +52,9 @@ Install only the `skills/create-miniature-world/` folder, not the whole reposito
 | Claude Code | `/create-miniature-world Use this product photo. Show me the ideas first. Do not generate images yet.` |
 | Codex | `Use $create-miniature-world with this product photo. Show me the ideas first. Do not generate images yet.` |
 
-**3. Pick an idea**, say "Generate idea 1, keep the product's appearance", then ask for one focused change after you see the image.
+**3. Pick an idea**, say "Generate one image for idea 1, keeping the product's appearance", then ask for one focused change after you see the image.
 
-Images come from your environment's own image tools: Codex generates directly; when Claude Code has no built-in generation, you get the full plan and prompts to run in any image tool you like. No model, API key or image credits are bundled.
+**Image creation depends on your host's capabilities.** Codex can generate or edit when image tools are available. When Claude Code has no built-in generation, you get concepts and prompts for your existing image tools. No model, API key or image credits are bundled.
 
 ## How to talk to it
 
@@ -49,7 +67,7 @@ Images come from your environment's own image tools: Codex generates directly; w
 | Make the people smaller | Rescales figures and their props, protecting the product |
 | I don't get the story | Rechecks the object link, the action and the spatial relationships; changes the situation if needed |
 
-With a product photo, its visible appearance is protected by default; with only a name, the design is free. Square frame by default; any ratio you specify takes priority. One first image per idea; at most one edit, only on the image you name; no retries or automatic extra images.
+With a product photo or a specified product, preserving its visible appearance is the default goal; a generic object name allows free creation. Square frame by default; any ratio you specify takes priority. Direct creation defaults to two ideas with one image each; a specific idea, a request for one image, or only one viable concept results in one image. One first image per idea; at most one edit, only on the image you name; no retries or automatic extra images.
 
 ## How it comes up with ideas
 
@@ -60,7 +78,7 @@ There are two ways to make the image: with only an object name, the whole pictur
 ## More examples and tutorials
 
 - [English first-use guide](docs/GETTING_STARTED.en.md#follow-the-examples), which introduces the case tutorials
-- [Orange photo → planet survey](site/orange.html): two concepts, then one edit to shrink the figures (Chinese)
+- [Orange photo → planet survey](https://denggui-ai.github.io/create-miniature-world/site/orange.html): two concepts, then one edit to shrink the figures (Chinese)
 - [Remote control photo → two results](https://denggui-ai.github.io/create-miniature-world/site/remote-control.html): one real photo, two tiny worlds (Chinese)
 - [All cases and reviews](examples/README.md) (Chinese)
 
