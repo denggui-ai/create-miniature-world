@@ -4,9 +4,9 @@
 
 <p align="center"><strong>让日常物件，成为有故事的小世界。</strong><br>给 Codex 与 Claude Code 的微缩摄影创作 Skill。</p>
 
-<p align="center"><img src="site/img/github-social-preview.jpg" width="100%" alt="Miniature World — miniature farming on a wooden comb"></p>
+<p align="center"><a href="https://denggui-ai.github.io/create-miniature-world/site/zh/"><img src="site/img/github-social-preview.zh-CN.jpg" width="100%" alt="Miniature World — 打开中文首页"></a></p>
 
-<p align="center"><a href="#安装与第一次创作">开始使用</a> · <a href="https://denggui-ai.github.io/create-miniature-world/site/gallery.html">案例图库</a> · <a href="https://github.com/denggui-ai/create-miniature-world/releases/latest">下载</a></p>
+<p align="center"><a href="https://denggui-ai.github.io/create-miniature-world/site/zh/">项目首页</a> · <a href="#安装与第一次创作">开始使用</a> · <a href="https://denggui-ai.github.io/create-miniature-world/site/gallery.html">案例图库</a> · <a href="https://github.com/denggui-ai/create-miniature-world/releases/latest">下载</a></p>
 
 <p align="center">
   <img src="site/img/notebook-pencil-bridge-20261008.webp" width="44%" alt="完整铅笔横跨笔记本书沟，微缩行人在笔杆上过桥">

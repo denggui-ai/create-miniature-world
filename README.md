@@ -4,9 +4,9 @@
 
 <p align="center"><strong>Turn everyday objects into tiny worlds with a story.</strong><br>A miniature photography skill for Codex and Claude Code.</p>
 
-<p align="center"><img src="site/img/github-social-preview.jpg" width="100%" alt="Miniature World — miniature farming on a wooden comb"></p>
+<p align="center"><a href="https://denggui-ai.github.io/create-miniature-world/site/"><img src="site/img/github-social-preview.en.jpg" width="100%" alt="Miniature World — open the English website"></a></p>
 
-<p align="center"><a href="#installation-and-your-first-creation">Get started</a> · <a href="https://denggui-ai.github.io/create-miniature-world/site/gallery.html">Gallery</a> · <a href="https://github.com/denggui-ai/create-miniature-world/releases/latest">Download</a></p>
+<p align="center"><a href="https://denggui-ai.github.io/create-miniature-world/site/">Website</a> · <a href="#installation-and-your-first-creation">Get started</a> · <a href="https://denggui-ai.github.io/create-miniature-world/site/gallery.html">Gallery (Chinese captions)</a> · <a href="https://github.com/denggui-ai/create-miniature-world/releases/latest">Download</a></p>
 
 <p align="center">
   <img src="site/img/notebook-pencil-bridge-20261008.webp" width="44%" alt="An intact yellow pencil bridges an open notebook, with miniature hikers crossing">

@@ -136,3 +136,8 @@ b8f6bddf2fbad05b89ee17bd7f691754ccc1c3b68c5c4cd7e33619a2f912070a  examples/cloth
 ## 2026-10-31 README 与社交预览横幅
 
 `site/img/github-social-preview.jpg` 以本项目已有木梳农田 AI 样图为参考，通过图像工具重新构图并加入项目文案，用于 README 与 GitHub 社交预览。它是 AI 展示与排版图，不是商品保真验证记录；不因加入仓库而自动纳入 MIT，既有素材与品牌权利边界继续适用。
+
+
+### 2026-10-31 横幅语言版本
+
+`site/img/github-social-preview.en.jpg`、`github-social-preview.zh-CN.jpg`、`github-social-preview.ja.jpg` 为同一展示横幅的英文、中文、日文版本；`github-social-preview.jpg` 为兼容旧链接的英文默认副本。英文、日文版本通过图像工具替换文案，沿用上述素材与展示用途边界，不作为商品一致性验证。

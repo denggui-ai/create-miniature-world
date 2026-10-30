@@ -4,9 +4,9 @@
 
 <p align="center"><strong>身近なモノを、物語のある小さな世界に。</strong><br>Codex と Claude Code のためのミニチュア写真 Skill。</p>
 
-<p align="center"><img src="site/img/github-social-preview.jpg" width="100%" alt="Miniature World — miniature farming on a wooden comb"></p>
+<p align="center"><a href="https://denggui-ai.github.io/create-miniature-world/site/ja/"><img src="site/img/github-social-preview.ja.jpg" width="100%" alt="Miniature World — 日本語サイトを開く"></a></p>
 
-<p align="center"><a href="#インストールと最初の制作">使いはじめる</a> · <a href="https://denggui-ai.github.io/create-miniature-world/site/gallery.html">ギャラリー</a> · <a href="https://github.com/denggui-ai/create-miniature-world/releases/latest">ダウンロード</a></p>
+<p align="center"><a href="https://denggui-ai.github.io/create-miniature-world/site/ja/">紹介サイト</a> · <a href="#インストールと最初の制作">使いはじめる</a> · <a href="https://denggui-ai.github.io/create-miniature-world/site/gallery.html">ギャラリー（説明は中国語）</a> · <a href="https://github.com/denggui-ai/create-miniature-world/releases/latest">ダウンロード</a></p>
 
 <p align="center">
   <img src="site/img/notebook-pencil-bridge-20261008.webp" width="44%" alt="開いたノートの溝に架かった鉛筆を小さな人たちが渡る">
