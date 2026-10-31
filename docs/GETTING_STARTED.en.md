@@ -34,23 +34,23 @@ Public main and the release archive use the Codex display label `微缩摄影 Sk
 
 ## Make your first request
 
-Attach a clear product photo, or start with an object name. In Codex:
+Start without a photo. After confirming that the Skill loaded in a fresh session, send the request for your host.
 
-> Use $create-miniature-world with this product photo. Show the picture cards first. Do not generate images yet. Please respond in English.
+**Codex**
 
-In Claude Code:
+> Use $create-miniature-world to design miniature photography using an ordinary mug. Show two text-only ideas first. Do not generate images. Please respond in English.
 
-> /create-miniature-world Use this product photo. Show the picture cards first. Do not generate images yet. Please respond in English.
+**Claude Code**
 
-With a product photo, the skill protects the visible product appearance by default. With only an ordinary object name, it uses free creation and does not promise to reproduce a particular product. State any features that must remain unchanged. Photos and prompts are processed by your host and its image tool; upload only material you may share with them. The project website displays examples and instructions.
+> /create-miniature-world Design miniature photography using an ordinary mug. Show two text-only ideas first. Do not generate images. Please respond in English.
 
-After selecting a card, ask “Generate one image from card 1; preserve the product.” Direct generation defaults to two ideas, one image each. Produce one when only one idea works or an idea/count is specified. One edit at most, only on the image you name; no retries or automatic extra images.
+Expect written ideas describing the object connection, character actions and camera position. No image is requested at this stage. If the Skill did not load, check the installation; if it generated an image despite this instruction, report it through the [first-use feedback form](https://github.com/denggui-ai/create-miniature-world/issues/new?template=first_use.md).
 
-For a text-only start:
+Choose one idea. With an image tool available, ask “Generate one image from idea 1.” Otherwise ask “Give me the full image prompt for idea 1, without generating.” Use a tool you already have; no image credits are included.
 
-> Use $create-miniature-world with an ordinary paper cup. Show the picture cards first. Do not generate yet. Please respond in English.
+For a later attempt, attach your own product photo and say what must stay unchanged. A product photo sets a preservation goal; it does not guarantee exact fidelity. With only an ordinary object name, the skill uses free creation. Photos and prompts are processed by your host and image tool; upload only content you may share with those services. The website itself displays examples and instructions.
 
-Use the Claude invocation instead when working in Claude Code. You can also request prompts only. The tested Claude Code environment has no built-in generation: use an image tool you already have, then return the results for review. Reading a photo does not prove that a generation tool can receive it.
+Direct creation requests still default to two ideas, one image each; this recommended text-first introduction does not change that runtime behavior. Your specified idea or count takes priority. Editing requires suitable tools, applies only to the named image and is limited to one edit per the documented budget. Reading a photo does not prove a generation tool can receive it.
 
 ## Select, review and refine
 

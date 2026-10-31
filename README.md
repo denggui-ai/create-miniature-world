@@ -30,33 +30,36 @@ AI-made examples: [pencil bridge process](docs/SECONDARY_CREATION.md) · [ice tr
 
 ## Installation and your first creation
 
-**1. Install** (first install only, when the target folder does not exist yet; if a copy is already installed, back it up and compare first, see [installation](docs/INSTALL.md))
+You need Codex or Claude Code. This is a creative Skill that your agent reads; the website shows examples and does not generate images. **You can start without a photo, and the first request does not call an image tool.**
 
-Get the repository first:
+**1. Install for the host you use**
 
-```bash
-git clone https://github.com/denggui-ai/create-miniature-world.git
-```
+Download the Skill archive and checksum file attached to the [latest release](https://github.com/denggui-ai/create-miniature-world/releases/latest), then verify and extract them using the [installation guide](docs/GETTING_STARTED.en.md#choose-your-source). Find the `create-miniature-world` folder containing `SKILL.md`; in the source repository it is `skills/create-miniature-world/`.
 
-In your target project, choose one project-level location for your host:
+| Your host | First project-local installation | Instructions |
+| --- | --- | --- |
+| Codex | `your-project/.agents/skills/create-miniature-world/` | [Host installation guide](docs/GETTING_STARTED.en.md#install-for-your-host) |
+| Claude Code | `your-project/.claude/skills/create-miniature-world/` | [Host installation guide](docs/GETTING_STARTED.en.md#install-for-your-host) |
 
-| Host | Installation location |
-| --- | --- |
-| Codex | `.agents/skills/create-miniature-world/` |
-| Claude Code | `.claude/skills/create-miniature-world/` |
+Choose the row for your host. Install the complete Skill folder, not just `SKILL.md` or the whole repository. If a copy already exists, [back it up and compare](docs/GETTING_STARTED.en.md#update-and-report-problems) before replacing it. In a fresh session, confirm which Skill was actually loaded; copying files alone does not prove discovery.
 
-Copy the repository's `skills/create-miniature-world/` folder in full to that location. **Install this Skill folder only, not the entire repository.** See [installation](docs/INSTALL.md) (Chinese) for first-install scripts, updates and backups, or the [English guide](docs/GETTING_STARTED.en.md). Compare any existing copy before replacing it.
-
-**2. Open a fresh session and send a product photo with one line** (an object name alone also works)
+**2. Copy one request — no photo needed**
 
 | Host | Send |
 | --- | --- |
-| Claude Code | `/create-miniature-world Use this product photo. Show me the ideas first. Do not generate images yet.` |
-| Codex | `Use $create-miniature-world with this product photo. Show me the ideas first. Do not generate images yet.` |
+| Claude Code | `/create-miniature-world Design miniature photography using an ordinary mug. Show two text-only ideas first. Do not generate images. Please respond in English.` |
+| Codex | `Use $create-miniature-world to design miniature photography using an ordinary mug. Show two text-only ideas first. Do not generate images. Please respond in English.` |
 
-**3. Pick an idea**, say "Generate one image for idea 1, keeping the product's appearance", then ask for one focused change after you see the image.
+Expect written ideas describing which part of the mug becomes what, who is doing what, and where the camera is. There should be no image yet. If the Skill was not loaded, return to the installation guide; if it generated an image at this step, report that behavior.
 
-**Image creation depends on your host's capabilities.** Codex can generate or edit when image tools are available. When Claude Code has no built-in generation, you get concepts and prompts for your existing image tools. No model, API key or image credits are bundled.
+**3. Choose one idea, then make one image**
+
+With an image tool available, ask “Generate one image from idea 1.” Without one, ask “Give me the full image prompt for idea 1, without generating.” Use it in an image tool you already have. For a later attempt, bring your own product photo and specify what must stay unchanged.
+
+Generation and editing depend on tools actually available in your host; not every Codex or Claude Code environment can generate images. No model, API key or image credits are included. See the [documented verification scope](docs/GETTING_STARTED.en.md#update-and-report-problems).
+
+Describe the resulting scene in one sentence before deciding what to change. Share your experience through the [first-use feedback form](https://github.com/denggui-ai/create-miniature-world/issues/new?template=first_use.md), including installation blockers or an unavailable image tool.
+
 
 ## How to talk to it
 
@@ -101,3 +104,5 @@ This is an independent project, with no official affiliation or endorsement from
 ## Versions, feedback and maintenance
 
 The current version, archive, SHA-256 and release notes are on [Releases](https://github.com/denggui-ai/create-miniature-world/releases/latest). Report problems with the [issue template](https://github.com/denggui-ai/create-miniature-world/issues/new?template=bug_report.md): host, loaded version, input, expected and actual result; share only images you may share and never credentials. Maintainers see [MAINTAINING.md](docs/MAINTAINING.md); the only source is `skills/create-miniature-world/`, and installed folders are copies.
+
+Project listing materials: [Chinese/English summary and walkthroughs](docs/SHARING.md).

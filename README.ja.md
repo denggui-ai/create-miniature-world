@@ -30,33 +30,36 @@ AI 制作の作例：[鉛筆の橋の制作過程](docs/SECONDARY_CREATION.md) �
 
 ## インストールと最初の制作
 
-**1. インストール**（初めて入れる場合。同名の Skill がすでにある場合は、先に[インストール説明](docs/INSTALL.md)（中国語）に沿ってバックアップと比較をしてください）
+Codex または Claude Code が必要です。これは Agent が読む創作用 Skill で、紹介サイト自体には画像生成機能はありません。**写真がなくても試せます。最初の依頼では画像生成ツールを呼び出しません。**
 
-まずリポジトリを取得します。
+**1. 使っている環境にインストール**
 
-```bash
-git clone https://github.com/denggui-ai/create-miniature-world.git
-```
+[最新版 Release](https://github.com/denggui-ai/create-miniature-world/releases/latest)に添付された Skill の ZIP とチェックサムを入手し、[インストール説明](docs/INSTALL.md)（中国語）または[英語ガイド](docs/GETTING_STARTED.en.md)に沿って確認・展開します。`SKILL.md` を含む `create-miniature-world` フォルダを使います。ソース内の場所は `skills/create-miniature-world/` です。
 
-使いたいプロジェクトで、ホストに合うインストール先をひとつ選びます。
-
-| ホスト | プロジェクト内のインストール先 |
+| 使う環境 | 初回のプロジェクト内インストール先 |
 | --- | --- |
-| Codex | `.agents/skills/create-miniature-world/` |
-| Claude Code | `.claude/skills/create-miniature-world/` |
+| Codex | `your-project/.agents/skills/create-miniature-world/` |
+| Claude Code | `your-project/.claude/skills/create-miniature-world/` |
 
-リポジトリの `skills/create-miniature-world/` を、選んだ場所にフォルダごとコピーします。**この Skill フォルダだけを入れ、リポジトリ全体はコピーしないでください。** 初回インストール用スクリプト、更新、バックアップは[インストール説明](docs/INSTALL.md)（中国語）にあります。同名のコピーがある場合は、上書きせず先に比較してください。
+使う環境の一行だけを選び、Skill フォルダ全体を入れてください。`SKILL.md` だけ、またはリポジトリ全体をコピーしないでください。同名のものがあれば、先にバックアップと比較を行います。新しいセッションで実際に読み込まれた Skill を確認してください。コピーできたことだけでは、読み込み成功とは言えません。
 
-**2. 新しいセッションで、商品写真と一言の指示を送る**（写真がなければモノの名前だけでも可）
+**2. 写真なしで、一文を送る**
 
 | 環境 | 送る文 |
 | --- | --- |
-| Claude Code | `/create-miniature-world この商品写真でミニチュア写真を作って。まず案を見せて、まだ生成しないで。` |
-| Codex | `$create-miniature-world を使って、この商品写真でミニチュア写真を作って。まず案を見せて、まだ生成しないで。` |
+| Claude Code | `/create-miniature-world 普通のマグカップでミニチュア写真を考えて。まず文章だけの案を二つ見せて。画像はまだ生成しないで。日本語で答えて。` |
+| Codex | `$create-miniature-world を使って、普通のマグカップでミニチュア写真を考えて。まず文章だけの案を二つ見せて。画像はまだ生成しないで。日本語で答えて。` |
 
-**3. 案を選ぶ。**「案1で1枚生成、商品の見た目はそのままで」と伝え、画像を見てから直したい点を1つだけ伝えます。
+カップのどの部分が何になり、誰が何をしていて、どこから撮るのかが文章で示されます。この段階では画像は生成しません。Skill が読み込まれていなければインストールを確認し、先に画像が生成された場合は問題として報告してください。
 
-**画像の生成・編集はホストの機能に依存します。** Codex は画像ツールを利用できる場合に生成・編集できます。Claude Code に内蔵生成がない場合は、案とプロンプトを受け取り、お手持ちの画像ツールで生成できます。モデル、API キー、生成クレジットは同梱していません。
+**3. 一案を選び、一枚だけ生成する**
+
+画像ツールがあれば「案1で一枚生成して」と依頼します。なければ「案1の画像生成プロンプトだけください。生成しないで」と依頼し、すでに使っている画像ツールに渡せます。次に自分の商品写真で試すときは、変えたくない部分を伝えてください。
+
+生成・編集は、現在の環境で実際に利用できる画像ツールに依存します。すべての Codex や Claude Code で生成できるわけではありません。モデル、API キー、生成クレジットは同梱していません。
+
+画像を見たら、どんな場面に見えるか一言で説明してから修正を決めます。インストールで止まった場合も、[初回体験のフィードバック](https://github.com/denggui-ai/create-miniature-world/issues/new?template=first_use.md)に記録できます。日本語でも構いません。
+
 
 ## こんなふうに頼めます
 
@@ -108,3 +111,5 @@ git clone https://github.com/denggui-ai/create-miniature-world.git
 不具合は[報告テンプレート](https://github.com/denggui-ai/create-miniature-world/issues/new?template=bug_report.md)からお知らせください（日本語・英語・中国語いずれも可）。
 
 報告には、ホスト、読み込んだバージョン、入力、期待した結果と実際の結果を添えてください。共有権限のある画像だけを使い、認証情報は載せないでください。保守については[保守説明](docs/MAINTAINING.md)（中国語）を参照してください。唯一のソースは `skills/create-miniature-world/` で、インストール先はそのコピーです。
+
+紹介・掲載用：[プロジェクト概要と作例リンク](docs/SHARING.md)（中国語・英語）。
