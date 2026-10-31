@@ -1,6 +1,6 @@
 <p align="center"><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a></p>
 
-<h1 align="center">Miniature World</h1>
+<h1 align="center">Miniature World · Agent Skill</h1>
 
 <p align="center"><strong>身近なモノを、物語のある小さな世界に。</strong><br>Codex と Claude Code のためのミニチュア写真 Skill。</p>
 
